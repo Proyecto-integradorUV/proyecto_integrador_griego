@@ -15,6 +15,7 @@ const SignIn = () => {
     >
       <div className="formContainer">
         <div className="form-group">
+          <h2>Iniciar sesión</h2>
           <label>Correo: </label>
           <input
             type="email"

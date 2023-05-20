@@ -15,6 +15,7 @@ const SignIn = () => {
     >
       <div className="formContainerSignUp">
         <div className="form-group">
+          <h2>Registrate</h2>
           <label>Nombre: </label>
           <input
             type="text"
