@@ -1,14 +1,11 @@
-/* .contenedor-inicial{
-    background-image: './Images/Civilización Griega.svg';
+.contenedor-inicial{
+    background-image: url('./Images/Civilización.png');
     width: 100;
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    
-} */
-.html,.contenedor-inicial{
-    height: 100vh;
+    background-position: center;      
 }
+
 .navbar {
     background-color: #E07A5F;
     padding: "10px";
@@ -16,26 +13,18 @@
 .navbarList {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
 }
 
 .navbarItem{
-    margin: 0 20px;
+    margin: 0 30px;
+    align-items: flex-start;
 }
 
 .navbarLink {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-}
-.Image{
-    background-image: './Images/Civilización Griega.svg';
-    width: 100;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    
 }
