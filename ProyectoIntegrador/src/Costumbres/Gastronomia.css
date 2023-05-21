@@ -1,0 +1,78 @@
+.contenedor-inicial{
+    background-image: url('./Images/acropolis.jpg');
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+.navbar {
+    background-color: #E07A5F;
+    padding: "10px";
+}
+.navbarList {
+    list-style: none;
+    display: flex;
+    /* align-items: flex-end; */
+    margin-left: 1200px;
+}
+
+.navbarItem{
+    align-items: flex-end;
+}
+
+.navbarName {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbarSecond {
+    background-color: #F2CC8F;
+    padding: "10px";
+}
+.navbarListSecond {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarItemSecond{
+    margin: 0 30px;
+    align-items: flex-start;
+}
+
+.navbarLinkSecond {
+    text-decoration: none;
+    color: #242121;
+    font-size: 20px;
+}
+
+.tema {
+    background-color: rgba(101, 104, 104);  
+    width: 38vh;
+    height: 6vh;
+    text-align: center;
+    color: #fffcfc;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduccion::before {
+    content: "La gastronomía de Grecia tiene una rica historia que se remonta a miles de años atrás y ha influido en muchas otras cocinas alrededor del mundo. La cocina griega es conocida por su sabor fresco, ingredientes saludables y técnicas culinarias simples pero sabrosas.";   
+}
+
+.introduccion {
+    background-color: rgba(217, 217, 217, 0.7);   
+    width: 100vh;
+    height: 18vh;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
