@@ -1,0 +1,78 @@
+.contenedor-inicial{
+    background-image: url('./Images/acropolis.jpg');
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+.navbar {
+    background-color: #E07A5F;
+    padding: "10px";
+}
+.navbarList {
+    list-style: none;
+    display: flex;
+    /* align-items: flex-end; */
+    margin-left: 1200px;
+}
+
+.navbarItem{
+    align-items: flex-end;
+}
+
+.navbarName {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbarSecond {
+    background-color: #F2CC8F;
+    padding: "10px";
+}
+.navbarListSecond {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarItemSecond{
+    margin: 0 30px;
+    align-items: flex-start;
+}
+
+.navbarLinkSecond {
+    text-decoration: none;
+    color: #242121;
+    font-size: 20px;
+}
+
+.temaFilosofia {
+    background-color: rgba(101, 104, 104);  
+    width: 38vh;
+    height: 6vh;
+    text-align: center;
+    color: #fffcfc;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduccionFilosofia::before {
+    content: "A lo largo de la historia de la filosofía griega, se destacaron figuras clave como Sócrates, Platón y Aristóteles. Sócrates enfatizó el uso de la razón y el diálogo para buscar la verdad y la virtud. Platón desarrolló la teoría de las Ideas, argumentando que el mundo sensible es solo una sombra imperfecta de las Ideas eternas y perfectas. Aristóteles, por su parte, realizó importantes contribuciones en lógica, ética, metafísica y ciencias naturales, y enfatizó la observación empírica y el estudio sistemático.";
+}
+
+.introduccionFilosofia {
+    background-color: rgba(217, 217, 217, 0.7);   
+    width: 100vh;
+    height: 30vh;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 180px;
+}

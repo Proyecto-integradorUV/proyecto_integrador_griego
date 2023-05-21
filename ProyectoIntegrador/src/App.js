@@ -11,6 +11,9 @@ import Vestimenta from "./Arte/Vestimenta";
 import Mitologia from "./Costumbres/Mitologia";
 import Gastronomia from "./Costumbres/Gastronomia";
 import Deporte from "./Costumbres/Deporte";
+import Derecho from "./Historia/Derecho";
+import Filosofia from "./Historia/Filosofia";
+import Sitios from "./Historia/Sitios";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="Temas/Mitologia" element={<Mitologia/>} />
           <Route path="Temas/Gastronomia" element={<Gastronomia/>} />
           <Route path="Temas/Deporte" element={<Deporte/>} />
+          <Route path="Temas/Derecho" element={<Derecho/>} />
+          <Route path="Temas/Filosofia" element={<Filosofia/>} />
+          <Route path="Temas/Sitios" element={<Sitios/>} />
         </Routes>
       </BrowserRouter>
     </div>
