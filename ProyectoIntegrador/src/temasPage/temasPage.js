@@ -1,4 +1,5 @@
-import "./Style.css";
+import "./StyleTemas.css";
+import { Link } from "react-router-dom";
 import React from "react";
 import filoImage from "./images/filosofia.png";
 import sitesImage from "./images/sitios.png";
@@ -7,106 +8,75 @@ import literaturaImage from "./images/literatura.png";
 import mitologiaImage from "./images/mitologia.png";
 import derechosImage from "./images/derechos.png";
 import deporteImage from "./images/deporte.png";
+import vestimentaImage from "./images/vestimenta.png";
+import arteImage from "./images/arte.png";
 
 const Temas = () => {
-  const styles = {
-    navbar: {
-      backgroundColor: "#E07A5F",
-      padding: "10px",
-    },
-    navbar2: {
-      backgroundColor: "#f2cc8f",
-      padding: "10px",
-    },
-    navbarList: {
-      listStyle: "none",
-      display: "flex",
-      justifyContent: "left",
-      alignItems: "left",
-      margin: 0,
-      padding: 0,
-    },
-    navbarItem: {
-      margin: "0 20px",
-    },
-    navbarLink: {
-      textDecoration: "none",
-      color: "#5c4a2d",
-      fontSize: "16px",
-    },
-    navbarLink2: {
-      textDecoration: "none",
-      color: "#E07A5F",
-      fontSize: "16px",
-    },
-    navbarList2: {
-      listStyle: "none",
-      display: "flex",
-      justifyContent: "right",
-      alignItems: "right",
-      margin: 0,
-      padding: 0,
-    },
-  };
   return (
     <div class="contenedor-inicial-principal">
-      <nav style={styles.navbar}>
-        <ul style={styles.navbarList2}>
-          <li style={styles.navbarItem}>
-            <a href="/Usuario" style={styles.navbarLink2}>
+      <nav className="navbarTemas">
+        <ul className="navbarList2Temas">
+          <li className="navbarItemTemas">
+            <a className="navbarLink2Temas">
               Usuario
             </a>
           </li>
-          <li style={styles.navbarItem}>
-            <a href="/" style={styles.navbarLink2}>
+          <li className="navbarItemTemas">
+            <a href="/Home" className="navbarLink2Temas">
               Cerrar sesión
             </a>
           </li>
         </ul>
       </nav>
-      <nav style={styles.navbar2}>
-        <ul style={styles.navbarList}>
-          <li style={styles.navbarItem}>
-            <a href="/" style={styles.navbarLink}>
-              Mis lecciones
+      <nav className="navbar2Temas">
+        <ul className="navbarListTemas">
+          <li className="navbarItemTemas">
+            <a className="navbarLinkTemas">
+              Lecciones
             </a>
           </li>
-          <li style={styles.navbarItem}>
-            <a href="/Temas" style={styles.navbarLink2}>
+          <li className="navbarItemTemas">
+            <a href="/Temas" className="navbarLink3Temas">
               Temas
             </a>
           </li>
         </ul>
       </nav>
 
-        <div class="button-container">
-          <button class="btn ">
-            <img src={filoImage} alt="Imagen" class="button-image" />
-          </button>
-          <button class="btn ">
-            <img src={gastroImage} alt="Imagen" class="button-image" />
-          </button>
-          <button class="btn ">
-            <img src={sitesImage} alt="Imagen" class="button-image" />
-          </button>
-        </div>
-        <div class="button-container2">
-          <button class="btn ">
-            <img src={mitologiaImage} alt="Imagen" class="button-image" />
-          </button>
-          <button class="btn ">
-            <img src={deporteImage} alt="Imagen" class="button-image" />
-          </button>
-        </div>
-        <div class="button-container3">
-          <button class="btn ">
-            <img src={literaturaImage} alt="Imagen" class="button-image" />
-          </button>
-          <button class="btn ">
-            <img src={derechosImage} alt="Imagen" class="button-image" />
-          </button>
-        </div>
+      <div class="button-container">
+        <Link to="/Temas/Filosofia" class="btn ">
+          <img src={filoImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/Gastronomia" class="btn ">
+          <img src={gastroImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/SitiosCaracteristicos" class="btn ">
+          <img src={sitesImage} alt="Imagen" class="button-image" />
+        </Link>
       </div>
+      <div class="button-container2">
+        <Link to="/Temas/Mitologia" class="btn ">
+          <img src={mitologiaImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/Deporte" class="btn ">
+          <img src={deporteImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/Vestimenta" class="btn ">
+          <img src={vestimentaImage} alt="Imagen" class="button-image" />
+        </Link>
+      </div>
+      <div class="button-container3">
+        <Link to="/Temas/Literatura" class="btn ">
+          <img src={literaturaImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/Derechos" class="btn ">
+          <img src={derechosImage} alt="Imagen" class="button-image" />
+        </Link>
+        <Link to="/Temas/Arte" class="btn ">
+          <img src={arteImage} alt="Imagen" class="button-image" />
+        </Link>
+      </div>
+    </div>
 
   );
 };

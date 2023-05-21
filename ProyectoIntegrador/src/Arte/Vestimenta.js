@@ -27,8 +27,8 @@ const Vestimenta = () => {
             </li>
             </ul>
         </nav>
-      <div class="tema">Vestimenta</div>
-      <div class="introduccion"></div>
+      <div class="temaVestimenta">Vestimenta</div>
+      <div class="introduccionVestimenta"></div>
     </div>
   );
 };

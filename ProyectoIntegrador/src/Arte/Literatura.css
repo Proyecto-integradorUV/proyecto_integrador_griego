@@ -50,7 +50,7 @@
     font-size: 20px;
 }
 
-.tema {
+.temaLiteratura {
     background-color: rgba(101, 104, 104);  
     width: 38vh;
     height: 6vh;
@@ -62,11 +62,11 @@
     margin-right: auto;
 }
 
-.introduccion::before {
+.introduccionLiteratura::before {
     content: "La literatura griega es una de las tradiciones literarias más influyentes y duraderas en la historia. Se desarrolló en la antigua Grecia, desde el siglo VIII a.C. hasta la época helenística, y ha dejado una huella profunda en la cultura occidental. La literatura griega abarca una amplia gama de géneros y temas, desde la poesía épica y la tragedia hasta la filosofía y la historia.";
 }
 
-.introduccion {
+.introduccionLiteratura {
     background-color: rgba(217, 217, 217, 0.7);   
     width: 100vh;
     height: 22vh;

@@ -16,7 +16,7 @@ const Mitologia = () => {
         <nav className="navbarSecond">
             <ul className="navbarListSecond">
             <li className="navbarItemSecond">
-                <a href="/Temas" className="navbarLinkSecond">
+                <a href="/" className="navbarLinkSecond">
                 Mis lecciones
                 </a>
             </li>
@@ -27,8 +27,8 @@ const Mitologia = () => {
             </li>
             </ul>
         </nav>
-      <div class="tema">Mitología</div>
-      <div class="introduccion"></div>
+      <div class="temaMitologia">Mitología</div>
+      <div class="introduccionMitologia"></div>
     </div>
   );
 };

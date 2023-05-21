@@ -60,7 +60,7 @@
     background-position: center;
 } */
 
-.tema {
+.temaMitologia {
     background-color: rgba(101, 104, 104);  
     width: 38vh;
     height: 6vh;
@@ -74,11 +74,11 @@
     margin-right: auto;
 }
 
-.introduccion::before {
+.introduccionMitologia::before {
     content: "La mitología griega es un vasto conjunto de relatos y creencias que formaban parte de la antigua religión y cultura de la civilización griega. Estas historias míticas abarcan desde los orígenes del mundo hasta las hazañas de los dioses, héroes y criaturas míticas. La mitología griega proporcionaba explicaciones sobre el origen del universo, la naturaleza, la vida humana y las interacciones entre los dioses y los mortales.";
 }
 
-.introduccion {
+.introduccionMitologia {
     background-color: rgba(217, 217, 217, 0.7);   
     width: 100vh;
     height: 26vh;

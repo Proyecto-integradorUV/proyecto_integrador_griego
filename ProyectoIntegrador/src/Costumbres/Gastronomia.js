@@ -27,8 +27,8 @@ const Gastronomia = () => {
             </li>
             </ul>
         </nav>
-      <div class="tema">Gastronomía</div>
-      <div class="introduccion"></div>
+      <div class="temaGastro">Gastronomía</div>
+      <div class="introduccionGastro"></div>
     </div>
   );
 };

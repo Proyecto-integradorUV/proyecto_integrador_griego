@@ -50,7 +50,7 @@
     font-size: 20px;
 }
 
-.tema {
+.temaArte {
     background-color: rgba(101, 104, 104);  
     width: 38vh;
     height: 6vh;
@@ -62,11 +62,11 @@
     margin-right: auto;
 }
 
-.introduccion::before {
+.introduccionArte::before {
     content: "El arte griego abarca una amplia gama de disciplinas, desde la escultura y la arquitectura hasta la pintura y la cerámica. A lo largo de los siglos, los artistas griegos experimentaron y perfeccionaron diversas técnicas y estilos artísticos, dejando un legado duradero.";
 }
 
-.introduccion {
+.introduccionArte {
     background-color: rgba(217, 217, 217, 0.7);   
     width: 100vh;
     height: 18vh;

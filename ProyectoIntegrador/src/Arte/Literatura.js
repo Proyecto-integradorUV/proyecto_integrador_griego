@@ -27,8 +27,8 @@ const Literatura = () => {
             </li>
             </ul>
         </nav>
-      <div class="tema">Literatura</div>
-      <div class="introduccion"></div>
+      <div class="temaLiteratura">Literatura</div>
+      <div class="introduccionLiteratura"></div>
     </div>
   );
 };

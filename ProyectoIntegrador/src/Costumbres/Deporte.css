@@ -50,7 +50,7 @@
     font-size: 20px;
 }
 
-.tema {
+.temaDepor {
     background-color: rgba(101, 104, 104);  
     width: 38vh;
     height: 6vh;
@@ -62,11 +62,11 @@
     margin-right: auto;
 }
 
-.introduccion::before {
+.introduccionDepor::before {
     content: "El deporte en la antigua Grecia era una parte integral de la vida y la cultura griega. Los griegos valoraban el cuerpo atlético y consideraban el deporte como una forma de cultivar la belleza, la virtud y la excelencia. Los juegos y competiciones deportivas eran celebrados en todo el territorio griego y eran considerados eventos de gran importancia social y cultural.";
 }
 
-.introduccion {
+.introduccionDepor {
     background-color: rgba(217, 217, 217, 0.7);   
     width: 100vh;
     height: 22vh;

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Style.css";
+import "./StylePrincipal.css";
 import Slider from 'react-slick';
 import video1 from "./videos/slide1.mp4"
 import video2 from "./videos/slide2.mp4"
