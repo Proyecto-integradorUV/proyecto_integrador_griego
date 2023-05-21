@@ -1,0 +1,90 @@
+.contenedor-inicial{
+    background-image: url('./Images/acropolis.jpg');
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+.navbar {
+    background-color: #E07A5F;
+    padding: "10px";
+}
+.navbarList {
+    list-style: none;
+    display: flex;
+    /* align-items: flex-end; */
+    margin-left: 1200px;
+}
+
+.navbarItem{
+    align-items: flex-end;
+}
+
+.navbarName {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbarSecond {
+    background-color: #F2CC8F;
+    padding: "10px";
+}
+.navbarListSecond {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarItemSecond{
+    margin: 0 30px;
+    align-items: flex-start;
+}
+
+.navbarLinkSecond {
+    text-decoration: none;
+    color: #242121;
+    font-size: 20px;
+}
+
+/* .tituloTema {
+    background-image: url('./Images/mitologia.png');
+    width: 15;
+    height: 15vh;
+    margin-top: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.tema {
+    background-color: rgba(101, 104, 104);  
+    width: 38vh;
+    height: 6vh;
+    text-align: center;
+    color: #fffcfc;
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduccion::before {
+    content: "La mitología griega es un vasto conjunto de relatos y creencias que formaban parte de la antigua religión y cultura de la civilización griega. Estas historias míticas abarcan desde los orígenes del mundo hasta las hazañas de los dioses, héroes y criaturas míticas. La mitología griega proporcionaba explicaciones sobre el origen del universo, la naturaleza, la vida humana y las interacciones entre los dioses y los mortales.";
+}
+
+.introduccion {
+    background-color: rgba(217, 217, 217, 0.7);   
+    width: 100vh;
+    height: 26vh;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
