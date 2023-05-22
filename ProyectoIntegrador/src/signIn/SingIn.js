@@ -1,7 +1,67 @@
 import "./StyleSignIn.css";
 import backgroundImage from "./Images/acropolis.jpg";
+import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { signIn } from "../Services/users";
+import Swal from "sweetalert2";
+import { LoginContext } from "../context/signInContext";
 
 const SignIn = () => {
+  const [fromData, setFromData] = useState({
+    email: "",
+    password: "",
+  });
+
+  let navigate = useNavigate();
+  const { setIsLogged } = useContext(LoginContext);
+  // const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFromData({ ...fromData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      ...fromData,
+    };
+
+    // setLoading(true);
+
+    signIn(data)
+      .then((response) => {
+        // setLoading(false);
+        localStorage.setItem("userData", JSON.stringify(response));
+
+        Swal.fire({
+          icon: "success",
+          title: "Bienvenido",
+          text: "Te has logueado correctamente",
+          confirmButtonText: "Continuar",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        }).then(() => {
+          // setIsLogged(true);
+          navigate("Principal");
+        });
+      })
+      .catch((err) => {
+        onError(err);
+        // setLoading(false);
+      });
+  };
+
+  const onError = (error) => {
+    Swal.fire({
+      icon: "error",
+      title: "Algo salió mal",
+      text: "Ocurrió un error al crear el usuario, intenta de nuevo",
+      confirmButtonText: "Continuar",
+      allowOutsideClick: false,
+      showCancelButton: false,
+    });
+  };
+
   return (
     <div
       className="contenedorPrincipal"
@@ -22,7 +82,7 @@ const SignIn = () => {
             className="form-control"
             name="username"
             placeholder="lorena@gmail.com"
-            // onChange={this.handleChange}
+            onChange={handleChange}
           />
           <br />
           <label>Contraseña: </label>
@@ -31,10 +91,12 @@ const SignIn = () => {
             className="form-control"
             name="password"
             placeholder="********"
-            // onChange={this.handleChange}
+            onChange={handleChange}
           />
           <br />
-          <button type="submit">Iniciar sesión</button>
+          <button onSubmit={handleSubmit} type="submit">
+            Iniciar sesión
+          </button>
         </div>
       </div>
     </div>
