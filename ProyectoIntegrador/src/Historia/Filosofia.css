@@ -51,28 +51,25 @@
 }
 
 .temaFilosofia {
-    background-color: rgba(101, 104, 104);  
-    width: 38vh;
-    height: 6vh;
-    text-align: center;
-    color: #fffcfc;
-    font-size: 20px;
-    margin-top: 25px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.introduccionFilosofia {
+    max-width: 800px;
+    background-color: rgba(217, 217, 217, 0.7);
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #000000;
     margin-left: auto;
     margin-right: auto;
 }
 
-.introduccionFilosofia::before {
-    content: "A lo largo de la historia de la filosofía griega, se destacaron figuras clave como Sócrates, Platón y Aristóteles. Sócrates enfatizó el uso de la razón y el diálogo para buscar la verdad y la virtud. Platón desarrolló la teoría de las Ideas, argumentando que el mundo sensible es solo una sombra imperfecta de las Ideas eternas y perfectas. Aristóteles, por su parte, realizó importantes contribuciones en lógica, ética, metafísica y ciencias naturales, y enfatizó la observación empírica y el estudio sistemático.";
-}
-
-.introduccionFilosofia {
-    background-color: rgba(217, 217, 217, 0.7);   
-    width: 100vh;
-    height: 30vh;
-    text-align: center;
-    color: #000000;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-left: 180px;
-}

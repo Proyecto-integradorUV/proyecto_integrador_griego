@@ -1,5 +1,6 @@
 import "./Literatura.css";
 import React from "react";
+import literaturaTitle from "../style/titulos/literatura.png"
 
 const Literatura = () => {
   return (
@@ -27,8 +28,8 @@ const Literatura = () => {
             </li>
             </ul>
         </nav>
-      <div class="temaLiteratura">Literatura</div>
-      <div class="introduccionLiteratura"></div>
+      <div class="temaLiteratura"><img src={literaturaTitle} alt="Imagen"/></div>
+      <div class="introduccionLiteratura">La literatura griega es una de las tradiciones literarias más influyentes y duraderas en la historia. Se desarrolló en la antigua Grecia, desde el siglo VIII a.C. hasta la época helenística, y ha dejado una huella profunda en la cultura occidental. La literatura griega abarca una amplia gama de géneros y temas, desde la poesía épica y la tragedia hasta la filosofía y la historia</div>
     </div>
   );
 };

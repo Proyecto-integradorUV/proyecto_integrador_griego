@@ -1,5 +1,6 @@
 import "./Arte.css";
 import React from "react";
+import arteTitle from "../style/titulos/arte.png"
 
 const Arte = () => {
   return (
@@ -27,8 +28,8 @@ const Arte = () => {
             </li>
             </ul>
         </nav>
-      <div class="temaArte">Arte</div>
-      <div class="introduccionArte"></div>
+      <div class="temaArte"><img src={arteTitle} alt="Imagen"/></div>
+      <div class="introduccionArte">El arte griego abarca una amplia gama de disciplinas, desde la escultura y la arquitectura hasta la pintura y la cerámica. A lo largo de los siglos, los artistas griegos experimentaron y perfeccionaron diversas técnicas y estilos artísticos, dejando un legado duradero</div>
     </div>
   );
 };

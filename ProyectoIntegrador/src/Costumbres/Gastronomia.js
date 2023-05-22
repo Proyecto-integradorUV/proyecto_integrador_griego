@@ -1,5 +1,6 @@
 import "./Gastronomia.css";
 import React from "react";
+import gastronomiaTitle from "../style/titulos/gastronomia.png"
 
 const Gastronomia = () => {
   return (
@@ -27,8 +28,8 @@ const Gastronomia = () => {
             </li>
             </ul>
         </nav>
-      <div class="temaGastro">Gastronomía</div>
-      <div class="introduccionGastro"></div>
+      <div class="temaGastro"><img src={gastronomiaTitle} alt="Imagen"/></div>
+      <div class="introduccionGastro">La gastronomía de Grecia tiene una rica historia que se remonta a miles de años atrás y ha influido en muchas otras cocinas alrededor del mundo. La cocina griega es conocida por su sabor fresco, ingredientes saludables y técnicas culinarias simples pero sabrosas</div>
     </div>
   );
 };

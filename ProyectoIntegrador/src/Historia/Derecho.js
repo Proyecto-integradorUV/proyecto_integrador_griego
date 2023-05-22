@@ -1,5 +1,6 @@
 import "./Derecho.css";
 import React from "react";
+import derechoTitle from "../style/titulos/derechos.png"
 
 const Derecho = () => {
   return (
@@ -27,8 +28,8 @@ const Derecho = () => {
             </li>
             </ul>
         </nav>
-      <div class="temaDerecho">Derecho</div>
-      <div class="introduccionDerecho"></div>
+      <div class="temaDerecho"><img src={derechoTitle} alt="Imagen"/></div>
+      <div class="introduccionDerecho">En la antigua Grecia, los derechos y la participación política estaban restringidos a los ciudadanos varones. Las mujeres, los esclavos y los extranjeros no tenían los mismos derechos que los ciudadanos. Aunque se desarrollaron conceptos de democracia y gobierno directo, la democracia ateniense era limitada y excluía a gran parte de la población</div>
     </div>
   );
 };

@@ -31,9 +31,9 @@ function App() {
           <Route path="Temas/Mitologia" element={<Mitologia/>} />
           <Route path="Temas/Gastronomia" element={<Gastronomia/>} />
           <Route path="Temas/Deporte" element={<Deporte/>} />
-          <Route path="Temas/Derecho" element={<Derecho/>} />
+          <Route path="Temas/Derechos" element={<Derecho/>} />
           <Route path="Temas/Filosofia" element={<Filosofia/>} />
-          <Route path="Temas/Sitios" element={<Sitios/>} />
+          <Route path="Temas/SitiosCaracteristicos" element={<Sitios/>} />
         </Routes>
       </BrowserRouter>
     </div>
