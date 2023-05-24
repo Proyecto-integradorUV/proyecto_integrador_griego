@@ -13,7 +13,7 @@ const SignIn = () => {
   });
 
   let navigate = useNavigate();
-  const { setIsLogged } = useContext(LoginContext);
+  //const { setIsLogged } = useContext(LoginContext);
   // const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {

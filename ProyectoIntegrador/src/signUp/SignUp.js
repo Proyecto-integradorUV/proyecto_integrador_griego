@@ -5,7 +5,7 @@ import { addUsers } from "../Services/users";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
-const SignIn = () => {
+const SignUp = () => {
   let navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -148,4 +148,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;

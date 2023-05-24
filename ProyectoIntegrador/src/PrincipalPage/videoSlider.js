@@ -37,17 +37,17 @@ const VideoSlider = () => {
         <Slider {...settings}>
             <div>
                 <div className="video-container">
-                    <video src={video1} controls className="video"/>
+                    <video src={video1} controls className="video" autoPlay/>
                 </div>
             </div>
             <div>
                 <div className="video-container">
-                    <video src={video2} controls className="video"/>
+                    <video src={video2} controls className="video" autoPlay/>
                 </div>
             </div>
             <div>
                 <div className="video-container">
-                    <video src={video3} controls className="video"/>
+                    <video src={video3} controls className="video" autoPlay/>
                 </div>
             </div>
         </Slider>

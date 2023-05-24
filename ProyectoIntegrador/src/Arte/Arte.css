@@ -6,52 +6,6 @@
     background-position: center;
 }
 
-.navbar {
-    background-color: #E07A5F;
-    padding: "10px";
-}
-
-.navbarList {
-    list-style: none;
-    display: flex;
-    /* align-items: flex-end; */
-    margin-left: 1200px;
-}
-
-.navbarItem {
-    align-items: flex-end;
-}
-
-.navbarName {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.navbarSecond {
-    background-color: #F2CC8F;
-    padding: "10px";
-}
-
-.navbarListSecond {
-    list-style: none;
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-}
-
-.navbarItemSecond {
-    margin: 0 30px;
-    align-items: flex-start;
-}
-
-.navbarLinkSecond {
-    text-decoration: none;
-    color: #242121;
-    font-size: 20px;
-}
-
 .temaArte {
     max-width: 100%;
     width: 100%;
