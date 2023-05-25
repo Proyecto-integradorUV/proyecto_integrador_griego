@@ -12,7 +12,7 @@ const SignUp = () => {
     first_name: "",
     last_name: "",
     email: "",
-    userName: "",
+    nickname: "",
     password: "",
   });
 
@@ -122,7 +122,7 @@ const SignUp = () => {
           <input
             type="text"
             className="form-control"
-            name="userName"
+            name="nickname"
             placeholder=" "
             onChange={handleChange}
           />
