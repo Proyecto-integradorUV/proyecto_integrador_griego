@@ -1,9 +1,9 @@
 //Estas urls son provicionales
-const URL = "http://localhost:8000";
+const URL = "http://127.0.0.1:8000";
 
 const endpoints = {
   users: {
-    registerUser: `${URL}/users/register-user/`,
+    registerUser: `${URL}/users/Pl/signup/`,
     loginUser: `${URL}/users/login/`,
   },
 };
