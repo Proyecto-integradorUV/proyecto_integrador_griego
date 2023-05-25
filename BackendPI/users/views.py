@@ -1,4 +1,4 @@
-from rest_framework import generics
+from rest_framework import generics, permissions
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authtoken.models import Token
@@ -17,13 +17,17 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import AuthenticationForm
 
 from .models import User
-from .serializers import UserSerializer
+from .serializers import CreateUserSerializer, UserSerializer
+
+class CreateUserView(generics.CreateAPIView):
+    serializer_class = CreateUserSerializer
+    permission_classes = [permissions.AllowAny]
 
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
 
 
 class LoginView(APIView):
