@@ -4,7 +4,7 @@ import sitiosTitle from "../style/titulos/sitios.png"
 
 const Sitios = () => {
   return (
-    <div class="contenedor-inicial">
+    <div class="contenedor-inicialHistoria">
       <nav className="navbarPrincipal">
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">

@@ -4,7 +4,7 @@ import derechoTitle from "../style/titulos/derechos.png"
 
 const Derecho = () => {
   return (
-    <div class="contenedor-inicial">
+    <div class="contenedor-inicialHistoria">
       <nav className="navbarPrincipal">
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">
