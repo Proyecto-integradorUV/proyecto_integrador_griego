@@ -1,4 +1,4 @@
-.contenedor-inicial {
+.contenedor-inicial{
     background-image: url('./Images/acropolis.jpg');
     background-size: cover;
     background-position: center;    
@@ -19,7 +19,7 @@
 }
 
 .introduccionArte {
-    max-width: 70%;
+    max-width: 50%;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.7);
     padding: 20px;

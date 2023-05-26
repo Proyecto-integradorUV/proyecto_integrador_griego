@@ -62,8 +62,7 @@
 
 .navbarList2Principal {
     display: flex;
-    margin-left: 80vmax;
-    padding: 0;
+    justify-content: flex-end;
 }
 
 .video-container {

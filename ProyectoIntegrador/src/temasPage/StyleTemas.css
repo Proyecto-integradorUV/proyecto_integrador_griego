@@ -91,8 +91,7 @@
 
 .navbarList2Temas {
   display: flex;
-  margin-left: 80vmax;
-  padding: 0;
+  justify-content: flex-end;
 }
 
 .navbarLink3Temas{
