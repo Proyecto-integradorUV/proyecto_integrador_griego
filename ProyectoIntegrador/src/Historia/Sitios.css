@@ -30,3 +30,34 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.button-container-sitio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+  }
+    
+.custom-button img {
+    margin-right: 5px; /* Ajusta el margen entre la imagen y el texto */
+    max-width: 0 auto;
+    height: auto;
+}
+
+.button-sitio {
+    font-size: 16px;
+    padding: 0 auto;
+}
+  
+  /* Estilos para dispositivos móviles */
+@media (max-width: 200px) {
+    .button-sitio  {
+      font-size: 14px;
+    }
+}
