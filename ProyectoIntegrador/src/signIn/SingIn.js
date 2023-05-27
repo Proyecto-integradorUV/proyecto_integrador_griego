@@ -81,7 +81,7 @@ const SignIn = () => {
             type="text"
             className="form-control"
             name="nickname"
-            placeholder="lorena@gmail.com"
+            placeholder=" "
             onChange={handleChange}
           />
           <br />
