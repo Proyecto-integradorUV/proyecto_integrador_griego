@@ -50,10 +50,8 @@ const SignUp = () => {
                 confirmButtonText: "Continuar",
                 allowOutsideClick: false,
                 showCancelButton: false,
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  navigate("SignIn");
-                }
+              }).then(() => {
+                navigate("/SignIn");
               });
             })
             .catch((err) => {
