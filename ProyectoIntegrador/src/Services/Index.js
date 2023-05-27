@@ -3,7 +3,7 @@ const URL = "http://127.0.0.1:8000";
 
 const endpoints = {
   users: {
-    registerUser: `${URL}/users/Pl/signup/`,
+    registerUser: `${URL}/users/signup/`,
     loginUser: `${URL}/users/login/`,
   },
 };

@@ -12,7 +12,7 @@ const SignUp = () => {
     first_name: "",
     last_name: "",
     email: "",
-    userName: "",
+    nickname: "",
     password: "",
   });
 
@@ -50,10 +50,8 @@ const SignUp = () => {
                 confirmButtonText: "Continuar",
                 allowOutsideClick: false,
                 showCancelButton: false,
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  navigate("SignIn");
-                }
+              }).then(() => {
+                navigate("/SignIn");
               });
             })
             .catch((err) => {
@@ -122,7 +120,7 @@ const SignUp = () => {
           <input
             type="text"
             className="form-control"
-            name="userName"
+            name="nickname"
             placeholder=" "
             onChange={handleChange}
           />
