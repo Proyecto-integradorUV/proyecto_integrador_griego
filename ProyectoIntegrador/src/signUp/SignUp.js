@@ -8,24 +8,26 @@ import Swal from "sweetalert2";
 const SignUp = () => {
   let navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
+  const [fromData, setFromData] = useState({
     first_name: "",
     last_name: "",
     email: "",
-    userName: "",
+    nickname: "",
     password: "",
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFromData({ ...fromData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      ...formData,
+      ...fromData,
     };
+
     console.log(data);
+
     Swal.fire({
       title: "Atención, estás seguro de realizar esta acción",
       text: "Vas a registrarte como un nuevo usuario",
@@ -48,20 +50,13 @@ const SignUp = () => {
                 confirmButtonText: "Continuar",
                 allowOutsideClick: false,
                 showCancelButton: false,
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  navigate("SignIn");
-                }
+              }).then(() => {
+                navigate("/SignIn");
               });
             })
             .catch((err) => {
-              if (err.response.status === 412) {
-                onError(err.response.data);
-                console.log(err.response.data);
-              } else {
-                console.log("error");
-                onError("Error al crear el cargo, intenta de nuevo.");
-              }
+              // console.log("error");
+              onError("Error al crear el usuario, intenta de nuevo.");
               console.log(err);
             });
         });
@@ -92,13 +87,13 @@ const SignUp = () => {
       }}
     >
       <div className="formContainerSignUp">
-        <form className="form-group">
+        <form onSubmit={handleSubmit} className="form-group">
           <h2>Registrate</h2>
           <label>Nombre: </label>
           <input
             type="text"
             className="form-control"
-            name="nombre"
+            name="first_name"
             placeholder=" "
             onChange={handleChange}
           />
@@ -107,7 +102,7 @@ const SignUp = () => {
           <input
             type="text"
             className="form-control"
-            name="apellido"
+            name="last_name"
             placeholder=" "
             onChange={handleChange}
           />
@@ -125,7 +120,7 @@ const SignUp = () => {
           <input
             type="text"
             className="form-control"
-            name="username"
+            name="nickname"
             placeholder=" "
             onChange={handleChange}
           />
@@ -139,9 +134,7 @@ const SignUp = () => {
             onChange={handleChange}
           />
           <br />
-          <button onSubmit={handleSubmit} type="submit">
-            Registarme
-          </button>
+          <button type="submit">Registarme</button>
         </form>
       </div>
     </div>

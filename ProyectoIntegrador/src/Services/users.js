@@ -1,17 +1,13 @@
 import Axios from "axios";
-// import { async } from "q";
-import { endpoints, token } from "./Index";
+import { endpoints } from "./Index";
 
 const addUsers = async (body) => {
-  let aux = localStorage.getItem("userData");
-  aux = JSON.parse(aux);
-  const token = aux.access;
   const config = {
     headers: {
-      Authorization: `Bearer ${token}`,
+      accept: "*/*",
+      "Content-Type": "application/json",
     },
   };
-
   const response = await Axios.post(endpoints.users.registerUser, body, config);
   return response.data;
 };
@@ -23,7 +19,6 @@ const signIn = async (body) => {
       "Content-Type": "application/json",
     },
   };
-
   const response = await Axios.post(endpoints.users.loginUser, body, config);
   return response.data;
 };

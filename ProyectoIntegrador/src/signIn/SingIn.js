@@ -8,7 +8,7 @@ import { LoginContext } from "../context/signInContext";
 
 const SignIn = () => {
   const [fromData, setFromData] = useState({
-    email: "",
+    nickname: "",
     password: "",
   });
 
@@ -74,13 +74,13 @@ const SignIn = () => {
       }}
     >
       <div className="formContainer">
-        <div className="form-group">
+        <form onSubmit={handleSubmit} className="form-group">
           <h2>Iniciar sesión</h2>
-          <label>Correo: </label>
+          <label>Usuario: </label>
           <input
-            type="email"
+            type="text"
             className="form-control"
-            name="username"
+            name="nickname"
             placeholder="lorena@gmail.com"
             onChange={handleChange}
           />
@@ -94,10 +94,8 @@ const SignIn = () => {
             onChange={handleChange}
           />
           <br />
-          <button onSubmit={handleSubmit} type="submit">
-            Iniciar sesión
-          </button>
-        </div>
+          <button type="submit">Iniciar sesión</button>
+        </form>
       </div>
     </div>
   );
