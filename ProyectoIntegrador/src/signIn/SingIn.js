@@ -42,7 +42,7 @@ const SignIn = () => {
           showCancelButton: false,
         }).then(() => {
           // setIsLogged(true);
-          navigate("Principal");
+          navigate("/Principal");
         });
       })
       .catch((err) => {
