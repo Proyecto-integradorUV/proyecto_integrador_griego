@@ -1,0 +1,4 @@
+users/migrations/*.pyc
+users/migrations/*.pyo
+./venv
+./db.sqlite3
