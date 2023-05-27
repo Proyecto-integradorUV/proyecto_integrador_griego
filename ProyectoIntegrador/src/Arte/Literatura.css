@@ -1,9 +1,9 @@
-.contenedor-inicial {
-    background-image: url('./Images/acropolis.jpg');
-    width: 100;
-    height: 100vh;
+.contenedor-inicial{
+    background-image: url('./Images/grecia.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center;    
+    width: 100%;
+    height: 100vh; 
 }
 
 .temaLiteratura {
@@ -19,32 +19,44 @@
 }
 
 .introduccionLiteratura {
-    max-width: 100%;
+    max-width: 50%;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.7);
     padding: 20px;
-    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button-container-lit{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
 }
 
-@media (min-width: 768px) {
-    .introduccionLiteratura {
-      max-width: 768px;
-      margin: 0 auto;
+.custom-button {
+    display: flex;
+    align-items: center;
+  }
+    
+.custom-button img {
+    margin-right: 5px; /* Ajusta el margen entre la imagen y el texto */
+    max-width: 0 auto;
+    height: auto;
+}
+
+.button-lit {
+    font-size: 16px;
+    padding: 0 auto;
+}
+  
+  /* Estilos para dispositivos móviles */
+@media (max-width: 200px) {
+    .button-lit {
+      font-size: 14px;
     }
-}
-
-.image-container {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-#responsive-image {
-    width: 100%;
-    height: auto;
 }
