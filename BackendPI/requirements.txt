@@ -11,3 +11,4 @@ sqlparse==0.4.3
 coreapi
 django-rest-auth
 django-allauth
+django-filter

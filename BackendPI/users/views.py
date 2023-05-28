@@ -11,12 +11,18 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 
+from django_filters.rest_framework import DjangoFilterBackend
+
+
+
 class CreateUserView(generics.CreateAPIView):
     serializer_class = CreateUserSerializer
     permission_classes = [permissions.AllowAny]
 
 
-class UserList(generics.ListCreateAPIView):
+class UserList(generics.ListAPIView):
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['username']
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
     authentication_classes = [TokenAuthentication]
