@@ -11,7 +11,9 @@ const Derecho = () => {
       <nav className="navbarPrincipal">
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">
-            <button className="navbarLink2Principal">Usuario</button>
+            <a href=" " className="navbarLink2Principal">
+              Usuario
+            </a>
           </li>
           <li className="navbarItemPrincipal">
             <a href="/Home" className="navbarLink2Principal">
@@ -23,7 +25,9 @@ const Derecho = () => {
       <nav className="navbar2Principal">
         <ul className="navbarListPrincipal">
           <li className="navbarItemPrincipal">
-            <button className="navbarLinkPrincipal">Lecciones</button>
+            <a href=" " className="navbarLinkPrincipal">
+              Lecciones
+            </a>
           </li>
           <li className="navbarItemPrincipal">
             <a href="/Temas" className="navbarLink3Temas">
