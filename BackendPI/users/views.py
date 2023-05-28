@@ -15,6 +15,7 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = CreateUserSerializer
     permission_classes = [permissions.AllowAny]
 
+
 class UserList(generics.ListCreateAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
@@ -37,9 +38,14 @@ class LoginView(APIView):
 
 class LogoutView(APIView):
     def post(self, request):
-        user = request.user
-        if user.is_authenticated:
+        token = request.data.get('token')
+        token = Token.objects.filter(key=token).first()
+
+        if token:
+            user = CustomUser.objects.get(id=token.user.id)
             Token.objects.filter(user=user).delete()
             return Response({'detail': 'Logout successful'}, status=status.HTTP_200_OK)
         else:
             return Response({'detail': 'User not authenticated'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
