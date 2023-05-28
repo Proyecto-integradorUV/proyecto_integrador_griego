@@ -28,6 +28,7 @@ class UserList(generics.ListAPIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     
+    
 
 class LoginView(APIView):
     def post(self, request):
