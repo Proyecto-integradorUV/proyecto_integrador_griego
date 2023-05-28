@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*NAVBAR*/
+.navbarTemas {
+  background-color:  rgb(226, 146, 115);
+  padding: 10px;
+}
+
+
+.navbar2Temas {
+  background-color:  rgb(226, 191, 115);
+  padding: 10px;
+}
+
+
+.navbarListTemas {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.navbarItemTemas {
+  margin: 0 30px;
+  list-style-type: none;
+  align-items: center;
+}
+
+
+.navbarLinkTemas {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+.navbarLink2Temas {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.navbarList2Temas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbarLink3Temas{
+  text-decoration: none;
+  color: #bb7154;
+  font-size: 16px;
+}
+
+.navbarPrincipal {
+  background-color:  rgb(226, 146, 115);
+  padding: 10px;
+}
+
+
+.navbar2Principal {
+  background-color:  rgb(226, 191, 115);
+  padding: 10px;
+}
+
+
+.navbarListPrincipal {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.navbarItemPrincipal {
+  margin: 0 30px;
+  list-style-type: none;
+  align-items: center;
+}
+
+
+.navbarLinkPrincipal {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+.navbarLink2Principal {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.navbarList2Principal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.navbar1 {
+  background-color: #E07A5F;
+  padding: "10px";
+}
+
+.navbarList1 {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItem1{
+  margin: 0 30px;
+  align-items: flex-start;
+}
+
+.navbarLink1 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
