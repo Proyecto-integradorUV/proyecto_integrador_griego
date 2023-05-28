@@ -1,17 +1,14 @@
+from django.shortcuts import render
 from rest_framework import generics, permissions
+from .serializers import UserSerializer, CreateUserSerializer
+from .models import CustomUser
+from rest_framework.views import APIView
+from django.contrib.auth.hashers import check_password
+from rest_framework.authtoken.models import Token
+from rest_framework.response import Response
+from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from rest_framework import status
-from rest_framework.views import APIView
-from rest_framework.response import Response
-
-from django.contrib.auth.forms import AuthenticationForm
-
-from .models import User, Token
-from .serializers import CreateUserSerializer, UserSerializer
-
-
-from django.contrib.auth import authenticate
 
 
 class CreateUserView(generics.CreateAPIView):
@@ -19,24 +16,22 @@ class CreateUserView(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
 
 class UserList(generics.ListCreateAPIView):
-    queryset = User.objects.all()
+    queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
     authentication_classes = [TokenAuthentication]
-    permission_classes = [permissions.AllowAny]
-
+    permission_classes = [IsAuthenticated]
+    
 
 class LoginView(APIView):
     def post(self, request):
-        user = User.objects.get(nickname= request.data.get('nickname'))
+        user = CustomUser.objects.get(username= request.data.get('username'))
         password = request.data.get('password')
         if user:
-            if user.validate(password):
-               token = Token()
-               token.user = user
-               token.save()
+            if check_password(password, user.password):
+               token, created = Token.objects.get_or_create(user=user)
                return Response({'token': token.key})
             else:
-                return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+               return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
         else:
             return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
 
