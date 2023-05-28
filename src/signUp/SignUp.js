@@ -68,7 +68,7 @@ const SignUp = () => {
     Swal.fire({
       icon: "error",
       title: "Algo salió mal",
-      text: "Ocurrió un error al crear el usuario, intenta de nuevo",
+      text: "Ocurrió un error al crear el usuario, recuerda que la contraseña es de 8 carácteres",
       confirmButtonText: "Continuar",
       allowOutsideClick: false,
       showCancelButton: false,
