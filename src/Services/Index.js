@@ -3,8 +3,8 @@ const URL = "http://jesus.pythonanywhere.com/";
 
 const endpoints = {
   users: {
-    registerUser: `${URL}/users/signup/`,
-    loginUser: `${URL}/users/login/`,
+    registerUser: `${URL}users/signup/`,
+    loginUser: `${URL}users/login/`,
   },
 };
 
