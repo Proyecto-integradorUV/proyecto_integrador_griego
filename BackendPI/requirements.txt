@@ -12,3 +12,4 @@ coreapi
 django-rest-auth
 django-allauth
 django-filter
+faker
