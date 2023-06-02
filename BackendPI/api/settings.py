@@ -47,7 +47,10 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'coreapi',
     'users',
+    'prueba',
     'corsheaders',
+
+
 ]
 
 
@@ -147,3 +150,6 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+
+SITE_ID = 1
