@@ -1,10 +1,10 @@
 
-import "./styleLecciones.css"
+import "../../style/css/styleLecciones.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import botonEmpezar from "./images/empezar.png";
+import botonEmpezar from "../../style/botones/empezar.png";
 
 const LeccionesVestimenta = () => {
 

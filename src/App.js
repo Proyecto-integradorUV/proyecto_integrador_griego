@@ -16,7 +16,9 @@ import Deporte from "./Costumbres/Deporte";
 import Derecho from "./Historia/Derecho";
 import Filosofia from "./Historia/Filosofia";
 import Sitios from "./Historia/Sitios";
-import LeccionesVestimenta from "./Arte/LeccionesVestimenta/LecInicioVestimenta";
+import LeccionesVestimenta from "./Arte/LeccionesArte/LecInicioVestimenta";
+import LeccionesArte from "./Arte/LeccionesArte/LecInicioArte";
+import LeccionesLiteratura from "./Arte/LeccionesArte/LecInicioLiteratura";
 
 function App() {
   // const { isLogged } = useContext(LoginContext);
@@ -85,6 +87,8 @@ function App() {
         <Route path="Temas/Filosofia" element={<Filosofia />} />
         <Route path="Temas/SitiosCaracteristicos" element={<Sitios />} />
         <Route path="Temas/Vestimenta/Lecciones" element={<LeccionesVestimenta />} />
+        <Route path="Temas/Arte/Lecciones" element={<LeccionesArte />} />
+        <Route path="Temas/Literatura/Lecciones" element={<LeccionesLiteratura />} />
       </Routes>
     </BrowserRouter>
   );
