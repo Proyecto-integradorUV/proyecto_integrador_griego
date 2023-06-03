@@ -1,0 +1,7 @@
+.contenedor-inicial1{
+    background-image: url('./Images/Civilización.png');
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;      
+}

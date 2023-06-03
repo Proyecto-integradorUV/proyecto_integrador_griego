@@ -1,0 +1,73 @@
+.contenedor-inicial-principal {
+  background-image: url("./images/Grecia.jfif");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/**
+.custom-button {
+  display: flex;
+  align-items: center;
+}
+  
+.custom-button img {
+  margin-right: 5px; /* Ajusta el margen entre la imagen y el texto 
+  max-width: 0 auto;
+  height: auto;
+}*/
+
+/** Estilo de álbum de temas*/
+.cuerpo {
+  width: 100%;
+  height: calc(100vh - 110px);
+  position: relative;
+}
+
+.contenedor-temas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-height: 100%;
+
+}
+
+.contenedor-temas div {
+  display: inline;
+}
+
+
+/* Estilos para PC */
+
+@media (max-width: 1850px) {
+  .contenedor-temas div img {
+    height: 110px;
+    width: 350px;
+  }
+}
+
+/**
+Estilos para portatil
+*/
+@media (max-width: 1100px) {
+  .contenedor-temas div img {
+    height: 90px;
+    width: 310px;
+  }
+}
+
+/* Estilos para celular o tablet */
+
+@media (max-width: 650px) {
+  .contenedor-temas {
+    width: 100%;
+  }
+
+  .contenedor-temas div img {
+    height: 100px;
+    width: 160px;
+  }
+}
