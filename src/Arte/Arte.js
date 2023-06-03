@@ -1,11 +1,21 @@
 import "./Arte.css";
-import React from "react";
+import React, { useContext } from "react";
 import arteTitle from "../style/titulos/arte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnArte.png";
 import botonModel3D from "./Images/btnArte3D.png";
+import { SignInContext } from "../context/signInContext";
 
 const Arte = () => {
+  const { isLogged, setIsLogged } = useContext(SignInContext);
+
+  const handdleLogout = () => {
+    if (isLogged) {
+      localStorage.removeItem("userData");
+      setIsLogged(false);
+    }
+    console.log("el vaino", isLogged);
+  };
   return (
     <div class="contenedor-inicial-arte">
       <nav className="navbarPrincipal">
@@ -16,7 +26,11 @@ const Arte = () => {
             </a>
           </li>
           <li className="navbarItemPrincipal">
-            <a href="/Home" className="navbarLink2Principal">
+            <a
+              href="/Home"
+              className="navbarLink2Principal"
+              onClick={handdleLogout}
+            >
               Cerrar sesión
             </a>
           </li>
