@@ -22,6 +22,7 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
+    #path('prueba/', include('prueba.urls')),
     path('users_generate_token/', views.obtain_auth_token),
     path('docs/', include_docs_urls(title='Api documentation')),
 

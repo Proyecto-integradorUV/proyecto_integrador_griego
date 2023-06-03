@@ -11,15 +11,23 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 
+from django_filters.rest_framework import DjangoFilterBackend
+
+
+
 class CreateUserView(generics.CreateAPIView):
     serializer_class = CreateUserSerializer
     permission_classes = [permissions.AllowAny]
 
-class UserList(generics.ListCreateAPIView):
+
+class UserList(generics.ListAPIView):
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['username']
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
+    
     
 
 class LoginView(APIView):
@@ -29,7 +37,7 @@ class LoginView(APIView):
         if user:
             if check_password(password, user.password):
                token, created = Token.objects.get_or_create(user=user)
-               return Response({'token': token.key})
+               return Response({'token': token.key}, status=status.HTTP_200_OK) 
             else:
                return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
         else:
@@ -37,9 +45,14 @@ class LoginView(APIView):
 
 class LogoutView(APIView):
     def post(self, request):
-        user = request.user
-        if user.is_authenticated:
+        token = request.data.get('token')
+        token = Token.objects.filter(key=token).first()
+
+        if token:
+            user = CustomUser.objects.get(id=token.user.id)
             Token.objects.filter(user=user).delete()
             return Response({'detail': 'Logout successful'}, status=status.HTTP_200_OK)
         else:
             return Response({'detail': 'User not authenticated'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
