@@ -95,6 +95,9 @@ const SignIn = () => {
           <br />
           <button type="submit">Iniciar sesión</button>
         </form>
+        <div class="col-md-10 my-2">
+          <a href="/SignUp">Registrar usuario</a>
+        </div>
       </div>
     </div>
   );
