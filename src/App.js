@@ -19,6 +19,7 @@ import Sitios from "./Historia/Sitios";
 import LeccionesVestimenta from "./Arte/LeccionesArte/LecInicioVestimenta";
 import LeccionesArte from "./Arte/LeccionesArte/LecInicioArte";
 import LeccionesLiteratura from "./Arte/LeccionesArte/LecInicioLiteratura";
+import LeccionesDerecho from "./Historia/LeccionesHistoria/LecInicioDerecho";
 
 function App() {
   // const { isLogged } = useContext(LoginContext);
@@ -89,6 +90,7 @@ function App() {
         <Route path="Temas/Vestimenta/Lecciones" element={<LeccionesVestimenta />} />
         <Route path="Temas/Arte/Lecciones" element={<LeccionesArte />} />
         <Route path="Temas/Literatura/Lecciones" element={<LeccionesLiteratura />} />
+        <Route path="Temas/Derecho/Lecciones" element={<LeccionesDerecho />} />
       </Routes>
     </BrowserRouter>
   );
