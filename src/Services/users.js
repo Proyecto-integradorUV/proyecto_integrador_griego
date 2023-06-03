@@ -23,4 +23,15 @@ const signIn = async (body) => {
   return response.data;
 };
 
-export { addUsers, signIn };
+const logout = async (body) => {
+  const config = {
+    headers: {
+      accept: "*/*",
+      "Content-Type": "application/json",
+    },
+  };
+  const response = await Axios.post(endpoints.users.logoutUser, body, config);
+  return response.data;
+};
+
+export { addUsers, signIn, logout };

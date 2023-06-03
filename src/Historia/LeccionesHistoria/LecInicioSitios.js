@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import botonEmpezar from "../../style/botones/empezar.png";
 import titulo from "../../style/lecciones_init.png";
 
-const LeccionesDerecho = () => {
+const LeccionesSitio = () => {
 
     return (
         <div className="contenedorLecciones">
@@ -46,22 +46,25 @@ const LeccionesDerecho = () => {
             <div class="titulo-lecciones">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
-            <div className="carousel-container abs-center" >
+            {/* Carrusel de lecciones */}
+            <div className="carousel-container" >
                 <Carousel interval={null} controls={true} indicators={false}>
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
                                 <Card.Title >Lección 1</Card.Title>
                                 <Card.Text className="card-title">
-                                    Introducción a los derechos y la historia de Grecia
+                                    Introducción a Grecia
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Explicar qué son los derechos y por qué son importantes.
+                                    • Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural.
                                     <br />
-                                    • Presentar una breve introducción a la historia de Grecia y su influencia en la concepción de los derechos.
+                                    • Presentación de la rica historia de Grecia y su influencia en la civilización occidental.
+                                    <br />
+                                    • Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion1" class="btn-empezar">
+                                    <Link to="/Temas/Sitios/Leccion1" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -73,17 +76,17 @@ const LeccionesDerecho = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2</Card.Title>
                                 <Card.Text className="card-title">
-                                    Derechos en la antigua Grecia
+                                    Atenas y la Acrópolis
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Describir los conceptos de ciudadanía y democracia en la antigua Grecia.
+                                    • Presentación de la ciudad de Atenas, su importancia como capital y centro cultural.
                                     <br />
-                                    • Analizar cómo se aplicaban los derechos en la sociedad ateniense.
+                                    • Exploración de la Acrópolis y sus principales estructuras, incluyendo el Partenón, el Erecteión y el Templo de Atenea Niké.
                                     <br />
-                                    • Discutir las limitaciones y exclusiones en los derechos en la antigua Grecia.
+                                    • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/Sitios/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -95,15 +98,17 @@ const LeccionesDerecho = () => {
                             <Card.Body>
                                 <Card.Title >Lección 3</Card.Title>
                                 <Card.Text className="card-title">
-                                    Los derechos durante la dominación extranjera
+                                    Delfos y el Oráculo
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Explorar el impacto de la dominación romana, bizantina y otomana en los derechos de los griegos.
+                                    • Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia.
                                     <br />
-                                    • Destacar los cambios y las restricciones impuestas durante estos períodos.
+                                    • Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro.
+                                    <br />
+                                    • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion3" class="btn-empezar">
+                                    <Link to="/Temas/Sitios/Leccion3" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -115,15 +120,17 @@ const LeccionesDerecho = () => {
                             <Card.Body>
                                 <Card.Title>Lección 4</Card.Title>
                                 <Card.Text className="card-title">
-                                    La lucha por la independencia y la formación del estado moderno
+                                    Las Islas Griegas
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Examinar el movimiento de independencia griego y su influencia en el desarrollo de los derechos.
+                                    • Presentación de las islas griegas como destinos turísticos populares y únicos.
                                     <br />
-                                    • Presentar la primera constitución de Grecia y los derechos establecidos en ella.                                  
+                                    • Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta.
+                                    <br />
+                                    • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/Sitios/Leccion4" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -132,10 +139,8 @@ const LeccionesDerecho = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-
-
         </div>
     );
 };
 
-export default LeccionesDerecho;
+export default LeccionesSitio;

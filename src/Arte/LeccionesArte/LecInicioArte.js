@@ -5,6 +5,7 @@ import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../style/botones/empezar.png";
+import titulo from "../../style/lecciones_init.png";
 
 const LeccionesArte = () => {
 
@@ -43,7 +44,9 @@ const LeccionesArte = () => {
                     </li>
                 </ul>
             </nav>
-
+            <div class="titulo-lecciones">
+                <img src={titulo} class="img-fluid" alt="Imagen" />
+            </div>
             <div className="carousel-container abs-center" >
                 <Carousel interval={null} controls={true} indicators={false}>
                     <Carousel.Item>

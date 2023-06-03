@@ -1,19 +1,26 @@
 import "./StyleSignIn.css";
+import React, { useState, useContext, useEffect } from "react";
 import backgroundImage from "./Images/acropolis.jpg";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signIn } from "../Services/users";
 import Swal from "sweetalert2";
+import { SignInContext } from "../context/signInContext";
 
 const SignIn = () => {
+  let navigate = useNavigate();
+  const { setIsLogged } = useContext(SignInContext);
+  const setLoading = useState(false)[1];
+
   const [fromData, setFromData] = useState({
     username: "",
     password: "",
   });
 
-  let navigate = useNavigate();
-  //const { setIsLogged } = useContext(LoginContext);
-  // const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    localStorage.removeItem("userData");
+    setIsLogged(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleChange = (e) => {
     setFromData({ ...fromData, [e.target.name]: e.target.value });
@@ -25,11 +32,11 @@ const SignIn = () => {
       ...fromData,
     };
 
-    // setLoading(true);
+    setLoading(true);
 
     signIn(data)
       .then((response) => {
-        // setLoading(false);
+        setLoading(false);
         localStorage.setItem("userData", JSON.stringify(response));
 
         Swal.fire({
@@ -40,13 +47,13 @@ const SignIn = () => {
           allowOutsideClick: false,
           showCancelButton: false,
         }).then(() => {
-          // setIsLogged(true);
+          setIsLogged(true);
           navigate("/Principal");
         });
       })
       .catch((err) => {
         onError(err);
-        // setLoading(false);
+        setLoading(false);
       });
   };
 

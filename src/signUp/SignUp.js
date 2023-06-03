@@ -194,6 +194,9 @@ const SignUp = () => {
           <br />
           <button type="submit">Registarme</button>
         </form>
+        <div class="col-md-10 my-2">
+          <a href="/Home">Regresar</a>
+        </div>
       </div>
     </div>
   );
