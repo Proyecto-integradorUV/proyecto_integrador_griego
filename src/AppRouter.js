@@ -21,6 +21,9 @@ import LeccionesLiteratura from "./Arte/LeccionesArte/LecInicioLiteratura";
 import LeccionesDerecho from "./Historia/LeccionesHistoria/LecInicioDerecho";
 import LeccionesDeporte from "./Costumbres/LeccionesCostumbres/LecInicioDeporte.js";
 import LeccionesSitios from "./Historia/LeccionesHistoria/LecInicioSitios.js";
+import LeccionesMitologia from "./Costumbres/LeccionesCostumbres/mitologia/LecInicioMitologia.js";
+import LeccionesFilosofia from "./Historia/LeccionesHistoria/filosofia/LecInicioFilosofía.js";
+import LeccionesGastronomia from "./Costumbres/LeccionesCostumbres/gastronomia/LecInicioGastronomia.js";
 
 function AppRouter() {
   const { isLogged } = useContext(SignInContext);
@@ -59,6 +62,19 @@ function AppRouter() {
           <Route
             path="Temas/Deporte/Lecciones"
             element={<LeccionesDeporte />}
+          />
+
+          <Route
+            path="Temas/Mitologia/Lecciones"
+            element={<LeccionesMitologia />}
+          />
+          <Route
+            path="Temas/Filosofia/Lecciones"
+            element={<LeccionesFilosofia />}
+          />
+          <Route
+            path="Temas/Gastronomia/Lecciones"
+            element={<LeccionesGastronomia />}
           />
         </Routes>
       ) : (

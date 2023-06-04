@@ -1,16 +1,19 @@
-.contenedorLecciones {
-  background-color: rgb(200, 200, 255);
+.contenedorLeccionesMito{
+    background-image: url('../../Images/grecia.jpg');
+    background-size: cover;
+    background-position: center;    
     width: 100%;
-    height: 100vh;
+    height: 100vh;   
 }
 
 .titulo-lecciones {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
-
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* margin-top: 5%;  */
 }
 
 
@@ -19,15 +22,19 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    align-items: center;
+    
   }
   
   .carousel {
     width: 50%;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, .8);
   }
   
   .carousel .card {
-    height: auto /* Ajusta la altura del cuerpo de la tarjeta según tus necesidades */
+    height: auto /* Ajusta la altura del cuerpo de la tarjeta según tus necesidades */;
+    background-color: rgba(255, 255, 255, .8);
   }
   
   .carousel .card-title {
@@ -36,6 +43,7 @@
 
   .carousel .card-text {
     margin-left: 10%;
+    
   }
 
 @media (max-width: 1850px) {
