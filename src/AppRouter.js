@@ -28,10 +28,6 @@ function AppRouter() {
     <BrowserRouter>
       {isLogged ? (
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Home" element={<Home />} />
-          <Route path="SignIn" element={<SignIn />} />
-          <Route path="SignUp" element={<SignUp />} />
           <Route path="Principal" element={<Principal />} />
           <Route path="Temas" element={<Temas />} />
           <Route path="Temas/Arte" element={<Arte />} />
@@ -43,12 +39,27 @@ function AppRouter() {
           <Route path="Temas/Derechos" element={<Derecho />} />
           <Route path="Temas/Filosofia" element={<Filosofia />} />
           <Route path="Temas/SitiosCaracteristicos" element={<Sitios />} />
-          <Route path="Temas/Vestimenta/Lecciones" element={<LeccionesVestimenta />} />
+          <Route
+            path="Temas/Vestimenta/Lecciones"
+            element={<LeccionesVestimenta />}
+          />
           <Route path="Temas/Arte/Lecciones" element={<LeccionesArte />} />
-          <Route path="Temas/Literatura/Lecciones" element={<LeccionesLiteratura />} />
-          <Route path="Temas/Derecho/Lecciones" element={<LeccionesDerecho />} />
-          <Route path="Temas/SitiosCaracteristicos/Lecciones" element={<LeccionesSitios />} />
-          <Route path="Temas/Deporte/Lecciones" element={<LeccionesDeporte />} />
+          <Route
+            path="Temas/Literatura/Lecciones"
+            element={<LeccionesLiteratura />}
+          />
+          <Route
+            path="Temas/Derecho/Lecciones"
+            element={<LeccionesDerecho />}
+          />
+          <Route
+            path="Temas/SitiosCaracteristicos/Lecciones"
+            element={<LeccionesSitios />}
+          />
+          <Route
+            path="Temas/Deporte/Lecciones"
+            element={<LeccionesDeporte />}
+          />
         </Routes>
       ) : (
         <Routes>
