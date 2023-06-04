@@ -73,7 +73,7 @@ code {
 
 
 .navbar2Principal {
-  background-color:  rgb(226, 191, 115);
+  background-color:  rgb(224, 188, 109);
   padding: 10px;
 }
 
@@ -132,8 +132,9 @@ code {
   align-items: flex-start;
 }
 
-.navbarLink1 {
+.navbar-home{
   text-decoration: none;
   color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
