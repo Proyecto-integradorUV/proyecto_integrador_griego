@@ -11,44 +11,12 @@ import derechosImage from "./images/derechos.png";
 import deporteImage from "./images/deporte.png";
 import vestimentaImage from "./images/vestimenta.png";
 import arteImage from "./images/arte.png";
+import NavbarPrincipal from "../components/navbar2";
 
 const Temas = () => {
   return (
     <div class="contenedor-inicial-principal">
-      <nav className="navbarTemas">
-        <ul className="navbarList2Temas">
-          <li className="navbarItemTemas">
-            <a href=" " className="navbarLink2Temas">
-              Usuario
-            </a>
-          </li>
-          <li className="navbarItemTemas">
-            <a href="/Home" className="navbarLink2Temas">
-              Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="navbar2Temas">
-        <ul className="navbarListTemas">
-          <li className="navbarItemPrincipal">
-            <a href="/Principal" className="navbarLinkPrincipal">
-              Página principal
-            </a>
-          </li>
-          <li className="navbarItemTemas">
-            <a href=" " className="navbarLinkTemas">
-              Lecciones
-            </a>
-          </li>
-          <li className="navbarItemTemas">
-            <a href="/Temas" className="navbarLink3Temas">
-              Temas
-            </a>
-          </li>
-        </ul>
-      </nav>
-
+      <NavbarPrincipal />
       <div class="cuerpo">
         <div class="contenedor-temas">
           <div class="contenedor-filosofia">
