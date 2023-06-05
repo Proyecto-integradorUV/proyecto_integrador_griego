@@ -1,4 +1,3 @@
-
 import "../../style/css/styleLecciones.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
@@ -6,44 +5,13 @@ import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../style/botones/empezar.png";
 import titulo from "../../style/lecciones_init.png";
+import NavbarPrincipal from "../../components/navbar2";
 
 const LeccionesArte = () => {
 
     return (
-        <div className="contenedorLecciones">
-            <nav className="navbarPrincipal">
-                <ul className="navbarList2Principal">
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink2Principal">
-                            Usuario
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Home" className="navbarLink2Principal">
-                            Cerrar sesión
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav className="navbar2Principal">
-                <ul className="navbarListPrincipal">
-                    <li className="navbarItemPrincipal">
-                        <a href="/Principal" className="navbarLinkPrincipal">
-                            Página principal
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink3Temas">
-                            Lecciones
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Temas" className=" navbarLinkPrincipal">
-                            Temas
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div className="contenedorArte">
+            <NavbarPrincipal />
             <div class="titulo-lecciones">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
@@ -62,7 +30,7 @@ const LeccionesArte = () => {
                                     • Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion1" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion1" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -84,7 +52,7 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de la arquitectura griega, como el Partenón.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -106,7 +74,7 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de esculturas griegas, como la Venus de Milo y el Discóbolo.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion3" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion3" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -128,7 +96,7 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de pinturas y cerámicas griegas, como las ánforas y las vasijas de figuras rojas.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion4" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -150,7 +118,7 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de obras literarias y teatrales griegas, como la Ilíada, la Odisea y las tragedias de Sófocles.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion5" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -172,7 +140,7 @@ const LeccionesArte = () => {
                                     • Ejemplos de danzas y melodías griegas.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/Arte/Leccion6" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -181,8 +149,6 @@ const LeccionesArte = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-
-
         </div>
     );
 };

@@ -17,6 +17,7 @@ import Filosofia from "./Historia/Filosofia";
 import Sitios from "./Historia/Sitios";
 import LeccionesVestimenta from "./Arte/LeccionesArte/LecInicioVestimenta";
 import LeccionesArte from "./Arte/LeccionesArte/LecInicioArte";
+import LeccionArte from "./Arte/LeccionesArte/LeccionArte.js";
 import LeccionesLiteratura from "./Arte/LeccionesArte/LecInicioLiteratura";
 import LeccionesDerecho from "./Historia/LeccionesHistoria/LecInicioDerecho";
 import LeccionesDeporte from "./Costumbres/LeccionesCostumbres/LecInicioDeporte.js";
@@ -47,6 +48,7 @@ function AppRouter() {
             element={<LeccionesVestimenta />}
           />
           <Route path="Temas/Arte/Lecciones" element={<LeccionesArte />} />
+          <Route path="Temas/Arte/Leccion1" element={<LeccionArte/>} />
           <Route
             path="Temas/Literatura/Lecciones"
             element={<LeccionesLiteratura />}
