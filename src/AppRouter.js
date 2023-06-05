@@ -22,10 +22,6 @@ function AppRouter() {
     <BrowserRouter>
       {isLogged ? (
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Home" element={<Home />} />
-          <Route path="SignIn" element={<SignIn />} />
-          <Route path="SignUp" element={<SignUp />} />
           <Route path="Principal" element={<Principal />} />
           <Route path="Temas" element={<Temas />} />
           <Route path="Temas/Arte" element={<Arte />} />

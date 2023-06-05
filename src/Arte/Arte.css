@@ -4,6 +4,8 @@
     background-position: center;    
     width: 100%;
     height: 100vh;   
+    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .temaArte {
