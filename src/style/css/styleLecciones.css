@@ -1,12 +1,3 @@
-.contenedorArte {
-  background-image: url('../fondos/arteFondo.png');
-  background-size: cover;
-  background-position: center;   
-  width: 100%;
-  height: 100vh;
-  margin-top: 100px;  
-}
-
 .titulo-lecciones {
   max-width: 100%;
   width: 100%;

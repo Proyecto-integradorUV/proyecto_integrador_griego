@@ -1,10 +1,3 @@
-.contenedorEmpezar {
-    background-color: rgb(200, 200, 255);
-    width: 100%;
-    height: 100vh;
-    margin-top: 100px;
-}
-  
 .titulo-empezar {
     max-width: 100%;
     width: 100%;
@@ -13,22 +6,33 @@
     justify-content: center;
 }
 
-.carousel-container-empezar {
-    display: inline-block;
-    justify-content: center;
-    margin-left: -10px;
-}
-
-.carousel-container-empezar:last-child {
-    margin-right: 0;
-    display: inline-block;
-    margin-left: -250px;
-}
-
-.stylecards {
+.fondo-card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
     width: 800px;
     height: 300px;
-    background-color: rgba(253, 253, 253, 0.5);
-    border: 1px solid #000;
-    border-radius: 1px;
+    border-radius: 30px;
+    overflow: hidden;
 }
+
+.fondo-card .carousel-control-prev-icon,
+.fondo-card .carousel-control-next-icon {
+  filter: invert(100%); /* Invierte el color de las flechas */
+}
+
+  .fondo-card .carousel-indicators li {
+    background-color: #000000 !important; /* Cambia el color de fondo de los indicadores a negro */
+  }
+  
+  .fondo-card .carousel-indicators .active {
+    background-color: #0000007e; /* Cambia el color de fondo del indicador activo a blanco */
+  }
+
+
+  
+  
+  
+  
+  
+  
+
+

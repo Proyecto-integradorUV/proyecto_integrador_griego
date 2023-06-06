@@ -21,7 +21,7 @@ const NavbarPrincipal = () => {
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">
             {isLogged && (
-              <a href=" " className="navbarLink2Principal navbar-home">
+              <a href=" " className="navbarLinkPrincipal navbar-home">
                 Hola, {username}
               </a>
             )}
@@ -30,7 +30,7 @@ const NavbarPrincipal = () => {
             {isLogged && (
               <a
                 href="/Home"
-                className="navbarLink2Principal navbar-home"
+                className="navbarLinkPrincipal navbar-home"
                 onClick={handdleLogout}
               >
                 Cerrar sesión

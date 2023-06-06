@@ -1,61 +1,16 @@
 import "./Arte.css";
-import React, { useContext } from "react";
+import "../style/css/contenedores.css";
 import arteTitle from "../style/titulos/arte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnArte.png";
 import botonModel3D from "./Images/btnArte3D.png";
-import { SignInContext } from "../context/signInContext";
+import NavbarPrincipal from "../components/navbar2";
 
 const Arte = () => {
-  const { isLogged, setIsLogged } = useContext(SignInContext);
-
-  const handdleLogout = () => {
-    if (isLogged) {
-      localStorage.removeItem("userData");
-      setIsLogged(false);
-    }
-    console.log("el vaino", isLogged);
-  };
   return (
-    <div class="contenedor-inicial-arte">
-      <nav className="navbarPrincipal">
-        <ul className="navbarList2Principal">
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLink2Principal">
-              Usuario
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a
-              href="/Home"
-              className="navbarLink2Principal"
-              onClick={handdleLogout}
-            >
-              Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="navbar2Principal">
-        <ul className="navbarListPrincipal">
-          <li className="navbarItemPrincipal">
-            <a href="/Principal" className="navbarLinkPrincipal">
-              Página principal
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLinkPrincipal">
-              Lecciones
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href="/Temas" className="navbarLink3Temas">
-              Temas
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="temaArte">
+    <div className="contenedorArte">
+      <NavbarPrincipal />
+      <div className="temaArte">
         <img src={arteTitle} alt="Imagen" />
       </div>
       <div class="introduccionArte">
