@@ -1,4 +1,4 @@
-.container-leccionVestimenta{
+.container-leccionSitios{
     background-image: url('./images/fondo.jpg');
     background-size: cover;
     background-position: center;    
@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-.contenedorLecciones-vestimenta{
+.contenedorLecciones-sitios{
     background-image: url('./images/fondo.jpg');
     background-size: cover;
     background-position: center;    
@@ -16,7 +16,7 @@
     margin-top: 60px;
 }
 
-.titulo-lecciones-vestimenta {
+.titulo-lecciones-sitios {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;

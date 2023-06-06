@@ -6,12 +6,12 @@ import "./leccionesVestimenta.css"
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import imagenVestimenta1 from "./images/vestimenta1.jpg"
-import imagenVestimenta2 from "./images/vestimenta2.jpg"
-import imagenVestimenta3 from "./images/vestimenta3.png"
-import imagenVestimenta4 from "./images/vestimenta4.png"
+import imagenVestimenta5 from "./images/vestimenta5.jpg"
+import imagenVestimenta6 from "./images/vestimenta6.png"
+import imagenVestimenta7 from "./images/vestimenta7.jpg"
+import imagenVestimenta8 from "./images/vestimenta8.jpg"
 
-const LeccionVestimenta1 = () => {
+const LeccionVestimenta2 = () => {
 
     return (
         <div className="container-leccionVestimenta">
@@ -23,28 +23,28 @@ const LeccionVestimenta1 = () => {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    src={imagenVestimenta1}
+                                    src={imagenVestimenta5}
                                     alt="..."
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                             <img
                                     className="d-block w-100"
-                                    src={imagenVestimenta2}
+                                    src={imagenVestimenta6}
                                     alt="..."
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                             <img
                                     className="d-block w-100"
-                                    src={imagenVestimenta3}
+                                    src={imagenVestimenta7}
                                     alt="..."
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                             <img
                                     className="d-block w-100"
-                                    src={imagenVestimenta4}
+                                    src={imagenVestimenta8}
                                     alt="..."
                                 />
                             </Carousel.Item>
@@ -56,7 +56,7 @@ const LeccionVestimenta1 = () => {
                                 <Card>
                                     <Card.Body>
                                         <Card.Text className="card-title">
-                                            Breve historia de la antigua Grecia y su influencia en la moda
+                                        Descripción detallada de las prendas utilizadas por los hombres griegos
                                         </Card.Text>
                                         <Card.Text className="card-title">
                                             <Link class="btn-empezar">
@@ -70,21 +70,7 @@ const LeccionVestimenta1 = () => {
                                 <Card>
                                     <Card.Body>
                                         <Card.Text className="card-title">
-                                            Conceptos básicos de la vestimenta griega
-                                        </Card.Text>
-                                        <Card.Text className="card-title">
-                                            <Link class="btn-empezar">
-                                                <img src={informacion} alt="Imagen" class="button-image" />
-                                            </Link>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Card>
-                                    <Card.Body>
-                                        <Card.Text className="card-title">
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo
+                                        Explicación de cómo se usaban estas prendas y cómo variaban según la clase social
                                         </Card.Text>
                                         <Card.Text className="card-title">
                                             <Link class="btn-empezar">
@@ -102,4 +88,4 @@ const LeccionVestimenta1 = () => {
     );
 };
 
-export default LeccionVestimenta1;
+export default LeccionVestimenta2;

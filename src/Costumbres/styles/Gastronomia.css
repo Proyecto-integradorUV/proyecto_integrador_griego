@@ -1,12 +1,14 @@
-.contenedor-inicial-arte{
-    background-image: url('./Images/grecia.jpg');
+.contenedor-inicial-gastro{
+    background-image: url('../Images/grecia.jpg');
     background-size: cover;
     background-position: center;    
     width: 100%;
     height: 100vh;
+    padding-top: 60px;
+    margin-top: 60px;
 }
 
-.temaArte {
+.temaGastronomia {
     max-width: 100%;
     width: 100%;
     padding: 20px;
@@ -18,7 +20,7 @@
     justify-content: center;
 }
 
-.introduccionArte {
+.introduccionGastronomia {
     max-width: 50%;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.7);
@@ -30,16 +32,15 @@
     margin-right: auto;
 }
 
-.button-container-arte{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
+.button-container-gastro{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 /* Estilos para PC */
 
 @media (max-width: 1850px) {
-    .btn-arte  img{
+    .btn-gastro img{
       width: 240px;
       height: 90px;
     }
@@ -50,7 +51,7 @@
   Estilos para portatil
   */
   @media (max-width: 1600px) {
-    .temaArte img{
+    .temaGastronomia img{
       width: 350px;
       height: 110px;  
     }
@@ -60,16 +61,16 @@
   
   @media (max-width: 660px) {
   
-    .temaArte img{
+    .temaGastronomia img{
       width: 320px;
       height: 80px;  
     }
   
-    .contenedor-inicial-arte{
+    .contenedor-inicial-gastro{
     height: 100% !important;
     }
   
-    .btn-arte img{
+    .btn-gastro img{
       width: 150px;
       height: 60px;
     }

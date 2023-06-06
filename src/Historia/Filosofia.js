@@ -1,4 +1,4 @@
-import "./Filosofia.css";
+import "./styles/Filosofia.css";
 import React from "react";
 import filoTitle from "../style/titulos/filosofia.png";
 import { Link } from "react-router-dom";

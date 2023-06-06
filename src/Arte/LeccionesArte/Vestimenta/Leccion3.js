@@ -7,11 +7,11 @@ import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import imagenVestimenta1 from "./images/vestimenta1.jpg"
-import imagenVestimenta2 from "./images/vestimenta2.jpg"
 import imagenVestimenta3 from "./images/vestimenta3.png"
-import imagenVestimenta4 from "./images/vestimenta4.png"
+import imagenVestimenta5 from "./images/vestimenta5.jpg"
+import imagenVestimenta7 from "./images/vestimenta7.jpg"
 
-const LeccionVestimenta1 = () => {
+const LeccionVestimenta3 = () => {
 
     return (
         <div className="container-leccionVestimenta">
@@ -28,23 +28,23 @@ const LeccionVestimenta1 = () => {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                            <img
-                                    className="d-block w-100"
-                                    src={imagenVestimenta2}
-                                    alt="..."
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                            <img
+                                <img
                                     className="d-block w-100"
                                     src={imagenVestimenta3}
                                     alt="..."
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                            <img
+                                <img
                                     className="d-block w-100"
-                                    src={imagenVestimenta4}
+                                    src={imagenVestimenta5}
+                                    alt="..."
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={imagenVestimenta7}
                                     alt="..."
                                 />
                             </Carousel.Item>
@@ -56,7 +56,7 @@ const LeccionVestimenta1 = () => {
                                 <Card>
                                     <Card.Body>
                                         <Card.Text className="card-title">
-                                            Breve historia de la antigua Grecia y su influencia en la moda
+                                            Descripción de las prendas utilizadas por las mujeres griegas
                                         </Card.Text>
                                         <Card.Text className="card-title">
                                             <Link class="btn-empezar">
@@ -70,7 +70,7 @@ const LeccionVestimenta1 = () => {
                                 <Card>
                                     <Card.Body>
                                         <Card.Text className="card-title">
-                                            Conceptos básicos de la vestimenta griega
+                                            Diferencias entre la ropa de las mujeres casadas y las solteras
                                         </Card.Text>
                                         <Card.Text className="card-title">
                                             <Link class="btn-empezar">
@@ -84,7 +84,7 @@ const LeccionVestimenta1 = () => {
                                 <Card>
                                     <Card.Body>
                                         <Card.Text className="card-title">
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo
+                                            Importancia de la vestimenta en la vida de las mujeres griegas y su papel en la sociedad
                                         </Card.Text>
                                         <Card.Text className="card-title">
                                             <Link class="btn-empezar">
@@ -102,4 +102,4 @@ const LeccionVestimenta1 = () => {
     );
 };
 
-export default LeccionVestimenta1;
+export default LeccionVestimenta3;

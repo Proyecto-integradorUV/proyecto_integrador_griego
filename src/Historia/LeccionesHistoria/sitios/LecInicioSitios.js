@@ -1,20 +1,19 @@
-import "../../../style/css/styleLecciones.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../style/css/contenedores.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./leccionesVestimenta.css"
-import React from 'react';
-import { Carousel, Card } from 'react-bootstrap';
+import "../sitios/leccionesSitios.css"
+import React from "react";
+import { Carousel, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../../style/botones/empezar.png";
 import titulo from "../../../style/titulos/lecciones_init.png";
 import NavbarPrincipal from "../../../components/navbar2";
 
-const LeccionesVestimenta = () => {
+const LeccionesSitio = () => {
 
     return (
-        <div className="contenedorLecciones-vestimenta">
+        <div className="contenedorLecciones-sitios">
             <NavbarPrincipal/>
-            <div class="titulo-lecciones-vestimenta">
+            <div class="titulo-lecciones-sitios">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}
@@ -25,17 +24,17 @@ const LeccionesVestimenta = () => {
                             <Card.Body>
                                 <Card.Title >Lección 1</Card.Title>
                                 <Card.Text className="card-title">
-                                    Introducción a la cultura griega y la vestimenta
+                                    Introducción a Grecia
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Breve historia de la antigua Grecia y su influencia en la moda
+                                    • Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural.
                                     <br />
-                                    • Conceptos básicos de la vestimenta griega
+                                    • Presentación de la rica historia de Grecia y su influencia en la civilización occidental.
                                     <br />
-                                    • Descripción de los materiales utilizados en la ropa griega y su simbolismo
+                                    • Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion1" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion1" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -47,15 +46,17 @@ const LeccionesVestimenta = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2</Card.Title>
                                 <Card.Text className="card-title">
-                                    Ropa masculina en la cultura griega
+                                    Atenas y la Acrópolis
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Descripción detallada de las prendas utilizadas por los hombres griegos
+                                    • Presentación de la ciudad de Atenas, su importancia como capital y centro cultural.
                                     <br />
-                                    • Explicación de cómo se usaban estas prendas y cómo variaban según la clase social
+                                    • Exploración de la Acrópolis y sus principales estructuras, incluyendo el Partenón, el Erecteión y el Templo de Atenea Niké.
+                                    <br />
+                                    • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -67,17 +68,17 @@ const LeccionesVestimenta = () => {
                             <Card.Body>
                                 <Card.Title >Lección 3</Card.Title>
                                 <Card.Text className="card-title">
-                                    Ropa femenina en la cultura griega
+                                    Delfos y el Oráculo
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Descripción de las prendas utilizadas por las mujeres griegas
+                                    • Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia.
                                     <br />
-                                    • Diferencias entre la ropa de las mujeres casadas y las solteras
+                                    • Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro.
                                     <br />
-                                    • Importancia de la vestimenta en la vida de las mujeres griegas y su papel en la sociedad
+                                    • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion3" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion3" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -89,15 +90,17 @@ const LeccionesVestimenta = () => {
                             <Card.Body>
                                 <Card.Title>Lección 4</Card.Title>
                                 <Card.Text className="card-title">
-                                    Accesorios y detalles de la vestimenta griega
+                                    Las Islas Griegas
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Explicación de los accesorios utilizados en la cultura griega
+                                    • Presentación de las islas griegas como destinos turísticos populares y únicos.
                                     <br />
-                                    • Significado simbólico de estos accesorios y cómo complementaban la vestimenta
+                                    • Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta.
+                                    <br />
+                                    • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion4" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -106,10 +109,8 @@ const LeccionesVestimenta = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-
-
         </div>
     );
 };
 
-export default LeccionesVestimenta;
+export default LeccionesSitio;

@@ -1,13 +1,13 @@
-.container-leccionVestimenta{
-    background-image: url('./images/fondo.jpg');
+.container-leccionDeporte{
+    background-image: url('./images/fondo.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100vw;
     height: 100vh;
 }
 
-.contenedorLecciones-vestimenta{
-    background-image: url('./images/fondo.jpg');
+.contenedorLecciones-deporte{
+    background-image: url('./images/fondo.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100%;
@@ -16,7 +16,7 @@
     margin-top: 60px;
 }
 
-.titulo-lecciones-vestimenta {
+.titulo-lecciones-deporte {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -25,3 +25,4 @@
   align-items: center;
   /* margin-top: 5%;  */
 }
+
