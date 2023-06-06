@@ -1,11 +1,11 @@
-import "../../style/css/styleLecciones.css"
+import "../../../style/css/styleLecciones.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import botonEmpezar from "../../style/botones/empezar.png";
-import titulo from "../../style/lecciones_init.png";
-import NavbarPrincipal from "../../components/navbar2";
+import botonEmpezar from "../../../style/botones/empezar.png";
+import titulo from "../../../style/titulos/lecciones_init.png";
+import NavbarPrincipal from "../../../components/navbar2";
 
 const LeccionesArte = () => {
 

@@ -1,0 +1,26 @@
+.contenedorArte {
+    background-image: url('../fondos/arteFondo.png');
+    background-size: cover;
+    background-position: center;   
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;  
+}
+
+.contenedorCostumbres {
+    background-image: url('../fondos/costumbresFondo.jpg');
+    background-size: cover;
+    background-position: center;   
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;  
+}
+
+.contenedorHistoria {
+    background-image: url('../fondos/historiaFondo.jpg');
+    background-size: cover;
+    background-position: center;   
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;  
+}
