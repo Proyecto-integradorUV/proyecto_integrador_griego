@@ -15,16 +15,17 @@ import Deporte from "./Costumbres/Deporte";
 import Derecho from "./Historia/Derecho";
 import Filosofia from "./Historia/Filosofia";
 import Sitios from "./Historia/Sitios";
-import LeccionesVestimenta from "./Arte/LeccionesArte/LecInicioVestimenta";
-import LeccionesArte from "./Arte/LeccionesArte/LecInicioArte";
+import LeccionesVestimenta from "./Arte/Lecciones/LecInicioVestimenta.js";
+import LeccionesArte from "./Arte/Lecciones/LecInicioArte.js";
 import LeccionArte from "./Arte/LeccionesArte/LeccionArte.js";
-import LeccionesLiteratura from "./Arte/LeccionesArte/LecInicioLiteratura";
+import LeccionesLiteratura from "./Arte/Lecciones/LecInicioLiteratura.js";
 import LeccionesDerecho from "./Historia/LeccionesHistoria/LecInicioDerecho";
 import LeccionesDeporte from "./Costumbres/LeccionesCostumbres/LecInicioDeporte.js";
 import LeccionesSitios from "./Historia/LeccionesHistoria/LecInicioSitios.js";
 import LeccionesMitologia from "./Costumbres/LeccionesCostumbres/mitologia/LecInicioMitologia.js";
 import LeccionesFilosofia from "./Historia/LeccionesHistoria/filosofia/LecInicioFilosofía.js";
 import LeccionesGastronomia from "./Costumbres/LeccionesCostumbres/gastronomia/LecInicioGastronomia.js";
+import LeccionVestimenta1 from "./Arte/LeccionVestimenta/Leccion1.js";
 
 function AppRouter() {
   const { isLogged } = useContext(SignInContext);
@@ -77,6 +78,10 @@ function AppRouter() {
           <Route
             path="Temas/Gastronomia/Lecciones"
             element={<LeccionesGastronomia />}
+          />
+          <Route
+            path="Temas/Vestimenta/Leccion1"
+            element={<LeccionVestimenta1 />}
           />
         </Routes>
       ) : (
