@@ -1,0 +1,19 @@
+.container-leccionVestimenta{
+    background-image: url('./images/fondo.jpg');
+    background-size: cover;
+    background-position: center;    
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-imagenes {
+    background-color: black; 
+    width: 50vw;
+    height: 100vh;
+}
+
+.container-leccionVestimenta .container-lecciones {
+    background-color: rgb(255, 0, 0);
+    width: 50vw;
+    height: 100vh;
+}
