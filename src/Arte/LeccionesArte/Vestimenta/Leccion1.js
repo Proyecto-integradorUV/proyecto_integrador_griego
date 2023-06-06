@@ -1,11 +1,11 @@
-import "../../style/css/styleEmpezar.css"
+import "../../../style/css/styleEmpezar.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import informacion from "../../../style/botones/informacion.png";
+import NavbarPrincipal from "../../../components/navbar2"
 import "./leccionesVestimenta.css"
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import informacion from "../../style/botones/informacion.png";
-import NavbarPrincipal from "../../components/navbar2"
 import imagenVestimenta1 from "./images/vestimenta1.jpg"
 import imagenVestimenta2 from "./images/vestimenta2.jpg"
 import imagenVestimenta3 from "./images/vestimenta3.png"

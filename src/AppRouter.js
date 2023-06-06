@@ -15,17 +15,17 @@ import Deporte from "./Costumbres/Deporte";
 import Derecho from "./Historia/Derecho";
 import Filosofia from "./Historia/Filosofia";
 import Sitios from "./Historia/Sitios";
-import LeccionesVestimenta from "./Arte/Lecciones/LecInicioVestimenta.js";
-import LeccionesArte from "./Arte/Lecciones/LecInicioArte.js";
-import LeccionArte from "./Arte/LeccionesArte/LeccionArte.js";
-import LeccionesLiteratura from "./Arte/Lecciones/LecInicioLiteratura.js";
+import LeccionesVestimenta from "./Arte/LeccionesArte/Vestimenta/LecInicioVestimenta.js";
+import LeccionArte from "./Arte/LeccionesArte/Arte/LeccionArte.js";
+import LeccionesLiteratura from "./Arte/LeccionesArte/Literatura/LecInicioLiteratura.js"
 import LeccionesDerecho from "./Historia/LeccionesHistoria/LecInicioDerecho";
 import LeccionesDeporte from "./Costumbres/LeccionesCostumbres/LecInicioDeporte.js";
 import LeccionesSitios from "./Historia/LeccionesHistoria/LecInicioSitios.js";
 import LeccionesMitologia from "./Costumbres/LeccionesCostumbres/mitologia/LecInicioMitologia.js";
 import LeccionesFilosofia from "./Historia/LeccionesHistoria/filosofia/LecInicioFilosofía.js";
 import LeccionesGastronomia from "./Costumbres/LeccionesCostumbres/gastronomia/LecInicioGastronomia.js";
-import LeccionVestimenta1 from "./Arte/LeccionVestimenta/Leccion1.js";
+import LeccionVestimenta1 from "./Arte/LeccionesArte/Vestimenta/Leccion1.js";
+import LeccionesArte from "./Arte/LeccionesArte/Arte/LecInicioArte.js";
 
 function AppRouter() {
   const { isLogged } = useContext(SignInContext);

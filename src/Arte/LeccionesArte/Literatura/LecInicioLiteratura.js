@@ -1,16 +1,16 @@
 
-import "../../style/css/styleLecciones.css"
+import "../../../style/css/styleLecciones.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import botonEmpezar from "../../style/botones/empezar.png";
-import titulo from "../../style/lecciones_init.png";
+import botonEmpezar from "../../../style/botones/empezar.png";
+import titulo from "../../../style/titulos/lecciones_init.png";
 
 const LeccionesLiteratura = () => {
 
     return (
-        <div className="contenedorLecciones">
+        <div className="contenedorArte">
             <nav className="navbarPrincipal">
                 <ul className="navbarList2Principal">
                     <li className="navbarItemPrincipal">

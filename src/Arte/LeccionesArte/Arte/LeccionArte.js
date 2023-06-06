@@ -1,17 +1,17 @@
-import "../../style/css/styleEmpezar.css"
+import "../../../style/css/styleEmpezar.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import leccionArte1 from "../Images/leccionArte1.jpg";
-import leccionArte2 from "../Images/leccionArte2.jpg";
-import leccionArte3 from "../Images/leccionArte3.jpg";
-import leccionArte4 from "../Images/leccionArte4.jpg";
-import leccionArte5 from "../Images/leccionArte5.jpg";
-import leccionArte6 from "../Images/leccionArte6.png";
-import lecArte from "../../style/titulos/LecArte.png";
-import informacion from "../../style/botones/informacion.png";
-import NavbarPrincipal from "../../components/navbar2"
+import leccionArte1 from "../../Images/leccionArte1.jpg";
+import leccionArte2 from "../../Images/leccionArte2.jpg";
+import leccionArte3 from "../../Images/leccionArte3.jpg";
+import leccionArte4 from "../../Images/leccionArte4.jpg";
+import leccionArte5 from "../../Images/leccionArte5.jpg";
+import leccionArte6 from "../../Images/leccionArte6.png";
+import lecArte from "../../../style/titulos/LecArte.png";
+import informacion from "../../../style/botones/informacion.png";
+import NavbarPrincipal from "../../../components/navbar2"
 
 const LeccionArte = () => {
 
