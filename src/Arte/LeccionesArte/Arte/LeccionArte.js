@@ -11,6 +11,7 @@ import leccionArte4 from "../../Images/leccionArte4.jpg";
 import leccionArte5 from "../../Images/leccionArte5.jpg";
 import leccionArte6 from "../../Images/leccionArte6.png";
 import lecArte from "../../../style/titulos/LecArte.png";
+import siguiente from "../../../style/titulos/siguiente.png";
 import informacion from "../../../style/botones/informacion.png";
 import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
@@ -18,6 +19,7 @@ import YouTube from 'react-youtube';
 
 const LeccionArte = () => {
 
+    //almacenar modals por nombres
     const [modals, setModals] = useState({
         modal1: false,
         modal2: false,
@@ -231,6 +233,11 @@ const LeccionArte = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>  
+        </div>
+        <div class="titulo-empezar">
+            <Link to="/Temas/Arte/Leccion2">
+            <img src={siguiente} class="img-fluid" alt="Imagen" />
+            </Link>     
         </div>
     </div>
     );

@@ -42,9 +42,24 @@ import LeccionDeporte1 from "./Costumbres/LeccionesCostumbres/deporte/leccion1.j
 import LeccionDeporte2 from "./Costumbres/LeccionesCostumbres/deporte/leccion2.js";
 import LeccionDeporte3 from "./Costumbres/LeccionesCostumbres/deporte/leccion3.js";
 import LeccionDeporte4 from "./Costumbres/LeccionesCostumbres/deporte/leccion4.js";
+// Gastronomia
+import LeccionGastronomia1 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion1.js";
+import LeccionGastronomia2 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion2.js";
+import LeccionGastronomia3 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion3.js";
+import LeccionGastronomia4 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion4.js";
+import LeccionGastronomia5 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion5.js";
+// Mitologia
+import LeccionMitologia1 from "./Costumbres/LeccionesCostumbres/mitologia/leccion1.js";
+import LeccionMitologia2 from "./Costumbres/LeccionesCostumbres/mitologia/leccion2.js";
+import LeccionMitologia3 from "./Costumbres/LeccionesCostumbres/mitologia/leccion3.js";
+import LeccionMitologia4 from "./Costumbres/LeccionesCostumbres/mitologia/leccion4.js";
 // lecciones seccion historia
 // Derecho
 // Filosofia
+import LeccionFilosofia1 from "./Historia/LeccionesHistoria/filosofia/leccion1.js";
+import LeccionFilosofia2 from "./Historia/LeccionesHistoria/filosofia/leccion2.js";
+import LeccionFilosofia3 from "./Historia/LeccionesHistoria/filosofia/leccion3.js";
+import LeccionFilosofia4 from "./Historia/LeccionesHistoria/filosofia/leccion4.js";
 // Sitios
 import LeccionSitios1 from "./Historia/LeccionesHistoria/sitios/leccion1.js"
 import LeccionSitios2 from "./Historia/LeccionesHistoria/sitios/leccion2.js"
@@ -97,9 +112,22 @@ function AppRouter() {
           <Route path="Temas/Deporte/Leccion3" element={<LeccionDeporte3 />}/>
           <Route path="Temas/Deporte/Leccion4" element={<LeccionDeporte4 />}/>
           {/* gastronomia */}
+          <Route path="Temas/Gastronomia/Leccion1" element={<LeccionGastronomia1 />}/>
+          <Route path="Temas/Gastronomia/Leccion2" element={<LeccionGastronomia2 />}/>
+          <Route path="Temas/Gastronomia/Leccion3" element={<LeccionGastronomia3 />}/>
+          <Route path="Temas/Gastronomia/Leccion4" element={<LeccionGastronomia4 />}/>
+          <Route path="Temas/Gastronomia/Leccion5" element={<LeccionGastronomia5 />}/>
           {/* mitologia */}
+          <Route path="Temas/Mitologia/Leccion1" element={<LeccionMitologia1 />}/>
+          <Route path="Temas/Mitologia/Leccion2" element={<LeccionMitologia2 />}/>
+          <Route path="Temas/Mitologia/Leccion3" element={<LeccionMitologia3 />}/>
+          <Route path="Temas/Mitologia/Leccion4" element={<LeccionMitologia4 />}/>
           {/* ruta a las lecciones por seccion: Historia */}
           {/* filosofia */}
+          <Route path="Temas/Filosofia/Leccion1" element={<LeccionFilosofia1 />}/>
+          <Route path="Temas/Filosofia/Leccion2" element={<LeccionFilosofia2 />}/>
+          <Route path="Temas/Filosofia/Leccion3" element={<LeccionFilosofia3 />}/>
+          <Route path="Temas/Filosofia/Leccion4" element={<LeccionFilosofia4 />}/>
           {/* derecho */}
           {/* sitios */}
           <Route path="Temas/SitiosCaracteristicos/Leccion1" element={<LeccionSitios1 />}/>

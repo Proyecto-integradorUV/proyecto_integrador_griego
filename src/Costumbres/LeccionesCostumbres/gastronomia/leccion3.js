@@ -4,26 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import vestimenta1 from "./images/vestimenta1.jpg";
-import vestimenta2 from "./images/vestimenta2.jpg";
-import vestimenta3 from "./images/vestimenta3.png";
-import vestimenta4 from "./images/vestimenta4.png";
-import vestimenta5 from "./images/vestimenta5.jpg";
-import vestimenta6 from "./images/vestimenta6.png";
-import vestimenta7 from "./images/vestimenta7.jpg";
-import vestimenta8 from "./images/vestimenta8.jpg";
-import lecArte from "../../../style/titulos/LecArte.png";
+import lecCostumbres from "../../../style/titulos/LecCostumbres.png";
 import informacion from "../../../style/botones/informacion.png";
 import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
 import YouTube from 'react-youtube';
 
-const LeccionVestimenta3 = () => {
+const LeccionGastronomia3 = () => {
 
     const [modals, setModals] = useState({
         modal1: false,
         modal2: false,
-        modal3: false
+        modal3: false,
+        modal4: false
     });
 
     // Funciones de manejo para abrir/cerrar cada modal
@@ -47,7 +40,7 @@ const LeccionVestimenta3 = () => {
         <div className="contenedorArte">
             <NavbarPrincipal/>
             <div class="titulo-empezar">
-                    <img src={lecArte} class="img-fluid" alt="Imagen" />
+                    <img src={lecCostumbres} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -57,7 +50,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '800px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -68,7 +61,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '800px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -79,7 +72,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -90,7 +83,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -101,7 +94,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -112,7 +105,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -123,7 +116,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -134,7 +127,7 @@ const LeccionVestimenta3 = () => {
                             <Card style={{ width: '1000px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={vestimenta8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -150,17 +143,17 @@ const LeccionVestimenta3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3</Card.Title>
                                 <Card.Text>
-                                    Descripción de las prendas utilizadas por las mujeres griegas
+                                    Moussaka y otros platos de horno.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <Link to="/Temas/Vestimenta/Leccion3">
+                                    <Link to="/Temas/Gastronomia/Leccion3">
                                         <img onClick={() => handleOpenModal('modal1')}src={informacion} alt="Imagen" />
                                     </Link>
                                 </div>
                                 <div>
                                     <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                         <Modal.Header closeButton>
-                                        <Modal.Title>Descripción de las prendas utilizadas por las mujeres griegas</Modal.Title>
+                                        <Modal.Title>Moussaka y otros platos de horno.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
                                         <p>vdffbdsfh.</p>
@@ -180,19 +173,19 @@ const LeccionVestimenta3 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '1000px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
+                                <Card.Title>Lección 3</Card.Title>
                                 <Card.Text>
-                                    Diferencias entre la ropa de las mujeres casadas y las solteras.
+                                    Souvlaki y otras carnes a la parrilla.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <Link to="/Temas/Vestimenta/Leccion3">
+                                    <Link to="/Temas/Gastronomia/Leccion3">
                                         <img  onClick={() => handleOpenModal('modal2')}src={informacion} alt="Imagen" />
                                     </Link>
                                 </div>
                                 <div>
                                     <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                         <Modal.Header closeButton>
-                                        <Modal.Title>Diferencias entre la ropa de las mujeres casadas y las solteras.</Modal.Title>
+                                        <Modal.Title>Souvlaki y otras carnes a la parrilla.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
                                         <p>tiguos.</p>
@@ -214,17 +207,17 @@ const LeccionVestimenta3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3</Card.Title>
                                 <Card.Text>
-                                    Importancia de la vestimenta en la vida de las mujeres griegas y su papel en la sociedad.
+                                    Platos de pescado y mariscos.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <Link to="/Temas/Vestimenta/Leccion3">
+                                    <Link to="/Temas/Gastronomia/Leccion3">
                                         <img  onClick={() => handleOpenModal('modal3')} src={informacion} alt="Imagen" />
                                     </Link>
                                 </div>
                                 <div>
                                     <Modal show={modals.modal3} onHide={() => handleCloseModal('modal3')} scrollable={true} size="lg">
                                         <Modal.Header closeButton>
-                                        <Modal.Title>Importancia de la vestimenta en la vida de las mujeres griegas y su papel en la sociedad.</Modal.Title>
+                                        <Modal.Title>Platos de pescado y mariscos.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
                                             <p>dws</p>
@@ -241,6 +234,39 @@ const LeccionVestimenta3 = () => {
                             </Card>
                         </div>    
                     </Carousel.Item>
+                    <Carousel.Item>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                        <Card style={{ width: '1000px', height: '300px' }}>
+                            <Card.Body>
+                                <Card.Title>Lección 3</Card.Title>
+                                <Card.Text>
+                                    Platos vegetarianos y veganos.
+                                </Card.Text>
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <Link to="/Temas/Gastronomia/Leccion3">
+                                        <img  onClick={() => handleOpenModal('modal4')} src={informacion} alt="Imagen" />
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Modal show={modals.modal4} onHide={() => handleCloseModal('modal4')} scrollable={true} size="lg">
+                                        <Modal.Header closeButton>
+                                        <Modal.Title>Platos vegetarianos y veganos.</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            <p>dws</p>
+                                            {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                        <Button variant="secondary" onClick={() => handleCloseModal('modal4')}>
+                                            Cerrar
+                                        </Button>
+                                        </Modal.Footer>
+                                    </Modal>
+                                </div>
+                                </Card.Body>
+                            </Card>
+                        </div>    
+                    </Carousel.Item>
                 </Carousel>
             </div>  
         </div>
@@ -248,4 +274,4 @@ const LeccionVestimenta3 = () => {
     );
 };
 
-export default LeccionVestimenta3;
+export default LeccionGastronomia3;
