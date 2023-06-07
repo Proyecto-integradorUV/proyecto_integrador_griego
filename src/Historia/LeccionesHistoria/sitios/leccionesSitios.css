@@ -1,0 +1,27 @@
+.container-leccionSitios{
+    background-image: url('./images/fondo.jpg');
+    background-size: cover;
+    background-position: center;    
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedorLecciones-sitios{
+    background-image: url('./images/fondo.jpg');
+    background-size: cover;
+    background-position: center;    
+    width: 100%;
+    height: 100vh;   
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.titulo-lecciones-sitios {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5%;  */
+}

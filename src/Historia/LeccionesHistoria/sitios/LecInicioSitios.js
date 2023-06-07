@@ -1,49 +1,19 @@
-import "../../style/css/styleLecciones.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import { Carousel, Card } from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../../style/css/contenedores.css";
+import "../sitios/leccionesSitios.css"
+import React from "react";
+import { Carousel, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import botonEmpezar from "../../style/botones/empezar.png";
-import titulo from "../../style/titulos/lecciones_init.png";
+import botonEmpezar from "../../../style/botones/empezar.png";
+import titulo from "../../../style/titulos/lecciones_init.png";
+import NavbarPrincipal from "../../../components/navbar2";
 
 const LeccionesSitio = () => {
 
     return (
-        <div className="contenedorLecciones">
-            <nav className="navbarPrincipal">
-                <ul className="navbarList2Principal">
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink2Principal">
-                            Usuario
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Home" className="navbarLink2Principal">
-                            Cerrar sesión
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav className="navbar2Principal">
-                <ul className="navbarListPrincipal">
-                    <li className="navbarItemPrincipal">
-                        <a href="/Principal" className="navbarLinkPrincipal">
-                            Página principal
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink3Temas">
-                            Lecciones
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Temas" className=" navbarLinkPrincipal">
-                            Temas
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="titulo-lecciones">
+        <div className="contenedorLecciones-sitios">
+            <NavbarPrincipal/>
+            <div class="titulo-lecciones-sitios">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}
@@ -64,7 +34,7 @@ const LeccionesSitio = () => {
                                     • Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Sitios/Leccion1" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion1" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -86,7 +56,7 @@ const LeccionesSitio = () => {
                                     • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Sitios/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -108,7 +78,7 @@ const LeccionesSitio = () => {
                                     • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Sitios/Leccion3" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion3" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -130,7 +100,7 @@ const LeccionesSitio = () => {
                                     • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Sitios/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion4" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>

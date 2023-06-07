@@ -1,49 +1,19 @@
-import "../../style/css/styleLecciones.css"
+import "../../../style/css/styleLecciones.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./leccionesDeporte.css"
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import botonEmpezar from "../../style/botones/empezar.png";
-import titulo from "../../style/titulos/lecciones_init.png";
+import botonEmpezar from "../../../style/botones/empezar.png";
+import titulo from "../../../style/titulos/lecciones_init.png";
+import NavbarPrincipal from "../../../components/navbar2";
 
 const LeccionesDeporte = () => {
 
     return (
-        <div className="contenedorLecciones">
-            <nav className="navbarPrincipal">
-                <ul className="navbarList2Principal">
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink2Principal">
-                            Usuario
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Home" className="navbarLink2Principal">
-                            Cerrar sesión
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav className="navbar2Principal">
-                <ul className="navbarListPrincipal">
-                    <li className="navbarItemPrincipal">
-                        <a href="/Principal" className="navbarLinkPrincipal">
-                            Página principal
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href=" " className="navbarLink3Temas">
-                            Lecciones
-                        </a>
-                    </li>
-                    <li className="navbarItemPrincipal">
-                        <a href="/Temas" className=" navbarLinkPrincipal">
-                            Temas
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="titulo-lecciones">
+        <div className="contenedorLecciones-deporte">
+            <NavbarPrincipal/>
+            <div class="titulo-lecciones-deporte">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}

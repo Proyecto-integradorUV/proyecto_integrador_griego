@@ -9,7 +9,7 @@ import NavbarPrincipal from "../../../components/navbar2";
 
 const LeccionFilosofia = () => {
   return (
-    <div className="contenedorLeccionesFilo">
+    <div className="contenedorHistoria">
       <NavbarPrincipal />
       <div class="titulo-lecciones">
         <img src={titulo} class="img-fluid" alt="Imagen" />

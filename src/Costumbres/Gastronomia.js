@@ -1,4 +1,4 @@
-import "./Gastronomia.css";
+import "./styles/Gastronomia.css";
 import React from "react";
 import gastronomiaTitle from "../style/titulos/gastronomia.png";
 import { Link } from "react-router-dom";
