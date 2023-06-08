@@ -4,12 +4,12 @@ import React from "react";
 import { Carousel, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../../style/botones/empezar.png";
-import titulo from "../../../style/lecciones_init.png";
+import titulo from "../../../style/titulos/lecciones_init.png";
 import NavbarPrincipal from "../../../components/navbar2";
 
 const LeccionFilosofia = () => {
   return (
-    <div className="contenedorLeccionesFilo">
+    <div className="contenedorHistoria">
       <NavbarPrincipal />
       <div class="titulo-lecciones">
         <img src={titulo} class="img-fluid" alt="Imagen" />

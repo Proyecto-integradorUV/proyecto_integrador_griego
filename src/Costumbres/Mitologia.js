@@ -1,4 +1,4 @@
-import "./Mitologia.css";
+import "./styles/Mitologia.css";
 import React from "react";
 import mitologiaTitle from "../style/titulos/mitologia.png";
 import { Link } from "react-router-dom";

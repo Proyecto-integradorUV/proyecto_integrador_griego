@@ -1,41 +1,15 @@
-import "./Deporte.css";
+import "./styles/Deporte.css";
 import React from "react";
 import deporteTitle from "../style/titulos/deporte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnDeporte.png";
 import botonModel3D from "./Images/btnDeporte3D.png";
+import NavbarPrincipal from "../components/navbar2";
 
 const Deporte = () => {
   return (
-    <div class="contenedor-inicial">
-      <nav className="navbarPrincipal">
-        <ul className="navbarList2Principal">
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLink2Principal">
-              Usuario
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href="/Home" className="navbarLink2Principal">
-              Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="navbar2Principal">
-        <ul className="navbarListPrincipal">
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLinkPrincipal">
-              Lecciones
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href="/Temas" className="navbarLink3Temas">
-              Temas
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="contenedor-inicial-deporte">
+      <NavbarPrincipal/>
       <div class="temaDepor">
         <img src={deporteTitle} alt="Imagen" />
       </div>
@@ -47,11 +21,11 @@ const Deporte = () => {
         todo el territorio griego y eran considerados eventos de gran
         importancia social y cultural
       </div>
-      <div class="button-container-dep">
-        <Link to="/Temas/Deporte/Lecciones" class="btn ">
+      <div class="button-container-depor">
+        <Link to="/Temas/Deporte/Lecciones" class="btn-deporte ">
           <img src={botonLeccion} alt="Imagen" class="button-image" />
         </Link>
-        <Link to="/Temas/Deporte/Model" class="btn ">
+        <Link to="/Temas/Deporte/Model" class="btn-deporte ">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>
       </div>

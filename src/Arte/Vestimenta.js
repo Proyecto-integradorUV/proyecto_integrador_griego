@@ -1,46 +1,15 @@
-import "./Vestimenta.css";
+import "./styles/Vestimenta.css";
 import React from "react";
 import vestimentaTitle from "../style/titulos/vestimenta.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnVestimenta.png";
 import botonModel3D from "./Images/btnVestimenta3D.png";
+import NavbarPrincipal from "../components/navbar2";
 
 const Vestimenta = () => {
   return (
     <div class="contenedor-inicial-vestimenta">
-      <nav className="navbarPrincipal">
-        <ul className="navbarList2Principal">
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLink2Principal">
-              Usuario
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href="/Home" className="navbarLink2Principal">
-              Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="navbar2Principal">
-        <ul className="navbarListPrincipal">
-          <li className="navbarItemPrincipal">
-            <a href="/Principal" className="navbarLinkPrincipal">
-              Página principal
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href=" " className="navbarLinkPrincipal">
-              Lecciones
-            </a>
-          </li>
-          <li className="navbarItemPrincipal">
-            <a href="/Temas" className="navbarLink3Temas">
-              Temas
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <NavbarPrincipal/>
       <div class="temaVestimenta">
         <img src={vestimentaTitle} alt="Imagen" />
       </div>
