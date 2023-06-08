@@ -7,7 +7,8 @@ import lecCostumbres from "../../../style/titulos/LecCostumbres.png";
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-
+import siguiente from "../../../style/botones/siguiente.png";
+import anterior from "../../../style/botones/anterior.png";
 
 const LeccionDeporte1 = () => {
 
@@ -149,7 +150,7 @@ const LeccionDeporte1 = () => {
                                 <div>
                                     <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                         <Modal.Header closeButton>
-                                        <Modal.Title>Juegos olimpicos.</Modal.Title>
+                                        <Modal.Title>Juegos olimpicos</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
                                         <p>vdffbdsfh.</p>
@@ -167,7 +168,15 @@ const LeccionDeporte1 = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>  
-        </div>           
+        </div>      
+        <div class="titulo-empezar">
+                <Link to="/Temas/Deporte/Lecciones">
+                    <img src={anterior} class="img-fluid" alt="Imagen" />
+                </Link>
+                <Link to="/Temas/Deporte/Leccion2">
+                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                </Link>
+            </div>     
     </div>
     );
 };

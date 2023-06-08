@@ -7,7 +7,8 @@ import lecCostumbres from "../../../style/titulos/LecCostumbres.png";
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-
+import siguiente from "../../../style/botones/siguiente.png";
+import anterior from "../../../style/botones/anterior.png";
 
 const LeccionDeporte2 = () => {
 
@@ -168,6 +169,14 @@ const LeccionDeporte2 = () => {
                 </Carousel>
             </div>  
         </div>           
+        <div class="titulo-empezar">
+                <Link to="/Temas/Deporte/Lecciones1">
+                    <img src={anterior} class="img-fluid" alt="Imagen" />
+                </Link>
+                <Link to="/Temas/Deporte/Leccion3">
+                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                </Link>
+            </div>
     </div>
     );
 };

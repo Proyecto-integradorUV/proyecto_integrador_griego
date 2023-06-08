@@ -12,7 +12,7 @@ const LeccionesLiteratura = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarPrincipal />
             <div class="titulo-lecciones">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
@@ -26,16 +26,16 @@ const LeccionesLiteratura = () => {
                                     La literatura griega en los distintos periodos
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Periodo arcaico.
+                                    • Periodo arcaico
                                     <br />
-                                    • Periodo clasico.
+                                    • Periodo clasico
                                     <br />
-                                    • Periodo helenistico.
+                                    • Periodo helenistico
                                     <br />
                                     • Legado
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion1" class="btn-empezar">
+                                    <Link to="/Temas/Literatura/Leccion1" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -63,7 +63,7 @@ const LeccionesLiteratura = () => {
                                     • Historia.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/Literatura/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
