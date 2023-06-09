@@ -7,11 +7,15 @@ import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/LecHistoria.png";
 import informacion from "../../../style/botones/informacion.png";
-import video from "../../../style/botones/ver_video.png";
+// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
+import imagenModal1 from "./images/delfos.webp";
+import imagenModal2 from "./images/TemploApolo.jpg";
+import imagenModal3 from "./images/teatroDelfos.gif";
+import imagenModal4 from "./images/oraculo.jpg";
 
 const LeccionSitios3 = () => {
 
@@ -52,7 +56,7 @@ const LeccionSitios3 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -63,7 +67,7 @@ const LeccionSitios3 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -74,7 +78,7 @@ const LeccionSitios3 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -85,51 +89,7 @@ const LeccionSitios3 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -162,6 +122,7 @@ const LeccionSitios3 = () => {
                                                         sagrados de la civilización griega. Se creía que en Delfos residía el oráculo de Apolo, dios de la profecía, la música y la luz. La importancia de Delfos
                                                         radicaba en su conexión con el mundo divino y su papel como centro religioso y oracular.
                                                     </p>
+                                                    <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto" }} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -198,10 +159,12 @@ const LeccionSitios3 = () => {
                                                         dórico. Aunque en su mayoría se encuentra en ruinas, aún se pueden apreciar los cimientos y algunas columnas, lo que permite
                                                         imaginar su grandeza original.
                                                     </p>
+                                                    <img src={imagenModal2} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto" }} />
                                                     <p>Otro destacado es el Teatro de Delfos, que se encuentra en una posición privilegiada con vistas al valle. Este antiguo teatro
                                                         al aire libre fue escenario de festivales y eventos culturales, y su construcción aprovecha la pendiente natural del terreno.
                                                         Aún se pueden apreciar las gradas y el escenario, que brindan una idea de la experiencia teatral en la antigua Grecia.
                                                     </p>
+                                                    <img src={imagenModal3} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto" }} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -233,19 +196,20 @@ const LeccionSitios3 = () => {
                                                     <Modal.Title>Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>El oráculo de Delfos desempeñó un papel fundamental en la toma de decisiones políticas y religiosas en la antigua Grecia. 
-                                                        Se creía que las sacerdotisas, conocidas como pitonisas, eran capaces de comunicarse con Apolo y recibir sus respuestas y 
-                                                        profecías. Tanto líderes políticos como individuos comunes buscaban las respuestas del oráculo antes de tomar decisiones 
+                                                    <p>El oráculo de Delfos desempeñó un papel fundamental en la toma de decisiones políticas y religiosas en la antigua Grecia.
+                                                        Se creía que las sacerdotisas, conocidas como pitonisas, eran capaces de comunicarse con Apolo y recibir sus respuestas y
+                                                        profecías. Tanto líderes políticos como individuos comunes buscaban las respuestas del oráculo antes de tomar decisiones
                                                         importantes, como la declaración de guerras, la fundación de colonias o la elección de líderes.
                                                     </p>
-                                                    <p>Las respuestas del oráculo eran enigmáticas y se presentaban en forma de versos ambiguos que requerían interpretación. 
-                                                        El papel de los sacerdotes y sacerdotisas en la interpretación de estas respuestas era fundamental. Sus palabras tenían 
+                                                    <p>Las respuestas del oráculo eran enigmáticas y se presentaban en forma de versos ambiguos que requerían interpretación.
+                                                        El papel de los sacerdotes y sacerdotisas en la interpretación de estas respuestas era fundamental. Sus palabras tenían
                                                         un gran impacto en la toma de decisiones y en la formación de políticas en la antigua Grecia.
                                                     </p>
-                                                    <p>La influencia del oráculo de Delfos se extendió más allá de la política, ya que también desempeñaba un papel importante en 
-                                                        la esfera religiosa. Muchos peregrinos acudían a Delfos en busca de guía espiritual y consejo divino en asuntos personales 
+                                                    <p>La influencia del oráculo de Delfos se extendió más allá de la política, ya que también desempeñaba un papel importante en
+                                                        la esfera religiosa. Muchos peregrinos acudían a Delfos en busca de guía espiritual y consejo divino en asuntos personales
                                                         y religiosos.
                                                     </p>
+                                                    <img src={imagenModal4} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto" }} />
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

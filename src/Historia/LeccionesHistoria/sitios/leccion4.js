@@ -7,12 +7,20 @@ import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/LecHistoria.png";
 import informacion from "../../../style/botones/informacion.png";
-import video from "../../../style/botones/ver_video.png";
+// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import quiz from "../../../style/botones/quiz.png";
+import imagenModal1 from "./images/islas.webp";
+import imagenModal2 from "./images/santorini.webp";
+import imagenModal3 from "./images/mykonos.jpg";
+import imagenModal4 from "./images/creta.jpg";
+import imagenModal5 from "./images/arquitectura.jpg";
+import imagenModal6 from "./images/playas.jpg";
+import imagenModal7 from "./images/gastronomia.webp";
+import imagenModal8 from "./images/actividades.jpg";
 
 const LeccionSitios4 = () => {
 
@@ -53,7 +61,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -64,7 +72,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -75,7 +83,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -86,7 +94,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -97,7 +105,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -108,7 +116,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -119,7 +127,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -130,7 +138,7 @@ const LeccionSitios4 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -163,6 +171,8 @@ const LeccionSitios4 = () => {
                                                         ofrecen una combinación perfecta de belleza natural, historia fascinante y una cultura vibrante. Cada isla tiene su propia
                                                         personalidad y encanto, lo que las convierte en destinos únicos y variados.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -197,10 +207,16 @@ const LeccionSitios4 = () => {
                                                     <p>Entre las islas más conocidas de Grecia se encuentran:</p>
                                                     <p>•  Santorini: Famosa por sus impresionantes vistas al mar Egeo, sus pueblos de casas blancas y azules, y sus atardeceres espectaculares. Santorini también es conocida por sus playas de arena volcánica y sus bodegas de vino.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal2} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     <p>• Mykonos: Conocida por su animada vida nocturna y sus playas de aguas cristalinas. Mykonos es famosa por sus casas encaladas con puertas y ventanas de colores vibrantes, sus estrechas calles empedradas y sus emblemáticos molinos de viento.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal3} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     <p>• Creta: La isla más grande de Grecia, ofrece una combinación única de historia, hermosas playas y paisajes impresionantes. Creta alberga el Palacio de Knossos, un importante sitio arqueológico de la civilización minoica, y cuenta con una rica tradición culinaria y festivales culturales.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal4} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     <p>Estas son solo algunas de las muchas islas griegas, cada una con su propia belleza y atractivo.</p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
@@ -237,18 +253,26 @@ const LeccionSitios4 = () => {
                                                         de colores brillantes, que contrastan con el intenso azul del mar y el cielo. Esta arquitectura distintiva crea un ambiente 
                                                         encantador y pintoresco.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal5} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     <p>Las islas griegas también son conocidas por sus playas impresionantes, con aguas cristalinas y arenas doradas o volcánicas. 
                                                         Desde playas tranquilas y apartadas hasta playas animadas y con deportes acuáticos, hay opciones para todos los gustos.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal6} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     <p>La gastronomía griega es otro atractivo de las islas. Los platos típicos incluyen el souvlaki (brochetas de carne), la moussaka 
                                                         (un pastel de carne y berenjena), el tzatziki (una salsa de yogur y pepino) y los deliciosos postres como el baklava. Además, 
                                                         las islas griegas ofrecen una amplia variedad de restaurantes, tabernas y cafeterías donde se puede disfrutar de la comida local 
                                                         y los sabores frescos del mar.
                                                     </p>
+                                                    <img src={imagenModal7} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    {/* islas griegas */}
                                                     <p> Las islas griegas también ofrecen actividades culturales y recreativas, como visitar antiguos sitios arqueológicos, explorar 
                                                         pintorescos pueblos pesqueros, hacer senderismo por senderos naturales, disfrutar de paseos en barco y participar en festivales 
                                                         locales con música y bailes tradicionales.
                                                     </p>
+                                                    {/* islas griegas */}
+                                                    <img src={imagenModal8} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

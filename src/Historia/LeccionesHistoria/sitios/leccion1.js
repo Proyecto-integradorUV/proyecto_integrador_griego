@@ -7,9 +7,9 @@ import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/LecHistoria.png";
 import informacion from "../../../style/botones/informacion.png";
-import video from "../../../style/botones/ver_video.png";
+// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import imagenModal1 from "./images/mapa_grecia.gif";
@@ -60,7 +60,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -71,7 +71,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -82,7 +82,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -93,7 +93,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal4} alt="Imagen" style={{ width: '50%', height: '50%', objectFit: 'contain', justifyContent: 'center'  }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -104,7 +104,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -115,7 +115,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -126,7 +126,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -137,7 +137,7 @@ const LeccionSitios1 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>

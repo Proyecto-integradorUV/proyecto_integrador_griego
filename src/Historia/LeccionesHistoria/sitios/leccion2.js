@@ -7,11 +7,17 @@ import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/LecHistoria.png";
 import informacion from "../../../style/botones/informacion.png";
-import video from "../../../style/botones/ver_video.png";
+// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
+import imagenModal1 from "./images/atenas.jpg";
+import imagenModal2 from "./images/acropolis.jpg";
+import imagenModal3 from "./images/partenon.jpg";
+import imagenModal4 from "./images/Erecteion.jpg";
+import imagenModal5 from "./images/AteneaNike.jpg";
+import imagenModal6 from "./images/estiloJonico.jpg";
 
 const LeccionSitios2 = () => {
 
@@ -52,7 +58,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -63,7 +69,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -74,7 +80,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -85,7 +91,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -96,7 +102,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -107,29 +113,7 @@ const LeccionSitios2 = () => {
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -162,6 +146,8 @@ const LeccionSitios2 = () => {
                                                     </p>
                                                     <p>Atenas alberga numerosos sitios históricos y culturales, y es una ciudad moderna que combina el encanto del pasado con una vibrante vida urbana. Sus calles están llenas de vida, con cafeterías, tiendas y restaurantes que ofrecen una mezcla única de tradición y modernidad. Además, la ciudad cuenta con museos de renombre, como el Museo de la Acrópolis y el Museo Arqueológico Nacional, que albergan valiosas colecciones de artefactos antiguos.
                                                     </p>
+                                                    <br />
+                                                    <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -195,12 +181,20 @@ const LeccionSitios2 = () => {
                                                 <Modal.Body>
                                                     <p>• La Acrópolis es una colina rocosa situada en el centro de Atenas y es uno de los lugares más emblemáticos de la ciudad. Es un sitio arqueológico de gran importancia que alberga varias estructuras antiguas notables. Al explorar la Acrópolis, se pueden visitar distintas construcciones que datan del siglo V a.C.
                                                     </p>
+                                                    <img src={imagenModal2} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                     <p>• El Partenón es el templo más famoso de la Acrópolis y uno de los ejemplos más importantes de la arquitectura clásica griega. Fue construido en honor a la diosa Atenea y se destaca por su impresionante tamaño y su exquisito detalle. A pesar de su estado actual de ruinas, el Partenón sigue siendo un símbolo duradero de la grandeza de la antigua Grecia.
                                                     </p>
+                                                    <img src={imagenModal3} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                     <p>• El Erecteión es otro templo importante en la Acrópolis, conocido por su diseño arquitectónico distintivo. Destaca por las Cariátides, columnas esculpidas en forma de mujeres, que sostienen el techo del pórtico del templo. Estas estatuas son una de las imágenes más icónicas de la arquitectura griega.
                                                     </p>
+                                                    <img src={imagenModal4} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                     <p>• El Templo de Atenea Niké es otro edificio notable en la Acrópolis. Es un pequeño templo dedicado a la diosa de la victoria y es conocido por su elegante diseño. Destaca por su proporción y por su ubicación estratégica en la Acrópolis, ofreciendo vistas panorámicas de la ciudad de Atenas.
                                                     </p>
+                                                    <img src={imagenModal5} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -237,7 +231,8 @@ const LeccionSitios2 = () => {
                                                     <p>El estilo dórico se caracteriza por columnas robustas y sin base, con capiteles sencillos y una frieza lisa. Es un estilo más austero y masculino, que refleja los ideales de la antigua Grecia en cuanto a fortaleza y racionalidad.
                                                     </p>
                                                     <p> Por otro lado, el estilo jónico presenta columnas más delgadas y elegantes, con capiteles ornamentados</p>
-
+                                                    <img src={imagenModal6} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>
