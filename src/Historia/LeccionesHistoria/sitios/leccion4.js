@@ -144,9 +144,9 @@ const LeccionSitios4 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Breve historia de la antigua Grecia y su influencia en la moda.
+                                            Presentación de las islas griegas como destinos turísticos populares y únicos
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -156,10 +156,13 @@ const LeccionSitios4 = () => {
                                         <div>
                                             <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Breve historia de la antigua Grecia y su influencia en la moda.</Modal.Title>
+                                                    <Modal.Title>Presentación de las islas griegas como destinos turísticos populares y únicos</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>vdffbdsfh.</p>
+                                                    <p>Las islas griegas son destinos turísticos muy populares y únicos que atraen a millones de visitantes cada año. Estas islas
+                                                        ofrecen una combinación perfecta de belleza natural, historia fascinante y una cultura vibrante. Cada isla tiene su propia
+                                                        personalidad y encanto, lo que las convierte en destinos únicos y variados.
+                                                    </p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -176,9 +179,9 @@ const LeccionSitios4 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Conceptos básicos de la vestimenta griega, como la toga y el peplo.
+                                            Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -188,10 +191,17 @@ const LeccionSitios4 = () => {
                                         <div>
                                             <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Conceptos básicos de la vestimenta griega, como la toga y el peplo.</Modal.Title>
+                                                    <Modal.Title>Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>tiguos.</p>
+                                                    <p>Entre las islas más conocidas de Grecia se encuentran:</p>
+                                                    <p>•  Santorini: Famosa por sus impresionantes vistas al mar Egeo, sus pueblos de casas blancas y azules, y sus atardeceres espectaculares. Santorini también es conocida por sus playas de arena volcánica y sus bodegas de vino.
+                                                    </p>
+                                                    <p>• Mykonos: Conocida por su animada vida nocturna y sus playas de aguas cristalinas. Mykonos es famosa por sus casas encaladas con puertas y ventanas de colores vibrantes, sus estrechas calles empedradas y sus emblemáticos molinos de viento.
+                                                    </p>
+                                                    <p>• Creta: La isla más grande de Grecia, ofrece una combinación única de historia, hermosas playas y paisajes impresionantes. Creta alberga el Palacio de Knossos, un importante sitio arqueológico de la civilización minoica, y cuenta con una rica tradición culinaria y festivales culturales.
+                                                    </p>
+                                                    <p>Estas son solo algunas de las muchas islas griegas, cada una con su propia belleza y atractivo.</p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -208,9 +218,9 @@ const LeccionSitios4 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo.
+                                            Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -220,10 +230,25 @@ const LeccionSitios4 = () => {
                                         <div>
                                             <Modal show={modals.modal3} onHide={() => handleCloseModal('modal3')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Descripción de los materiales utilizados en la ropa griega y su simbolismo.</Modal.Title>
+                                                    <Modal.Title>Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>dws</p>
+                                                    <p>La arquitectura tradicional de las islas griegas es reconocible por sus casas encaladas de paredes blancas y puertas y ventanas 
+                                                        de colores brillantes, que contrastan con el intenso azul del mar y el cielo. Esta arquitectura distintiva crea un ambiente 
+                                                        encantador y pintoresco.
+                                                    </p>
+                                                    <p>Las islas griegas también son conocidas por sus playas impresionantes, con aguas cristalinas y arenas doradas o volcánicas. 
+                                                        Desde playas tranquilas y apartadas hasta playas animadas y con deportes acuáticos, hay opciones para todos los gustos.
+                                                    </p>
+                                                    <p>La gastronomía griega es otro atractivo de las islas. Los platos típicos incluyen el souvlaki (brochetas de carne), la moussaka 
+                                                        (un pastel de carne y berenjena), el tzatziki (una salsa de yogur y pepino) y los deliciosos postres como el baklava. Además, 
+                                                        las islas griegas ofrecen una amplia variedad de restaurantes, tabernas y cafeterías donde se puede disfrutar de la comida local 
+                                                        y los sabores frescos del mar.
+                                                    </p>
+                                                    <p> Las islas griegas también ofrecen actividades culturales y recreativas, como visitar antiguos sitios arqueológicos, explorar 
+                                                        pintorescos pueblos pesqueros, hacer senderismo por senderos naturales, disfrutar de paseos en barco y participar en festivales 
+                                                        locales con música y bailes tradicionales.
+                                                    </p>
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

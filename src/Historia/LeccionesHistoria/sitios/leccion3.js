@@ -143,9 +143,9 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Breve historia de la antigua Grecia y su influencia en la moda.
+                                            Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">
@@ -155,10 +155,13 @@ const LeccionSitios3 = () => {
                                         <div>
                                             <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Breve historia de la antigua Grecia y su influencia en la moda.</Modal.Title>
+                                                    <Modal.Title>Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>vdffbdsfh.</p>
+                                                    <p>Delfos es un sitio arqueológico ubicado en la ladera sur del monte Parnaso, en Grecia. Durante la antigüedad, fue uno de los lugares más importantes y
+                                                        sagrados de la civilización griega. Se creía que en Delfos residía el oráculo de Apolo, dios de la profecía, la música y la luz. La importancia de Delfos
+                                                        radicaba en su conexión con el mundo divino y su papel como centro religioso y oracular.
+                                                    </p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -175,9 +178,9 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Conceptos básicos de la vestimenta griega, como la toga y el peplo.
+                                            Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">
@@ -187,10 +190,18 @@ const LeccionSitios3 = () => {
                                         <div>
                                             <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Conceptos básicos de la vestimenta griega, como la toga y el peplo.</Modal.Title>
+                                                    <Modal.Title>Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>tiguos.</p>
+                                                    <p>Al explorar los restos arqueológicos de Delfos, los visitantes pueden maravillarse con el Templo de Apolo, que era el
+                                                        principal santuario del sitio. El templo fue construido en honor a Apolo y se caracteriza por su elegante estilo arquitectónico
+                                                        dórico. Aunque en su mayoría se encuentra en ruinas, aún se pueden apreciar los cimientos y algunas columnas, lo que permite
+                                                        imaginar su grandeza original.
+                                                    </p>
+                                                    <p>Otro destacado es el Teatro de Delfos, que se encuentra en una posición privilegiada con vistas al valle. Este antiguo teatro
+                                                        al aire libre fue escenario de festivales y eventos culturales, y su construcción aprovecha la pendiente natural del terreno.
+                                                        Aún se pueden apreciar las gradas y el escenario, que brindan una idea de la experiencia teatral en la antigua Grecia.
+                                                    </p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -207,9 +218,9 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo.
+                                            Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">
@@ -219,10 +230,22 @@ const LeccionSitios3 = () => {
                                         <div>
                                             <Modal show={modals.modal3} onHide={() => handleCloseModal('modal3')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Descripción de los materiales utilizados en la ropa griega y su simbolismo.</Modal.Title>
+                                                    <Modal.Title>Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>dws</p>
+                                                    <p>El oráculo de Delfos desempeñó un papel fundamental en la toma de decisiones políticas y religiosas en la antigua Grecia. 
+                                                        Se creía que las sacerdotisas, conocidas como pitonisas, eran capaces de comunicarse con Apolo y recibir sus respuestas y 
+                                                        profecías. Tanto líderes políticos como individuos comunes buscaban las respuestas del oráculo antes de tomar decisiones 
+                                                        importantes, como la declaración de guerras, la fundación de colonias o la elección de líderes.
+                                                    </p>
+                                                    <p>Las respuestas del oráculo eran enigmáticas y se presentaban en forma de versos ambiguos que requerían interpretación. 
+                                                        El papel de los sacerdotes y sacerdotisas en la interpretación de estas respuestas era fundamental. Sus palabras tenían 
+                                                        un gran impacto en la toma de decisiones y en la formación de políticas en la antigua Grecia.
+                                                    </p>
+                                                    <p>La influencia del oráculo de Delfos se extendió más allá de la política, ya que también desempeñaba un papel importante en 
+                                                        la esfera religiosa. Muchos peregrinos acudían a Delfos en busca de guía espiritual y consejo divino en asuntos personales 
+                                                        y religiosos.
+                                                    </p>
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

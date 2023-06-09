@@ -143,9 +143,9 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Breve historia de la antigua Grecia y su influencia en la moda.
+                                            Presentación de la ciudad de Atenas, su importancia como capital y centro cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">
@@ -155,10 +155,13 @@ const LeccionSitios2 = () => {
                                         <div>
                                             <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Breve historia de la antigua Grecia y su influencia en la moda.</Modal.Title>
+                                                    <Modal.Title>Presentación de la ciudad de Atenas, su importancia como capital y centro cultural</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>vdffbdsfh.</p>
+                                                    <p>Atenas es la capital de Grecia y una de las ciudades más antiguas del mundo. Tiene una historia que se remonta a más de 3.000 años y es conocida por su importancia cultural y su legado histórico. Atenas fue el epicentro de la antigua Grecia y es considerada la cuna de la civilización occidental. Es famosa por su contribución a la filosofía, la política, el arte y la literatura.
+                                                    </p>
+                                                    <p>Atenas alberga numerosos sitios históricos y culturales, y es una ciudad moderna que combina el encanto del pasado con una vibrante vida urbana. Sus calles están llenas de vida, con cafeterías, tiendas y restaurantes que ofrecen una mezcla única de tradición y modernidad. Además, la ciudad cuenta con museos de renombre, como el Museo de la Acrópolis y el Museo Arqueológico Nacional, que albergan valiosas colecciones de artefactos antiguos.
+                                                    </p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -175,9 +178,9 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Conceptos básicos de la vestimenta griega, como la toga y el peplo.
+                                            Exploración de la Acrópolis y sus principales estructuras
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">
@@ -187,10 +190,17 @@ const LeccionSitios2 = () => {
                                         <div>
                                             <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Conceptos básicos de la vestimenta griega, como la toga y el peplo.</Modal.Title>
+                                                    <Modal.Title>Exploración de la Acrópolis y sus principales estructuras</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>tiguos.</p>
+                                                    <p>• La Acrópolis es una colina rocosa situada en el centro de Atenas y es uno de los lugares más emblemáticos de la ciudad. Es un sitio arqueológico de gran importancia que alberga varias estructuras antiguas notables. Al explorar la Acrópolis, se pueden visitar distintas construcciones que datan del siglo V a.C.
+                                                    </p>
+                                                    <p>• El Partenón es el templo más famoso de la Acrópolis y uno de los ejemplos más importantes de la arquitectura clásica griega. Fue construido en honor a la diosa Atenea y se destaca por su impresionante tamaño y su exquisito detalle. A pesar de su estado actual de ruinas, el Partenón sigue siendo un símbolo duradero de la grandeza de la antigua Grecia.
+                                                    </p>
+                                                    <p>• El Erecteión es otro templo importante en la Acrópolis, conocido por su diseño arquitectónico distintivo. Destaca por las Cariátides, columnas esculpidas en forma de mujeres, que sostienen el techo del pórtico del templo. Estas estatuas son una de las imágenes más icónicas de la arquitectura griega.
+                                                    </p>
+                                                    <p>• El Templo de Atenea Niké es otro edificio notable en la Acrópolis. Es un pequeño templo dedicado a la diosa de la victoria y es conocido por su elegante diseño. Destaca por su proporción y por su ubicación estratégica en la Acrópolis, ofreciendo vistas panorámicas de la ciudad de Atenas.
+                                                    </p>
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -207,9 +217,9 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo.
+                                            Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">
@@ -219,10 +229,15 @@ const LeccionSitios2 = () => {
                                         <div>
                                             <Modal show={modals.modal3} onHide={() => handleCloseModal('modal3')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Descripción de los materiales utilizados en la ropa griega y su simbolismo.</Modal.Title>
+                                                    <Modal.Title>Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>dws</p>
+                                                    <p>Los templos griegos, incluyendo los ubicados en la Acrópolis, siguen un estilo arquitectónico característico conocido como orden dórico o jónico. Estos estilos arquitectónicos se basaban en principios de proporción y belleza, y tenían un profundo significado cultural y religioso.
+                                                    </p>
+                                                    <p>El estilo dórico se caracteriza por columnas robustas y sin base, con capiteles sencillos y una frieza lisa. Es un estilo más austero y masculino, que refleja los ideales de la antigua Grecia en cuanto a fortaleza y racionalidad.
+                                                    </p>
+                                                    <p> Por otro lado, el estilo jónico presenta columnas más delgadas y elegantes, con capiteles ornamentados</p>
+
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

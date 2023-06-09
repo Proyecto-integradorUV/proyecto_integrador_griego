@@ -12,6 +12,14 @@ import NavbarPrincipal from "../../../components/navbar2"
 import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
+import imagenModal1 from "./images/mapa_grecia.gif";
+import imagenModal2 from "./images/civilizacion.jpg";
+import imagenModal3 from "./images/filosofia.webp";
+import imagenModal4 from "./images/arte.jpg";
+import imagenModal5 from "./images/acropolis.jpg";
+import imagenModal6 from "./images/delos.jpg";
+import imagenModal7 from "./images/delfos.webp";
+import imagenModal8 from "./images/olympia.jpg";
 
 const LeccionSitios1 = () => {
 
@@ -145,7 +153,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Breve historia de la antigua Grecia y su influencia en la moda.
+                                            Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">
@@ -155,10 +163,14 @@ const LeccionSitios1 = () => {
                                         <div>
                                             <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Breve historia de la antigua Grecia y su influencia en la moda.</Modal.Title>
+                                                    <Modal.Title>Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>vdffbdsfh.</p>
+                                                    <p>Grecia es un país ubicado en el sureste de Europa, en la península de los Balcanes. Limita al norte con Albania, Macedonia del Norte y Bulgaria, al este con Turquía,
+                                                        al sur con el mar Mediterráneo y al oeste con el mar Jónico. Su posición geográfica estratégica lo ha convertido en un puente entre Europa, Asia y África, lo que ha tenido un
+                                                        impacto significativo en su historia y desarrollo cultural.</p>
+                                                    <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
@@ -177,7 +189,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Conceptos básicos de la vestimenta griega, como la toga y el peplo.
+                                            Presentación de la rica historia de Grecia y su influencia en la civilización occidental
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">
@@ -187,10 +199,29 @@ const LeccionSitios1 = () => {
                                         <div>
                                             <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Conceptos básicos de la vestimenta griega, como la toga y el peplo.</Modal.Title>
+                                                    <Modal.Title>Presentación de la rica historia de Grecia y su influencia en la civilización occidental</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>tiguos.</p>
+                                                    <p>La historia de Grecia es una de las más antiguas y ricas del mundo. Se remonta a la época de la civilización minoica en Creta,
+                                                        alrededor del segundo milenio a.C. Sin embargo, es el período clásico griego el que ha dejado una huella duradera en la
+                                                        civilización occidental. Durante los siglos V y IV a.C., la antigua Grecia fue el epicentro de grandes logros en la filosofía,
+                                                        la política, las artes y las ciencias.
+                                                    </p>
+                                                    <img src={imagenModal2} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
+                                                    <p>En términos de filosofía, figuras como Sócrates, Platón y Aristóteles sentaron las bases del pensamiento racional y la búsqueda
+                                                        de la verdad. La política también tuvo un papel importante en la antigua Grecia, especialmente en Atenas, donde se desarrolló
+                                                        la democracia, un sistema de gobierno basado en la participación ciudadana.
+                                                    </p>
+                                                    <img src={imagenModal3} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
+                                                    <p>Las artes también florecieron en la antigua Grecia, con la creación de esculturas icónicas, arquitectura monumental como
+                                                        el Partenón en Atenas y obras de teatro trágicas y cómicas que aún se representan en la actualidad. En ciencias, matemáticas
+                                                        y medicina, destacaron figuras como Pitágoras, Arquímedes e Hipócrates, quienes sentaron las bases para futuros avances en estos
+                                                        campos.
+                                                    </p>
+                                                    <img src={imagenModal4} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                     <Button variant="secondary" onClick={() => handleCloseModal('modal2')}>
@@ -209,7 +240,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo.
+                                            Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">
@@ -219,10 +250,27 @@ const LeccionSitios1 = () => {
                                         <div>
                                             <Modal show={modals.modal3} onHide={() => handleCloseModal('modal3')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Descripción de los materiales utilizados en la ropa griega y su simbolismo.</Modal.Title>
+                                                    <Modal.Title>Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <p>dws</p>
+                                                    <p>Grecia está repleta de sitios históricos y culturales que ofrecen una visión profunda de su historia. Algunos de los lugares más emblemáticos incluyen:
+                                                    </p>
+                                                    <p>• Acrópolis de Atenas: Este sitio arqueológico alberga el Partenón y otros templos antiguos. Es un símbolo de la antigua Atenas y una muestra impresionante de la arquitectura griega clásica.
+                                                    </p>
+                                                    <img src={imagenModal5} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
+                                                    <p>• Delos: Situada en el mar Egeo, Delos es una isla sagrada y uno de los yacimientos arqueológicos más importantes de Grecia. Fue un importante centro religioso y comercial en la antigüedad.
+                                                    </p>
+                                                    <img src={imagenModal6} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
+                                                    <p>• Delfos: Ubicada en el monte Parnaso, Delfos fue considerada el centro del mundo en la antigua Grecia. Allí se encontraba el famoso Oráculo de Delfos, un lugar de consulta divina.
+                                                    </p>
+                                                    <img src={imagenModal7} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
+                                                    <p>• Olympia: Famosa por ser el lugar de nacimiento de los Juegos Olímpicos de la antigüedad, Olympia cuenta con ruinas de antiguos templos y estadios.
+                                                    </p>
+                                                    <img src={imagenModal8} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto"}} />
+                                                    <br />
                                                     {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
                                                 </Modal.Body>
                                                 <Modal.Footer>

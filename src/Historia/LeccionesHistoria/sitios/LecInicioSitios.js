@@ -27,9 +27,9 @@ const LeccionesSitio = () => {
                                     Introducción a Grecia
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural.
+                                    • Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural
                                     <br />
-                                    • Presentación de la rica historia de Grecia y su influencia en la civilización occidental.
+                                    • Presentación de la rica historia de Grecia y su influencia en la civilización occidental
                                     <br />
                                     • Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                 </Card.Text>
@@ -49,11 +49,11 @@ const LeccionesSitio = () => {
                                     Atenas y la Acrópolis
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Presentación de la ciudad de Atenas, su importancia como capital y centro cultural.
+                                    • Presentación de la ciudad de Atenas, su importancia como capital y centro cultural
                                     <br />
-                                    • Exploración de la Acrópolis y sus principales estructuras, incluyendo el Partenón, el Erecteión y el Templo de Atenea Niké.
+                                    • Exploración de la Acrópolis y sus principales estructuras, incluyendo el Partenón, el Erecteión y el Templo de Atenea Niké
                                     <br />
-                                    • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural.
+                                    • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural
                                 </Card.Text>
                                 <Card.Text className="card-title">
                                     <Link to="/Temas/SitiosCaracteristicos/Leccion2" class="btn-empezar">
@@ -71,11 +71,11 @@ const LeccionesSitio = () => {
                                     Delfos y el Oráculo
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia.
+                                    • Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                     <br />
-                                    • Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro.
+                                    • Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                     <br />
-                                    • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad.
+                                    • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                 </Card.Text>
                                 <Card.Text className="card-title">
                                     <Link to="/Temas/SitiosCaracteristicos/Leccion3" class="btn-empezar">
@@ -93,11 +93,11 @@ const LeccionesSitio = () => {
                                     Las Islas Griegas
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Presentación de las islas griegas como destinos turísticos populares y únicos.
+                                    • Presentación de las islas griegas como destinos turísticos populares y únicos
                                     <br />
-                                    • Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta.
+                                    • Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta
                                     <br />
-                                    • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles.
+                                    • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles
                                 </Card.Text>
                                 <Card.Text className="card-title">
                                     <Link to="/Temas/SitiosCaracteristicos/Leccion4" class="btn-empezar">
