@@ -31,12 +31,13 @@
   .carousel {
     width: 50%;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, .8);
+    border-radius: 30px;
   }
   
   .carousel .card {
     height: auto /* Ajusta la altura del cuerpo de la tarjeta según tus necesidades */;
     background-color: rgba(255, 255, 255, .8);
+    border-radius: 30px;
   }
   
   .carousel .card-title {

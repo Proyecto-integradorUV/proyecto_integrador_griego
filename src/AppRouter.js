@@ -54,7 +54,6 @@ import LeccionGastronomia1 from "./Costumbres/LeccionesCostumbres/gastronomia/le
 import LeccionGastronomia2 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion2.js";
 import LeccionGastronomia3 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion3.js";
 import LeccionGastronomia4 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion4.js";
-import LeccionGastronomia5 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion5.js";
 // Mitologia
 import LeccionMitologia1 from "./Costumbres/LeccionesCostumbres/mitologia/leccionMitologia1.js";
 import LeccionMitologia2 from "./Costumbres/LeccionesCostumbres/mitologia/leccionMitologia2.js";
@@ -188,10 +187,6 @@ function AppRouter() {
           <Route
             path="Temas/Gastronomia/Leccion4"
             element={<LeccionGastronomia4 />}
-          />
-          <Route
-            path="Temas/Gastronomia/Leccion5"
-            element={<LeccionGastronomia5 />}
           />
           {/* mitologia */}
           <Route
