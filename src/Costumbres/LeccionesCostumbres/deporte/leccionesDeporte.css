@@ -26,3 +26,16 @@
   /* margin-top: 5%;  */
 }
 
+.botones-sig-ant {
+  margin-top: 5%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-empezar {
+  margin-top: 5%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

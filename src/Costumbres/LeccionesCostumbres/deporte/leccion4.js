@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import quiz from "../../../style/botones/quiz.png";
+import imagenModal1 from "./images/halterofila.jpg";
+import imagenModal2 from "./images/gim.jpg";
+import imagenModal3 from "./images/gim2.webp";
+import imagenModal4 from "./images/gim3.jpg";
 
 const LeccionDeporte4 = () => {
 
@@ -24,7 +28,7 @@ const LeccionDeporte4 = () => {
             [modalName]: true,
         }));
     };
-    
+
     const handleCloseModal = (modalName) => {
         setModals((prevState) => ({
             ...prevState,
@@ -38,150 +42,113 @@ const LeccionDeporte4 = () => {
         <div className="container-leccionDeporte">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                    <img src={lecCostumbres} class="img-fluid" alt="Imagen" />
+                <img src={lecCostumbres} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
-                <Carousel interval={2000} controls={true} indicators={true} className="fondo-card">
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '800px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div> 
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '800px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                            <Card style={{ width: '1000px', height: '300px' }}>
-                                <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>  
+                    <Carousel interval={2000} controls={true} indicators={true} className="fondo-card">
+                        <Carousel.Item>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                                <Card style={{ width: '800px', height: '300px' }}>
+                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                                <Card style={{ width: '800px', height: '300px' }}>
+                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
+                                            <img src={imagenModal2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                                <Card style={{ width: '1000px', height: '300px' }}>
+                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
+                                            <img src={imagenModal3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                                <Card style={{ width: '1000px', height: '300px' }}>
+                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
+                                            <img src={imagenModal4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+                <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0" >
+                    <Carousel interval={null} controls={true} indicators={false} className="fondo-card">
+                        <Carousel.Item>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                                <Card style={{ width: '1000px', height: '300px' }}>
+                                    <Card.Body>
+                                        <Card.Title>Lección 4</Card.Title>
+                                        <Card.Text>
+                                            Gimnasia entrenamiento fisico
+                                        </Card.Text>
+                                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Link to="/Temas/Deporte/Leccion4">
+                                                <img onClick={() => handleOpenModal('modal1')} src={informacion} alt="Imagen" />
+                                            </Link>
+                                        </div>
+                                        <div>
+                                            <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
+                                                <Modal.Header closeButton>
+                                                    <Modal.Title>Gimnasia entrenamiento fisico</Modal.Title>
+                                                </Modal.Header>
+                                                <Modal.Body>
+                                                    <p>La gimnasia y el entrenamiento físico eran fundamentales en la educación de los jóvenes griegos. </p>
+                                                    <p>
+                                                        Se practicaban ejercicios como la halterofilia, la lucha y la lucha con armas.
+                                                    </p>
+                                                    <img src={imagenModal1} class="img-fluid" alt="Imagen" style={{ width: "40%", height: "40%", display: "block", margin: "auto" }} />
+                                                    <p>
+                                                        Estos entrenamientos no solo se enfocaban en desarrollar la fuerza y la resistencia, sino también en fomentar la disciplina y el carácter.
+                                                    </p>
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                    <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
+                                                        Cerrar
+                                                    </Button>
+                                                </Modal.Footer>
+                                            </Modal>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
             </div>
-            <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0" >
-                <Carousel interval={null} controls={true} indicators={false} className="fondo-card">
-                <Carousel.Item>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                        <Card style={{ width: '1000px', height: '300px' }}>
-                            <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text>
-                                    Gimnasia entrenamiento fisico
-                                </Card.Text>
-                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <Link to="/Temas/Deporte/Leccion4">
-                                        <img onClick={() => handleOpenModal('modal1')}src={informacion} alt="Imagen" />
-                                    </Link>
-                                </div>
-                                <div>
-                                    <Modal show={modals.modal1} onHide={() => handleCloseModal('modal1')} scrollable={true} size="lg">
-                                        <Modal.Header closeButton>
-                                        <Modal.Title>Gimnasia entrenamiento fisico</Modal.Title>
-                                        </Modal.Header>
-                                        <Modal.Body>
-                                        <p>vdffbdsfh.</p>
-                                        </Modal.Body>
-                                        <Modal.Footer>
-                                        <Button variant="secondary" onClick={() => handleCloseModal('modal1')}>
-                                            Cerrar
-                                        </Button>
-                                        </Modal.Footer>
-                                    </Modal>
-                                </div>
-                                </Card.Body>
-                            </Card>
-                        </div>    
-                    </Carousel.Item>
-                </Carousel>
-            </div>  
-        </div>           
-        <div class="titulo-empezar">
-            <Link to="/Temas/Deporte/Leccion3">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
-            <Link to="/Temas/Deporte/Leccion4">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>   
-            <Link to="/Temas/Deporte">
-            <img src={quiz} class="img-fluid" alt="Imagen" />
-            </Link>  
+            <div class="botones-sig-ant">
+                <Link to="/Temas/Deporte/Leccion3">
+                    <img src={anterior} class="img-fluid" alt="Imagen" />
+                </Link>
+                <Link to="/Temas/Deporte/Leccion4">
+                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                </Link>
+                <Link to="/Temas/Deporte">
+                    <img src={quiz} class="img-fluid" alt="Imagen" />
+                </Link>
+            </div>
         </div>
-    </div>
     );
 };
 
