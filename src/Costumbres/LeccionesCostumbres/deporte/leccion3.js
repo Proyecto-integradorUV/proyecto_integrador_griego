@@ -50,7 +50,7 @@ const LeccionDeporte3 = () => {
                                 <Card style={{ width: '800px', height: '300px' }}>
                                     <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                         <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={imagenModal} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                            <img src={imagenModal1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                         </div>
                                     </Card.Body>
                                 </Card>
