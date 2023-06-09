@@ -34,7 +34,7 @@ const NavbarPrincipal = () => {
           <li className="navbarItemPrincipal">
             {isLogged && (
               <a href=" " className="navbarLink2Principal navbar-home">
-                Hola, {username}
+                Hola,
               </a>
             )}
           </li>
