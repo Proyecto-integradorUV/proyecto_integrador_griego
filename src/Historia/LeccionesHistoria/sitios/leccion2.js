@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./leccionesSitios.css"
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import lecHistoria from "../../../style/titulos/LecHistoria.png";
+import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
 // import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
@@ -18,6 +18,7 @@ import imagenModal3 from "./images/partenon.jpg";
 import imagenModal4 from "./images/Erecteion.jpg";
 import imagenModal5 from "./images/AteneaNike.jpg";
 import imagenModal6 from "./images/estiloJonico.jpg";
+
 
 const LeccionSitios2 = () => {
 
@@ -48,7 +49,7 @@ const LeccionSitios2 = () => {
         <div className="container-leccionSitios">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+                <img src={lecSitios} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -129,7 +130,7 @@ const LeccionSitios2 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Presentación de la ciudad de Atenas, su importancia como capital y centro cultural
+                                            <b>Presentación</b> de la ciudad de Atenas, su <b>importancia</b> como capital y centro cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">
@@ -166,7 +167,7 @@ const LeccionSitios2 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Exploración de la Acrópolis y sus principales estructuras
+                                            <b>Exploración</b> de la Acrópolis y sus <b>principales</b> estructuras
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">
@@ -213,7 +214,7 @@ const LeccionSitios2 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 2</Card.Title>
                                         <Card.Text>
-                                            Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural
+                                            Discusión sobre el estilo <b>arquitectónico</b> de los templos griegos y su <b>significado</b> cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion2">

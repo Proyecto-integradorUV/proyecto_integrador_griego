@@ -5,12 +5,11 @@ import React, { useState } from "react";
 import "./leccionesSitios.css"
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import lecHistoria from "../../../style/titulos/LecHistoria.png";
+import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
 // import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
 // import YouTube from 'react-youtube';
-import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import quiz from "../../../style/botones/quiz.png";
 import imagenModal1 from "./images/islas.webp";
@@ -51,7 +50,7 @@ const LeccionSitios4 = () => {
         <div className="container-leccionSitios">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+                <img src={lecSitios} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -154,7 +153,7 @@ const LeccionSitios4 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Presentación de las islas griegas como destinos turísticos populares y únicos
+                                            <b>Presentación</b> de las islas griegas como destinos turísticos populares y únicos
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -191,7 +190,7 @@ const LeccionSitios4 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Destacar algunas de las islas más conocidas, como Santorini, Mykonos y Creta
+                                            Destacar algunas de las islas <b>más conocidas</b>, como Santorini, Mykonos y Creta
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -236,7 +235,7 @@ const LeccionSitios4 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 4</Card.Title>
                                         <Card.Text>
-                                            Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles
+                                            Discusión sobre la <b>arquitectura tradicional</b> de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion4">
@@ -292,9 +291,6 @@ const LeccionSitios4 = () => {
             <div class="botones-sig-ant">
                 <Link to="/Temas/SitiosCaracteristicos/Leccion3">
                     <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
-                <Link to="/Temas/SitiosCaracteristicos/Leccion4">
-                    <img src={siguiente} class="img-fluid" alt="Imagen" />
                 </Link>
                 <Link to="/Temas/SitiosCaracteristicos">
                     <img src={quiz} class="img-fluid" alt="Imagen" />

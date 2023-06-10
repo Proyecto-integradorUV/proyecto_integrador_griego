@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./leccionesSitios.css"
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import lecHistoria from "../../../style/titulos/LecHistoria.png";
+import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
 // import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
@@ -50,7 +50,7 @@ const LeccionSitios1 = () => {
         <div className="contenedorHistoria">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+                <img src={lecSitios} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -153,7 +153,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural
+                                            Breve <b>introducción</b> al país, su <b>ubicación</b> geográfica y su <b>importancia</b> histórica y cultural
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">
@@ -189,7 +189,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Presentación de la rica historia de Grecia y su influencia en la civilización occidental
+                                            Presentación de la <b>rica historia</b> de Grecia y su <b>influencia</b> en la civilización occidental
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">
@@ -240,7 +240,7 @@ const LeccionSitios1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
+                                            Destacar la <b>importancia</b> de los sitios característicos en la <b>comprensión</b> de la historia y la cultura griega
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion1">

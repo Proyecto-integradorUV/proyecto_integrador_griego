@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2"
 import "./leccionesDeporte.css"
-import lecCostumbres from "../../../style/titulos/LecCostumbres.png";
+import lecDeporte from "../../../style/titulos/deporte.png";
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ const LeccionDeporte1 = () => {
         <div className="container-leccionDeporte">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecCostumbres} alt="Imagen" style={{justifyContent: "center"}} />
+                <img src={lecDeporte} alt="Imagen" style={{justifyContent: "center"}} />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -124,7 +124,7 @@ const LeccionDeporte1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Juegos olimpicos
+                                            Juegos <b>olimpicos</b>
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/Deporte/Leccion1">

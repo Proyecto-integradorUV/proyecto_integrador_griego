@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./leccionesSitios.css"
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import lecHistoria from "../../../style/titulos/LecHistoria.png";
+import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
 // import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
@@ -46,7 +46,7 @@ const LeccionSitios3 = () => {
         <div className="container-leccionSitios">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+                <img src={lecSitios} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -105,7 +105,7 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
+                                            <b>Introducción</b> a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">
@@ -141,7 +141,7 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
+                                            <b>Exploración</b> de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">
@@ -183,7 +183,7 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3</Card.Title>
                                         <Card.Text>
-                                            Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
+                                            <b>Explicación</b> del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/SitiosCaracteristicos/Leccion3">

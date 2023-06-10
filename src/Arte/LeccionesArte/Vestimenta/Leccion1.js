@@ -6,21 +6,15 @@ import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import vestimenta1 from "./images/vestimenta1.jpg";
-import vestimenta2 from "./images/vestimenta2.jpg";
-import vestimenta3 from "./images/vestimenta3.png";
-import vestimenta4 from "./images/vestimenta4.png";
 import vestimenta5 from "./images/vestimenta5.jpg";
-import vestimenta6 from "./images/vestimenta6.png";
-import vestimenta7 from "./images/vestimenta7.jpg";
-import vestimenta8 from "./images/vestimenta8.jpg";
 import imagenModal1 from "./images/img1.jpg";
 import imagenModal2 from "./images/img2.png";
 import imagenModal3 from "./images/img3.png";
-import lecArte from "../../../style/titulos/LecArte.png";
 import informacion from "../../../style/botones/informacion.png";
-import video from "../../../style/botones/ver_video.png";
+// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
+import lecVestimenta from "../../../style/titulos/vestimenta.png";
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 
@@ -53,99 +47,17 @@ const LeccionVestimenta1 = () => {
         <div className="contenedorArte">
             <NavbarPrincipal />
             <div class="titulo-empezar">
-                <img src={lecArte} class="img-fluid" alt="Imagen" />
+                <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 {/* Card de imagenes */}
                 <div class="col-sm-5 col-md-6 ">
                     <Carousel interval={2000} controls={true} indicators={true} className="fondo-card">
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '800px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                        <Carousel.Item >
+                            <img src={vestimenta1} alt="Imagen" className="img-fluid" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '800px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta2} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta3} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta4} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta5} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta7} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-                                <Card style={{ width: '1000px', height: '300px' }}>
-                                    <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                            <img src={vestimenta8} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                            <img src={vestimenta5} alt="Imagen" className="img-fluid" />
                         </Carousel.Item>
                     </Carousel>
                 </div>
@@ -157,9 +69,9 @@ const LeccionVestimenta1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
-                                            Breve historia de la antigua Grecia y su influencia en la moda
+                                            Breve <b>historia</b> de la antigua Grecia y su influencia en la moda
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/Vestimenta/Leccion1">
@@ -195,9 +107,9 @@ const LeccionVestimenta1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
-                                            Conceptos básicos de la vestimenta griega
+                                            Conceptos <b>básicos</b> de la vestimenta griega
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/Vestimenta/Leccion1">
@@ -207,7 +119,7 @@ const LeccionVestimenta1 = () => {
                                         <div>
                                             <Modal show={modals.modal2} onHide={() => handleCloseModal('modal2')} scrollable={true} size="lg">
                                                 <Modal.Header closeButton>
-                                                    <Modal.Title>Conceptos básicos de la vestimenta griega </Modal.Title>
+                                                    <Modal.Title>Conceptos básicos de la vestimenta griega: Introducción a la cultura griega y la vestimenta </Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
                                                     <p>Dos prendas destacadas en la vestimenta griega son la toga y el peplo.</p>
@@ -234,7 +146,7 @@ const LeccionVestimenta1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1</Card.Title>
                                         <Card.Text>
-                                            Descripción de los materiales utilizados en la ropa griega y su simbolismo
+                                            Descripción de los <b>materiales</b> utilizados en la ropa griega y su simbolismo
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             <Link to="/Temas/Vestimenta/Leccion1">
