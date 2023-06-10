@@ -24,9 +24,9 @@ const LeccionesDerecho = () => {
                                     Introducción a los derechos y la historia de Grecia
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Explicar qué son los derechos y por qué son importantes
+                                    • Explicar qué son los derechos y por qué son importantes.
                                     <br />
-                                    • Presentar una breve introducción a la historia de Grecia y su influencia en la concepción de los derechos
+                                    • Presentar una breve introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
                                 <Card.Text className="card-title">
                                     <Link to="/Temas/Derecho/Leccion1" class="btn-empezar">
@@ -44,14 +44,14 @@ const LeccionesDerecho = () => {
                                     Derechos en la antigua Grecia
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Describir los conceptos de ciudadanía y democracia en la antigua Grecia
+                                    • Describir los conceptos de ciudadanía y democracia en la antigua Grecia.
                                     <br />
-                                    • Analizar cómo se aplicaban los derechos en la sociedad ateniense
+                                    • Analizar cómo se aplicaban los derechos en la sociedad ateniense.
                                     <br />
-                                    • Discutir las limitaciones y exclusiones en los derechos en la antigua Grecia
+                                    • Discutir las limitaciones y exclusiones en los derechos en la antigua Grecia.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Derecho/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>

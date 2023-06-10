@@ -12,7 +12,7 @@ const LeccionesLiteratura = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal />
+            <NavbarPrincipal/>
             <div class="titulo-lecciones">
                 <img src={titulo} class="img-fluid" alt="Imagen" />
             </div>
@@ -26,11 +26,11 @@ const LeccionesLiteratura = () => {
                                     La literatura griega en los distintos periodos
                                 </Card.Text>
                                 <Card.Text className="card-text">
-                                    • Periodo arcaico
+                                    • Periodo arcaico.
                                     <br />
-                                    • Periodo clasico
+                                    • Periodo clasico.
                                     <br />
-                                    • Periodo helenistico
+                                    • Periodo helenistico.
                                     <br />
                                     • Legado
                                 </Card.Text>

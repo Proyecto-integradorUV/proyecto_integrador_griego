@@ -10,7 +10,7 @@ import Arte3 from "./images/Arte3.jpg";
 import Arte4 from "./images/Arte4.jpg";
 import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
-import lecArte from "../../../style/titulos/LecArte.png";
+import arte from "../../../style/titulos/arte.png";
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import quiz from "../../../style/botones/quiz.png";
@@ -46,7 +46,7 @@ const LeccionArte6 = () => {
         <div className="contenedorArte">
             <NavbarPrincipal/>
             <div class="titulo-empezar">
-                    <img src={lecArte} class="img-fluid" alt="Imagen" />
+                    <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
             <div className="row align-items-center" style={{ marginTop: '0px' }}>
                 <div class="col-sm-5 col-md-6 ">
@@ -56,7 +56,7 @@ const LeccionArte6 = () => {
                             <Card style={{ width: '600px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={Arte1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={Arte6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -111,7 +111,7 @@ const LeccionArte6 = () => {
                             <Card style={{ width: '600px', height: '300px' }}>
                                 <Card.Body style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={{ maxWidth: 'auto', maxHeight: 'auto' }}>
-                                    <img src={Arte6} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                    <img src={Arte1} alt="Imagen" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                 </div>
                                 </Card.Body>
                             </Card>
@@ -125,9 +125,9 @@ const LeccionArte6 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '600px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 6: Danza y música griega</Card.Title>
+                                <Card.Title>Lección 6: introducción a la danza y música</Card.Title>
                                 <Card.Text>
-                                    Vídeo explicativo
+                                    Danza y música griega: Vídeo explicativo
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Link to="/Temas/Arte/Leccion6">
@@ -160,7 +160,7 @@ const LeccionArte6 = () => {
             <Link to="/Temas/Arte/Leccion5">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>
-            <Link to="/Temas/Literatura/Leccion6">
+            <Link to="/Temas/Literatura/Leccion1">
             <img src={siguiente} class="img-fluid" alt="Imagen" />
             </Link>   
             <Link to="/Temas/Arte">

@@ -1,5 +1,4 @@
 import "./styles/Arte.css";
-import React, { useContext } from "react";
 import arteTitle from "../style/titulos/arte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnArte.png";
