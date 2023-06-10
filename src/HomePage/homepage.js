@@ -6,7 +6,7 @@ import Navbar from "../components/navbar";
 const Home = () => {
   return (
     <div class="contenedor-inicial1">
-      <Navbar />
+      <Navbar/>
     </div>
   );
 };

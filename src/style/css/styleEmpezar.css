@@ -1,0 +1,38 @@
+.titulo-empezar {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.fondo-card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.fondo-card .carousel-control-prev-icon,
+.fondo-card .carousel-control-next-icon {
+  filter: invert(100%); /* Invierte el color de las flechas */
+}
+
+  .fondo-card .carousel-indicators li {
+    background-color: #000000 !important; /* Cambia el color de fondo de los indicadores a negro */
+  }
+  
+  .fondo-card .carousel-indicators .active {
+    background-color: #0000007e; /* Cambia el color de fondo del indicador activo a blanco */
+  }
+
+
+  
+  
+  
+  
+  
+  
+
+

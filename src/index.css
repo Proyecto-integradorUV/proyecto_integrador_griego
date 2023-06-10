@@ -12,53 +12,6 @@ code {
     monospace;
 }
 
-/*NAVBAR*/
-.navbarTemas {
-  background-color:  rgb(226, 146, 115);
-  padding: 10px;
-}
-
-
-.navbar2Temas {
-  background-color:  rgb(226, 191, 115);
-  padding: 10px;
-}
-
-
-.navbarListTemas {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  margin: 0px;
-  padding: 0px;
-}
-
-
-.navbarItemTemas {
-  margin: 0 30px;
-  list-style-type: none;
-  align-items: center;
-}
-
-
-.navbarLinkTemas {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-
-.navbarLink2Temas {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-
-.navbarList2Temas {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .navbarLink3Temas{
   text-decoration: none;
@@ -101,16 +54,11 @@ code {
 }
 
 
-.navbarLink2Principal {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-
 .navbarList2Principal {
   display: flex;
   justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
 }
 
 

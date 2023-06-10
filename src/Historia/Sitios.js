@@ -1,4 +1,4 @@
-import "./Sitios.css";
+import "./styles/Sitios.css";
 import React from "react";
 import sitiosTitle from "../style/titulos/sitios.png";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Sitios = () => {
   return (
     <div class="contenedor-inicia-sitios">
-      <NavbarPrincipal />
+      <NavbarPrincipal/>
       <div class="temaSitios">
         <img src={sitiosTitle} alt="Imagen" />
       </div>

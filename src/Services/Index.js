@@ -5,6 +5,7 @@ const endpoints = {
   users: {
     registerUser: `${URL}/users/signup/`,
     loginUser: `${URL}/users/login/`,
+    logoutUser: `${URL}/users/logout/`,
   },
 };
 

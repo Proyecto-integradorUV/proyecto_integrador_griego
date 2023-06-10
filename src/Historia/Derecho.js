@@ -1,4 +1,4 @@
-import "./Derecho.css";
+import "./styles/Derecho.css";
 import React from "react";
 import derechoTitle from "../style/titulos/derechos.png";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Derecho = () => {
   return (
     <div class="contenedor-inicial-derecho">
-      <NavbarPrincipal />
+      <NavbarPrincipal/>
       <div class="temaDerecho">
         <img src={derechoTitle} alt="Imagen" />
       </div>
@@ -21,10 +21,10 @@ const Derecho = () => {
         ateniense era limitada y excluía a gran parte de la población
       </div>
       <div class="button-container-der">
-        <Link to="/Temas/Derecho/Lecciones" class="btn ">
+        <Link to="/Temas/Derecho/Lecciones" class="btn-derecho ">
           <img src={botonLeccion} alt="Imagen" class="button-image" />
         </Link>
-        <Link to="/Temas/Derecho/Model" class="btn ">
+        <Link to="/Temas/Derecho/Model" class="btn-derecho ">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>
       </div>

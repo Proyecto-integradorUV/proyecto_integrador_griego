@@ -1,4 +1,4 @@
-import "./Arte.css";
+import "./styles/Arte.css";
 import arteTitle from "../style/titulos/arte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnArte.png";
@@ -6,9 +6,10 @@ import botonModel3D from "./Images/btnArte3D.png";
 import NavbarPrincipal from "../components/navbar2";
 
 const Arte = () => {
+
   return (
     <div class="contenedor-inicial-arte">
-      <NavbarPrincipal />
+      <NavbarPrincipal/>
       <div class="temaArte">
         <img src={arteTitle} alt="Imagen" />
       </div>

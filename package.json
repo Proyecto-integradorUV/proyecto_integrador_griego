@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.68.6",
+    "@react-three/fiber": "^8.13.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0-alpha3",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
     "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
@@ -14,8 +17,10 @@
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-youtube": "^10.1.0",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.7.5",
+    "three": "^0.153.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

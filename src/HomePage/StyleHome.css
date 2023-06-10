@@ -1,7 +1,46 @@
-.contenedor-inicial1{
+.contenedor-inicial1 {
     background-image: url('./Images/Civilización.png');
-    width: 100;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-position: center;      
+}
+
+@media (max-width: 575.98px) {
+    /* Estilos para teléfonos pequeños */
+    .contenedor-inicial1 {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Estilos para teléfonos */
+    .contenedor-inicial1 {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Estilos para tabletas */
+    .contenedor-inicial1 {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Estilos para escritorio pequeño */
+    .contenedor-inicial1 {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Estilos para escritorio grande */
+    .contenedor-inicial1 {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
 }

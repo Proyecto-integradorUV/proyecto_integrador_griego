@@ -1,0 +1,52 @@
+.titulo-lecciones {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+
+.carousel-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  
+  .carousel {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .carousel .card {
+    height: auto /* Ajusta la altura del cuerpo de la tarjeta según tus necesidades */
+  }
+  
+  .carousel .card-title {
+    text-align: center;
+  }
+
+  .carousel .card-text {
+    margin-left: 10%;
+  }
+
+@media (max-width: 1850px) {
+
+  }
+  
+  
+  /**
+  Estilos para portatil
+  */
+  @media (max-width: 1600px) {
+
+  }
+  
+  /* Estilos para celular o tablet */
+  
+  @media (max-width: 660px) {
+  
+
+  
+  }

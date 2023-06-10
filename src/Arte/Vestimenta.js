@@ -1,4 +1,4 @@
-import "./Vestimenta.css";
+import "./styles/Vestimenta.css";
 import React from "react";
 import vestimentaTitle from "../style/titulos/vestimenta.png";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Vestimenta = () => {
   return (
     <div class="contenedor-inicial-vestimenta">
-      <NavbarPrincipal />
+      <NavbarPrincipal/>
       <div class="temaVestimenta">
         <img src={vestimentaTitle} alt="Imagen" />
       </div>

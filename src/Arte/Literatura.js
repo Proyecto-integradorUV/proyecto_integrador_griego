@@ -1,4 +1,4 @@
-import "./Literatura.css";
+import "./styles/Literatura.css";
 import React from "react";
 import literaturaTitle from "../style/titulos/literatura.png";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Literatura = () => {
   return (
     <div class="contenedor-inicial-leteratura">
-      <NavbarPrincipal />
+      <NavbarPrincipal/>
       <div class="temaLiteratura">
         <img src={literaturaTitle} alt="Imagen" />
       </div>
