@@ -94,25 +94,6 @@ const LeccionFilosofia = () => {
               </Card.Body>
             </Card>
           </Carousel.Item>
-          <Carousel.Item>
-            <Card>
-              <Card.Body>
-                <Card.Title>Lección 5</Card.Title>
-                <Card.Text className="card-title">
-                  La liada y la odisea
-                </Card.Text>
-                <Card.Text className="card-text">
-                  • Introducción
-                  <br />• Fragmentos y explicaciónes
-                </Card.Text>
-                <Card.Text className="card-title">
-                  <Link to="/Temas/Filosofia/Leccion5" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
-                  </Link>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
         </Carousel>
       </div>
     </div>

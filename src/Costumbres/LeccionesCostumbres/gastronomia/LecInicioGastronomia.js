@@ -48,7 +48,6 @@ const LeccionGastronomia = () => {
                 <Card.Text className="card-text">
                   • Productos agrícolas
                   <br />• Productos lácteos y quesos griegos
-                  <br />• Marícos y pescados típicos en la cocina griega
                   <br />• Productos de panadería griegos
                 </Card.Text>
                 <Card.Text className="card-title">
@@ -68,7 +67,6 @@ const LeccionGastronomia = () => {
                   • Platos de horno
                   <br />• Carnes a las parrilla
                   <br />• Platos de pescado y maríscos
-                  <br />• Platos vegetarianos y vegetarianos
                 </Card.Text>
                 <Card.Text className="card-title">
                   <Link to="/Temas/Gastronomia/Leccion3" class="btn-empezar">
@@ -82,32 +80,15 @@ const LeccionGastronomia = () => {
             <Card>
               <Card.Body>
                 <Card.Title>Lección 4</Card.Title>
-                <Card.Text className="card-title">Postres y dulces</Card.Text>
+                <Card.Text className="card-title">Postres Griegos</Card.Text>
                 <Card.Text className="card-text">
-                  • Pasteles de nueces y miel
-                  <br />• Loukoumades y otros dulces fritos
-                  <br />• Postres lácteos como el yogurt griego y rigozalo
+                  • Baklava y otros pasteles de nueces y miel.
+                  <br />• Loukoumades y otros dulces fritos.
+                  <br />• Postres lácteos como el rizogalo (arroz con leche
+                  griego).
                 </Card.Text>
                 <Card.Text className="card-title">
                   <Link to="/Temas/Gastronomia/Leccion4" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
-                  </Link>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Card>
-              <Card.Body>
-                <Card.Title>Lección 5</Card.Title>
-                <Card.Text className="card-title">Vino y bebidas</Card.Text>
-                <Card.Text className="card-text">
-                  • Historia del vino griego
-                  <br />• Variedades de uvas y regiones vitivinícolas
-                  <br />• Bebidas tradicionales como el ouzo y el tsipouro
-                </Card.Text>
-                <Card.Text className="card-title">
-                  <Link to="/Temas/Gastronomia/Leccion5" class="btn-empezar">
                     <img src={botonEmpezar} alt="Imagen" class="button-image" />
                   </Link>
                 </Card.Text>

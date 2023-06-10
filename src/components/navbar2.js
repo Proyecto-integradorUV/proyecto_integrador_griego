@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import React, { useContext } from "react";
 import { SignInContext } from "../context/signInContext";
+import jwt_decode from "jwt-decode";
 
 const NavbarPrincipal = () => {
   const { isLogged, setIsLogged } = useContext(SignInContext);
@@ -13,7 +14,18 @@ const NavbarPrincipal = () => {
     }
   };
 
-  const username = localStorage.getItem("username");
+  const userData = localStorage.getItem("userData");
+  const userName = () => {
+    if (isLogged) {
+      const userDataObj = JSON.parse(userData);
+      // const token = userDataObj["token"];
+      const decodedToken = jwt_decode(userDataObj.access);
+      const userName = decodedToken;
+      console.log(userName);
+    } else {
+      console.log("No hay ningun token");
+    }
+  };
 
   return (
     <div className="fixed-top">
@@ -21,8 +33,8 @@ const NavbarPrincipal = () => {
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">
             {isLogged && (
-              <a href=" " className="navbarLinkPrincipal navbar-home">
-                Hola, {username}
+              <a href=" " className="navbarLink2Principal navbar-home">
+                Hola,
               </a>
             )}
           </li>
