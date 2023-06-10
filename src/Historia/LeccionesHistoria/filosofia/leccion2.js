@@ -256,7 +256,7 @@ const LeccionFilosofia2 = () => {
                       Lección 2: El período platónico y aristotélico
                     </Card.Title>
                     <Card.Text>
-                      Hablaremos sobre una breve introduccion al periodo
+                      Hablaremos sobre una breve <b>introducción</b> al periodo
                       platónico y aristotélico
                     </Card.Text>
                     <div
@@ -288,8 +288,7 @@ const LeccionFilosofia2 = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
-                            <b>Introduccion </b>al periodo platónico y
-                            aristotélico
+                            Introducción al periodo platónico y aristotélico
                           </h2>
                           <p>
                             Representa una de las etapas más importantes y
