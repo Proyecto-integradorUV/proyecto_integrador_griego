@@ -20,10 +20,7 @@ const LeccionesMitologia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1</Card.Title>
-                <Card.Text className="card-title">
-                  Periodos de la mitología griega
-                </Card.Text>
+                <Card.Title>Lección 1: Periodos de la mitología griega</Card.Title>
                 <Card.Text className="card-text">
                   • La edad de los dioses.
                   <br />• La edad de convivencia entre dioses y humanos
@@ -40,8 +37,7 @@ const LeccionesMitologia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 2</Card.Title>
-                <Card.Text className="card-title">Más sobre Dioses</Card.Text>
+                <Card.Title>Lección 2: Más sobre Dioses</Card.Title>
                 <Card.Text className="card-text">
                   • Presentación de los dioses
                   <br />
@@ -58,10 +54,7 @@ const LeccionesMitologia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 3</Card.Title>
-                <Card.Text className="card-title">
-                  Principales mitos de la mitología griega
-                </Card.Text>
+                <Card.Title>Lección 3: Principales mitos de la mitología griega</Card.Title>
                 <Card.Text className="card-text">
                   • El origen del mundo
                   <br />• La guerra de troya

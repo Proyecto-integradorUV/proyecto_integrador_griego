@@ -279,7 +279,7 @@ const LeccionLiteratura1 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
+        <div class="botones-lecciones">
             <Link to="/Temas/Literatura/Lecciones">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>

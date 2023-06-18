@@ -20,10 +20,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    Introducción a la cultura griega y su influencia artística
-                                </Card.Text>
+                                <Card.Title >Lección 1: Introducción a la cultura griega y su influencia artística</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve descripción de la cultura y la importancia del arte en la sociedad griega.
                                     <br />
@@ -40,10 +37,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Arquitectura griega
-                                </Card.Text>
+                                <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Explicación de los elementos arquitectónicos griegos, como el orden dórico, jónico y corintio.
                                     <br />
@@ -62,10 +56,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 3</Card.Title>
-                                <Card.Text className="card-title">
-                                    Escultura griega
-                                </Card.Text>
+                                <Card.Title >Lección 3: Escultura griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Descripción de los estilos y técnicas escultóricas griegas, como el estilo kouros y el estilo contrapposto.
                                     <br />
@@ -84,10 +75,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text className="card-title">
-                                    Pintura y cerámica griega
-                                </Card.Text>
+                                <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Explicación de la pintura y la cerámica griega y su importancia en la vida cotidiana.
                                     <br />
@@ -106,10 +94,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 5</Card.Title>
-                                <Card.Text className="card-title">
-                                    Literatura y teatro griego
-                                </Card.Text>
+                                <Card.Title>Lección 5: Literatura y teatro griego</Card.Title>
                                 <Card.Text className="card-text">
                                     • Resumen de la importancia de la literatura y el teatro en la cultura griega.
                                     <br />
@@ -128,10 +113,7 @@ const LeccionesArte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 6</Card.Title>
-                                <Card.Text className="card-title">
-                                    Danza y música griega
-                                </Card.Text>
+                                <Card.Title>Lección 6: Danza y música griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Descripción de la danza y la música en la cultura griega y su relación con el arte.
                                     <br />

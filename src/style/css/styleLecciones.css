@@ -6,6 +6,16 @@
   justify-content: center;
 }
 
+.botones-lecciones {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; 
+  gap: 20px;
+}
 
 .carousel-container {
     display: flex;
@@ -25,10 +35,18 @@
   
   .carousel .card-title {
     text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #bb7154;
   }
 
   .carousel .card-text {
     margin-left: 10%;
+  }
+
+  .carousel .carousel-control-prev-icon,
+  .carousel .carousel-control-next-icon {
+  filter: invert(100%); /* Invierte el color de las flechas */
   }
 
 @media (max-width: 1850px) {

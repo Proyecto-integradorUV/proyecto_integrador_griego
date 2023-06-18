@@ -23,10 +23,7 @@ const LeccionesVestimenta = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    Introducción a la cultura griega y la vestimenta
-                                </Card.Text>
+                                <Card.Title >Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve historia de la antigua Grecia y su influencia en la moda
                                     <br />
@@ -45,10 +42,7 @@ const LeccionesVestimenta = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Ropa masculina en la cultura griega
-                                </Card.Text>
+                                <Card.Title>Lección 2: Ropa masculina en la cultura griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Descripción detallada de las prendas utilizadas por los hombres griegos
                                     <br />
@@ -65,10 +59,7 @@ const LeccionesVestimenta = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 3</Card.Title>
-                                <Card.Text className="card-title">
-                                    Ropa femenina en la cultura griega
-                                </Card.Text>
+                                <Card.Title >Lección 3: Ropa femenina en la cultura griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Descripción de las prendas utilizadas por las mujeres griegas
                                     <br />
@@ -87,10 +78,7 @@ const LeccionesVestimenta = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text className="card-title">
-                                    Accesorios y detalles de la vestimenta griega
-                                </Card.Text>
+                                <Card.Title>Lección 4: Accesorios y detalles de la vestimenta griega</Card.Title>
                                 <Card.Text className="card-text">
                                     • Explicación de los accesorios utilizados en la cultura griega
                                     <br />

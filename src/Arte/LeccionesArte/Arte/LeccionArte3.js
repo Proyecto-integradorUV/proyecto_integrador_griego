@@ -253,7 +253,7 @@ const LeccionArte3 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
+        <div class="botones-lecciones">
             <Link to="/Temas/Arte/Leccion2">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>

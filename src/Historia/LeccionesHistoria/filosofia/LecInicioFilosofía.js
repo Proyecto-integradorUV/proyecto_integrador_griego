@@ -20,10 +20,7 @@ const LeccionFilosofia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1</Card.Title>
-                <Card.Text className="card-title">
-                  Período preocrático
-                </Card.Text>
+                <Card.Title>Lección 1: Período preocrático</Card.Title>
                 <Card.Text className="card-text">
                   • Introducción
                   <br />• Escuelas
@@ -39,10 +36,7 @@ const LeccionFilosofia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 2</Card.Title>
-                <Card.Text className="card-title">
-                  El período platónico y aristotélico
-                </Card.Text>
+                <Card.Title>Lección 2: El período platónico y aristotélico</Card.Title>
                 <Card.Text className="card-text">
                   • Introducción
                   <br />• Principales carácteristicas del período platónico
@@ -59,10 +53,7 @@ const LeccionFilosofia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 3</Card.Title>
-                <Card.Text className="card-title">
-                  Período helenístico
-                </Card.Text>
+                <Card.Title>Lección 3: Período helenístico</Card.Title>
                 <Card.Text className="card-text">
                   • Introducción
                   <br />• Principales carácteristicas
@@ -78,10 +69,7 @@ const LeccionFilosofia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 4</Card.Title>
-                <Card.Text className="card-title">
-                  El período neoplatónico
-                </Card.Text>
+                <Card.Title>Lección 4: El período neoplatónico</Card.Title>
                 <Card.Text className="card-text">
                   • Introducción
                   <br />• Principales carácteristicas
