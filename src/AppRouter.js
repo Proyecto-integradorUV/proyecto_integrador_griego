@@ -76,6 +76,14 @@ import LeccionSitios3 from "./Historia/LeccionesHistoria/sitios/leccion3.js";
 import LeccionSitios4 from "./Historia/LeccionesHistoria/sitios/leccion4.js";
 // Paginas3D
 import Experience from "./Arte/Paginas3D/Arte/experience.jsx";
+import Experience2 from "./Arte/Paginas3D/Literatura/experience.jsx";
+import Experience3 from "./Arte/Paginas3D/Vestimenta/experience.jsx";
+import Experience4 from "./Costumbres/Paginas3D/Deporte/experience.jsx";
+import Experience5 from "./Costumbres/Paginas3D/Gastronomia/experience.jsx";
+import Experience6 from "./Costumbres/Paginas3D/Mitologia/experience.jsx";
+import Experience7 from "./Historia/Paginas3D/Derecho/experience.jsx";
+import Experience8 from "./Historia/Paginas3D/Filosofia/experience.jsx";
+import Experience9 from "./Historia/Paginas3D/Sitios/experience.jsx";
 
 function AppRouter() {
   const { isLogged } = useContext(SignInContext);
@@ -243,6 +251,16 @@ function AppRouter() {
           />
           {/* paginas3D */}
           <Route path="Temas/Arte/Model" element={<Experience />} />
+          <Route path="Temas/Literatura/Model" element={<Experience2 />} />
+          <Route path="Temas/Vestimenta/Model" element={<Experience3 />} />
+          <Route path="Temas/Deporte/Model" element={<Experience4 />} />
+          <Route path="Temas/Gastronomia/Model" element={<Experience5 />} />
+          <Route path="Temas/Mitologia/Model" element={<Experience6 />} />
+          <Route path="Temas/Derecho/Model" element={<Experience7 />} />
+          <Route path="Temas/Filosofia/Model" element={<Experience8 />} />
+          <Route path="Temas/SitiosCaracteristicos/Model" element={<Experience9 />} />
+
+
         </Routes>
       ) : (
         <Routes>

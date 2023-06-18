@@ -86,3 +86,28 @@ code {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.selected-photo-container {
+  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.selected-photo {
+  width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 30px;
+  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.small-photo {
+  width: 50px;
+  height: 50px;
+}
+
+.selected-image {
+  width: 50px;
+  height: 50px;
+}
