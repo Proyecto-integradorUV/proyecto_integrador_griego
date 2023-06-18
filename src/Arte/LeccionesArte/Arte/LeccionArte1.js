@@ -32,6 +32,7 @@ const LeccionArte1 = () => {
         }));
     };
     
+
     const handleCloseModal = (modalName) => {
         setModals((prevState) => ({
             ...prevState,
