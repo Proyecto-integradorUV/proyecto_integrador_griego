@@ -19,10 +19,7 @@ const LeccionesDerecho = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    Introducción a los derechos y la historia de Grecia
-                                </Card.Text>
+                                <Card.Title >Lección 1:  Introducción a los derechos y la historia de Grecia</Card.Title>
                                 <Card.Text className="card-text">
                                     • Explicar qué son los derechos y por qué son importantes.
                                     <br />
@@ -39,10 +36,7 @@ const LeccionesDerecho = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Derechos en la antigua Grecia
-                                </Card.Text>
+                                <Card.Title>Lección 2: Derechos en la antigua Grecia</Card.Title>
                                 <Card.Text className="card-text">
                                     • Describir los conceptos de ciudadanía y democracia en la antigua Grecia.
                                     <br />
@@ -61,10 +55,7 @@ const LeccionesDerecho = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 3</Card.Title>
-                                <Card.Text className="card-title">
-                                    Los derechos durante la dominación extranjera
-                                </Card.Text>
+                                <Card.Title >Lección 3: Los derechos durante la dominación extranjera</Card.Title>
                                 <Card.Text className="card-text">
                                     • Explorar el impacto de la dominación romana, bizantina y otomana en los derechos de los griegos.
                                     <br />
@@ -81,10 +72,7 @@ const LeccionesDerecho = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text className="card-title">
-                                    La lucha por la independencia y la formación del estado moderno
-                                </Card.Text>
+                                <Card.Title>Lección 4: La lucha por la independencia y la formación del estado moderno</Card.Title>
                                 <Card.Text className="card-text">
                                     • Examinar el movimiento de independencia griego y su influencia en el desarrollo de los derechos.
                                     <br />

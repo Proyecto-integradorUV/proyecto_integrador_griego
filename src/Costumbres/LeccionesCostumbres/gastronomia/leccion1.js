@@ -697,7 +697,7 @@ const LeccionGastronomia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="titulo-empezar">
+      <div class="botones-lecciones">
         <Link to="/Temas/Gastronomia/Leccion1">
           <img src={anterior} class="img-fluid" alt="Imagen" />
         </Link>

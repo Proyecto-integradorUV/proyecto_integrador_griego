@@ -1,4 +1,5 @@
 import "./styles/Arte.css";
+import "../style/css/contenedores.css" 
 import arteTitle from "../style/titulos/arte.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnArte.png";
@@ -8,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Arte = () => {
 
   return (
-    <div class="contenedor-inicial-arte">
+    <div class="contenedorArte">
       <NavbarPrincipal/>
       <div class="temaArte">
         <img src={arteTitle} alt="Imagen" />

@@ -21,10 +21,7 @@ const LeccionesLiteratura = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    La literatura griega en los distintos periodos
-                                </Card.Text>
+                                <Card.Title >Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text className="card-text">
                                     • Periodo arcaico.
                                     <br />
@@ -45,10 +42,7 @@ const LeccionesLiteratura = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Generos literarios en la antigua grecia
-                                </Card.Text>
+                                <Card.Title>Lección 2: Generos literarios en la antigua grecia</Card.Title>
                                 <Card.Text className="card-text">
                                     • Poesía épica.
                                     <br />

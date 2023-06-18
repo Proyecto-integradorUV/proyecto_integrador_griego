@@ -185,7 +185,7 @@ const LeccionVestimenta1 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
+            <div class="botones-lecciones">
                 <Link to="/Temas/Vestimenta/Lecciones">
                     <img src={anterior} class="img-fluid" alt="Imagen" />
                 </Link>
