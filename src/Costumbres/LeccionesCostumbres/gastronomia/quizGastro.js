@@ -11,6 +11,8 @@ const QuizGastronomia = () => {
   const [isFinished, setIsFinished] = useState(false);
   const [tiempoRestante, setTiempoRestante] = useState(10);
   const [areDisabled, setAreDisabled] = useState(false);
+  const [start, setStart] = useState(false);
+  const [botonIniciar, setBotonIniciar] = useState(false);
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -30,12 +32,14 @@ const QuizGastronomia = () => {
   }
 
   useEffect(() => {
-    const intervalo = setInterval(() => {
-      if (tiempoRestante > 0) setTiempoRestante((prev) => prev - 1);
-      if (tiempoRestante === 0) setAreDisabled(true);
-    }, 1000);
-    return () => clearInterval(intervalo);
-  }, [tiempoRestante]);
+    if (start) {
+      const intervalo = setInterval(() => {
+        if (tiempoRestante > 0) setTiempoRestante((prev) => prev - 1);
+        if (tiempoRestante === 0) setAreDisabled(true);
+      }, 1000);
+      return () => clearInterval(intervalo);
+    }
+  }, [start, tiempoRestante]);
 
   function calificacion(puntaje) {
     if (puntaje === 0) {
@@ -60,18 +64,21 @@ const QuizGastronomia = () => {
 
   if (isFinished)
     return (
-      <div className="contenedorHistoria">
+      <div className="contenedorLeccionesGastro">
         <NavbarPrincipal />
         <div class="titulo-empezar">
           <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
         </div>
         <div className="contenedor-quiz">
           <div className="juego-terminado">
-            <span>Tu calificación fue {calificacion(puntuacion)}/5</span>
+            <span>Tu calificación fue {calificacion(puntuacion)}/5.0</span>
             <br></br>
             <button
               className="boton-quiz"
-              onClick={() => (window.location.href = "/Temas/Mitologia/Quiz")}
+              onClick={() => {
+                window.location.href = "/Temas/Gastronomia/Quiz";
+                setStart(false);
+              }}
             >
               Volver a hacer quiz
             </button>
@@ -81,7 +88,7 @@ const QuizGastronomia = () => {
     );
 
   return (
-    <div className="contenedorHistoria">
+    <div className="contenedorLeccionesGastro">
       <NavbarPrincipal />
       <div class="titulo-empezar">
         <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
@@ -116,12 +123,25 @@ const QuizGastronomia = () => {
               </button>
             )}
           </div>
+          <br></br>
+          {!botonIniciar && ( // Ocultar si botonIniciar es true
+            <button
+              className="boton-quiz"
+              onClick={() => {
+                setStart(true);
+                setBotonIniciar(true);
+                console.log(start);
+              }}
+            >
+              Iniciar quiz
+            </button>
+          )}
         </div>
         <div className="lado-derecho">
           {preguntas[preguntaActual].opciones.map((respuesta) => (
             <button
-              className="boton-quiz"
-              disabled={areDisabled}
+              className="boton-quizContinuar"
+              disabled={areDisabled || !botonIniciar}
               key={respuesta.textoRespuesta}
               onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
             >
