@@ -17,6 +17,7 @@ import imagen6 from "./images/gente2.png";
 import rigozalo from "./images/rigozalo.png";
 import baklava from "./images/baklava.jpg";
 import louku from "./images/louku.webp";
+import quiz from "../../../style/botones/quiz.png";
 
 const LeccionGastronomia4 = () => {
   const [modals, setModals] = useState({
@@ -588,6 +589,9 @@ const LeccionGastronomia4 = () => {
       <div class="botones-lecciones">
         <Link to="/Temas/Gastronomia/Leccion3">
           <img src={anterior} class="img-fluid" alt="Imagen" />
+        </Link>
+        <Link to="/Temas/Gastronomia/Quiz">
+          <img src={quiz} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

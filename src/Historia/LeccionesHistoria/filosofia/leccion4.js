@@ -15,6 +15,7 @@ import imagen4 from "./Images/filo4.jpg";
 import imagen5 from "./Images/filo5.webp";
 import neoplatonismo from "./Images/Neoplatonismo.jpg";
 import cosmos from "./Images/cosmos.jpg";
+import quiz from "../../../style/botones/quiz.png";
 
 const LeccionFilosofia4 = () => {
   const [modals, setModals] = useState({
@@ -527,6 +528,9 @@ const LeccionFilosofia4 = () => {
       <div class="botones-lecciones">
         <Link to="/Temas/Filosofia/Leccion3">
           <img src={anterior} class="img-fluid" alt="Imagen" />
+        </Link>
+        <Link to="/Temas/Filosofia/Quiz">
+          <img src={quiz} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

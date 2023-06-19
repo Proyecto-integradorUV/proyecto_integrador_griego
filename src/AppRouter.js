@@ -54,10 +54,12 @@ import LeccionGastronomia1 from "./Costumbres/LeccionesCostumbres/gastronomia/le
 import LeccionGastronomia2 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion2.js";
 import LeccionGastronomia3 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion3.js";
 import LeccionGastronomia4 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion4.js";
+import QuizGastronomia from "./Costumbres/LeccionesCostumbres/gastronomia/quizGastro.js";
 // Mitologia
 import LeccionMitologia1 from "./Costumbres/LeccionesCostumbres/mitologia/leccionMitologia1.js";
 import LeccionMitologia2 from "./Costumbres/LeccionesCostumbres/mitologia/leccionMitologia2.js";
 import LeccionMitologia3 from "./Costumbres/LeccionesCostumbres/mitologia/leccionMitologia3.js";
+import QuizMitologia from "./Costumbres/LeccionesCostumbres/mitologia/quizMito.js";
 // lecciones seccion historia
 // Derecho
 import LeccionDerecho1 from "./Historia/LeccionesHistoria/derecho/LeccionDerecho1.js";
@@ -69,6 +71,7 @@ import LeccionFilosofia1 from "./Historia/LeccionesHistoria/filosofia/leccion1.j
 import LeccionFilosofia2 from "./Historia/LeccionesHistoria/filosofia/leccion2.js";
 import LeccionFilosofia3 from "./Historia/LeccionesHistoria/filosofia/leccion3.js";
 import LeccionFilosofia4 from "./Historia/LeccionesHistoria/filosofia/leccion4.js";
+import QuizFilosofia from "./Historia/LeccionesHistoria/filosofia/quizFilo.js";
 // Sitios
 import LeccionSitios1 from "./Historia/LeccionesHistoria/sitios/leccion1.js";
 import LeccionSitios2 from "./Historia/LeccionesHistoria/sitios/leccion2.js";
@@ -196,6 +199,7 @@ function AppRouter() {
             path="Temas/Gastronomia/Leccion4"
             element={<LeccionGastronomia4 />}
           />
+          <Route path="Temas/Gastronomia/Quiz" element={<QuizGastronomia />} />
           {/* mitologia */}
           <Route
             path="Temas/Mitologia/Leccion1"
@@ -209,6 +213,7 @@ function AppRouter() {
             path="Temas/Mitologia/Leccion3"
             element={<LeccionMitologia3 />}
           />
+          <Route path="Temas/Mitologia/Quiz" element={<QuizMitologia />} />
           {/* ruta a las lecciones por seccion: Historia */}
           {/* filosofia */}
           <Route
@@ -227,6 +232,7 @@ function AppRouter() {
             path="Temas/Filosofia/Leccion4"
             element={<LeccionFilosofia4 />}
           />
+          <Route path="Temas/Filosofia/Quiz" element={<QuizFilosofia />} />
           {/* derecho */}
           <Route path="Temas/Derecho/Leccion1" element={<LeccionDerecho1 />} />
           <Route path="Temas/Derecho/Leccion2" element={<LeccionDerecho2 />} />
@@ -258,9 +264,10 @@ function AppRouter() {
           <Route path="Temas/Mitologia/Model" element={<Experience6 />} />
           <Route path="Temas/Derecho/Model" element={<Experience7 />} />
           <Route path="Temas/Filosofia/Model" element={<Experience8 />} />
-          <Route path="Temas/SitiosCaracteristicos/Model" element={<Experience9 />} />
-
-
+          <Route
+            path="Temas/SitiosCaracteristicos/Model"
+            element={<Experience9 />}
+          />
         </Routes>
       ) : (
         <Routes>
