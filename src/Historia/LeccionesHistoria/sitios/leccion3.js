@@ -43,7 +43,7 @@ const LeccionSitios3 = () => {
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
 
     return (
-        <div className="container-leccionSitios">
+        <div className="contenedorHistoria">
             <NavbarPrincipal />
             <div class="titulo-empezar">
                 <img src={lecSitios} class="img-fluid" alt="Imagen" />

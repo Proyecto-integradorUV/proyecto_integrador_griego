@@ -14,7 +14,6 @@ import literatura9 from "./images/literatura9.jpeg";
 import literatura10 from "./images/literatura10.jpg";
 import literatura12 from "./images/literatura12.jpg";
 import literatura from "../../../style/titulos/literatura.png";
-import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2";
@@ -764,9 +763,6 @@ const LeccionLiteratura2 = () => {
       <div class="botones-lecciones">
         <Link to="/Temas/Literatura/Leccion1">
           <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Deporte/Leccion1">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Literatura/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

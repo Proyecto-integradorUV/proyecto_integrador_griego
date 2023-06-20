@@ -11,7 +11,6 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2";
@@ -519,9 +518,6 @@ const LeccionDerecho4 = () => {
       <div class="botones-lecciones">
         <Link to="/Temas/Derecho/Leccion3">
           <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Filosofia/Leccion1">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Derecho/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

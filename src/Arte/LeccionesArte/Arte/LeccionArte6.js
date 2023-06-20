@@ -11,7 +11,6 @@ import Arte4 from "./images/Arte4.jpg";
 import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import quiz from "../../../style/botones/quiz.png";
 import video from "../../../style/botones/ver_video.png";
@@ -345,9 +344,6 @@ const LeccionArte6 = () => {
       <div class="botones-lecciones">
         <Link to="/Temas/Arte/Leccion5">
           <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Literatura/Leccion1">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Arte/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />
