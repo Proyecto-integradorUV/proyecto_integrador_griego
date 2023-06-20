@@ -2,6 +2,8 @@ import { OrbitControls } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { Canvas } from '@react-three/fiber'
 import Model from './model'
+import Floor from './Floor'
+import Image from './Image'
 
 export default function Experience4() {
     const containerStyles = {

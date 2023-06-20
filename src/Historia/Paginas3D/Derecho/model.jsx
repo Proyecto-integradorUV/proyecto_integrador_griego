@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export default function Model(props) {
+export default function Model7(props) {
   const { nodes, materials } = useGLTF("/static/derechos.glb");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, 0.08, -12.72]}>

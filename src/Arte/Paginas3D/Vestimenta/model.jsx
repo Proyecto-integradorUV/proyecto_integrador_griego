@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 export default function Model3(props) {
   const { nodes, materials } = useGLTF("/static/vestimenta.glb");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={0.7}>
       <group position={[7.53, 3.25, 6.06]} rotation={[1.61, 0.16, -1.83]}>
         <mesh
           castShadow
