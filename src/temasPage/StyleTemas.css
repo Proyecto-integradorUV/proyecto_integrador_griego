@@ -35,6 +35,50 @@
 
 }
 
+.button-image {
+  /* Transición suave de tamaño para una animación fluida */
+  transition: transform 0.3s ease;
+}
+
+.contenedor-filosofia:hover .button-image {
+  transform: scale(1.1); /* Escala aumentada cuando el cursor está encima del contenedor */
+}
+
+.contenedor-gastronomia:hover .button-image {
+  transform: scale(1.1);
+}
+
+
+.contenedor-sitios:hover .button-image {
+  transform: scale(1.1); 
+}
+
+
+.contenedor-mitologia:hover .button-image {
+  transform: scale(1.1); 
+}
+
+.contenedor-deporte:hover .button-image {
+  transform: scale(1.1); 
+}
+
+.contenedor-vestimenta:hover .button-image {
+  transform: scale(1.1); 
+}
+
+.contenedor-literatura:hover .button-image {
+  transform: scale(1.1); 
+}
+
+.contenedor-derechos:hover .button-image {
+  transform: scale(1.1); 
+}
+
+.contenedor-arte:hover .button-image {
+  transform: scale(1.1); 
+}
+
+
 .contenedor-temas div {
   display: inline;
 }
