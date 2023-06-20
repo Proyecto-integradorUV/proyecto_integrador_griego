@@ -33,6 +33,7 @@ import LeccionVestimenta1 from "./Arte/LeccionesArte/Vestimenta/Leccion1.js";
 import LeccionVestimenta2 from "./Arte/LeccionesArte/Vestimenta/Leccion2.js";
 import LeccionVestimenta3 from "./Arte/LeccionesArte/Vestimenta/Leccion3.js";
 import LeccionVestimenta4 from "./Arte/LeccionesArte/Vestimenta/Leccion4.js";
+import QuizVestimenta from "./Arte/LeccionesArte/Vestimenta/quizVesti.js";
 // arte
 import LeccionArte1 from "./Arte/LeccionesArte/Arte/LeccionArte1.js";
 import LeccionArte2 from "./Arte/LeccionesArte/Arte/LeccionArte2.js";
@@ -40,15 +41,18 @@ import LeccionArte3 from "./Arte/LeccionesArte/Arte/LeccionArte3.js";
 import LeccionArte4 from "./Arte/LeccionesArte/Arte/LeccionArte4.js";
 import LeccionArte5 from "./Arte/LeccionesArte/Arte/LeccionArte5.js";
 import LeccionArte6 from "./Arte/LeccionesArte/Arte/LeccionArte6.js";
+import QuizArte from "./Arte/LeccionesArte/Arte/quizArte.js";
 // literatura
 import LeccionLiteratura1 from "./Arte/LeccionesArte/Literatura/LeccionLiteratura1.js";
 import LeccionLiteratura2 from "./Arte/LeccionesArte/Literatura/LeccionLiteratura2.js";
+import QuizLite from "./Arte/LeccionesArte/Literatura/quizLite.js";
 // lecciones seccion costumbres
 // Deporte
 import LeccionDeporte1 from "./Costumbres/LeccionesCostumbres/deporte/leccion1.js";
 import LeccionDeporte2 from "./Costumbres/LeccionesCostumbres/deporte/leccion2.js";
 import LeccionDeporte3 from "./Costumbres/LeccionesCostumbres/deporte/leccion3.js";
 import LeccionDeporte4 from "./Costumbres/LeccionesCostumbres/deporte/leccion4.js";
+import QuizDeporte from "./Costumbres/LeccionesCostumbres/deporte/quizDepor.js";
 // Gastronomia
 import LeccionGastronomia1 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion1.js";
 import LeccionGastronomia2 from "./Costumbres/LeccionesCostumbres/gastronomia/leccion2.js";
@@ -66,6 +70,7 @@ import LeccionDerecho1 from "./Historia/LeccionesHistoria/derecho/LeccionDerecho
 import LeccionDerecho2 from "./Historia/LeccionesHistoria/derecho/LeccionDerecho2.js";
 import LeccionDerecho3 from "./Historia/LeccionesHistoria/derecho/LeccionDerecho3.js";
 import LeccionDerecho4 from "./Historia/LeccionesHistoria/derecho/LeccionDerecho4.js";
+import QuizDerecho from "./Historia/LeccionesHistoria/derecho/quizDerecho.js";
 // Filosofia
 import LeccionFilosofia1 from "./Historia/LeccionesHistoria/filosofia/leccion1.js";
 import LeccionFilosofia2 from "./Historia/LeccionesHistoria/filosofia/leccion2.js";
@@ -77,6 +82,7 @@ import LeccionSitios1 from "./Historia/LeccionesHistoria/sitios/leccion1.js";
 import LeccionSitios2 from "./Historia/LeccionesHistoria/sitios/leccion2.js";
 import LeccionSitios3 from "./Historia/LeccionesHistoria/sitios/leccion3.js";
 import LeccionSitios4 from "./Historia/LeccionesHistoria/sitios/leccion4.js";
+import QuizSitios from "./Historia/LeccionesHistoria/sitios/quizSitios.js";
 // Paginas3D
 import Experience from "./Arte/Paginas3D/Arte/experience.jsx";
 import Experience2 from "./Arte/Paginas3D/Literatura/experience.jsx";
@@ -160,6 +166,7 @@ function AppRouter() {
             path="Temas/Vestimenta/Leccion4"
             element={<LeccionVestimenta4 />}
           />
+          <Route path="Temas/Vestimenta/Quiz" element={<QuizVestimenta />} />
           {/* arte */}
           <Route path="Temas/Arte/Leccion1" element={<LeccionArte1 />} />
           <Route path="Temas/Arte/Leccion2" element={<LeccionArte2 />} />
@@ -167,6 +174,8 @@ function AppRouter() {
           <Route path="Temas/Arte/Leccion4" element={<LeccionArte4 />} />
           <Route path="Temas/Arte/Leccion5" element={<LeccionArte5 />} />
           <Route path="Temas/Arte/Leccion6" element={<LeccionArte6 />} />
+          <Route path="Temas/Arte/Quiz" element={<QuizArte />} />
+
           {/* literatura */}
           <Route
             path="Temas/Literatura/Leccion1"
@@ -176,12 +185,14 @@ function AppRouter() {
             path="Temas/Literatura/Leccion2"
             element={<LeccionLiteratura2 />}
           />
+          <Route path="Temas/Literatura/Quiz" element={<QuizLite />} />
           {/* ruta a las lecciones por seccion: Costumbres */}
           {/* deporte */}
           <Route path="Temas/Deporte/Leccion1" element={<LeccionDeporte1 />} />
           <Route path="Temas/Deporte/Leccion2" element={<LeccionDeporte2 />} />
           <Route path="Temas/Deporte/Leccion3" element={<LeccionDeporte3 />} />
           <Route path="Temas/Deporte/Leccion4" element={<LeccionDeporte4 />} />
+          <Route path="Temas/Deporte/Quiz" element={<QuizDeporte />} />
           {/* gastronomia */}
           <Route
             path="Temas/Gastronomia/Leccion1"
@@ -238,6 +249,7 @@ function AppRouter() {
           <Route path="Temas/Derecho/Leccion2" element={<LeccionDerecho2 />} />
           <Route path="Temas/Derecho/Leccion3" element={<LeccionDerecho3 />} />
           <Route path="Temas/Derecho/Leccion4" element={<LeccionDerecho4 />} />
+          <Route path="Temas/Derecho/Quiz" element={<QuizDerecho />} />
           {/* sitios */}
           <Route
             path="Temas/SitiosCaracteristicos/Leccion1"
@@ -254,6 +266,10 @@ function AppRouter() {
           <Route
             path="Temas/SitiosCaracteristicos/Leccion4"
             element={<LeccionSitios4 />}
+          />
+          <Route
+            path="Temas/SitiosCaracteristicos/Quiz"
+            element={<QuizSitios />}
           />
           {/* paginas3D */}
           <Route path="Temas/Arte/Model" element={<Experience />} />
