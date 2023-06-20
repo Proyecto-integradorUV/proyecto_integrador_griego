@@ -1,35 +1,44 @@
 import { useTexture } from "@react-three/drei"
 import { DoubleSide } from "three"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Image() {
 
-    const PATH = "/static/fondos/deporte"
+    const PATH = "/static/fondos/deporte/"
     const imagenes = ["1.jfif", "2.jfif", "3.jpg", "4.jpg", "5.jpg"];
-    var idImage = 0;
-    const [textureUrl, setTextureUrl] = useState(imagenes[idImage]);
+    const [textureUrl, setTextureUrl] = useState(imagenes[0]);
+    const [canChangeImage, setCanChangeImage] = useState(true);
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCanChangeImage(true);
+        }, 1000); // Tiempo de espera en milisegundos antes de permitir cambiar la imagen nuevamente
 
+        return () => clearTimeout(timer);
+    }, [textureUrl]);
 
     const props = useTexture({
         map: PATH + textureUrl
-
-    })
+    });
 
     const changeImage = () => {
-        let idAnterior = textureUrl
-        do {
-            idImage = Math.floor(Math.random() * imagenes.length);
-        } while (idAnterior == imagenes[idImage]);
+        if (canChangeImage) {
+            setCanChangeImage(false);
 
-        console.log(idImage)
-        setTextureUrl(imagenes[idImage])
-    }
+            let idAnterior = textureUrl;
+            let idImage;
+            do {
+                idImage = Math.floor(Math.random() * imagenes.length);
+            } while (idAnterior === imagenes[idImage]);
+
+            setTextureUrl(imagenes[idImage]);
+        }
+    };
 
     return (
-        <mesh receiveShadow position-z={-9} position-y={6.5} rotation-z={- Math.PI * 2} onPointerMove={changeImage}>
+        <mesh receiveShadow position-z={-9} position-y={6.5} rotation-z={-Math.PI * 2} onPointerMove={changeImage}>
             <planeGeometry args={[18, 18]} />
             <meshStandardMaterial {...props} side={DoubleSide} />
         </mesh>
-    )
+    );
 }

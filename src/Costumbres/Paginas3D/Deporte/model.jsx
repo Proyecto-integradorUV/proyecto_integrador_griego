@@ -1,50 +1,41 @@
-import React, { useRef } from "react";
+
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/static/deporte.glb");
+  const { nodes, materials } = useGLTF("/static/discobolus.glb");
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_2.geometry}
-          material={materials["Scene_-_Root"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_3.geometry}
-          material={materials["Scene_-_Root"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_4.geometry}
-          material={materials["Scene_-_Root"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_5.geometry}
-          material={materials["Scene_-_Root"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_6.geometry}
-          material={materials["Scene_-_Root"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_7.geometry}
-          material={materials["Scene_-_Root"]}
-        />
+      <group rotation={[-Math.PI, 0.749, 0]}>
+        <group position={[-2.85, -14.541, -4.32]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_3.geometry}
+            material={materials.Material_0}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_4.geometry}
+            material={materials.Material_0}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_5.geometry}
+            material={materials.Material_0}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_6.geometry}
+            material={materials.Material_0}
+          />
+        </group>
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/static/deporte.glb");
+useGLTF.preload("/static/discobolus.glb");

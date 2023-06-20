@@ -2,7 +2,7 @@ import { useTexture } from "@react-three/drei"
 import { DoubleSide } from "three"
 
 export default function Floor() {
-    const PATH = "/static/textures/deporte"
+    const PATH = "/static/texturas/deporte/"
 
     const props = useTexture ({
         map: PATH + "color.jpg",
