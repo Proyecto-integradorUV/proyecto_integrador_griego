@@ -30,7 +30,6 @@ export default function Experience3() {
         width: '100%',
         height: '100%',
     };
-
     const buttonStyles = {
         position: 'absolute',
         top: '20px',
@@ -54,10 +53,10 @@ export default function Experience3() {
                 style={canvasStyles}
                 shadows
                 camera={{
-                    fov: 45,
-                    near: 0.1,
-                    far: 200,
-                    position: [4, 3, 16]
+                    fov: 70,
+                    near: 0.3,
+                    far: 250,
+                    position: [10, 13,30]
                 }}
             >
                 <OrbitControls makeDefault />

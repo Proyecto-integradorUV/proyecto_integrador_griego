@@ -41,6 +41,7 @@ export default function Experience6() {
         color: 'black',
     };
 
+
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -54,10 +55,10 @@ export default function Experience6() {
                 style={canvasStyles}
                 shadows
                 camera={{
-                    fov: 45,
-                    near: 0.1,
-                    far: 200,
-                    position: [4, 3, 16]
+                    fov: 70,
+                    near: 0.3,
+                    far: 250,
+                    position: [10, 13,30]
                 }}
             >
                 <OrbitControls makeDefault />

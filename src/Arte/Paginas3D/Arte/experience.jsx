@@ -55,10 +55,10 @@ export default function Experience() {
                 style={canvasStyles}
                 shadows
                 camera={{
-                    fov: 50,
-                    near: 0.9,
-                    far: 200,
-                    position: [8, 5, 20]
+                    fov: 70,
+                    near: 0.3,
+                    far: 250,
+                    position: [10, 13,30]
                 }}
             >
                 <OrbitControls makeDefault />
