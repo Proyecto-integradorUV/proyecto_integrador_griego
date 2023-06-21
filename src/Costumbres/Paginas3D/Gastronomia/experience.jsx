@@ -6,6 +6,7 @@ import Model from './model';
 import Floor from './Floor';
 import Image from './Image';
 import fondo from '../../Images/grecia.jpg';
+import regresar from "../../../style/botones/regresar.png";
 
 export default function Experience5() {
 
@@ -33,15 +34,15 @@ export default function Experience5() {
     };
 
     const buttonStyles = {
-        position: 'absolute',
-        top: '20px',
+        position: 'fixed',
+        // top: '20px',
         zIndex: 1,
-        fontSize: '18px',
+        background: 'none',
+        border: 'none',
+        bottom: '10px',
+        left: '10px',
         padding: '8px 16px',
-        backgroundColor: '#E07A5F',
-        color: 'black',
     };
-
 
     const navigate = useNavigate();
 
@@ -51,7 +52,7 @@ export default function Experience5() {
 
     return (
         <div ref={containerRef} style={containerStyles}>
-            <button onClick={handleClick} style={buttonStyles}>Regresar</button>
+            <button onClick={handleClick} style={buttonStyles}><img src={regresar} className="img-fluid" alt="Imagen" /></button>
             <Canvas
                 style={canvasStyles}
                 shadows

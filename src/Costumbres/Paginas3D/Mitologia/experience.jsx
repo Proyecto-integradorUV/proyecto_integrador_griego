@@ -1,11 +1,14 @@
 import { OrbitControls, Html, Text, Float } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import Model3 from './model';
 import Floor from './Floor';
 import Image from './Image';
-import fondo from '../../Images/grecia.jpg'
+import fondo from '../../Images/grecia.jpg';
+import { Link } from "react-router-dom";
+import regresar from "../../../style/botones/regresar.png";
+import NavbarPrincipal from "../../../components/navbar2";
+import { useNavigate } from 'react-router-dom';
 
 export default function Experience6() {
     const containerRef = useRef(null);
@@ -16,31 +19,15 @@ export default function Experience6() {
         container.style.backgroundSize = 'cover';
       }, []);
 
-    const containerStyles = {
-        position: 'relative',
-        width: '100%',
-        height: '100vh',
-        backgroundImage: `url("${fondo}")`,
-    };
-
     const canvasStyles = {
         position: 'absolute',
         top: 0,
         left: 0,
         width: '100%',
         height: '100%',
+        paddingtop: '100px',
+        margintop: '100px',
     };
-
-    const buttonStyles = {
-        position: 'absolute',
-        top: '20px',
-        zIndex: 1,
-        fontSize: '18px',
-        padding: '8px 16px',
-        backgroundColor: '#E07A5F',
-        color: 'black',
-    };
-
 
     const navigate = useNavigate();
 
@@ -48,9 +35,21 @@ export default function Experience6() {
         navigate('/Temas/Mitologia');
     };
 
+    const buttonStyles = {
+        position: 'fixed',
+        zIndex: 1,
+        background: 'none',
+        border: 'none',
+        bottom: '10px',
+        left: '10px',
+        padding: '8px 16px',
+    };
+
     return <>
-         <div ref={containerRef} style={containerStyles}>
-            <button onClick={handleClick} style={buttonStyles}>Regresar</button>
+     <NavbarPrincipal />
+         <div ref={containerRef} className="contenedorLeccionesMito">
+         {/* <img src={regresar} className="img-fluid" alt="Imagen" /> */}
+         <button onClick={handleClick} style={buttonStyles}><img src={regresar} className="img-fluid" alt="Imagen" /></button>
             <Canvas
                 style={canvasStyles}
                 shadows
@@ -90,6 +89,5 @@ export default function Experience6() {
                 </Float>
             </Canvas>
         </div>
-        
     </>
 }
