@@ -36,7 +36,7 @@ export default function Image() {
     };
 
     return (
-        <mesh receiveShadow position-z={-9} position-y={6.5} rotation-z={-Math.PI * 2} onPointerMove={changeImage}>
+        <mesh receiveShadow position-z={-9} position-y={-2.8} rotation-z={-Math.PI * 2} onPointerMove={changeImage}>
             <planeGeometry args={[18, 18]} />
             <meshStandardMaterial {...props} side={DoubleSide} />
         </mesh>

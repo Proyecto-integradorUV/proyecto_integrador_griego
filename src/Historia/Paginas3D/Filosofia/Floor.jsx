@@ -12,7 +12,7 @@ export default function Floor() {
         aoMap: PATH + 'ao.jpg'
     })
     return (
-        <mesh receiveShadow position-y={- 2.5} rotation-x={- Math.PI * 0.5} scale={2}>
+        <mesh receiveShadow position-y={-13} rotation-x={- Math.PI * 0.5} scale={2}>
             <planeGeometry args={[18, 18]} />
             <meshStandardMaterial {...props} side={DoubleSide}/>
         </mesh>
