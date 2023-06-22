@@ -37,7 +37,7 @@ const SignIn = () => {
     signIn(data)
       .then((response) => {
         setLoading(false);
-        localStorage.setItem("userData", JSON.stringify(response));
+        localStorage.setItem("userData", JSON.stringify(response.token));
 
         Swal.fire({
           icon: "success",
