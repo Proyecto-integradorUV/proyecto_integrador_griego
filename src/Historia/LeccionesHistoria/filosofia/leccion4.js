@@ -250,7 +250,7 @@ const LeccionFilosofia4 = () => {
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
                     <br></br>
-                    <Card.Title>Leccion4: El período neoplatónico</Card.Title>
+                    <Card.Title>Leccion 4: El período neoplatónico</Card.Title>
                     <Card.Text>
                       Daremos una breve <b>introducción</b> del período
                       neoplatónico
@@ -279,7 +279,7 @@ const LeccionFilosofia4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Leccion4: El período neoplatónico
+                            Leccion 4: El período neoplatónico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -333,7 +333,7 @@ const LeccionFilosofia4 = () => {
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
                     <br></br>
-                    <Card.Title>Leccion4: El período neoplatónico</Card.Title>
+                    <Card.Title>Leccion 4: El período neoplatónico</Card.Title>
                     <Card.Text>
                       Hablaremos sobre las principales <b>características</b>{" "}
                       del período neoplatónico
@@ -362,7 +362,7 @@ const LeccionFilosofia4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Leccion4: El período neoplatónico
+                            Leccion 4: El período neoplatónico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -449,69 +449,6 @@ const LeccionFilosofia4 = () => {
                           <Button
                             variant="secondary"
                             onClick={() => handleCloseModal("modal2")}
-                          >
-                            Cerrar
-                          </Button>
-                        </Modal.Footer>
-                      </Modal>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                  height: "100%",
-                }}
-              >
-                <Card style={{ width: "1000px", height: "300px" }}>
-                  <Card.Body>
-                    <Card.Title>Lección 1</Card.Title>
-                    <Card.Text>
-                      Descripción de los materiales utilizados en la ropa griega
-                      y su simbolismo.
-                    </Card.Text>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Link to="/Temas/Filosofia/Leccion4">
-                        <img
-                          onClick={() => handleOpenModal("modal3")}
-                          src={informacion}
-                          alt="Imagen"
-                        />
-                      </Link>
-                    </div>
-                    <div>
-                      <Modal
-                        show={modals.modal3}
-                        onHide={() => handleCloseModal("modal3")}
-                        scrollable={true}
-                        size="lg"
-                      >
-                        <Modal.Header closeButton>
-                          <Modal.Title>
-                            Descripción de los materiales utilizados en la ropa
-                            griega y su simbolismo.
-                          </Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                          <p>dws</p>
-                          {/* <YouTube videoId={videoId} opts={{ width: '100%', height: '100%' }} /> */}
-                        </Modal.Body>
-                        <Modal.Footer>
-                          <Button
-                            variant="secondary"
-                            onClick={() => handleCloseModal("modal3")}
                           >
                             Cerrar
                           </Button>
