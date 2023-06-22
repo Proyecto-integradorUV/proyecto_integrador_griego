@@ -11,12 +11,9 @@ import imagenModal1 from "./images/img1.jpg";
 import imagenModal2 from "./images/img2.png";
 import imagenModal3 from "./images/img3.png";
 import informacion from "../../../style/botones/informacion.png";
-// import video from "../../../style/botones/ver_video.png";
 import NavbarPrincipal from "../../../components/navbar2"
-// import YouTube from 'react-youtube';
 import lecVestimenta from "../../../style/titulos/vestimenta.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 
 const LeccionVestimenta1 = () => {
 
@@ -144,7 +141,7 @@ const LeccionVestimenta1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
                                             Descripción de los <b>materiales</b> utilizados en la ropa griega y su simbolismo
                                         </Card.Text>
@@ -186,9 +183,6 @@ const LeccionVestimenta1 = () => {
                 </div>
             </div>
             <div class="botones-lecciones">
-                <Link to="/Temas/Vestimenta/Lecciones">
-                    <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
                 <Link to="/Temas/Vestimenta/Leccion2">
                     <img src={siguiente} class="img-fluid" alt="Imagen" />
                 </Link>

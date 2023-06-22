@@ -286,7 +286,7 @@ const LeccionArte6 = () => {
                 <Card style={{ width: "600px", height: "300px" }}>
                   <Card.Body>
                     <Card.Title>
-                      Lección 6: introducción a la danza y música
+                    Lección 6: Danza y música griega
                     </Card.Title>
                     <Card.Text>
                       Danza y música griega: Vídeo explicativo

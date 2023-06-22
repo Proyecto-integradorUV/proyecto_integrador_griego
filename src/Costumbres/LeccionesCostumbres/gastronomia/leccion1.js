@@ -14,7 +14,6 @@ import imagen4 from "./images/griegos.jpg";
 import imagen5 from "./images/plato2.webp";
 import imagen6 from "./images/griego3.jpg";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 
 const LeccionGastronomia1 = () => {
   const [modals, setModals] = useState({
@@ -287,7 +286,7 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                      Lección 1: Introducción a la gastronomía girega
+                    Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
                       Mencionaremos sobre como ha sido la gastronomía griega.
@@ -374,7 +373,7 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                      Lección 1: Introducción a la gastronomía girega
+                    Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
                       Mencionaremos la influencia cultural y geográficas en la
@@ -528,7 +527,7 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                      Lección 1: Introducción a la gastronomía girega
+                    Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
                       Hablaremos sobre aquellas características principales de
@@ -558,7 +557,7 @@ const LeccionGastronomia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Introducción a la gastronomía girega
+                            Introducción a la gastronomía griega
                           </Modal.Title>
                         </Modal.Header>
 
@@ -698,9 +697,6 @@ const LeccionGastronomia1 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
         <Link to="/Temas/Gastronomia/Leccion2">
           <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>

@@ -128,7 +128,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             <b>Presentación</b> de la ciudad de Atenas, su <b>importancia</b> como capital y centro cultural
                                         </Card.Text>
@@ -165,7 +165,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             <b>Exploración</b> de la Acrópolis y sus <b>principales</b> estructuras
                                         </Card.Text>
@@ -212,7 +212,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             Discusión sobre el estilo <b>arquitectónico</b> de los templos griegos y su <b>significado</b> cultural
                                         </Card.Text>

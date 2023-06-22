@@ -124,7 +124,7 @@ const LeccionArte5 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                             <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 5: introduccion al teatro griego</Card.Title>
+                                <Card.Title>Lección 5: Literatura y teatro griego</Card.Title>
                                 <Card.Text>
                                     Importancia del teatro antiguo griego.
                                 </Card.Text>
@@ -174,7 +174,7 @@ const LeccionArte5 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 5: introduccion al teatro griego</Card.Title>
+                                <Card.Title>Lección 5: Literatura y teatro griego</Card.Title>
                                 <Card.Text>
                                     Antiguas obras teatrales de grecia
                                 </Card.Text>

@@ -86,7 +86,7 @@ const LeccionDeporte2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Juegos panhelenicos</Card.Title>
                                         <Card.Text>
                                             Juegos <b>panhelenicos</b>
                                         </Card.Text>

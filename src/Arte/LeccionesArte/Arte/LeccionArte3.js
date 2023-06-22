@@ -128,7 +128,7 @@ const LeccionArte3 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 3: Introducción a la escultura</Card.Title>
+                                <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
                                     Descripción de los estilos y técnicas escultóricas griegas, como el estilo kouros y el estilo contrapposto.
                                 </Card.Text>
@@ -171,7 +171,7 @@ const LeccionArte3 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 3: Temas de la escultura</Card.Title>
+                                <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
                                     Mención de los temas y motivos comunes en la escultura griega, como los dioses y atletas.
                                 </Card.Text>
@@ -214,7 +214,7 @@ const LeccionArte3 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 3: Ejemplos</Card.Title>
+                                <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
                                     Figuras destacadas de la escultura griega
                                 </Card.Text>

@@ -14,7 +14,6 @@ import literatura7 from "./images/literatura7.jpg";
 import literatura8 from "./images/literatura8.jpg";
 import literatura from "../../../style/titulos/literatura.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2"
 
@@ -126,7 +125,7 @@ const LeccionLiteratura1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                             <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: La literatura griega en los distintos periodos (periodo arcaico)</Card.Title>
+                                <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
                                     Breve introduccion a la literatura griega en el periodo arcaico
                                 </Card.Text>
@@ -165,7 +164,7 @@ const LeccionLiteratura1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: La literatura griega en los distintos periodos (periodo clásico)</Card.Title>
+                                <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
                                     Breve introduccion a la literatura griega en el periodo clásico.
                                 </Card.Text>
@@ -206,7 +205,7 @@ const LeccionLiteratura1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: La literatura griega en los distintos periodos (periodo helenístico)</Card.Title>
+                                <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
                                     Breve introducción a la literatura griega en el periodo helenístico.
                                 </Card.Text>
@@ -241,7 +240,7 @@ const LeccionLiteratura1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: El legado de la literatura griega</Card.Title>
+                                <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
                                     Legado de la literatura griega.
                                 </Card.Text>
@@ -279,10 +278,7 @@ const LeccionLiteratura1 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="botones-lecciones">
-            <Link to="/Temas/Literatura/Lecciones">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
+        <div class="botones-lecciones"> 
             <Link to="/Temas/Literatura/Leccion2">
             <img src={siguiente} class="img-fluid" alt="Imagen" />
             </Link>     

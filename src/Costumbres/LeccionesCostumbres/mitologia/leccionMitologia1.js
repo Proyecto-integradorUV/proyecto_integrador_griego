@@ -15,7 +15,6 @@ import dios1 from "./imagesLec1/zeus.png";
 import dios5 from "./imagesLec1/atenea.png";
 import dios6 from "./imagesLec1/afrodita.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import diosesHumanos from "./imagesLec1/diosesHumanos.jpeg";
 
 const LeccionMitologia1 = () => {
@@ -547,9 +546,6 @@ const LeccionMitologia1 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Lecciones">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
         <Link to="/Temas/Mitologia/Leccion2">
           <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>

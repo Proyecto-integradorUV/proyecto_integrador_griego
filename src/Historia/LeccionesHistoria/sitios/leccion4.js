@@ -360,7 +360,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4</Card.Title>
+                    <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       <b>Presentación</b> de las islas griegas como destinos
                       turísticos populares y únicos
@@ -442,7 +442,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4</Card.Title>
+                    <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       Destacar algunas de las islas <b>más conocidas</b>, como
                       Santorini, Mykonos y Creta
@@ -569,7 +569,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4</Card.Title>
+                    <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       Discusión sobre la <b>arquitectura tradicional</b> de las
                       islas, las playas, la gastronomía y las actividades

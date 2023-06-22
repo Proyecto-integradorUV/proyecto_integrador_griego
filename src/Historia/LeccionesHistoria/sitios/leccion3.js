@@ -103,7 +103,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Introducción</b> a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                         </Card.Text>
@@ -139,7 +139,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Exploración</b> de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                         </Card.Text>
@@ -181,7 +181,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Explicación</b> del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                         </Card.Text>

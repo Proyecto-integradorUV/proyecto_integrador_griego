@@ -284,8 +284,7 @@ const LeccionDerecho4 = () => {
                 <Card style={{ width: "400", height: "300px" }}>
                   <Card.Body>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación
-                      del estado moderno
+                      Lección 4: La lucha por la independencia y la formación del estado moderno
                     </Card.Title>
                     <Card.Text>
                       Movimiento de independencia griego y su influencia en el
@@ -412,8 +411,7 @@ const LeccionDerecho4 = () => {
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación
-                      del estado moderno.
+                      Lección 4: La lucha por la independencia y la formación del estado moderno
                     </Card.Title>
                     <Card.Text>
                       La primera constitución de Grecia y los derechos

@@ -211,7 +211,7 @@ const LeccionDeporte4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4</Card.Title>
+                    <Card.Title>Lección 4: Gimnasia entrenamiento fisico</Card.Title>
                     <Card.Text>
                       <b>Gimnasia</b> entrenamiento fisico
                     </Card.Text>

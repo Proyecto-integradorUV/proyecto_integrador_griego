@@ -12,7 +12,6 @@ import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2"
 
@@ -122,7 +121,7 @@ const LeccionDerecho1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: Introducción a los derechos y la historia de Grecia</Card.Title>
+                                <Card.Title>Lección 1:  Introducción a los derechos y la historia de Grecia</Card.Title>
                                 <Card.Text>
                                     Explicación de los derechos y por qué son importantes
                                 </Card.Text>
@@ -164,7 +163,7 @@ const LeccionDerecho1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: Introducción e influencia de los derechos.</Card.Title>
+                                <Card.Title>Lección 1:  Introducción a los derechos y la historia de Grecia</Card.Title>
                                 <Card.Text>
                                     Introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
@@ -212,9 +211,6 @@ const LeccionDerecho1 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Derecho/Lecciones">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
             <Link to="/Temas/Derecho/Leccion2">
             <img src={siguiente} class="img-fluid" alt="Imagen" />
             </Link>     

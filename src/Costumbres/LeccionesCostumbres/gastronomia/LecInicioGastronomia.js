@@ -20,7 +20,7 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1: Introducción a la gastronomía girega</Card.Title>
+                <Card.Title>Lección 1: Introducción a la gastronomía griega</Card.Title>
                 <Card.Text className="card-text">
                   • Breve historia de la cocina griega
                   <br />• Influencias culturales y geográficas de la cocina
