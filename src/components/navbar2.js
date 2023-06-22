@@ -3,21 +3,21 @@ import { Button, Modal } from "react-bootstrap";
 import { SignInContext } from "../context/signInContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
-import avatar1 from "./images/Afrodita.png";
-import avatar2 from "./images/Apolo.png";
-import avatar3 from "./images/Ares.png";
-import avatar4 from "./images/Artemisa.png";
-import avatar5 from "./images/Atenea.png";
-import avatar6 from "./images/Demeter.png";
-import avatar7 from "./images/Dioniso.png";
-import avatar8 from "./images/Hades.png";
-import avatar9 from "./images/Hefesto.png";
-import avatar10 from "./images/Hera.png";
-import avatar11 from "./images/Hestia.png";
-import avatar12 from "./images/Poseidon.png";
-import avatar13 from "./images/Zeus.png";
-import avatar14 from "./images/medusa.png";
-import defaultPhoto from "./images/default_photo.jpg";
+// import avatar1 from "./images/Afrodita.png";
+// import avatar2 from "./images/Apolo.png";
+// import avatar3 from "./images/Ares.png";
+// import avatar4 from "./images/Artemisa.png";
+// import avatar5 from "./images/Atenea.png";
+// import avatar6 from "./images/Demeter.png";
+// import avatar7 from "./images/Dioniso.png";
+// import avatar8 from "./images/Hades.png";
+// import avatar9 from "./images/Hefesto.png";
+// import avatar10 from "./images/Hera.png";
+// import avatar11 from "./images/Hestia.png";
+// import avatar12 from "./images/Poseidon.png";
+// import avatar13 from "./images/Zeus.png";
+// import avatar14 from "./images/medusa.png";
+// import defaultPhoto from "./images/default_photo.jpg";
 
 const NavbarPrincipal = () => {
   const { isLogged, setIsLogged } = useContext(SignInContext);
@@ -44,13 +44,13 @@ const NavbarPrincipal = () => {
     <div className="fixed-top">
       <nav className="navbarPrincipal">
           <ul className="navbarList2Principal">
-            {/* <li className="navbarItemPrincipal">
+            <li className="navbarItemPrincipal">
               {isLogged && (
                 <a href=" " className="navbarLink2Principal navbar-home">
-                  Hola, {getUsername()}
+                  Hola, &nbsp;{getUsername()}
                 </a>
               )}
-            </li> */}
+            </li>
             <li className="navbarItemPrincipal">
               {isLogged && (
                 <a
