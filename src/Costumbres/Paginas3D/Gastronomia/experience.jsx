@@ -1,3 +1,4 @@
+import "../../../style/css/model.css"
 import { OrbitControls, Html, Text, Float } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +7,8 @@ import Model from './model';
 import Floor from './Floor';
 import Image from './Image';
 import fondo from '../../Images/grecia.jpg';
+import regresar from "../../../style/botones/regresar.png";
+import NavbarPrincipal from "../../../components/navbar2";
 
 export default function Experience5() {
 
@@ -17,13 +20,6 @@ export default function Experience5() {
         container.style.backgroundSize = 'cover';
       }, []);
 
-    const containerStyles = {
-        position: 'relative',
-        width: '100%',
-        height: '100vh',
-        backgroundImage: `url("${fondo}")`,
-    };
-
     const canvasStyles = {
         position: 'absolute',
         top: 0,
@@ -33,15 +29,26 @@ export default function Experience5() {
     };
 
     const buttonStyles = {
-        position: 'absolute',
-        top: '20px',
+        position: 'fixed',
         zIndex: 1,
-        fontSize: '18px',
+        background: 'none',
+        border: 'none',
+        bottom: '10px',
+        left: '10px',
         padding: '8px 16px',
-        backgroundColor: '#E07A5F',
-        color: 'black',
+        transition: 'transform 0.3s',
+        transformOrigin: 'top left',
     };
 
+    const divStyles = {
+        position: 'fixed',
+        bottom: '10px',
+        right: '10px',
+        background: '#E07A5F',
+        borderRadius: '8px',
+        padding: '8px',
+        color: 'white',
+      };
 
     const navigate = useNavigate();
 
@@ -50,16 +57,19 @@ export default function Experience5() {
     };
 
     return (
-        <div ref={containerRef} style={containerStyles}>
-            <button onClick={handleClick} style={buttonStyles}>Regresar</button>
+        <>
+        <NavbarPrincipal/>
+        <div ref={containerRef} className="contenedorLeccionesGastro">
+            <button onClick={handleClick} style={buttonStyles} className="regresar-button"><img src={regresar} className="img-fluid" alt="Imagen" /></button>
+            <div style={divStyles}> Pasa el mouse por la pared de imágenes </div>
             <Canvas
                 style={canvasStyles}
                 shadows
                 camera={{
                     fov: 70,
-                    near: 0.3,
+                    near: 0.9,
                     far: 250,
-                    position: [10, 13,30]
+                    position: [10, 10,40]
                 }}
             >
                 <OrbitControls makeDefault />
@@ -67,13 +77,13 @@ export default function Experience5() {
                 <spotLight castShadow position={[0, 3, -6]} intensity={1.5} />
 
                 <ambientLight intensity={0.5} />
-                <Html position={[10, 15, 0]} wrapperClass="label" style={{ fontSize: '36px', fontWeight: 'bold', color: 'BLACK' }}>
-                    GASTRONOMIA GRIEGA
+                <Html position={[10, 7, 0]} wrapperClass="label" style={{ fontSize: '36px', fontWeight: 'bold', color: 'BLACK' }}>
+                    GASTRONOMÍA GRIEGA
                 </Html>
                 <Floor />
-                <Model position-y={-1} scale={25} position-z={1} rotation-y={30} castShadow />
+                <Model position-y={-9.8} scale={25} position-z={1} rotation-y={30} castShadow />
                 <Image />
-                <Float
+                {/* <Float
                     speed={2}
                     rotationIntensity={2}
                 >
@@ -88,8 +98,9 @@ export default function Experience5() {
                     >
                         Pase el mouse por la pared de imagenes
                     </Text>
-                </Float>
+                </Float> */}
             </Canvas>
         </div>
+        </>
     );
 }
