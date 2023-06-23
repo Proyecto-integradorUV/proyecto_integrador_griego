@@ -10,7 +10,8 @@ class UserSerializer(serializers.ModelSerializer):
                   'last_name',
                   'email',
                   'username',
-                  'password',  
+                  'password',
+                  'avatar',  
                 ]
         extra_kwargs = {
             'id': {'read_only': True},
@@ -26,7 +27,8 @@ class CreateUserSerializer(serializers.ModelSerializer):
                   'last_name',
                   'email',
                   'username',
-                  'password',  
+                  'password',
+                  'avatar',  
                 ]
 
     def create(self, validated_data):
@@ -37,3 +39,15 @@ class CreateUserSerializer(serializers.ModelSerializer):
         person.save()
         
         return person
+
+    def update(self, instance, validated_data):
+        instance.first_name = validated_data.get('first_name', instance.first_name)
+        instance.last_name = validated_data.get('last_name', instance.last_name)
+        instance.email = validated_data.get('email', instance.email)
+        instance.username = validated_data.get('username', instance.username)
+        instance.password = validated_data.get('password', instance.password)
+        instance.avatar = validated_data.get('avatar', instance.avatar)
+    
+        instance.save()
+        
+        return instance
