@@ -69,13 +69,14 @@
   }
 
   .boton-quiz {
-    /* border-radius: 10%; */
     margin-bottom: 5%;
+    border-radius: 10px;
   }
 
   .boton-quizContinuar{
-    /* border-radius: 10%; */
+    align-items: center;
     margin-top: 5%;
+    border-radius: 10px;
   }
   
   .tiempo-restante {
@@ -87,18 +88,13 @@
   
   .correct,
   .correct:hover {
-    background-color: #87f087;
+    background-color: #347a34;
   }
   
   .incorrect,
   .incorrect:hover {
-    background-color: #fc4e4e;
+    background-color: #9f2626;
   }
-  
-  /* .btns-container {
-    display: flex;
-    justify-content: space-evenly;
-  } */
   
   button:hover {
     background-color: #CD6155;
@@ -106,6 +102,7 @@
   
   button[disabled] {
     background-color: rgb(224, 188, 109);
+    opacity: 0.6;
     color: #ffffff;
     cursor: not-allowed;
   }

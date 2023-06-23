@@ -9,7 +9,7 @@ const QuizMitologia = () => {
   const [puntuacion, setPuntuacion] = useState(0);
 
   const [isFinished, setIsFinished] = useState(false);
-  const [tiempoRestante, setTiempoRestante] = useState(10);
+  const [tiempoRestante, setTiempoRestante] = useState(60);
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
@@ -26,9 +26,9 @@ const QuizMitologia = () => {
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
-        setTiempoRestante(10);
+        setTiempoRestante(60);
       }
-    }, 1500);
+    }, 1000);
   }
 
   useEffect(() => {
@@ -46,18 +46,27 @@ const QuizMitologia = () => {
       return "0.0";
     }
     if (puntaje === 1) {
-      return "2.5";
+      return "0.62";
     }
     if (puntaje === 2) {
-      return "5.0";
+      return "1.25";
     }
     if (puntaje === 3) {
-      return "3.0";
+      return "1.87";
     }
     if (puntaje === 4) {
-      return "4.0";
+      return "2.5";
     }
     if (puntaje === 5) {
+      return "3.12";
+    }
+    if (puntaje === 6) {
+      return "3.75";
+    }
+    if (puntaje === 7) {
+      return "4.37";
+    }
+    if (puntaje === 8) {
       return "5.0";
     }
   }
