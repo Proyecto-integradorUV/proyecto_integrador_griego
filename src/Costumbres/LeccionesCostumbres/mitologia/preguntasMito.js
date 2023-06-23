@@ -90,7 +90,7 @@ const preguntasMito = [
     opciones: [
       { textoRespuesta: "Cronos", isCorrect: true },
       { textoRespuesta: "Zeus", isCorrect: false },
-      { textoRespuesta: "Hera", isCorrect: false },
+      { textoRespuesta: "Poseidon", isCorrect: false },
       { textoRespuesta: "Dionisio", isCorrect: false },
     ],
   },
