@@ -57,9 +57,6 @@ const QuizDepor = () => {
     if (puntaje === 4) {
       return "4.0";
     }
-    if (puntaje === 5) {
-      return "5.0";
-    }
   }
 
   if (isFinished)
