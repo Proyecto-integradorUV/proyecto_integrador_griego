@@ -17,7 +17,7 @@ import avatar10 from "./images/Hera.png";
 import avatar11 from "./images/Hestia.png";
 import avatar12 from "./images/Poseidon.png";
 import avatar13 from "./images/Zeus.png";
-import avatar14 from "./images/medusa.png";
+import avatar14 from "./images/Medusa.png";
 import defaultPhoto from "./images/default_photo.jpg";
 
 const NavbarPrincipal = () => {  
