@@ -45,7 +45,7 @@ const LeccionesDerecho = () => {
                                     • Discutir las limitaciones y exclusiones en los derechos en la antigua Grecia.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
+                                    <Link to="/Temas/Derecho/Leccion2" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -62,7 +62,7 @@ const LeccionesDerecho = () => {
                                     • Destacar los cambios y las restricciones impuestas durante estos períodos.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion3" class="btn-empezar">
+                                    <Link to="/Temas/Derecho/Leccion3" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>
@@ -79,7 +79,7 @@ const LeccionesDerecho = () => {
                                     • Presentar la primera constitución de Grecia y los derechos establecidos en ella.                                  
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
+                                    <Link to="/Temas/Derecho/Leccion4" class="btn-empezar">
                                         <img src={botonEmpezar} alt="Imagen" class="button-image" />
                                     </Link>
                                 </Card.Text>

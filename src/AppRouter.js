@@ -93,6 +93,8 @@ import Experience6 from "./Costumbres/Paginas3D/Mitologia/experience.jsx";
 import Experience7 from "./Historia/Paginas3D/Derecho/experience.jsx";
 import Experience8 from "./Historia/Paginas3D/Filosofia/experience.jsx";
 import Experience9 from "./Historia/Paginas3D/Sitios/experience.jsx";
+// Lecciones
+import Lecciones from "./leccionesPage/leccionesPage.js"
 
 function AppRouter() {
   const { isLogged } = useContext(SignInContext);
@@ -104,6 +106,8 @@ function AppRouter() {
           <Route path="Principal" element={<Principal />} />
           {/* ruta a la pagina de donde salen los temas a aprender */}
           <Route path="Temas" element={<Temas />} />
+          {/* ruta a la pagina de donde salen las lecciones del usuario*/}
+          <Route path="Lecciones" element={<Lecciones />} />
           {/* ruta a cada tema de aprendizaje */}
           <Route path="Temas/Arte" element={<Arte />} />
           <Route path="Temas/Literatura" element={<Literatura />} />

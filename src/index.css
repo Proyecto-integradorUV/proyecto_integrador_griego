@@ -87,27 +87,15 @@ code {
   font-size: 20px;
 }
 
-.user-actions {
-  display: flex;
-  align-items: center;
-}
-
-.selected-photo-container {
-  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
-}
-
-.selected-photo {
-  width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+.userImageContainer {
+  width: 30px;
   height: 30px;
-  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.small-photo {
-  width: 50px;
-  height: 50px;
-}
-
-.selected-image {
-  width: 50px;
-  height: 50px;
+.userImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

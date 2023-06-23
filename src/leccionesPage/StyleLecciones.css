@@ -1,0 +1,55 @@
+.contenedor-inicial-principal {
+    background-image: url("./images/Grecia.jfif");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* .tabla-contenedor {
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    max-width: 1000px;
+  } */
+  
+  .mi-tabla {
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(224, 188, 109, 0.5);
+    max-width: 1000px;
+  }
+
+  .enlace-personalizado {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: black; /* Cambia el color del enlace a negro */
+    font-size: 18px;
+  }
+  
+  .mi-tabla::before,
+  .mi-tabla::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    pointer-events: none;
+  }
+  
+  .mi-tabla::before {
+    left: -2px;
+    border-right: none;
+  }
+  
+  .mi-tabla::after {
+    right: -2px;
+    border-left: none;
+  }
+  
+  .mi-tabla tbody td:nth-child(2n+0) {
+    background-color: rgba(226, 224, 115, 0.5); /* Color de fondo para las columnas de resultados */
+  }

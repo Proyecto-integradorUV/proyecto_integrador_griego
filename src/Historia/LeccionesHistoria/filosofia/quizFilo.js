@@ -1,5 +1,5 @@
 import preguntas from "./preguntasFilo";
-import "./quizFilo.css";
+import "../../../style/css/quiz.css";
 import { useState, useEffect } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";

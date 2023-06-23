@@ -1,5 +1,5 @@
 import preguntas from "./preguntas";
-import "./quizVesti.css";
+import "../../../style/css/quiz.css";
 import { useState, useEffect } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/vestimenta.png";

@@ -1,5 +1,6 @@
 import preguntas from "./preguntas";
-import "./quizLite.css";
+import "../../../style/css/quiz.css";
+import "../../../style/css/contenedores.css";
 import { useState, useEffect } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/literatura.png";
@@ -46,18 +47,27 @@ const QuizLite = () => {
       return "0.0";
     }
     if (puntaje === 1) {
-      return "2.5";
+      return "0.6";
     }
     if (puntaje === 2) {
-      return "5.0";
+      return "1.2";
     }
     if (puntaje === 3) {
-      return "3.0";
+      return "1.8";
     }
     if (puntaje === 4) {
-      return "4.0";
+      return "2.5";
     }
     if (puntaje === 5) {
+      return "3.1";
+    }
+    if (puntaje === 6) {
+      return "3.7";
+    }
+    if (puntaje === 7) {
+      return "4.4";
+    }
+    if (puntaje === 8) {
       return "5.0";
     }
   }
