@@ -26,7 +26,7 @@ const QuizVesti = () => {
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
-        setTiempoRestante(10);
+        setTiempoRestante(60);
       }
     }, 1500);
   }
@@ -46,28 +46,28 @@ const QuizVesti = () => {
       return "0.0";
     }
     if (puntaje === 1) {
-      return "2.5";
+      return "0.62";
     }
     if (puntaje === 2) {
-      return "5.0";
+      return "1.25";
     }
     if (puntaje === 3) {
-      return "3.0";
+      return "1.87";
     }
     if (puntaje === 4) {
-      return "4.0";
+      return "2.5";
     }
     if (puntaje === 5) {
-      return "5.0";
+      return "3.12";
     }
     if (puntaje === 6) {
-      return "6.0";
+      return "3.75";
     }
     if (puntaje === 7) {
-      return "7.0";
+      return "4.37";
     }
     if (puntaje === 8) {
-      return "8.0";
+      return "5.0";
     }
   }
 

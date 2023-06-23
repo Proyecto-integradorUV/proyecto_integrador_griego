@@ -26,7 +26,7 @@ const QuizDepor = () => {
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
-        setTiempoRestante(10);
+        setTiempoRestante(60);
       }
     }, 1500);
   }
@@ -46,10 +46,10 @@ const QuizDepor = () => {
       return "0.0";
     }
     if (puntaje === 1) {
-      return "2.5";
+      return "1.0";
     }
     if (puntaje === 2) {
-      return "5.0";
+      return "2.0";
     }
     if (puntaje === 3) {
       return "3.0";
