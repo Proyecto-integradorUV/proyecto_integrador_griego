@@ -60,7 +60,7 @@
     width: 100%;
     font-size: 16px;
     color: #ffffff;
-    background-color: rgb(224, 188, 109);
+    background-color: #CD6155;
     display: flex;
     padding: 5px;
     justify-content: flex-start;
@@ -101,11 +101,11 @@
   } */
   
   button:hover {
-    background-color: #CD6155;
+    background-color: rgb(224, 188, 109);
   }
   
   button[disabled] {
-    background-color: rgb(224, 188, 109);
+    background-color: #CD6155;
     color: #ffffff;
     cursor: not-allowed;
   }
