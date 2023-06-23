@@ -60,6 +60,15 @@ const QuizSitios = () => {
     if (puntaje === 5) {
       return "5.0";
     }
+    if (puntaje === 6) {
+      return "6.0";
+    }
+    if (puntaje === 7) {
+      return "7.0";
+    }
+    if (puntaje === 8) {
+      return "8.0";
+    }
   }
 
   if (isFinished)

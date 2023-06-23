@@ -62,6 +62,15 @@ const preguntasMito = [
       { textoRespuesta: "Pasta carbonara", isCorrect: false },
     ],
   },
+  {
+    titulo: "¿Cuál es el templo más famoso de la Acrópolis en Atenas?",
+    opciones: [
+      { textoRespuesta: "Templo de Atenea Niké", isCorrect: false },
+      { textoRespuesta: "Partenón", isCorrect: true },
+      { textoRespuesta: "Templo de Zeus Olímpico", isCorrect: false },
+      { textoRespuesta: "Erecteión", isCorrect: false },
+    ],
+  },
 ];
 
 export default preguntasMito;
