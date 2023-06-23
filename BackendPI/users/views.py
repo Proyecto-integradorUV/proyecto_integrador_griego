@@ -30,7 +30,7 @@ class UserList(generics.ListAPIView):
     
 
 class UserUpdateAPIView(generics.UpdateAPIView):
-    serializer_class = UserSerializer
+    serializer_class = CreateUserSerializer
     queryset = CustomUser.objects.all()
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
