@@ -1,5 +1,5 @@
 import "../../../style/css/model.css"
-import { OrbitControls, Html, Text, Float } from '@react-three/drei';
+import { OrbitControls, Html} from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
@@ -83,22 +83,6 @@ export default function Experience5() {
                 <Floor />
                 <Model position-y={-9.8} scale={25} position-z={1} rotation-y={30} castShadow />
                 <Image />
-                {/* <Float
-                    speed={2}
-                    rotationIntensity={2}
-                >
-                    <Text
-                        font="./bangers-v20-latin-regular.woff"
-                        fontSize={2}
-                        color="black"
-                        position-y={13}
-                        position-x={-15}
-                        maxWidth={8}
-                        textAlign="center"
-                    >
-                        Pase el mouse por la pared de imagenes
-                    </Text>
-                </Float> */}
             </Canvas>
         </div>
         </>
