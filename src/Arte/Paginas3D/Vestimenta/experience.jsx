@@ -64,7 +64,7 @@ export default function Experience3() {
             style={canvasStyles}
             shadows
             camera={{
-                fov: 100,
+                fov: 70,
                 near: 0.9,
                 far: 250,
                 position: [10, 10, 40]
@@ -75,7 +75,7 @@ export default function Experience3() {
             <spotLight castShadow position={[0, 3, -6]} intensity={1.5} />
 
             <ambientLight intensity={0.5} />
-            <Html position={[30, 10, 0]} wrapperClass="label" style={{ fontSize: '36px', fontWeight: 'bold', color: 'BLACK' }}>
+            <Html position={[20, 10, 0]} wrapperClass="label" style={{ fontSize: '36px', fontWeight: 'bold', color: 'BLACK' }}>
                     VESTIMENTA GRIEGA
                 </Html>
                 <Floor />
