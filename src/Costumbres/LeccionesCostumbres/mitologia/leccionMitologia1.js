@@ -526,7 +526,6 @@ const LeccionMitologia1 = () => {
                             en la Tierra disminuía gradualmente, y los dioses se
                             volvían menos accesibles para los mortales.
                           </p>
-                          <p>Vídeo</p>
                         </Modal.Body>
                         <Modal.Footer>
                           <Button
