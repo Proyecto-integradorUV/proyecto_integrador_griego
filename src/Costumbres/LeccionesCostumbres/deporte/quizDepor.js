@@ -9,7 +9,7 @@ const QuizDepor = () => {
   const [puntuacion, setPuntuacion] = useState(0);
 
   const [isFinished, setIsFinished] = useState(false);
-  const [tiempoRestante, setTiempoRestante] = useState(10);
+  const [tiempoRestante, setTiempoRestante] = useState(60);
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
@@ -28,7 +28,7 @@ const QuizDepor = () => {
         setPreguntaActual(preguntaActual + 1);
         setTiempoRestante(60);
       }
-    }, 1500);
+    }, 1000);
   }
 
   useEffect(() => {
