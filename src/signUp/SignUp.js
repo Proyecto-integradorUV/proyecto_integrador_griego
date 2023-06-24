@@ -32,7 +32,7 @@ const SignUp = () => {
     email: "",
     username: "",
     password: "",
-    avatar: "",
+    // avatar: "",
     errors: {},
   });
 
@@ -240,7 +240,7 @@ const SignUp = () => {
           )}
           <br />
           <label>Seleccione un avatar: </label>
-          <Link style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%'}} onChange={handleChange}>
+          <Link style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%'}}>
                   <img
                     onClick={() => handleOpenModal("modal")}
                     src={selectedImage}
