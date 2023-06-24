@@ -126,7 +126,7 @@ const LeccionArte2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '600px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Introducción a la arquitectura</Card.Title>
+                                <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
                                     Explicación de los elementos arquitectónicos griegos, como el orden dórico, jónico y corintio.
                                 </Card.Text>
@@ -171,7 +171,7 @@ const LeccionArte2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '600px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Descripción de la arquitectura</Card.Title>
+                                <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
                                     Descripción de los principales tipos de edificios, como los templos y teatros.
                                 </Card.Text>
@@ -213,7 +213,7 @@ const LeccionArte2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '600px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Ejemplos</Card.Title>
+                                <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
                                     Ejemplos destacados de la arquitectura griega, como el Partenón.
                                 </Card.Text>
@@ -257,7 +257,7 @@ const LeccionArte2 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
+        <div class="botones-lecciones">
             <Link to="/Temas/Arte/Leccion1">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>

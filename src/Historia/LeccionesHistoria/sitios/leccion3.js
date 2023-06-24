@@ -43,7 +43,7 @@ const LeccionSitios3 = () => {
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
 
     return (
-        <div className="container-leccionSitios">
+        <div className="contenedorHistoria">
             <NavbarPrincipal />
             <div class="titulo-empezar">
                 <img src={lecSitios} class="img-fluid" alt="Imagen" />
@@ -103,7 +103,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Introducción</b> a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                         </Card.Text>
@@ -139,7 +139,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Exploración</b> de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                         </Card.Text>
@@ -181,7 +181,7 @@ const LeccionSitios3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
                                             <b>Explicación</b> del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                         </Card.Text>
@@ -226,7 +226,7 @@ const LeccionSitios3 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
+            <div class="botones-lecciones">
                 <Link to="/Temas/SitiosCaracteristicos/Leccion2">
                     <img src={anterior} class="img-fluid" alt="Imagen" />
                 </Link>

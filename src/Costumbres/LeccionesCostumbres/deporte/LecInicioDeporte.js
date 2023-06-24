@@ -22,10 +22,7 @@ const LeccionesDeporte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    Juegos olimpicos
-                                </Card.Text>
+                                <Card.Title >Lección 1: Juegos olimpicos</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve introducción
                                 </Card.Text>
@@ -40,10 +37,7 @@ const LeccionesDeporte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Juegos panhelenicos
-                                </Card.Text>
+                                <Card.Title>Lección 2: Juegos panhelenicos</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve introducción
                                 </Card.Text>
@@ -58,10 +52,7 @@ const LeccionesDeporte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 3</Card.Title>
-                                <Card.Text className="card-title">
-                                    Carreras y competiciones atleticas
-                                </Card.Text>
+                                <Card.Title >Lección 3: Carreras y competiciones atleticas</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve introducción
                                 </Card.Text>
@@ -76,10 +67,7 @@ const LeccionesDeporte = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text className="card-title">
-                                    Gimnasia entrenamiento fisico
-                                </Card.Text>
+                                <Card.Title>Lección 4: Gimnasia entrenamiento fisico</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve introducción
                                 </Card.Text>

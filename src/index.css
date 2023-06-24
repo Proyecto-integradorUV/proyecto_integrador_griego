@@ -86,3 +86,16 @@ code {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
+
+.userImageContainer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

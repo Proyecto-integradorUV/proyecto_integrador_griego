@@ -1,9 +1,9 @@
 import React from 'react';
 import "./StylePrincipal.css";
 import Slider from 'react-slick';
-import video1 from "./videos/slide1.mp4"
-import video2 from "./videos/slide2.mp4"
-import video3 from "./videos/slide3.mp4"
+import video1 from "./videos/video1.mp4"
+// import video2 from "./videos/slide2.mp4"
+// import video3 from "./videos/slide3.mp4"
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -37,10 +37,10 @@ const VideoSlider = () => {
         <Slider {...settings}>
             <div>
                 <div className="video-container">
-                    <video src={video1} controls className="video" autoPlay/>
+                    <video src={video1} controls className="video" autoPlay loop/>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <div className="video-container">
                     <video src={video2} controls className="video" autoPlay/>
                 </div>
@@ -49,7 +49,7 @@ const VideoSlider = () => {
                 <div className="video-container">
                     <video src={video3} controls className="video" autoPlay/>
                 </div>
-            </div>
+            </div> */}
         </Slider>
     );
 };

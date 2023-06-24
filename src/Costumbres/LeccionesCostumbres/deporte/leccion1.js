@@ -8,7 +8,6 @@ import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import imagenModal1 from "./images/carreras.jpg";
 import imagenModal2 from "./images/lanzamiento disco.jpg";
 import imagenModal3 from "./images/jabalina.png";
@@ -122,7 +121,7 @@ const LeccionDeporte1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Juegos olimpicos</Card.Title>
                                         <Card.Text>
                                             Juegos <b>olimpicos</b>
                                         </Card.Text>
@@ -178,10 +177,7 @@ const LeccionDeporte1 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
-                <Link to="/Temas/Deporte/Lecciones">
-                    <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
+            <div class="botones-lecciones">
                 <Link to="/Temas/Deporte/Leccion2">
                     <img src={siguiente} class="img-fluid" alt="Imagen" />
                 </Link>

@@ -22,10 +22,7 @@ const LeccionesSitio = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 1</Card.Title>
-                                <Card.Text className="card-title">
-                                    Introducción a Grecia
-                                </Card.Text>
+                                <Card.Title >Lección 1: Introducción a Grecia</Card.Title>
                                 <Card.Text className="card-text">
                                     • Breve introducción al país, su ubicación geográfica y su importancia histórica y cultural
                                     <br />
@@ -44,10 +41,7 @@ const LeccionesSitio = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 2</Card.Title>
-                                <Card.Text className="card-title">
-                                    Atenas y la Acrópolis
-                                </Card.Text>
+                                <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                 <Card.Text className="card-text">
                                     • Presentación de la ciudad de Atenas, su importancia como capital y centro cultural
                                     <br />
@@ -66,10 +60,7 @@ const LeccionesSitio = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title >Lección 3</Card.Title>
-                                <Card.Text className="card-title">
-                                    Delfos y el Oráculo
-                                </Card.Text>
+                                <Card.Title >Lección 3: Delfos y el Oráculo</Card.Title>
                                 <Card.Text className="card-text">
                                     • Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                     <br />
@@ -88,10 +79,7 @@ const LeccionesSitio = () => {
                     <Carousel.Item>
                         <Card>
                             <Card.Body>
-                                <Card.Title>Lección 4</Card.Title>
-                                <Card.Text className="card-title">
-                                    Las Islas Griegas
-                                </Card.Text>
+                                <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                                 <Card.Text className="card-text">
                                     • Presentación de las islas griegas como destinos turísticos populares y únicos
                                     <br />

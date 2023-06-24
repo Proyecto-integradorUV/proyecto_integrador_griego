@@ -1,6 +1,6 @@
 import React, { createContext, useState, useLayoutEffect } from "react";
 
-export const SignInContext  = createContext();
+export const SignInContext = createContext();
 
 export function LoginWrapper({ children }) {
   const [isLogged, setIsLogged] = useState(false);

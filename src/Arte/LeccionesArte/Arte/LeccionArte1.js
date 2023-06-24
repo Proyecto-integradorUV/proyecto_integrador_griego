@@ -12,7 +12,6 @@ import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
 import arte from "../../../style/titulos/arte.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2"
 
@@ -122,7 +121,7 @@ const LeccionArte1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: Introducción a la influencia artística de los griegos</Card.Title>
+                                <Card.Title>Lección 1: Introducción a la cultura griega y su influencia artística</Card.Title>
                                 <Card.Text>
                                     Breve descripción de la cultura y la importancia del arte en la sociedad griega.
                                 </Card.Text>
@@ -166,7 +165,7 @@ const LeccionArte1 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 1: Periodos de la influencia artistica.</Card.Title>
+                                <Card.Title>Lección 1: Introducción a la cultura griega y su influencia artística</Card.Title>
                                 <Card.Text>
                                     Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.
                                 </Card.Text>
@@ -210,10 +209,7 @@ const LeccionArte1 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
-            <Link to="/Temas/Arte/Lecciones">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
+        <div class="botones-lecciones"> 
             <Link to="/Temas/Arte/Leccion2">
             <img src={siguiente} class="img-fluid" alt="Imagen" />
             </Link>     

@@ -12,7 +12,6 @@ import imagen2 from "./Images/filo2.png";
 import imagen3 from "./Images/filo3.webp";
 import imagen4 from "./Images/filo4.jpg";
 import imagen5 from "./Images/filo5.webp";
-import anterior from "../../../style/botones/anterior.png";
 import siguiente from "../../../style/botones/siguiente.png";
 import escuela from "./Images/escuelapreo.png";
 const LeccionFilosofia1 = () => {
@@ -425,10 +424,7 @@ const LeccionFilosofia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="titulo-empezar">
-        <Link to="/Temas/Filosofia/Lecciones">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
+      <div class="botones-lecciones">
         <Link to="/Temas/Filosofia/Leccion2">
           <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>

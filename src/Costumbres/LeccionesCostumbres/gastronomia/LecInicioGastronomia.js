@@ -20,10 +20,7 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1</Card.Title>
-                <Card.Text className="card-title">
-                  Introducción a la gastronomía girega
-                </Card.Text>
+                <Card.Title>Lección 1: Introducción a la gastronomía griega</Card.Title>
                 <Card.Text className="card-text">
                   • Breve historia de la cocina griega
                   <br />• Influencias culturales y geográficas de la cocina
@@ -41,10 +38,7 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 2</Card.Title>
-                <Card.Text className="card-title">
-                  Ingredientes y productos básicos
-                </Card.Text>
+                <Card.Title>Lección 2: Ingredientes y productos básicos</Card.Title>
                 <Card.Text className="card-text">
                   • Productos agrícolas
                   <br />• Productos lácteos y quesos griegos
@@ -61,8 +55,7 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 3</Card.Title>
-                <Card.Text className="card-title">Platos principales</Card.Text>
+                <Card.Title>Lección 3: Platos principales</Card.Title>
                 <Card.Text className="card-text">
                   • Platos de horno
                   <br />• Carnes a las parrilla
@@ -79,8 +72,7 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 4</Card.Title>
-                <Card.Text className="card-title">Postres Griegos</Card.Text>
+                <Card.Title>Lección 4: Postres Griegos</Card.Title>
                 <Card.Text className="card-text">
                   • Baklava y otros pasteles de nueces y miel.
                   <br />• Loukoumades y otros dulces fritos.

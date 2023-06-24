@@ -86,7 +86,7 @@ const LeccionDeporte3 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 3</Card.Title>
+                                        <Card.Title>Lección 3: Carreras y competiciones atleticas</Card.Title>
                                         <Card.Text>
                                             Carreras y <b>competiciones</b> atleticas
                                         </Card.Text>
@@ -129,7 +129,7 @@ const LeccionDeporte3 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
+            <div class="botones-lecciones">
                 <Link to="/Temas/Deporte/Leccion2">
                     <img src={anterior} class="img-fluid" alt="Imagen" />
                 </Link>

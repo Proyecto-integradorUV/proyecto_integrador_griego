@@ -46,7 +46,7 @@ const LeccionSitios2 = () => {
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
 
     return (
-        <div className="container-leccionSitios">
+        <div className="contenedorHistoria">
             <NavbarPrincipal />
             <div class="titulo-empezar">
                 <img src={lecSitios} class="img-fluid" alt="Imagen" />
@@ -128,7 +128,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             <b>Presentación</b> de la ciudad de Atenas, su <b>importancia</b> como capital y centro cultural
                                         </Card.Text>
@@ -165,7 +165,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             <b>Exploración</b> de la Acrópolis y sus <b>principales</b> estructuras
                                         </Card.Text>
@@ -212,7 +212,7 @@ const LeccionSitios2 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 2</Card.Title>
+                                        <Card.Title>Lección 2: Atenas y la Acrópolis</Card.Title>
                                         <Card.Text>
                                             Discusión sobre el estilo <b>arquitectónico</b> de los templos griegos y su <b>significado</b> cultural
                                         </Card.Text>
@@ -250,7 +250,7 @@ const LeccionSitios2 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
+            <div class="botones-lecciones">
                 <Link to="/Temas/SitiosCaracteristicos/Leccion1">
                     <img src={anterior} class="img-fluid" alt="Imagen" />
                 </Link>

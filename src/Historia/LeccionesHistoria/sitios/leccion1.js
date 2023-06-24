@@ -11,7 +11,6 @@ import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navbar2"
 // import YouTube from 'react-youtube';
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import imagenModal1 from "./images/mapa_grecia.gif";
 import imagenModal2 from "./images/civilizacion.jpg";
 import imagenModal3 from "./images/filosofia.webp";
@@ -151,7 +150,7 @@ const LeccionSitios1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a Grecia</Card.Title>
                                         <Card.Text>
                                             Breve <b>introducción</b> al país, su <b>ubicación</b> geográfica y su <b>importancia</b> histórica y cultural
                                         </Card.Text>
@@ -187,7 +186,7 @@ const LeccionSitios1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a Grecia</Card.Title>
                                         <Card.Text>
                                             Presentación de la <b>rica historia</b> de Grecia y su <b>influencia</b> en la civilización occidental
                                         </Card.Text>
@@ -238,7 +237,7 @@ const LeccionSitios1 = () => {
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                                 <Card style={{ width: '1000px', height: '300px' }}>
                                     <Card.Body>
-                                        <Card.Title>Lección 1</Card.Title>
+                                        <Card.Title>Lección 1: Introducción a Grecia</Card.Title>
                                         <Card.Text>
                                             Destacar la <b>importancia</b> de los sitios característicos en la <b>comprensión</b> de la historia y la cultura griega
                                         </Card.Text>
@@ -287,10 +286,7 @@ const LeccionSitios1 = () => {
                     </Carousel>
                 </div>
             </div>
-            <div class="botones-sig-ant">
-                <Link to="/Temas/SitiosCaracteristicos/Leccion1">
-                    <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
+            <div class="botones-lecciones"> 
                 <Link to="/Temas/SitiosCaracteristicos/Leccion2">
                     <img src={siguiente} class="img-fluid" alt="Imagen" />
                 </Link>

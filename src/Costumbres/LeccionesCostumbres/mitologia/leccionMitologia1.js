@@ -15,7 +15,6 @@ import dios1 from "./imagesLec1/zeus.png";
 import dios5 from "./imagesLec1/atenea.png";
 import dios6 from "./imagesLec1/afrodita.png";
 import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import diosesHumanos from "./imagesLec1/diosesHumanos.jpeg";
 
 const LeccionMitologia1 = () => {
@@ -527,7 +526,6 @@ const LeccionMitologia1 = () => {
                             en la Tierra disminuía gradualmente, y los dioses se
                             volvían menos accesibles para los mortales.
                           </p>
-                          <p>Vídeo</p>
                         </Modal.Body>
                         <Modal.Footer>
                           <Button
@@ -546,10 +544,7 @@ const LeccionMitologia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="titulo-empezar">
-        <Link to="/Temas/Mitologia/Lecciones">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
+      <div class="botones-lecciones">
         <Link to="/Temas/Mitologia/Leccion2">
           <img src={siguiente} class="img-fluid" alt="Imagen" />
         </Link>

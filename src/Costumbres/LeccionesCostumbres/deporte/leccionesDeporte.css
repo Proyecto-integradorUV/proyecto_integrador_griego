@@ -1,5 +1,5 @@
 .container-leccionDeporte{
-    background-image: url('./images/fondo.jpg');
+    background-image: url('./images/fondo.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100vw;
@@ -7,7 +7,7 @@
 }
 
 .contenedorLecciones-deporte{
-    background-image: url('./images/fondo.jpg');
+    background-image: url('./images/fondo.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100%;

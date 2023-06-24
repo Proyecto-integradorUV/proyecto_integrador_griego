@@ -123,7 +123,7 @@ const LeccionDerecho2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Describir los conceptos de ciudadanía y democracia en la antigua Grecia.</Card.Title>
+                                <Card.Title>Lección 2: Derechos en la antigua Grecia</Card.Title>
                                 <Card.Text>
                                     Breve descripción de los derechos.
                                 </Card.Text>
@@ -161,7 +161,7 @@ const LeccionDerecho2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Analizar cómo se aplicaban los derechos en la sociedad ateniense.</Card.Title>
+                                <Card.Title>Lección 2: Derechos en la antigua Grecia</Card.Title>
                                 <Card.Text>
                                     Introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
@@ -221,7 +221,7 @@ const LeccionDerecho2 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 2: Limitaciones de los derechos en la antigua Grecia.</Card.Title>
+                                <Card.Title>Lección 2: Derechos en la antigua Grecia.</Card.Title>
                                 <Card.Text>
                                     Limitaciones y exclusiones en los derechos en la antigua Grecia.
                                 </Card.Text>
@@ -263,7 +263,7 @@ const LeccionDerecho2 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
+        <div class="botones-lecciones">
             <Link to="/Temas/Derecho/Leccion1">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>

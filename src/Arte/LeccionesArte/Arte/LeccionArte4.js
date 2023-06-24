@@ -129,7 +129,7 @@ const LeccionArte4 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 4: Introducción a la pintura y cerámica</Card.Title>
+                                <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
                                     Explicación de la pintura y la cerámica griega y su importancia en la vida cotidiana.
                                 </Card.Text>
@@ -174,7 +174,7 @@ const LeccionArte4 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 4: Descripción de la pintura y cerámica</Card.Title>
+                                <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
                                     Descripción de los estilos y técnicas de pintura, como el estilo de figuras rojas y el estilo de figuras negras.
                                 </Card.Text>
@@ -226,7 +226,7 @@ const LeccionArte4 = () => {
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <Card style={{ width: '400px', height: '300px' }}>
                             <Card.Body>
-                                <Card.Title>Lección 4: Características de la pintura</Card.Title>
+                                <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
                                     Pintura griega antigua
                                 </Card.Text>
@@ -269,7 +269,7 @@ const LeccionArte4 = () => {
                 </Carousel>
             </div>  
         </div>
-        <div class="titulo-empezar">
+        <div class="botones-lecciones">
             <Link to="/Temas/Arte/Leccion3">
             <img src={anterior} class="img-fluid" alt="Imagen" />
             </Link>

@@ -13,6 +13,7 @@ import dragones from "./imagesLec1/dragones.jpg";
 import origen from "./imagesLec1/origen.webp";
 import anterior from "../../../style/botones/anterior.png";
 import caballo from "./imagesLec1/caballoTroya.webp";
+import quiz from "../../../style/botones/quiz.png";
 
 const LeccionMitologia3 = () => {
   const [modals, setModals] = useState({
@@ -546,9 +547,12 @@ const LeccionMitologia3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="titulo-empezar">
+      <div class="botones-lecciones">
         <Link to="/Temas/Mitologia/Leccion2">
           <img src={anterior} class="img-fluid" alt="Imagen" />
+        </Link>
+        <Link to="/Temas/Mitologia/Quiz">
+          <img src={quiz} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

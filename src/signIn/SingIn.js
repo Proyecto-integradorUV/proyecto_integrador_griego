@@ -38,7 +38,6 @@ const SignIn = () => {
       .then((response) => {
         setLoading(false);
         localStorage.setItem("userData", JSON.stringify(response));
-
         Swal.fire({
           icon: "success",
           title: "Bienvenido",
