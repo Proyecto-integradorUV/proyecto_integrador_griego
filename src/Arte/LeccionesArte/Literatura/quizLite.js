@@ -27,7 +27,7 @@ const QuizLite = () => {
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
-        setTiempoRestante(10);
+        setTiempoRestante(60);
       }
     }, 1500);
   }
