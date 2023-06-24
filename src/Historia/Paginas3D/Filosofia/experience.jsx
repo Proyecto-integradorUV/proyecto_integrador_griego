@@ -1,4 +1,4 @@
-import { OrbitControls, Html, Text, Float } from '@react-three/drei';
+import { OrbitControls, Html} from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
@@ -19,12 +19,6 @@ export default function Experience7() {
         container.style.backgroundSize = 'cover';
       }, []);
 
-    const containerStyles = {
-        position: 'relative',
-        width: '100%',
-        height: '100vh',
-        backgroundImage: `url("${fondo}")`,
-    };
 
     const canvasStyles = {
         position: 'absolute',

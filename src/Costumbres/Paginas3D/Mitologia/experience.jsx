@@ -1,4 +1,4 @@
-import { OrbitControls, Html, Text, Float } from '@react-three/drei';
+import { OrbitControls, Html } from '@react-three/drei';
 import "../../../style/css/model.css"
 import { Canvas } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
