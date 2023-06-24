@@ -1,25 +1,25 @@
 import "./StyleSignUp.css";
 import backgroundImage from "./Images/temploPoseidon.jpg";
-import { useNavigate } from "react-router-dom"; //aqui Link
-// import { Button, Modal } from "react-bootstrap";
+import { useNavigate, Link } from "react-router-dom";
+import { Button, Modal } from "react-bootstrap";
 import { addUsers } from "../Services/users";
 import { useState } from "react";
 import Swal from "sweetalert2";
-// import avatar1 from "../components/images/Afrodita.png";
-// import avatar2 from "../components/images/Apolo.png";
-// import avatar3 from "../components/images/Ares.png";
-// import avatar4 from "../components/images/Artemisa.png";
-// import avatar5 from "../components/images/Atenea.png";
-// import avatar6 from "../components/images/Demeter.png";
-// import avatar7 from "../components/images/Dioniso.png";
-// import avatar8 from "../components/images/Hades.png";
-// import avatar9 from "../components/images/Hefesto.png";
-// import avatar10 from "../components/images/Hera.png";
-// import avatar11 from "../components/images/Hestia.png";
-// import avatar12 from "../components/images/Poseidon.png";
-// import avatar13 from "../components/images/Zeus.png";
-// import avatar14 from "../components/images/Medusa.png";
-// import defaultPhoto from "../components/images/default_photo.jpg";
+import avatar1 from "../components/images/Afrodita.png";
+import avatar2 from "../components/images/Apolo.png";
+import avatar3 from "../components/images/Ares.png";
+import avatar4 from "../components/images/Artemisa.png";
+import avatar5 from "../components/images/Atenea.png";
+import avatar6 from "../components/images/Demeter.png";
+import avatar7 from "../components/images/Dioniso.png";
+import avatar8 from "../components/images/Hades.png";
+import avatar9 from "../components/images/Hefesto.png";
+import avatar10 from "../components/images/Hera.png";
+import avatar11 from "../components/images/Hestia.png";
+import avatar12 from "../components/images/Poseidon.png";
+import avatar13 from "../components/images/Zeus.png";
+import avatar14 from "../components/images/Medusa.png";
+import defaultPhoto from "../components/images/default_photo.jpg";
 
 const SignUp = () => {
   let navigate = useNavigate();
@@ -32,37 +32,62 @@ const SignUp = () => {
     email: "",
     username: "",
     password: "",
-    // avatar: "",
+    avatar: defaultPhoto,
     errors: {},
   });
 
-  // //almacenar modals por nombres
-  // const [modals, setModals] = useState({
-  //   modal: false
-  // });
+  //almacenar modals por nombres
+  const [modals, setModals] = useState({
+    modal: false
+  });
 
-  // //imagen seleccionada
-  // const [selectedImage, setSelectedImage] = useState(defaultPhoto);
+  const avatars = [
+    avatar1,
+    avatar2,
+    avatar3,
+    avatar4,
+    avatar5,
+    avatar6,
+    avatar7,
+    avatar8,
+    avatar9,
+    avatar10,
+    avatar11,
+    avatar12,
+    avatar13,
+    avatar14,
+  ];
 
-  // // Funciones de manejo para abrir/cerrar cada modal
-  // const handleOpenModal = (modalName) => {
-  //     setModals((prevState) => ({
-  //         ...prevState,
-  //         [modalName]: true,
-  //     }));
-  // };
+  //imagen seleccionada
+  const [selectedImage, setSelectedImage] = useState(defaultPhoto);
 
-  // const handleCloseModal = (modalName) => {
-  //     setModals((prevState) => ({
-  //         ...prevState,
-  //         [modalName]: false,
-  //     }));
-  // };
+  const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
 
-  // const handleImageSelect = (imageUrl) => {
-  //   setSelectedImage(imageUrl);
-  //   handleCloseModal('modal');
-  // };
+  // Funciones de manejo para abrir/cerrar cada modal
+  const handleOpenModal = (modalName) => {
+      setModals((prevState) => ({
+          ...prevState,
+          [modalName]: true,
+      }));
+  };
+
+  const handleCloseModal = (modalName) => {
+      setModals((prevState) => ({
+          ...prevState,
+          [modalName]: false,
+      }));
+  };
+
+  
+  const handleImageSelect = (imageIndex) => {
+    setSelectedAvatarIndex(imageIndex);
+    setSelectedImage(avatars[imageIndex]);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      avatar: `avatar${imageIndex + 1}`,
+    }));
+    handleCloseModal('modal');
+  };
 
   const validateForm = () => {
     const errors = {};
@@ -100,7 +125,10 @@ const SignUp = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -239,7 +267,8 @@ const SignUp = () => {
             <span className="error-message">{formData.errors.password}</span>
           )}
           <br />
-          {/* <label>Seleccione un avatar: </label>
+          <label>Seleccione un avatar: </label>
+          <br />
           <Link style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%'}}>
                   <img
                     onClick={() => handleOpenModal("modal")}
@@ -248,27 +277,29 @@ const SignUp = () => {
                     className="userImage"
                   />
           </Link>
-          <div>
+          <br />
+          <input type="text"
+                className="form-control"
+                disabled
+                name="avatar"
+                onChange={handleChange}
+                value={selectedAvatarIndex !== -1 ? `avatar${selectedAvatarIndex + 1}` : 'defaultPhoto'} >
+          </input>
+          <br />
+          <button type="submit">Registarme</button>
+        </form>
+        <div>
               <Modal show={modals.modal} onHide={() => handleCloseModal('modal')} scrollable={true} size="lg">
                 <Modal.Header closeButton>
                   <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
                     </Modal.Header>
-                        <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
-                          <Link onClick={() => handleImageSelect(avatar1)}><img src={avatar1} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar2)}><img src={avatar2} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar3)}><img src={avatar3} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar4)}><img src={avatar4} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar5)}><img src={avatar5} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar6)}><img src={avatar6} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar7)}><img src={avatar7} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar8)}><img src={avatar8} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar9)}><img src={avatar9} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar10)}><img src={avatar10} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar11)}><img src={avatar11} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar12)}><img src={avatar12} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar13)}><img src={avatar13} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar14)}><img src={avatar14} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                        </Modal.Body>
+                    <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
+                      {avatars.map((avatar, index) => (
+                        <Link key={index} onClick={() => handleImageSelect(index)}>
+                          <img src={avatar} alt="Imagen" style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
+                        </Link>
+                      ))}
+                    </Modal.Body>
                       <Modal.Footer>
                       <Button variant="secondary" onClick={() => handleCloseModal('modal')}>
                         Cerrar
@@ -276,9 +307,6 @@ const SignUp = () => {
                       </Modal.Footer>
               </Modal>
           </div>
-          <br /> */}
-          <button type="submit">Registarme</button>
-        </form>
         <div class="col-md-10 my-2">
           <a href="/Home">Regresar</a>
         </div>
