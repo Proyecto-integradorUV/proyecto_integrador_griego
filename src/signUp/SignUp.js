@@ -5,36 +5,26 @@ import { Button, Modal } from "react-bootstrap";
 import { addUsers } from "../Services/users";
 import { useState } from "react";
 import Swal from "sweetalert2";
-import avatar1 from "../components/images/Afrodita.png";
-import avatar2 from "../components/images/Apolo.png";
-import avatar3 from "../components/images/Ares.png";
-import avatar4 from "../components/images/Artemisa.png";
-import avatar5 from "../components/images/Atenea.png";
-import avatar6 from "../components/images/Demeter.png";
-import avatar7 from "../components/images/Dioniso.png";
-import avatar8 from "../components/images/Hades.png";
-import avatar9 from "../components/images/Hefesto.png";
-import avatar10 from "../components/images/Hera.png";
-import avatar11 from "../components/images/Hestia.png";
-import avatar12 from "../components/images/Poseidon.png";
-import avatar13 from "../components/images/Zeus.png";
-import avatar14 from "../components/images/Medusa.png";
-import defaultPhoto from "../components/images/default_photo.jpg";
+import Afrodita from "../components/images/Afrodita.png";
+import Apolo from "../components/images/Apolo.png";
+import Ares from "../components/images/Ares.png";
+import Artemisa from "../components/images/Artemisa.png";
+import Atenea from "../components/images/Atenea.png";
+import Demeter from "../components/images/Demeter.png";
+import Dioniso from "../components/images/Dioniso.png";
+import Hades from "../components/images/Hades.png";
+import Hefesto from "../components/images/Hefesto.png";
+import Hera from "../components/images/Hera.png";
+import Hestia from "../components/images/Hestia.png";
+import Poseidon from "../components/images/Poseidon.png";
+import Zeus from "../components/images/Zeus.png";
+import Medusa from "../components/images/Medusa.png";
+import default_photo from "../components/images/default_photo.jpg";
 
 const SignUp = () => {
   let navigate = useNavigate();
 
   // const[erros, setErros] = useState()
-
-  const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    username: "",
-    password: "",
-    avatar: defaultPhoto,
-    errors: {},
-  });
 
   //almacenar modals por nombres
   const [modals, setModals] = useState({
@@ -42,24 +32,25 @@ const SignUp = () => {
   });
 
   const avatars = [
-    avatar1,
-    avatar2,
-    avatar3,
-    avatar4,
-    avatar5,
-    avatar6,
-    avatar7,
-    avatar8,
-    avatar9,
-    avatar10,
-    avatar11,
-    avatar12,
-    avatar13,
-    avatar14,
+    { name: 'Afrodita', image: Afrodita },
+    { name: 'Apolo', image: Apolo },
+    { name: 'Ares', image: Ares },
+    { name: 'Artemisa', image: Artemisa },
+    { name: 'Atenea', image: Atenea },
+    { name: 'Demeter', image: Demeter },
+    { name: 'Dioniso', image: Dioniso },
+    { name: 'Hades', image: Hades },
+    { name: 'Hefesto', image: Hefesto },
+    { name: 'Hera', image: Hera },
+    { name: 'Hestia', image: Hestia },
+    { name: 'Poseidon', image: Poseidon },
+    { name: 'Zeus', image: Zeus },
+    { name: 'Medusa', image: Medusa },
+    { name: 'default_photo', image: default_photo }
   ];
 
   //imagen seleccionada
-  const [selectedImage, setSelectedImage] = useState(defaultPhoto);
+  const [selectedImage, setSelectedImage] = useState(default_photo);
 
   const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
 
@@ -78,16 +69,26 @@ const SignUp = () => {
       }));
   };
 
-  
   const handleImageSelect = (imageIndex) => {
     setSelectedAvatarIndex(imageIndex);
-    setSelectedImage(avatars[imageIndex]);
+    const selectedAvatar = avatars[imageIndex];
+    setSelectedImage(selectedAvatar.image);
     setFormData((prevFormData) => ({
       ...prevFormData,
-      avatar: `avatar${imageIndex + 1}`,
+      avatar: selectedAvatar.name,
     }));
-    handleCloseModal('modal');
+    handleCloseModal("modal");
   };
+
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    username: "",
+    password: "",
+    avatar: "default_photo",
+    errors: {},
+  });
 
   const validateForm = () => {
     const errors = {};
@@ -270,22 +271,21 @@ const SignUp = () => {
           <label>Seleccione un avatar: </label>
           <br />
           <Link style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%'}}>
-                  <img
-                    onClick={() => handleOpenModal("modal")}
-                    src={selectedImage}
-                    alt="Imagen"
-                    className="userImage"
-                  />
+            <img
+              onClick={() => handleOpenModal("modal")}
+              src={selectedImage}
+              alt="Imagen"
+              className="userImage"
+            />
           </Link>
           <br />
-          <input type="text"
+          <input type="hidden"
                 className="form-control"
                 disabled
                 name="avatar"
                 onChange={handleChange}
-                value={selectedAvatarIndex !== -1 ? `avatar${selectedAvatarIndex + 1}` : 'defaultPhoto'} >
+                value={formData.avatar} >
           </input>
-          <br />
           <button type="submit">Registarme</button>
         </form>
         <div>
@@ -296,7 +296,11 @@ const SignUp = () => {
                     <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
                       {avatars.map((avatar, index) => (
                         <Link key={index} onClick={() => handleImageSelect(index)}>
-                          <img src={avatar} alt="Imagen" style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
+                          <img key={index}
+                            src={avatar.image}
+                            alt={avatar.name}
+                            className={`avatarImage ${selectedAvatarIndex === index ? "selected" : ""}`}
+                            onClick={() => handleImageSelect(index)} style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
                         </Link>
                       ))}
                     </Modal.Body>
