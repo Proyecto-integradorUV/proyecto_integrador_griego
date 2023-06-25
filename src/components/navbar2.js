@@ -1,34 +1,49 @@
 import React, { useContext, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SignInContext } from "../context/signInContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
-import avatar1 from "./images/Afrodita.png";
-import avatar2 from "./images/Apolo.png";
-import avatar3 from "./images/Ares.png";
-import avatar4 from "./images/Artemisa.png";
-import avatar5 from "./images/Atenea.png";
-import avatar6 from "./images/Demeter.png";
-import avatar7 from "./images/Dioniso.png";
-import avatar8 from "./images/Hades.png";
-import avatar9 from "./images/Hefesto.png";
-import avatar10 from "./images/Hera.png";
-import avatar11 from "./images/Hestia.png";
-import avatar12 from "./images/Poseidon.png";
-import avatar13 from "./images/Zeus.png";
-import avatar14 from "./images/Medusa.png";
-import defaultPhoto from "./images/default_photo.jpg";
+import Afrodita from "./images/Afrodita.png";
+import Apolo from "./images/Apolo.png";
+import Ares from "./images/Ares.png";
+import Artemisa from "./images/Artemisa.png";
+import Atenea from "./images/Atenea.png";
+import Demeter from "./images/Demeter.png";
+import Dioniso from "./images/Dioniso.png";
+import Hades from "./images/Hades.png";
+import Hefesto from "./images/Hefesto.png";
+import Hera from "./images/Hera.png";
+import Hestia from "./images/Hestia.png";
+import Poseidon from "./images/Poseidon.png";
+import Zeus from "./images/Zeus.png";
+import Medusa from "./images/Medusa.png";
+import default_photo from "./images/default_photo.jpg";
 
 const NavbarPrincipal = () => {  
+
+  const avatars = [
+    { name: 'Afrodita', image: Afrodita },
+    { name: 'Apolo', image: Apolo },
+    { name: 'Ares', image: Ares },
+    { name: 'Artemisa', image: Artemisa },
+    { name: 'Atenea', image: Atenea },
+    { name: 'Demeter', image: Demeter },
+    { name: 'Dioniso', image: Dioniso },
+    { name: 'Hades', image: Hades },
+    { name: 'Hefesto', image: Hefesto },
+    { name: 'Hera', image: Hera },
+    { name: 'Hestia', image: Hestia },
+    { name: 'Poseidon', image: Poseidon },
+    { name: 'Zeus', image: Zeus },
+    { name: 'Medusa', image: Medusa },
+    { name: 'default_photo', image: default_photo }
+  ];
 
   //almacenar modals por nombres
   const [modals, setModals] = useState({
     modal: false
   });
-
-  //imagen seleccionada
-  const [selectedImage, setSelectedImage] = useState(defaultPhoto);
 
   // Funciones de manejo para abrir/cerrar cada modal
   const handleOpenModal = (modalName) => {
@@ -45,9 +60,42 @@ const NavbarPrincipal = () => {
       }));
   };
 
-  const handleImageSelect = (imageUrl) => {
-    setSelectedImage(imageUrl);
-    handleCloseModal('modal');
+  // const handleImageSelect = (imageUrl) => {
+  //   setSelectedImage(imageUrl);
+  //   handleCloseModal('modal');
+  // };
+
+  //imagen seleccionada
+  const [ setSelectedImage] = useState(default_photo);
+
+  const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
+
+  const [ setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    username: "",
+    password: "",
+    avatar: "default_photo",
+    errors: {},
+  });
+
+  // const handleChange = (e) => {
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     [e.target.name]: e.target.value,
+  //   }));
+  // };
+
+  const handleImageSelect = (imageIndex) => {
+    setSelectedAvatarIndex(imageIndex);
+    const selectedAvatar = avatars[imageIndex];
+    setSelectedImage(selectedAvatar.image);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      avatar: selectedAvatar.name,
+    }));
+    handleCloseModal("modal");
   };
 
   const { isLogged, setIsLogged } = useContext(SignInContext);
@@ -70,26 +118,27 @@ const NavbarPrincipal = () => {
     }
   };
 
+  const getAvatar = () => {
+    if (isLogged) {
+      const userData = localStorage.getItem("userData");
+      const parsedUserData = JSON.parse(userData);
+      const avatarName = parsedUserData.avatar;
+      const selectedAvatar = avatars.find((avatarObj) => avatarObj.name === avatarName);
+      return selectedAvatar ? selectedAvatar.image : default_photo;
+    } else {
+      return default_photo;
+    }
+  };
+
   return (
     <div className="fixed-top">
       <nav className="navbarPrincipal">
         <ul className="navbarList2Principal">
           <li className="navbarItemPrincipal">
             {isLogged && (
-              <a href=" " className="navbarLink2Principal navbar-home">
+              <p style={{ margin: 'auto'}} className="navbarLink2Principal navbar-home">
                 Hola, &nbsp;{getUsername()}
-              </a>
-            )}
-          </li>
-          <li className="navbarItemPrincipal">
-            {isLogged && (
-              <a
-                href="/Home"
-                className="navbarLinkPrincipal navbar-home"
-                onClick={handleLogout}
-              >
-                Cerrar sesión
-              </a>
+              </p>
             )}
           </li>
           <li className="navbarItemPrincipal">
@@ -98,60 +147,230 @@ const NavbarPrincipal = () => {
                 <Link>
                   <img
                     onClick={() => handleOpenModal("modal")}
-                    src={selectedImage}
+                    src={getAvatar()}
                     alt="Imagen"
                     className="userImage"
                   />
                 </Link>
-                <div>
-                <Modal show={modals.modal} onHide={() => handleCloseModal('modal')} scrollable={true} size="lg">
-                                        <Modal.Header closeButton>
-                                        <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
-                                        </Modal.Header>
-                                        <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
-                                        <Link onClick={() => handleImageSelect(avatar1)}><img src={avatar1} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar2)}><img src={avatar2} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar3)}><img src={avatar3} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar4)}><img src={avatar4} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar5)}><img src={avatar5} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar6)}><img src={avatar6} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar7)}><img src={avatar7} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar8)}><img src={avatar8} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar9)}><img src={avatar9} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar10)}><img src={avatar10} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar11)}><img src={avatar11} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar12)}><img src={avatar12} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar13)}><img src={avatar13} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        <Link onClick={() => handleImageSelect(avatar14)}><img src={avatar14} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                                        </Modal.Body>
-                                        <Modal.Footer>
-                                        <Button variant="secondary" onClick={() => handleCloseModal('modal')}>
-                                            Cerrar
-                                        </Button>
-                            </Modal.Footer>
-                      </Modal>
-                </div>
               </div>
             )}
           </li>
+          <li className="navbarItemPrincipal">
+          <Dropdown className="custom-dropdown">
+            <Dropdown.Toggle variant="light" id="dropdownMenu" className="custom-toggle"/>
+            <Dropdown.Menu>
+              <Dropdown.Item href="/Lecciones">Mi progreso</Dropdown.Item>
+              <Dropdown.Item onClick={() => handleOpenModal("modal")}>Cambiar avatar</Dropdown.Item>
+              <div>
+                <Modal show={modals.modal} onHide={() => handleCloseModal('modal')} scrollable={true} size="lg">
+                  <Modal.Header closeButton>
+                    <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
+                        {avatars.map((avatar, index) => (
+                          <Link key={index} onClick={() => handleImageSelect(index)}>
+                            <img key={index}
+                              src={avatar.image}
+                              alt={avatar.name}
+                              className={`avatarImage ${selectedAvatarIndex === index ? "selected" : ""}`}
+                              onClick={() => handleImageSelect(index)} style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
+                          </Link>
+                        ))}
+                      </Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={() => handleCloseModal('modal')}>
+                          Cerrar
+                        </Button>
+                        </Modal.Footer>
+                </Modal>
+              </div>
+              <Dropdown.Item href="/Home">
+              <li>
+                {isLogged && (
+                  <p
+                    onClick={handleLogout}
+                  >
+                    Cerrar sesión
+                  </p>
+                )}
+              </li>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </li>
         </ul>
       </nav>
       <nav className="navbar2Principal">
         <ul className="navbarListPrincipal">
           <li className="navbarItemPrincipal">
             <a href="/Principal" className="navbarLinkPrincipal navbar-home">
-              Página principal
+              Home
             </a>
           </li>
           <li className="navbarItemPrincipal">
             <a href="/Lecciones" className="navbarLinkPrincipal navbar-home ">
-              Lecciones
+              Mi progreso
             </a>
           </li>
           <li className="navbarItemPrincipal">
             <a href="/Temas" className="navbarLinkPrincipal navbar-home">
               Temas
             </a>
+          </li>
+          <li className="navbarItemPrincipal">
+            <Dropdown className="custom-dropdown">
+              <Dropdown.Toggle variant="light" id="dropdownMenu" className="custom-toggle">
+                <span className="navbarLinkPrincipal navbar-home">Lecciones</span>
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="custom-menu">
+              <div className="row">
+                <div className="col">
+                  <h5>Filosofía</h5>
+                  <ul>
+                    <li >
+                      <a href="/Temas/Filosofia/Leccion1">Lección 1: Período presocrático</a>
+                    </li>
+                    <li>
+                      <a href="/Temas/Filosofia/Leccion2">Lección 2: Período Platónico y Aristotélico</a>
+                    </li>
+                    <li>
+                      <a href="/Temas/Filosofia/Leccion3">Lección 3: Período helenístico</a>
+                    </li>
+                    <li>
+                      <a href="/Temas/Filosofia/Leccion4">Lección 4: Período neoplatónico</a>
+                    </li>
+                  </ul>
+                  <br/>
+                  <h5>Derechos</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: </a>
+                    </li>
+                  </ul>
+                  <br/>
+                  <h5>Sitios Caracteristicos</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <h5>Arte</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: Introducción</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: Arquitectura Griega</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: Escultura Griega</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: Pintura y cerámica</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 5: Literatura y teatro</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 6: Danza y música</a>
+                    </li>
+                  </ul>
+                  <br/>
+                  <h5>Literatura</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                  </ul>
+                  <br/>
+                  <h5>Vestimenta</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <h5>Mitología</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: Periodos de la mitología</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: Más sobre dioses</a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: Mitos principales</a>
+                    </li> 
+                  </ul>
+                  <br/>
+                  <h5>Deporte</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: </a>
+                    </li>
+                  </ul>
+                  <br/>
+                  <h5>Gastronomia</h5>
+                  <ul>
+                    <li>
+                      <a href="/Lecciones">Lección 1: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 2: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 3: </a>
+                    </li>
+                    <li>
+                      <a href="/Lecciones">Lección 4: </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </Dropdown.Menu>
+            </Dropdown>
           </li>
         </ul>
       </nav>

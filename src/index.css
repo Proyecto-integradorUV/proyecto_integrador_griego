@@ -99,3 +99,65 @@ code {
   height: 100%;
   object-fit: cover;
 }
+
+.custom-toggle.dropdown-toggle {
+  /* Cambiar el fondo del botón */
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.custom-toggle.dropdown-toggle::after {
+  /* Cambiar el color de la flecha */
+  margin-top: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+.custom-toggle.dropdown-toggle:hover {
+  /* Cambiar el color de fondo al hacer hover sobre el botón */
+  background-color:  rgb(224, 188, 109, 0.7); 
+}
+.custom-toggle.dropdown-toggle.show {
+  /* Cambiar el color de fondo del menú desplegable */
+  background-color: rgb(224, 188, 109, 0.7); 
+}
+
+.custom-dropdown {
+  margin: -7px;
+  padding: -7px;
+}
+
+.custom-dropdown .custom-menu {
+  background-color: rgb(226, 146, 115); 
+  width: 800px; /* Ajusta el ancho deseado */
+  padding: 0;
+}
+
+.custom-dropdown .custom-menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-dropdown .custom-menu .col {
+  flex: 0 0 33.33%;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.custom-menu h5 {
+  text-align: center;
+  color: white;
+}
+
+.custom-menu li {
+  color: white !important;
+}
+
+.custom-menu a {
+  color: white !important;
+}
+
+.custom-menu a:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Cambia los valores según tus necesidades */
+}
