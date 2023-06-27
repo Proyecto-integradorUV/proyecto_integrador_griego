@@ -1,7 +1,7 @@
 import preguntas from "./preguntasMito";
 import "../../../style/css/quiz.css";
 import { useState, useEffect } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 
 const QuizMitologia = () => {

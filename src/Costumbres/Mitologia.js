@@ -4,12 +4,12 @@ import mitologiaTitle from "../style/titulos/mitologia.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnMitologia.png";
 import botonModel3D from "./Images/btnMitologia3D.png";
-import NavbarPrincipal from "../components/navbar2";
+import NavbarMito from "../components/navMito";
 
 const Mitologia = () => {
   return (
     <div class="contenedor-inicial-mitologia">
-      <NavbarPrincipal />
+      <NavbarMito />
       <div class="temaMitologia">
         <img src={mitologiaTitle} alt="Imagen" />
       </div>
@@ -23,9 +23,9 @@ const Mitologia = () => {
         dioses y los mortales
       </div>
       <div class="button-container-mito">
-        <Link to="/Temas/Mitologia/Lecciones" class="btn-mito">
+        {/* <Link to="/Temas/Mitologia/Lecciones" class="btn-mito">
           <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link>
+        </Link> */}
         <Link to="/Temas/Mitologia/Model" class="btn-mito">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>

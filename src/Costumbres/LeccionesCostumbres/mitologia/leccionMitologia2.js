@@ -6,7 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import siguiente from "../../../style/botones/siguiente.png";
 import anterior from "../../../style/botones/anterior.png";
 import ImagenCaoursel from "./componenteimagenes";
@@ -395,6 +395,9 @@ const LeccionMitologia2 = () => {
                     <br></br>
                     <Card.Title>Lección 2: Más sobre Dioses</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
                       Conoce mas de los 6 principales dioses que hay en la
                       mitología griega
                     </Card.Text>
@@ -582,6 +585,9 @@ const LeccionMitologia2 = () => {
                     <br></br>
                     <Card.Title>Lección 2: Más sobre Dioses</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
                       Abordaremos sobre el resto de historia de los otros 6
                       dioses
                     </Card.Text>

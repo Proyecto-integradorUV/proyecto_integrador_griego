@@ -6,9 +6,8 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/filosofia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
-import anterior from "../../../style/botones/anterior.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import imagen1 from "./Images/filo.jpg";
 import imagen2 from "./Images/filo2.png";
 import imagen3 from "./Images/filo3.webp";
@@ -39,11 +38,26 @@ const LeccionFilosofia2 = () => {
     }));
   };
 
+  const url1 = "/Temas/Filosofia/Leccion1";
+  const url2 = "/Temas/Filosofia/Leccion2";
+  const url3 = "/Temas/Filosofia/Leccion3";
+  const url4 = "/Temas/Filosofia/Leccion4";
+
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Filosofía"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecHistoria} class="img-fluid" alt="Imagen" />
       </div>
@@ -256,6 +270,9 @@ const LeccionFilosofia2 = () => {
                       Lección 2: El período platónico y aristotélico
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
                       Hablaremos sobre una breve <b>introducción</b> al periodo
                       platónico y aristotélico
                     </Card.Text>
@@ -288,7 +305,8 @@ const LeccionFilosofia2 = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
-                            Introducción al periodo platónico y aristotélico
+                            <b>2.1 </b>Introducción al periodo platónico y
+                            aristotélico
                           </h2>
                           <p>
                             Representa una de las etapas más importantes y
@@ -329,6 +347,9 @@ const LeccionFilosofia2 = () => {
                       Lección 2: El período platónico y aristotélico
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
                       Principales características del preiodo <b>platónico</b>
                     </Card.Text>
                     <div
@@ -360,7 +381,7 @@ const LeccionFilosofia2 = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
-                            Características del periodo aristotélico
+                            <b>2.2 </b>Características del periodo aristotélico
                           </h2>
                           <br></br>
                           <img
@@ -436,6 +457,9 @@ const LeccionFilosofia2 = () => {
                       Lección 2: El período platónico y aristotélico
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.3
+                      </span>{" "}
                       Principales características del periodo{" "}
                       <b>aristotélico</b>
                     </Card.Text>
@@ -468,7 +492,7 @@ const LeccionFilosofia2 = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
-                            Características del periodo aristotélico
+                            <b>2.3 </b> Características del periodo aristotélico
                           </h2>
                           <img
                             src={aristoteles}
@@ -537,11 +561,8 @@ const LeccionFilosofia2 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Filosofia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Filosofia/Leccion3">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Filosofia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

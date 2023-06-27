@@ -6,13 +6,13 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/filosofia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import imagen1 from "./Images/filo.jpg";
 import imagen2 from "./Images/filo2.png";
 import imagen3 from "./Images/filo3.webp";
 import imagen4 from "./Images/filo4.jpg";
 import imagen5 from "./Images/filo5.webp";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
 import escuela from "./Images/escuelapreo.png";
 const LeccionFilosofia1 = () => {
   const [modals, setModals] = useState({
@@ -36,11 +36,26 @@ const LeccionFilosofia1 = () => {
     }));
   };
 
+  const url1 = "/Temas/Filosofia/Leccion1";
+  const url2 = "/Temas/Filosofia/Leccion2";
+  const url3 = "/Temas/Filosofia/Leccion3";
+  const url4 = "/Temas/Filosofia/Leccion4";
+
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Filosofía"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecHistoria} class="img-fluid" alt="Imagen" />
       </div>
@@ -251,6 +266,9 @@ const LeccionFilosofia1 = () => {
                     <br></br>
                     <Card.Title>Lección 1: Período presocrático</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.1
+                      </span>{" "}
                       Hablaremos sobre la <b>introducción </b> al periodo
                       presocrático
                     </Card.Text>
@@ -282,7 +300,9 @@ const LeccionFilosofia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 class="text-center">
+                            <b>1.1 </b>Introducción
+                          </h2>
                           <p>
                             El período presocrático, también conocido como
                             período prefilosófico, abarca desde el siglo VI a.C.
@@ -327,6 +347,9 @@ const LeccionFilosofia1 = () => {
                     <br></br>
                     <Card.Title>Lección 1: Período presocrático</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.2
+                      </span>{" "}
                       Hablaremos sobre algunas <b>escuelas </b> de este periodo
                       presocrático
                     </Card.Text>
@@ -358,7 +381,9 @@ const LeccionFilosofia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Escuelas</h2>
+                          <h2 class="text-center">
+                            <b>1.2 </b>Escuelas
+                          </h2>
                           <p>
                             Los filósofos presocráticos plantearon una variedad
                             de teorías y enfoques, pero algunas de las escuelas
@@ -425,8 +450,8 @@ const LeccionFilosofia1 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Filosofia/Leccion2">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Filosofia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

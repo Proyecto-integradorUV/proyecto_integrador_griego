@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import imagen1 from "./images/almuerzo.jpg";
 import imagen2 from "./images/griego2.webp";
 import imagen3 from "./images/mediterraneo.jpg";
@@ -16,6 +16,11 @@ import anterior from "../../../style/botones/anterior.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 
 const LeccionGastronomia2 = () => {
+  const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
+
   const [modals, setModals] = useState({
     modal1: false,
     modal2: false,
@@ -41,7 +46,17 @@ const LeccionGastronomia2 = () => {
 
   return (
     <div className="contenedorLeccionesGastro">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
       </div>
@@ -253,6 +268,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
                       Hablaremos sobre los productos agrícolas los cuales son la
                       clave en la cocina griega (aceite de oliva, aceitunas,
                       hierbas, verduras, etc.)
@@ -415,6 +433,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
                       Hablaremos sobre los productos lácteos y quesos griegos
                       (feta, yogur, etc.).
                     </Card.Text>
@@ -539,6 +560,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.3
+                      </span>{" "}
                       Hablaremos sobre el pan y otros productos de panadería
                       griegos.
                     </Card.Text>

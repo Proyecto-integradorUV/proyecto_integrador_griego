@@ -5,7 +5,7 @@ import { Carousel, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../../style/botones/empezar.png";
 import titulo from "../../../style/titulos/lecciones_init.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 
 const LeccionesMitologia = () => {
   return (
@@ -20,7 +20,9 @@ const LeccionesMitologia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1: Periodos de la mitología griega</Card.Title>
+                <Card.Title>
+                  Lección 1: Periodos de la mitología griega
+                </Card.Title>
                 <Card.Text className="card-text">
                   • La edad de los dioses.
                   <br />• La edad de convivencia entre dioses y humanos
@@ -54,7 +56,9 @@ const LeccionesMitologia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 3: Principales mitos de la mitología griega</Card.Title>
+                <Card.Title>
+                  Lección 3: Principales mitos de la mitología griega
+                </Card.Title>
                 <Card.Text className="card-text">
                   • El origen del mundo
                   <br />• La guerra de troya

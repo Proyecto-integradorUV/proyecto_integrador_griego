@@ -6,7 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import mitologia from "./imagesLec1/fondo.jpg";
 import dioses from "./imagesLec1/dioses2.jpg";
 import dragones from "./imagesLec1/dragones.jpg";
@@ -222,6 +222,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.1
+                      </span>{" "}
                       Abordaremos sobre el origen del mundo como mito de la
                       mitología griega
                     </Card.Text>
@@ -321,6 +324,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.2
+                      </span>{" "}
                       Hablaremos sobre la guerra de troya y sucesos relacionados
                       a esta
                     </Card.Text>
@@ -447,6 +453,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.3
+                      </span>{" "}
                       Hablaremos sobre el amor y la tragedia
                     </Card.Text>
                     <div

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import anterior from "../../../style/botones/anterior.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 import siguiente from "../../../style/botones/siguiente.png";
@@ -20,6 +20,11 @@ import imagen5 from "./images/gente.jpg";
 import imagen6 from "./images/gente2.png";
 
 const LeccionGastronomia3 = () => {
+  const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
+
   const [modals, setModals] = useState({
     modal1: false,
     modal2: false,
@@ -45,7 +50,17 @@ const LeccionGastronomia3 = () => {
 
   return (
     <div className="contenedorLeccionesGastro">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
       </div>
@@ -290,6 +305,9 @@ const LeccionGastronomia3 = () => {
                   <Card.Body>
                     <Card.Title>Lección 3: Platos principales</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.1
+                      </span>{" "}
                       Hablaremos sobre el vino y ciertas bebidas relacionados a
                       esta civilización.
                     </Card.Text>
@@ -405,6 +423,9 @@ const LeccionGastronomia3 = () => {
                   <Card.Body>
                     <Card.Title>Lección 3: Platos principales</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.2
+                      </span>{" "}
                       Hablaremos sobre el Souvlaki y otras carnes a la parrilla.
                     </Card.Text>
                     <div
@@ -518,6 +539,9 @@ const LeccionGastronomia3 = () => {
                   <Card.Body>
                     <Card.Title>Lección 3: Platos principales</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.3
+                      </span>{" "}
                       Hablaremos sobre los platos de pescado y mariscos.
                     </Card.Text>
                     <div

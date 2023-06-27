@@ -46,21 +46,7 @@ const QuizArte = () => {
     if (puntaje === 0) {
       return "0.0";
     }
-    // if (puntaje === 1) {
-    //   return "2.5";
-    // }
-    // if (puntaje === 2) {
-    //   return "5.0";
-    // }
-    // if (puntaje === 3) {
-    //   return "3.0";
-    // }
-    // if (puntaje === 4) {
-    //   return "4.0";
-    // }
-    // if (puntaje === 5) {
-    //   return "5.0";
-    // }
+
     if (puntaje === 1) {
       return "0.6";
     }

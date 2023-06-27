@@ -5,12 +5,27 @@ import { Carousel, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import botonEmpezar from "../../../style/botones/empezar.png";
 import titulo from "../../../style/titulos/lecciones_init.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionGastronomia = () => {
+  const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
+
   return (
     <div className="contenedorLeccionesGastro">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-lecciones">
         <img src={titulo} class="img-fluid" alt="Imagen" />
       </div>
@@ -20,7 +35,9 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 1: Introducción a la gastronomía griega</Card.Title>
+                <Card.Title>
+                  Lección 1: Introducción a la gastronomía griega
+                </Card.Title>
                 <Card.Text className="card-text">
                   • Breve historia de la cocina griega
                   <br />• Influencias culturales y geográficas de la cocina
@@ -38,7 +55,9 @@ const LeccionGastronomia = () => {
           <Carousel.Item>
             <Card>
               <Card.Body>
-                <Card.Title>Lección 2: Ingredientes y productos básicos</Card.Title>
+                <Card.Title>
+                  Lección 2: Ingredientes y productos básicos
+                </Card.Title>
                 <Card.Text className="card-text">
                   • Productos agrícolas
                   <br />• Productos lácteos y quesos griegos

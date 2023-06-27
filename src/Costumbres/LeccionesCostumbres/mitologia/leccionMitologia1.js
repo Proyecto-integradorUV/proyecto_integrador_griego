@@ -6,7 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import mitologia from "./imagesLec1/fondo.jpg";
 import dioses from "./imagesLec1/dioses2.jpg";
 import dragones from "./imagesLec1/dragones.jpg";
@@ -224,6 +224,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.1
+                      </span>{" "}
                       Abordaremos sobre el porqué de la existencia de los
                       objetos o seres vivos y el origen de los primeros Dioses.
                     </Card.Text>
@@ -382,6 +385,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.2
+                      </span>{" "}
                       Se mencionará sobre la "Edad de Oro" o "Edad de
                       Convivencia" entre dioses y humanos.
                     </Card.Text>
@@ -484,6 +490,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.3
+                      </span>{" "}
                       Hablaremos sobre la tercer periodo el cual es la edad
                       heroica griega.
                     </Card.Text>

@@ -6,7 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import imagen1 from "./images/almuerzo.jpg";
 import imagen2 from "./images/griego2.webp";
 import imagen3 from "./images/mediterraneo.jpg";
@@ -16,6 +16,11 @@ import imagen6 from "./images/griego3.jpg";
 import siguiente from "../../../style/botones/siguiente.png";
 
 const LeccionGastronomia1 = () => {
+  const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
+
   const [modals, setModals] = useState({
     modal1: false,
     modal2: false,
@@ -41,7 +46,17 @@ const LeccionGastronomia1 = () => {
 
   return (
     <div className="contenedorLeccionesGastro">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
       </div>
@@ -286,9 +301,12 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                    Lección 1: Introducción a la gastronomía griega
+                      Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.1
+                      </span>{" "}
                       Mencionaremos sobre como ha sido la gastronomía griega.
                     </Card.Text>
                     <div
@@ -373,9 +391,12 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                    Lección 1: Introducción a la gastronomía griega
+                      Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.2
+                      </span>{" "}
                       Mencionaremos la influencia cultural y geográficas en la
                       cocina griega.
                     </Card.Text>
@@ -527,9 +548,12 @@ const LeccionGastronomia1 = () => {
                   <Card.Body>
                     <br></br>
                     <Card.Title>
-                    Lección 1: Introducción a la gastronomía griega
+                      Lección 1: Introducción a la gastronomía griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.3
+                      </span>{" "}
                       Hablaremos sobre aquellas características principales de
                       la gastronomía griega
                     </Card.Text>
