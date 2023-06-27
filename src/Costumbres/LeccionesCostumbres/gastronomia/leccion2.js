@@ -11,8 +11,7 @@ import imagen2 from "./images/griego2.webp";
 import imagen3 from "./images/mediterraneo.jpg";
 import imagen4 from "./images/griegos.jpg";
 import imagen5 from "./images/plato2.webp";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 
 const LeccionGastronomia2 = () => {
@@ -299,7 +298,7 @@ const LeccionGastronomia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
+                            2.1 Productos clave en la cocina griega
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -462,9 +461,7 @@ const LeccionGastronomia2 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
-                          </Modal.Title>
+                          <Modal.Title>2.2 Quesos, leche y más</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2>Productos lácteos y quesos griegos</h2>
@@ -590,13 +587,10 @@ const LeccionGastronomia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
+                            2.3 Pan y otros productos de panadería griegos
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            Pan y otros productos de panadería griegos.
-                          </h2>
                           <p>
                             El pan y los productos de panadería tienen una larga
                             tradición en la cocina griega. Estos son algunos de
@@ -678,11 +672,8 @@ const LeccionGastronomia2 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Gastronomia/Leccion3">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Gastronomia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

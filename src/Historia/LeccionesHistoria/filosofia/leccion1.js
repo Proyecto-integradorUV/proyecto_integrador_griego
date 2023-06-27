@@ -296,13 +296,11 @@ const LeccionFilosofia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 1: Período presocrático
+                            1.1 Introducción al periodo presocrático
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>1.1 </b>Introducción
-                          </h2>
+                          <h2 class="text-center">Introducción</h2>
                           <p>
                             El período presocrático, también conocido como
                             período prefilosófico, abarca desde el siglo VI a.C.
@@ -377,13 +375,11 @@ const LeccionFilosofia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 1: Período presocrático
+                            1.2 Escuelas del periodo presocrático
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>1.2 </b>Escuelas
-                          </h2>
+                          <h2 class="text-center">Escuelas</h2>
                           <p>
                             Los filósofos presocráticos plantearon una variedad
                             de teorías y enfoques, pero algunas de las escuelas

@@ -6,7 +6,6 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import informacion from "../../../style/botones/informacion.png";
 import Navbar4 from "../../../components/navbar4";
-import anterior from "../../../style/botones/anterior.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 import imagen1 from "./images/plato.png";
 import imagen2 from "./images/plato2.webp";
@@ -18,6 +17,7 @@ import rigozalo from "./images/rigozalo.png";
 import baklava from "./images/baklava.jpg";
 import louku from "./images/louku.webp";
 import quiz from "../../../style/botones/quiz.png";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionGastronomia4 = () => {
   const url1 = "/Temas/Gastronomia/Leccion1";
@@ -335,7 +335,7 @@ const LeccionGastronomia4 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>Postres Griegos</Modal.Title>
+                          <Modal.Title>4.1 Postres</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
@@ -447,12 +447,10 @@ const LeccionGastronomia4 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>Leccion 4: Postres Griegos</Modal.Title>
+                          <Modal.Title>4.2 Dulces fritos</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            Loukoumades y otros dulces fritos.
-                          </h2>
+                          <h2 class="text-center">4.2 Loukoumades.</h2>
                           <img
                             src={louku}
                             alt="Imagen"
@@ -556,11 +554,11 @@ const LeccionGastronomia4 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>Lección 4: Postres Griegos</Modal.Title>
+                          <Modal.Title>4.3 Postres lácteos</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
-                            Postres lácteos como el yogur griego y el rizogalo
+                            4.3 Postres como el yogur griego y el rizogalo
                           </h2>
                           <img
                             src={rigozalo}
@@ -611,8 +609,8 @@ const LeccionGastronomia4 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Gastronomia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Gastronomia/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

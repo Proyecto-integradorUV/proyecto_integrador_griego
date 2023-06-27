@@ -371,6 +371,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       <span style={{ fontWeight: "bold", color: "#bd795c" }}>
@@ -403,14 +404,12 @@ const LeccionSitios4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Presentación de las islas griegas como destinos
+                            4.1 Presentación de las islas griegas como destinos
                             turísticos populares y únicos
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>4.1 </b>Presentación
-                          </h2>
+                          <h2 class="text-center">Presentación</h2>
                           <p>
                             Las islas griegas son destinos turísticos muy
                             populares y únicos que atraen a millones de
@@ -459,6 +458,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       <span style={{ fontWeight: "bold", color: "#bd795c" }}>
@@ -491,14 +491,12 @@ const LeccionSitios4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Destacar algunas de las islas más conocidas, como
-                            Santorini, Mykonos y Creta
+                            4.2 Destacar algunas de las islas más conocidas,
+                            como Santorini, Mykonos y Creta
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                            <b>4.2 </b>Islas conocidas
-                          </h2>
+                          <h2 class="text-center">Islas conocidas</h2>
                           <p>
                             Entre las islas más conocidas de Grecia se
                             encuentran:
@@ -592,6 +590,7 @@ const LeccionSitios4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
                       <span style={{ fontWeight: "bold", color: "#bd795c" }}>
@@ -625,15 +624,13 @@ const LeccionSitios4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Discusión sobre la arquitectura tradicional de las
-                            islas, las playas, la gastronomía y las actividades
-                            culturales y recreativas disponibles
+                            4.3 Discusión sobre la arquitectura tradicional de
+                            las islas, las playas, la gastronomía y las
+                            actividades culturales y recreativas disponibles
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                            <b>4.3 </b>Arquitectura tradicional
-                          </h2>
+                          <h2 class="text-center">Arquitectura tradicional</h2>
                           <p>
                             La arquitectura tradicional de las islas griegas es
                             reconocible por sus casas encaladas de paredes

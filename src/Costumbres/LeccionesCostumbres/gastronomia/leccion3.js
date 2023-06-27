@@ -6,9 +6,8 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import informacion from "../../../style/botones/informacion.png";
 import Navbar4 from "../../../components/navbar4";
-import anterior from "../../../style/botones/anterior.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
 import mariscos from "./images/mariscos.webp";
 import parrilla from "./images/parrilla.jpg";
 import vino from "./images/vino.png";
@@ -334,9 +333,7 @@ const LeccionGastronomia3 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 3: Platos principales
-                          </Modal.Title>
+                          <Modal.Title>3.1 Vino y uvas</Modal.Title>
                         </Modal.Header>
 
                         <Modal.Body>
@@ -451,9 +448,7 @@ const LeccionGastronomia3 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 3: Platos principales
-                          </Modal.Title>
+                          <Modal.Title>3.2 Comida a la parrilla</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
@@ -567,9 +562,7 @@ const LeccionGastronomia3 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 3: Platos principales
-                          </Modal.Title>
+                          <Modal.Title>3.3 Comida de mar en griega</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
@@ -649,11 +642,8 @@ const LeccionGastronomia3 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion2">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Gastronomia/Leccion4">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Gastronomia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

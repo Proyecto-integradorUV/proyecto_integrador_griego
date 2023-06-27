@@ -296,14 +296,10 @@ const LeccionFilosofia4 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Leccion 4: El período neoplatónico
-                          </Modal.Title>
+                          <Modal.Title>4.1 El período neoplatónico</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>4.1 </b>Introducción
-                          </h2>
+                          <h2 class="text-center">Introducción</h2>
                           <br></br>
                           <img
                             src={neoplatonismo}
@@ -385,13 +381,10 @@ const LeccionFilosofia4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Leccion 4: El período neoplatónico
+                            4.2 Características del período neoplatónico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>4.2 </b>Características del período neoplatónico
-                          </h2>
                           <br></br>
                           <img
                             src={neoplatonismo}

@@ -1,7 +1,6 @@
 import "../../../style/css/styleEmpezar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
 import "./leccionesDeporte.css";
 import lecDeporte from "../../../style/titulos/deporte.png";
 import React, { useState } from "react";
@@ -210,7 +209,7 @@ const LeccionDeporte4 = () => {
         <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
           <Carousel
             interval={null}
-            controls={true}
+            controls={false}
             indicators={false}
             className="fondo-card"
           >
@@ -226,7 +225,11 @@ const LeccionDeporte4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4: Gimnasia entrenamiento fisico</Card.Title>
+                    <br></br>
+                    <br></br>
+                    <Card.Title>
+                      Lección 4: Gimnasia entrenamiento fisico
+                    </Card.Title>
                     <Card.Text>
                       <b>Gimnasia</b> entrenamiento fisico
                     </Card.Text>

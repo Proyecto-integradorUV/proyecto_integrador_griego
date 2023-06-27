@@ -300,14 +300,11 @@ const LeccionFilosofia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: El período platónico y aristotélico
+                            2.1 Introducción al periodo platónico y aristotélico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>2.1 </b>Introducción al periodo platónico y
-                            aristotélico
-                          </h2>
+                          <h2 class="text-center">Introducción</h2>
                           <p>
                             Representa una de las etapas más importantes y
                             influyentes en la historia de la filosofía griega y
@@ -376,13 +373,10 @@ const LeccionFilosofia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: El período platónico y aristotélico
+                            2.2 Características del periodo platónico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>2.2 </b>Características del periodo aristotélico
-                          </h2>
                           <br></br>
                           <img
                             src={platon}
@@ -487,13 +481,10 @@ const LeccionFilosofia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: El período platónico y aristotélico
+                            2.3 Características del periodo aristotélico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>2.3 </b> Características del periodo aristotélico
-                          </h2>
                           <img
                             src={aristoteles}
                             alt="Imagen"

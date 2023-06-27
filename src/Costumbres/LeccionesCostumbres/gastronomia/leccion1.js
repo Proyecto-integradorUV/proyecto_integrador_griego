@@ -13,7 +13,7 @@ import imagen3 from "./images/mediterraneo.jpg";
 import imagen4 from "./images/griegos.jpg";
 import imagen5 from "./images/plato2.webp";
 import imagen6 from "./images/griego3.jpg";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionGastronomia1 = () => {
   const url1 = "/Temas/Gastronomia/Leccion1";
@@ -333,7 +333,7 @@ const LeccionGastronomia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Introducción a la gastronomía girega
+                            1.1 Introducción a la gastronomía girega
                           </Modal.Title>
                         </Modal.Header>
                         <br></br>
@@ -424,8 +424,7 @@ const LeccionGastronomia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Influencias culturales y geográficas en la cocina
-                            griega.
+                            1.2 la influencia cultural y geográfica
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -581,7 +580,7 @@ const LeccionGastronomia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Introducción a la gastronomía griega
+                            1.3 Características principales
                           </Modal.Title>
                         </Modal.Header>
 
@@ -721,8 +720,8 @@ const LeccionGastronomia1 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion2">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Gastronomia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

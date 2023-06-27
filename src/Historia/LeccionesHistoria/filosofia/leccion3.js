@@ -296,14 +296,10 @@ const LeccionFilosofia3 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 3: Período helenístico
-                          </Modal.Title>
+                          <Modal.Title>3.1 Período helenístico</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>3.1 </b>Introducción
-                          </h2>
+                          <h2 class="text-center">Introducción</h2>
                           <p>
                             Abarca aproximadamente desde la muerte de Alejandro
                             Magno en el año 323 a.C. hasta el dominio romano
@@ -373,14 +369,11 @@ const LeccionFilosofia3 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 3: Período helenístico
+                            3.2 principales características y escuelas de este
+                            periodo helenístico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>3.2 </b>principales características y escuelas de
-                            este periodo helenístico
-                          </h2>
                           <p>
                             Durante el período helenístico, la filosofía griega
                             experimentó cambios significativos y se

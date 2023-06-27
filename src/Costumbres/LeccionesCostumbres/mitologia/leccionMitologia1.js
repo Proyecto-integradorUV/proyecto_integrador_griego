@@ -14,8 +14,8 @@ import origen from "./imagesLec1/origen.webp";
 import dios1 from "./imagesLec1/zeus.png";
 import dios5 from "./imagesLec1/atenea.png";
 import dios6 from "./imagesLec1/afrodita.png";
-import siguiente from "../../../style/botones/siguiente.png";
 import diosesHumanos from "./imagesLec1/diosesHumanos.jpeg";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionMitologia1 = () => {
   const [modals, setModals] = useState({
@@ -254,11 +254,11 @@ const LeccionMitologia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Los mitos de origen y nacimiento de los dioses.
+                            1.1 Los mitos de origen y nacimiento de los dioses.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">El principio del mundo</h2>
+                          <h2 class="text-center"> El principio del mundo</h2>
                           <p>
                             La edad de los Dioses es el nombre que recibe la
                             primera etapa de la mitología griega, a la que
@@ -414,7 +414,7 @@ const LeccionMitologia1 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>La edad de los Dioses</Modal.Title>
+                          <Modal.Title>1.2 La edad de los Dioses</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2 class="text-center">
@@ -520,7 +520,7 @@ const LeccionMitologia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Periodos de la mitología griega
+                            1.3 Periodos de la mitología griega
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -554,8 +554,8 @@ const LeccionMitologia1 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Leccion2">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Mitologia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
 import NavbarPrincipal from "../../../components/navMito";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
 import ImagenCaoursel from "./componenteimagenes";
 import zeus from "./imagesLec1/zeus.png";
 import hera from "./imagesLec1/hera.png";
@@ -22,6 +20,7 @@ import ares from "./imagesLec1/ares.png";
 import apolo from "./imagesLec1/apolo.png";
 import gordo from "./imagesLec1/el.png";
 import hades from "./imagesLec1/hades.png";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionMitologia2 = () => {
   const [modals, setModals] = useState({
@@ -425,7 +424,8 @@ const LeccionMitologia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Introducción la edad de los dioses y los humanos.
+                            2.1 Introducción la edad de los dioses y los
+                            humanos.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
@@ -614,7 +614,7 @@ const LeccionMitologia2 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>Dioses</Modal.Title>
+                          <Modal.Title>2.2 Dioses</Modal.Title>
                         </Modal.Header>
                         <h2 class="text-center">
                           Dioses importantes de la mitología griega
@@ -760,11 +760,8 @@ const LeccionMitologia2 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Mitologia/Leccion3">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Mitologia">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

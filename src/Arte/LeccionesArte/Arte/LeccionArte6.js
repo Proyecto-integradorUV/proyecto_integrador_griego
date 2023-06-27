@@ -18,7 +18,6 @@ import NavbarArte from "../../../components/navArte";
 import YouTube from "react-youtube";
 
 const LeccionArte6 = () => {
-
   //almacenar modals por nombres
   const [modals, setModals] = useState({
     modal1: false,
@@ -43,7 +42,7 @@ const LeccionArte6 = () => {
 
   return (
     <div className="contenedorArte">
-      <NavbarArte/>
+      <NavbarArte />
       <div class="titulo-empezar">
         <img src={arte} class="img-fluid" alt="Imagen" />
       </div>
@@ -270,7 +269,7 @@ const LeccionArte6 = () => {
         <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
           <Carousel
             interval={null}
-            controls={true}
+            controls={false}
             indicators={false}
             className="fondo-card"
           >
@@ -286,13 +285,9 @@ const LeccionArte6 = () => {
               >
                 <Card style={{ width: "600px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>
-                    Lección 6: Danza y música griega
-                    </Card.Title>
+                    <br></br>
+                    <Card.Title>Lección 6: Danza y música griega</Card.Title>
                     <Card.Text>
-                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
-                      6.1
-                    </span>{" "}
                       Danza y música griega: Vídeo explicativo
                     </Card.Text>
                     <div
@@ -323,9 +318,7 @@ const LeccionArte6 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                          <b>6.1 </b>Vídeo introductorio
-                        </h2>
+                          <h2 class="text-center">Vídeo introductorio</h2>
                           <YouTube
                             videoId={videoId}
                             opts={{ width: "100%", height: "100%" }}

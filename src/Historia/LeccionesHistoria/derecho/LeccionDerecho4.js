@@ -17,7 +17,6 @@ import quiz from "../../../style/botones/quiz.png";
 import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho4 = () => {
-
   const url1 = "/Temas/Derecho/Leccion1";
   const url2 = "/Temas/Derecho/Leccion2";
   const url3 = "/Temas/Derecho/Leccion3";
@@ -299,13 +298,15 @@ const LeccionDerecho4 = () => {
               >
                 <Card style={{ width: "400", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación del estado moderno
+                      Lección 4: La lucha por la independencia y la formación
+                      del estado moderno
                     </Card.Title>
                     <Card.Text>
-                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
-                      4.1
-                    </span>{" "}
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.1
+                      </span>{" "}
                       Movimiento de independencia griego y su influencia en el
                       desarrollo de los derechos
                     </Card.Text>
@@ -333,14 +334,12 @@ const LeccionDerecho4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Movimiento de independencia griego y su influencia
-                            en el desarrollo de los derechos.
+                            4.1 Movimiento de independencia griego y su
+                            influencia en el desarrollo de los derechos.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                          <b>4.1 </b>Independencia
-                        </h2>
+                          <h2 class="text-center">Independencia</h2>
                           <p>
                             <img
                               src={derecho1}
@@ -432,13 +431,15 @@ const LeccionDerecho4 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación del estado moderno
+                      Lección 4: La lucha por la independencia y la formación
+                      del estado moderno
                     </Card.Title>
                     <Card.Text>
-                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
-                      4.2
-                    </span>{" "}
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.2
+                      </span>{" "}
                       La primera constitución de Grecia y los derechos
                       establecidos en ella.
                     </Card.Text>
@@ -466,14 +467,12 @@ const LeccionDerecho4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            La primera constitución de Grecia y los derechos
+                            4.2 La primera constitución de Grecia y los derechos
                             establecidos en ella.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                          <b>4.2 </b>Constitución
-                        </h2>
+                          <h2 class="text-center">Constitución</h2>
                           <p>
                             La primera Constitución de Grecia, conocida como la
                             "Constitución de Epidauro", fue promulgada en enero

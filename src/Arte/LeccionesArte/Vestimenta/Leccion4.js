@@ -94,6 +94,7 @@ const LeccionVestimenta4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
@@ -128,14 +129,12 @@ const LeccionVestimenta4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Explicación de los accesorios utilizados en la
+                            4.1 Explicación de los accesorios utilizados en la
                             cultura griega, como joyas, cinturones y sandalias
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                            <b>4.1 </b>Explicación
-                          </h2>
+                          <h2 class="text-center">Explicación</h2>
                           <p>
                             En la cultura griega, tanto hombres como mujeres
                             complementaban su vestimenta con diversos accesorios
@@ -224,6 +223,7 @@ const LeccionVestimenta4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
@@ -258,14 +258,12 @@ const LeccionVestimenta4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Significado simbólico de estos accesorios y cómo
+                            4.2 Significado simbólico de estos accesorios y cómo
                             complementaban la vestimenta
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                        <h2 class="text-center">
-                            <b>4.2 </b>Significado
-                          </h2>
+                          <h2 class="text-center">Significado</h2>
                           <p>
                             Los accesorios en la cultura griega tenían un
                             significado simbólico y complementaban la vestimenta
@@ -328,6 +326,7 @@ const LeccionVestimenta4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
@@ -361,13 +360,11 @@ const LeccionVestimenta4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Detalles adicionales en la cultura griega
+                            4.3 Detalles adicionales en la cultura griega
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            <b>4.3 </b>Detalles
-                          </h2>
+                          <h2 class="text-center">Detalles</h2>
                           <p>
                             En la cultura griega, los peinados y el maquillaje
                             también eran importantes para complementar la
