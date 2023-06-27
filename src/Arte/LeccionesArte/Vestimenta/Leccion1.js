@@ -11,9 +11,9 @@ import imagenModal1 from "./images/img1.jpg";
 import imagenModal2 from "./images/img2.png";
 import imagenModal3 from "./images/img3.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
 import lecVestimenta from "../../../style/titulos/vestimenta.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionVestimenta1 = () => {
 
@@ -39,10 +39,23 @@ const LeccionVestimenta1 = () => {
     };
 
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
-
+    const url1 = "/Temas/Vestimenta/Leccion1";
+    const url2 = "/Temas/Vestimenta/Leccion2";
+    const url3 = "/Temas/Vestimenta/Leccion3";
+    const url4 = "/Temas/Vestimenta/Leccion4";
     return (
-        <div className="contenedorArte">
-            <NavbarPrincipal />
+        <div class="contenedorArte">
+            <Navbar4
+                tituloTema="Vestimenta"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                 <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
             </div>
@@ -68,6 +81,9 @@ const LeccionVestimenta1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                1.1
+                                            </span>{" "}
                                             Breve <b>historia</b> de la antigua Grecia y su influencia en la moda
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -81,6 +97,9 @@ const LeccionVestimenta1 = () => {
                                                     <Modal.Title>Breve historia de la antigua Grecia y su influencia en la moda</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>1.1 </b>Historia
+                                                    </h2>
                                                     <p> La antigua Grecia, conocida como la cuna de la civilización occidental, floreció desde el siglo VIII a.C. hasta el siglo IV a.C. </p>
                                                     <p> Durante este período, los griegos hicieron numerosas contribuciones significativas a la filosofía, el arte, la política, la ciencia y también a la moda.</p>
                                                     <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto", borderRadius: "40%" }} />
@@ -106,6 +125,9 @@ const LeccionVestimenta1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                1.2
+                                            </span>{" "}
                                             Conceptos <b>básicos</b> de la vestimenta griega
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -119,6 +141,9 @@ const LeccionVestimenta1 = () => {
                                                     <Modal.Title>Conceptos básicos de la vestimenta griega: Introducción a la cultura griega y la vestimenta </Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>1.2 </b>Conceptos
+                                                    </h2>
                                                     <p>Dos prendas destacadas en la vestimenta griega son la toga y el peplo.</p>
                                                     <img src={imagenModal2} class="img-fluid" alt="Imagen" style={{ width: "80%", height: "80%", display: "block", margin: "auto", borderRadius: "40%" }} />
                                                     <br />
@@ -143,6 +168,9 @@ const LeccionVestimenta1 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 1: Introducción a la cultura griega y la vestimenta</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                1.3
+                                            </span>{" "}
                                             Descripción de los <b>materiales</b> utilizados en la ropa griega y su simbolismo
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -156,6 +184,9 @@ const LeccionVestimenta1 = () => {
                                                     <Modal.Title>Descripción de los materiales utilizados en la ropa griega y su simbolismo</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>1.3 </b>Descripción
+                                                    </h2>
                                                     <p>En la antigua Grecia, la ropa se hacía principalmente de lana, lino y seda. </p>
                                                     <img src={imagenModal3} class="img-fluid" alt="Imagen" style={{ width: "80%", height: "80%", display: "block", margin: "auto", borderRadius: "40%" }} />
                                                     <br />
@@ -183,8 +214,8 @@ const LeccionVestimenta1 = () => {
                 </div>
             </div>
             <div class="botones-lecciones">
-                <Link to="/Temas/Vestimenta/Leccion2">
-                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                <Link to="/Temas/Vestimenta">
+                    <img src={inicio} class="img-fluid" alt="Imagen" />
                 </Link>
             </div>
         </div>

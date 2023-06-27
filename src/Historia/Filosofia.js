@@ -2,7 +2,6 @@ import "./styles/Filosofia.css";
 import React from "react";
 import filoTitle from "../style/titulos/filosofia.png";
 import { Link } from "react-router-dom";
-import botonLeccion from "./Images/btnFilosofia.png";
 import botonModel3D from "./Images/btnFilosofia3D.png";
 import Navbar4 from "../components/navbar4";
 
@@ -39,9 +38,6 @@ const Filosofia = () => {
         empírica y el estudio sistemático
       </div>
       <div class="button-container-fil">
-        {/* <Link to="/Temas/Filosofia/Lecciones" class="btn-filosofia">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link> */}
         <Link to="/Temas/Filosofia/Model" class="btn-filosofia">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>

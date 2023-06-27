@@ -7,7 +7,8 @@ import lecDeporte from "../../../style/titulos/deporte.png";
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import anterior from "../../../style/botones/anterior.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import quiz from "../../../style/botones/quiz.png";
 import imagenModal1 from "./images/halterofila.jpg";
 import imagenModal2 from "./images/gim.jpg";
@@ -35,10 +36,24 @@ const LeccionDeporte4 = () => {
   };
 
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
+  const url1 = "/Temas/Deporte/Leccion1";
+  const url2 = "/Temas/Deporte/Leccion2";
+  const url3 = "/Temas/Deporte/Leccion3";
+  const url4 = "/Temas/Deporte/Leccion4";
 
   return (
     <div className="container-leccionDeporte">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Deporte"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecDeporte} class="img-fluid" alt="Imagen" />
       </div>
@@ -287,8 +302,8 @@ const LeccionDeporte4 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Deporte/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Deporte">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Deporte/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

@@ -4,12 +4,26 @@ import vestimentaTitle from "../style/titulos/vestimenta.png";
 import { Link } from "react-router-dom";
 import botonLeccion from "./Images/btnVestimenta.png";
 import botonModel3D from "./Images/btnVestimenta3D.png";
-import NavbarPrincipal from "../components/navbar2";
+import Navbar4 from "../components/navbar4";
 
 const Vestimenta = () => {
+  const url1 = "/Temas/Vestimenta/Leccion1";
+  const url2 = "/Temas/Vestimenta/Leccion2";
+  const url3 = "/Temas/Vestimenta/Leccion3";
+  const url4 = "/Temas/Vestimenta/Leccion4";
   return (
     <div class="contenedor-inicial-vestimenta">
-      <NavbarPrincipal/>
+      <Navbar4
+        tituloTema="Vestimenta"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="temaVestimenta">
         <img src={vestimentaTitle} alt="Imagen" />
       </div>
@@ -24,9 +38,6 @@ const Vestimenta = () => {
         broches
       </div>
       <div class="button-container-vest">
-        <Link to="/Temas/Vestimenta/Lecciones" class="btn-vest ">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link>
         <Link to="/Temas/Vestimenta/Model" class="btn-vest ">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>

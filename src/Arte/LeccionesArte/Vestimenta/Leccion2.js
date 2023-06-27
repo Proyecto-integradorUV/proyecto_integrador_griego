@@ -8,11 +8,8 @@ import vestimenta1 from "./images/vestimenta1.jpg";
 import vestimenta5 from "./images/vestimenta5.jpg";
 import lecVestimenta from "../../../style/titulos/vestimenta.png";
 import informacion from "../../../style/botones/informacion.png";
-// import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2"
-// import YouTube from 'react-youtube';
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
+import Navbar4 from "../../../components/navbar4";
 import imagenModal1 from "./images/img4.png";
 import imagenModal2 from "./images/img5.png";
 
@@ -40,10 +37,23 @@ const LeccionVestimenta2 = () => {
     };
 
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
-
+    const url1 = "/Temas/Vestimenta/Leccion1";
+    const url2 = "/Temas/Vestimenta/Leccion2";
+    const url3 = "/Temas/Vestimenta/Leccion3";
+    const url4 = "/Temas/Vestimenta/Leccion4";
     return (
-        <div className="contenedorArte">
-            <NavbarPrincipal />
+        <div class="contenedorArte">
+            <Navbar4
+                tituloTema="Vestimenta"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                 <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
             </div>
@@ -66,6 +76,9 @@ const LeccionVestimenta2 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 2: Ropa masculina en la cultura griega</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                2.1
+                                            </span>{" "}
                                             <b>Descripción</b> detallada de las prendas utilizadas por los hombres griegos.
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -79,6 +92,9 @@ const LeccionVestimenta2 = () => {
                                                     <Modal.Title>Descripción detallada de las prendas utilizadas por los hombres griegos</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>2.1 </b>Descripción
+                                                    </h2>
                                                     <p>En la antigua Grecia, los hombres utilizaban principalmente dos prendas principales: el himation y el chiton.</p>
                                                     <img src={imagenModal1} class="img-fluid center" alt="Imagen" style={{ width: "50%", height: "50%", display: "block", margin: "auto", borderRadius: "40%" }} />
                                                     <br />
@@ -114,6 +130,9 @@ const LeccionVestimenta2 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 2: Ropa masculina en la cultura griega</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                2.2
+                                            </span>{" "}
                                             Explicación de <b>cómo se usaban</b> estas prendas y cómo variaban según la clase social.
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -127,6 +146,9 @@ const LeccionVestimenta2 = () => {
                                                     <Modal.Title>Explicación de cómo se usaban estas prendas y cómo variaban según la clase social</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>2.2 </b>Explicación
+                                                    </h2>
                                                     <p>La forma de llevar estas prendas podía variar según la ocasión y la clase social.</p>
 
                                                     <p>Los hombres de clase alta solían llevar el himation de manera más elaborada y estilizada, con pliegues y drapeados sofisticados. Podían llevarlo sobre el hombro izquierdo o
@@ -154,11 +176,8 @@ const LeccionVestimenta2 = () => {
                 </div>
             </div>
             <div class="botones-lecciones">
-                <Link to="/Temas/Vestimenta/Leccion1">
-                    <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
-                <Link to="/Temas/Vestimenta/Leccion3">
-                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                <Link to="/Temas/Vestimenta">
+                    <img src={inicio} class="img-fluid" alt="Imagen" />
                 </Link>
             </div>
         </div>

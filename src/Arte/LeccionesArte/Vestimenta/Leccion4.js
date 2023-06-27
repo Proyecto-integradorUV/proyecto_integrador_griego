@@ -8,10 +8,8 @@ import vestimenta1 from "./images/vestimenta1.jpg";
 import vestimenta5 from "./images/vestimenta5.jpg";
 import lecVestimenta from "../../../style/titulos/vestimenta.png";
 import informacion from "../../../style/botones/informacion.png";
-// import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2";
-// import YouTube from 'react-youtube';
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
+import Navbar4 from "../../../components/navbar4";
 import quiz from "../../../style/botones/quiz.png";
 import imagenModal1 from "./images/img7.png";
 import imagenModal2 from "./images/img8.jpg";
@@ -41,10 +39,23 @@ const LeccionVestimenta4 = () => {
   };
 
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
-
+  const url1 = "/Temas/Vestimenta/Leccion1";
+  const url2 = "/Temas/Vestimenta/Leccion2";
+  const url3 = "/Temas/Vestimenta/Leccion3";
+  const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div className="contenedorArte">
-      <NavbarPrincipal />
+    <div class="contenedorArte">
+      <Navbar4
+        tituloTema="Vestimenta"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
       </div>
@@ -87,6 +98,9 @@ const LeccionVestimenta4 = () => {
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.1
+                      </span>{" "}
                       <b>Explicación</b> de los accesorios utilizados en la
                       cultura griega, como joyas, cinturones y sandalias.
                     </Card.Text>
@@ -119,6 +133,9 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                            <b>4.1 </b>Explicación
+                          </h2>
                           <p>
                             En la cultura griega, tanto hombres como mujeres
                             complementaban su vestimenta con diversos accesorios
@@ -211,6 +228,9 @@ const LeccionVestimenta4 = () => {
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.2
+                      </span>{" "}
                       Significado <b>simbólico</b> de estos accesorios y cómo
                       complementaban la vestimenta
                     </Card.Text>
@@ -243,6 +263,9 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                            <b>4.2 </b>Significado
+                          </h2>
                           <p>
                             Los accesorios en la cultura griega tenían un
                             significado simbólico y complementaban la vestimenta
@@ -309,6 +332,9 @@ const LeccionVestimenta4 = () => {
                       Lección 4: Accesorios y detalles de la vestimenta griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.3
+                      </span>{" "}
                       Detalles <b>adicionales</b> en la cultura griega
                     </Card.Text>
                     <div
@@ -339,6 +365,9 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 class="text-center">
+                            <b>4.3 </b>Detalles
+                          </h2>
                           <p>
                             En la cultura griega, los peinados y el maquillaje
                             también eran importantes para complementar la
@@ -404,8 +433,8 @@ const LeccionVestimenta4 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Vestimenta/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Vestimenta">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Vestimenta/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

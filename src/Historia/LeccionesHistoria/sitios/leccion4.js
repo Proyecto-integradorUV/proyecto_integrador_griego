@@ -7,10 +7,8 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
-// import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2";
-// import YouTube from 'react-youtube';
-import anterior from "../../../style/botones/anterior.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import quiz from "../../../style/botones/quiz.png";
 import imagenModal1 from "./images/islas.webp";
 import imagenModal2 from "./images/santorini.webp";
@@ -44,10 +42,23 @@ const LeccionSitios4 = () => {
   };
 
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
-
+  const url1 = "/Temas/SitiosCaracteristicos/Leccion1";
+  const url2 = "/Temas/SitiosCaracteristicos/Leccion2";
+  const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
+  const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
   return (
-    <div className="contenedorHistoria">
-      <NavbarPrincipal />
+    <div class="contenedorHistoria">
+      <Navbar4
+        tituloTema="Sitios caracteristicos"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={lecSitios} class="img-fluid" alt="Imagen" />
       </div>
@@ -362,6 +373,9 @@ const LeccionSitios4 = () => {
                   <Card.Body>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.1
+                      </span>{" "}
                       <b>Presentación</b> de las islas griegas como destinos
                       turísticos populares y únicos
                     </Card.Text>
@@ -394,6 +408,9 @@ const LeccionSitios4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 class="text-center">
+                            <b>4.1 </b>Presentación
+                          </h2>
                           <p>
                             Las islas griegas son destinos turísticos muy
                             populares y únicos que atraen a millones de
@@ -444,6 +461,9 @@ const LeccionSitios4 = () => {
                   <Card.Body>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.2
+                      </span>{" "}
                       Destacar algunas de las islas <b>más conocidas</b>, como
                       Santorini, Mykonos y Creta
                     </Card.Text>
@@ -476,6 +496,9 @@ const LeccionSitios4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                            <b>4.2 </b>Islas conocidas
+                          </h2>
                           <p>
                             Entre las islas más conocidas de Grecia se
                             encuentran:
@@ -571,6 +594,9 @@ const LeccionSitios4 = () => {
                   <Card.Body>
                     <Card.Title>Lección 4: Las Islas Griegas</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.3
+                      </span>{" "}
                       Discusión sobre la <b>arquitectura tradicional</b> de las
                       islas, las playas, la gastronomía y las actividades
                       culturales y recreativas disponibles
@@ -605,6 +631,9 @@ const LeccionSitios4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                            <b>4.3 </b>Arquitectura tradicional
+                          </h2>
                           <p>
                             La arquitectura tradicional de las islas griegas es
                             reconocible por sus casas encaladas de paredes
@@ -709,8 +738,8 @@ const LeccionSitios4 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/SitiosCaracteristicos/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/SitiosCaracteristicos">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/SitiosCaracteristicos/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

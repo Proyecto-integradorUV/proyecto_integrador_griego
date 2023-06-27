@@ -7,11 +7,8 @@ import { Carousel, Card, Modal, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import lecSitios from "../../../style/titulos/sitios.png";
 import informacion from "../../../style/botones/informacion.png";
-// import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2"
-// import YouTube from 'react-youtube';
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import imagenModal1 from "./images/delfos.webp";
 import imagenModal2 from "./images/TemploApolo.jpg";
 import imagenModal3 from "./images/teatroDelfos.gif";
@@ -41,10 +38,23 @@ const LeccionSitios3 = () => {
     };
 
     // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
-
+    const url1 = "/Temas/SitiosCaracteristicos/Leccion1";
+    const url2 = "/Temas/SitiosCaracteristicos/Leccion2";
+    const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
+    const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
     return (
-        <div className="contenedorHistoria">
-            <NavbarPrincipal />
+        <div class="contenedorHistoria">
+            <Navbar4
+                tituloTema="Sitios caracteristicos"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                 <img src={lecSitios} class="img-fluid" alt="Imagen" />
             </div>
@@ -105,6 +115,9 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                3.1
+                                            </span>{" "}
                                             <b>Introducción</b> a Delfos y su importancia como centro religioso y oracular en la antigua Grecia
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -118,6 +131,9 @@ const LeccionSitios3 = () => {
                                                     <Modal.Title>Introducción a Delfos y su importancia como centro religioso y oracular en la antigua Grecia</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>3.1 </b>Introducción
+                                                    </h2>
                                                     <p>Delfos es un sitio arqueológico ubicado en la ladera sur del monte Parnaso, en Grecia. Durante la antigüedad, fue uno de los lugares más importantes y
                                                         sagrados de la civilización griega. Se creía que en Delfos residía el oráculo de Apolo, dios de la profecía, la música y la luz. La importancia de Delfos
                                                         radicaba en su conexión con el mundo divino y su papel como centro religioso y oracular.
@@ -141,6 +157,9 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                3.2
+                                            </span>{" "}
                                             <b>Exploración</b> de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -154,6 +173,9 @@ const LeccionSitios3 = () => {
                                                     <Modal.Title>Exploración de los restos arqueológicos en Delfos, como el Templo de Apolo y el Teatro</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>3.2 </b>Restos arqueológicos
+                                                    </h2>
                                                     <p>Al explorar los restos arqueológicos de Delfos, los visitantes pueden maravillarse con el Templo de Apolo, que era el
                                                         principal santuario del sitio. El templo fue construido en honor a Apolo y se caracteriza por su elegante estilo arquitectónico
                                                         dórico. Aunque en su mayoría se encuentra en ruinas, aún se pueden apreciar los cimientos y algunas columnas, lo que permite
@@ -183,6 +205,9 @@ const LeccionSitios3 = () => {
                                     <Card.Body>
                                         <Card.Title>Lección 3: Delfos y el Oráculo</Card.Title>
                                         <Card.Text>
+                                            <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                3.3
+                                            </span>{" "}
                                             <b>Explicación</b> del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                         </Card.Text>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -196,6 +221,9 @@ const LeccionSitios3 = () => {
                                                     <Modal.Title>Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
+                                                    <h2 class="text-center">
+                                                        <b>3.3 </b>Oráculo
+                                                    </h2>
                                                     <p>El oráculo de Delfos desempeñó un papel fundamental en la toma de decisiones políticas y religiosas en la antigua Grecia.
                                                         Se creía que las sacerdotisas, conocidas como pitonisas, eran capaces de comunicarse con Apolo y recibir sus respuestas y
                                                         profecías. Tanto líderes políticos como individuos comunes buscaban las respuestas del oráculo antes de tomar decisiones
@@ -227,11 +255,8 @@ const LeccionSitios3 = () => {
                 </div>
             </div>
             <div class="botones-lecciones">
-                <Link to="/Temas/SitiosCaracteristicos/Leccion2">
-                    <img src={anterior} class="img-fluid" alt="Imagen" />
-                </Link>
-                <Link to="/Temas/SitiosCaracteristicos/Leccion4">
-                    <img src={siguiente} class="img-fluid" alt="Imagen" />
+                <Link to="/Temas/SitiosCaracteristicos">
+                    <img src={inicio} class="img-fluid" alt="Imagen" />
                 </Link>
             </div>
         </div>

@@ -2,14 +2,27 @@ import "./styles/Sitios.css";
 import React from "react";
 import sitiosTitle from "../style/titulos/sitios.png";
 import { Link } from "react-router-dom";
-import botonLeccion from "./Images/btnSitios.png";
 import botonModel3D from "./Images/btnSitios3D.png";
-import NavbarPrincipal from "../components/navbar2";
+import Navbar4 from "../components/navbar4";
 
 const Sitios = () => {
+  const url1 = "/Temas/SitiosCaracteristicos/Leccion1";
+  const url2 = "/Temas/SitiosCaracteristicos/Leccion2";
+  const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
+  const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
   return (
     <div class="contenedor-inicia-sitios">
-      <NavbarPrincipal/>
+      <Navbar4
+        tituloTema="Sitios caracteristicos"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="temaSitios">
         <img src={sitiosTitle} alt="Imagen" />
       </div>
@@ -21,9 +34,6 @@ const Sitios = () => {
         característicos que atraen a millones de visitantes cada año
       </div>
       <div class="button-container-sitio">
-        <Link to="/Temas/SitiosCaracteristicos/Lecciones" class="btn-sites">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link>
         <Link to="/Temas/SitiosCaracteristicos/Model" class="btn-sites">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>
