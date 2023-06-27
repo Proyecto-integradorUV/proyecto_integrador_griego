@@ -13,9 +13,9 @@ import literatura6 from "./images/literatura6.jpg";
 import literatura7 from "./images/literatura7.jpg";
 import literatura8 from "./images/literatura8.jpg";
 import literatura from "../../../style/titulos/literatura.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarLite from "../../../components/navLite";
 
 const LeccionLiteratura1 = () => {
 
@@ -44,7 +44,7 @@ const LeccionLiteratura1 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarLite/>
             <div class="titulo-empezar">
                     <img src={literatura} class="img-fluid" alt="Imagen" />
             </div>
@@ -127,6 +127,9 @@ const LeccionLiteratura1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.1
+                                </span>{" "}
                                     Breve introduccion a la literatura griega en el periodo arcaico
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -140,6 +143,9 @@ const LeccionLiteratura1 = () => {
                                         <Modal.Title>Literatura griega en el periodo arcaico.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.1 </b>Periodo arcaico
+                                        </h2>
                                         <p>
                                         Durante el período arcaico, las obras de los poetas se declamaban, como resultado de la tradición oral, en los festivales. 
                                         Producto de la edad oscura griega, la Ilíada de Homero se centraba en los últimos días de la guerra de Troya, una guerra iniciada por el amor de una hermosa mujer, Helena. 
@@ -166,6 +172,9 @@ const LeccionLiteratura1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.2
+                                </span>{" "}
                                     Breve introduccion a la literatura griega en el periodo clásico.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -179,6 +188,9 @@ const LeccionLiteratura1 = () => {
                                         <Modal.Title>Literatura griega en el periodo clásico.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.2 </b>Periodo clásico
+                                        </h2>
                                         <img src={literatura6} alt="Imagen" style={{ width: '20%', height: '20%',  display: "block",margin: "auto", borderRadius: "60px" }}/>
                                         <p>La declamación de la poesía, y de la poesía lírica, se transformó en teatro. 
                                         El propósito del teatro no era únicamente el de entretener, sino que buscaba además educar a los ciudadanos griegos, buscaba explorar un problema. 
@@ -207,6 +219,9 @@ const LeccionLiteratura1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.3
+                                </span>{" "}
                                     Breve introducción a la literatura griega en el periodo helenístico.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -220,6 +235,9 @@ const LeccionLiteratura1 = () => {
                                         <Modal.Title>Literatura griega en el periodo helenístico.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.3 </b>Periodo helenístico
+                                        </h2>
                                         <p>El periodo helenístico produjo poetas, escritores de prosa e historiadores. 
                                         Entre ellos estaba Calímaco, su estudiante Teócrito, Apolonio de Rodas, y el respetado historiador Plutarco. 
                                         Desafortunadamente, como en eras pasadas, mucho de lo que se escribió solo se conserva en fragmentos o citado en las obras de otros.</p><br/>
@@ -242,6 +260,9 @@ const LeccionLiteratura1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: La literatura griega en los distintos periodos</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.4
+                                </span>{" "}
                                     Legado de la literatura griega.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -255,6 +276,9 @@ const LeccionLiteratura1 = () => {
                                         <Modal.Title>Legado de la literatura griega.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.4 </b>Legado
+                                        </h2>
                                         <p>Después de la muerte de Alejandro Magno y el crecimiento de la cultura helenística a través del Mediterráneo, la literatura y el arte romanos tenían un toque griego característico. 
                                         La literatura griega se elevó de la tradición oral de Homero y Hesíodo hasta las obras de Sófocles y Aristófanes, y ahora se encontraba en las mesas de ciudadanos y autores romanos. 
                                         Esta literatura incluía la filosofía de Platón y Aristóteles y las historias de Heródoto y Tucídides. <br/><br/>
@@ -279,8 +303,8 @@ const LeccionLiteratura1 = () => {
             </div>  
         </div>
         <div class="botones-lecciones"> 
-            <Link to="/Temas/Literatura/Leccion2">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Literatura">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link>     
         </div>
     </div>

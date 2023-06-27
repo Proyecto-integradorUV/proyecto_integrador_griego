@@ -11,12 +11,18 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
 import quiz from "../../../style/botones/quiz.png";
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho4 = () => {
+
+  const url1 = "/Temas/Derecho/Leccion1";
+  const url2 = "/Temas/Derecho/Leccion2";
+  const url3 = "/Temas/Derecho/Leccion3";
+  const url4 = "/Temas/Derecho/Leccion4";
+
   //almacenar modals por nombres
   const [modals, setModals] = useState({
     modal1: false,
@@ -40,7 +46,17 @@ const LeccionDerecho4 = () => {
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Derecho"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="titulo-empezar">
         <img src={derechos} class="img-fluid" alt="Imagen" />
       </div>
@@ -287,6 +303,9 @@ const LeccionDerecho4 = () => {
                       Lección 4: La lucha por la independencia y la formación del estado moderno
                     </Card.Title>
                     <Card.Text>
+                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                      4.1
+                    </span>{" "}
                       Movimiento de independencia griego y su influencia en el
                       desarrollo de los derechos
                     </Card.Text>
@@ -319,6 +338,9 @@ const LeccionDerecho4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                          <b>4.1 </b>Independencia
+                        </h2>
                           <p>
                             <img
                               src={derecho1}
@@ -414,6 +436,9 @@ const LeccionDerecho4 = () => {
                       Lección 4: La lucha por la independencia y la formación del estado moderno
                     </Card.Title>
                     <Card.Text>
+                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                      4.2
+                    </span>{" "}
                       La primera constitución de Grecia y los derechos
                       establecidos en ella.
                     </Card.Text>
@@ -446,6 +471,9 @@ const LeccionDerecho4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                          <b>4.2 </b>Constitución
+                        </h2>
                           <p>
                             La primera Constitución de Grecia, conocida como la
                             "Constitución de Epidauro", fue promulgada en enero
@@ -515,7 +543,7 @@ const LeccionDerecho4 = () => {
       </div>
       <div class="botones-lecciones">
         <Link to="/Temas/Derecho/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Derecho/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

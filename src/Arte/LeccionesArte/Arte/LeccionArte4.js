@@ -17,10 +17,9 @@ import pintura4 from "./images/pintura4.jpg";
 import ceramica from "./images/ceramica.jpg";
 import pintura5 from "./images/pintura5.jpg";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarArte from "../../../components/navArte";
 
 const LeccionArte4 = () => {
 
@@ -48,7 +47,7 @@ const LeccionArte4 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarArte/>
             <div class="titulo-empezar">
                     <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
@@ -131,6 +130,9 @@ const LeccionArte4 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    4.1
+                                </span>{" "}
                                     Explicación de la pintura y la cerámica griega y su importancia en la vida cotidiana.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -144,6 +146,9 @@ const LeccionArte4 = () => {
                                         <Modal.Title>Explicación de la pintura y la cerámica griega y su importancia en la vida cotidiana.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>4.1 </b>Explicación
+                                        </h2>
                                         <p>La pintura y la cerámica griega tuvieron una gran importancia en la vida cotidiana de la antigua Grecia. Estas formas de arte se utilizaron para decorar diversos objetos y también desempeñaron un papel significativo en la expresión cultural y religiosa de la época. Aquí hay una explicación más detallada sobre la pintura y la cerámica griega y su importancia:<br/><br/>
                                         <img src={pintura1} alt="Imagen" style={{ width: '40%', height: '40%',  display: "block",margin: "auto" }}/><br/>
                                         <h6>Pintura griega</h6>
@@ -176,6 +181,9 @@ const LeccionArte4 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    4.2
+                                </span>{" "}
                                     Descripción de los estilos y técnicas de pintura, como el estilo de figuras rojas y el estilo de figuras negras.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -189,6 +197,9 @@ const LeccionArte4 = () => {
                                         <Modal.Title>Descripción de los estilos y técnicas de pintura, como el estilo de figuras rojas y el estilo de figuras negras.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>4.2 </b>Descripción
+                                        </h2>
                                         <p>El arte de la cerámica griega se caracteriza por dos estilos distintivos: el estilo de figuras rojas (red-figure) y el estilo de figuras negras (black-figure). 
                                         Estos estilos se desarrollaron en Atenas durante el período arcaico (siglos VII-VI a.C.) y continuaron siendo utilizados en el período clásico (siglos V-IV a.C.). 
                                         Ahora una breve descripción de cada uno:
@@ -228,6 +239,9 @@ const LeccionArte4 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 4: Pintura y cerámica griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    4.3
+                                </span>{" "}
                                     Pintura griega antigua
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -241,6 +255,9 @@ const LeccionArte4 = () => {
                                         <Modal.Title>Pintura griega antigua</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>4.3 </b>Pintura griega antigua
+                                        </h2>
                                         <p>Algunas características distintivas de la pintura antigua griega incluyen:
                                         <br/>
                                         Naturalismo y proporción: Los artistas griegos se esforzaban por capturar la belleza y la armonía en sus obras. Buscaban representar las figuras humanas y los objetos de manera realista, con proporciones equilibradas y cuidado en los detalles anatómicos.
@@ -270,12 +287,9 @@ const LeccionArte4 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Arte/Leccion3">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
-            <Link to="/Temas/Arte/Leccion5">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>     
+            <Link to="/Temas/Arte">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
+            </Link>    
         </div>
     </div>
     );

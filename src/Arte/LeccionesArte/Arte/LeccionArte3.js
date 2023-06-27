@@ -16,10 +16,9 @@ import escultura3 from "./images/escultura3.jpg";
 import escultura4 from "./images/escultura4.jpg";
 import escultura5 from "./images/escultura5.jpg";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarArte from "../../../components/navArte";
 
 const LeccionArte3 = () => {
 
@@ -47,7 +46,7 @@ const LeccionArte3 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarArte/>
             <div class="titulo-empezar">
                     <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
@@ -130,6 +129,9 @@ const LeccionArte3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    3.1
+                                </span>{" "}
                                     Descripción de los estilos y técnicas escultóricas griegas, como el estilo kouros y el estilo contrapposto.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -143,6 +145,9 @@ const LeccionArte3 = () => {
                                         <Modal.Title>Descripción de los estilos y técnicas escultóricas griegas, como el estilo kouros y el estilo contrapposto.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>3.1 </b>Descripción
+                                        </h2>
                                         <p>La escultura griega antigua se caracteriza por su enfoque en la representación idealizada de la forma humana y su habilidad para capturar la belleza y el realismo. 
                                         A continuación, describiré dos estilos y técnicas escultóricas griegas destacadas: el estilo kouros y el estilo contrapposto.<br/><br/>
                                         <h6>Estilo Kouros</h6> El estilo kouros se refiere a la representación de figuras masculinas jóvenes en la escultura griega arcaica. 
@@ -173,6 +178,9 @@ const LeccionArte3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    3.2
+                                </span>{" "}
                                     Mención de los temas y motivos comunes en la escultura griega, como los dioses y atletas.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -186,6 +194,9 @@ const LeccionArte3 = () => {
                                         <Modal.Title>Mención de los temas y motivos comunes en la escultura griega, como los dioses y atletas.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>3.2 </b>Temas
+                                        </h2>
                                         <img src={escultura3} alt="Imagen" style={{ width: '40%', height: '40%',  display: "block",margin: "auto" }}/><br/>
                                         <p>La escultura griega abarcó una amplia gama de temas y motivos a lo largo de su historia. A continuación, mencionaré algunos de los temas y motivos más comunes en la escultura griega:<br/><br/>
                                         <h6>Dioses y diosas</h6> Los dioses y diosas del panteón griego fueron una fuente recurrente de inspiración para los escultores griegos. Estas esculturas representaban a deidades como Zeus, Atenea, Apolo, Afrodita y Poseidón, entre otros. 
@@ -216,6 +227,9 @@ const LeccionArte3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3: Escultura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    3.3
+                                </span>{" "}
                                     Figuras destacadas de la escultura griega
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -229,6 +243,9 @@ const LeccionArte3 = () => {
                                         <Modal.Title>Figuras destacadas de la escultura griega.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>3.3 </b>Figuras
+                                        </h2>
                                         <p>
                                         <h6>Venus de Milo</h6> La Afrodita de Milo, más conocida como Venus de Milo, es una de las estatuas más representativas del periodo helenístico de la escultura griega, y una de las más famosas esculturas de la antigua Grecia. 
                                         Fue creada en algún momento entre los años 130 a. C. y 100 a. C., y se cree que representa a Afrodita (denominada Venus en la mitología romana), diosa del amor y la belleza;2​ mide, aproximadamente, 211 cm de alto.<br/>
@@ -254,12 +271,9 @@ const LeccionArte3 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Arte/Leccion2">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Arte">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link>
-            <Link to="/Temas/Arte/Leccion4">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>     
         </div>
     </div>
     );

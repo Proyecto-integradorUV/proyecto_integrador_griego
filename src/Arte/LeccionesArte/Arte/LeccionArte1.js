@@ -11,9 +11,9 @@ import Arte4 from "./images/Arte4.jpg";
 import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarArte from "../../../components/navArte";
 
 const LeccionArte1 = () => {
 
@@ -40,7 +40,7 @@ const LeccionArte1 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarArte/>
             <div class="titulo-empezar">
                     <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
@@ -123,6 +123,9 @@ const LeccionArte1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: Introducción a la cultura griega y su influencia artística</Card.Title>
                                 <Card.Text>
+                                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                1.1
+                                    </span>{" "}
                                     Breve descripción de la cultura y la importancia del arte en la sociedad griega.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -136,6 +139,9 @@ const LeccionArte1 = () => {
                                         <Modal.Title>Breve descripción de la cultura y la importancia del arte en la sociedad griega.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.1 </b>Descripción
+                                        </h2>
                                         <p>
                                             La cultura griega antigua se considera una de las civilizaciones más influyentes en la historia occidental. 
                                             El arte desempeñó un papel fundamental en la sociedad griega, siendo valorado y celebrado en todas las formas de expresión.
@@ -167,6 +173,9 @@ const LeccionArte1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1: Introducción a la cultura griega y su influencia artística</Card.Title>
                                 <Card.Text>
+                                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                                1.2
+                                    </span>{" "}
                                     Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -180,6 +189,9 @@ const LeccionArte1 = () => {
                                         <Modal.Title>Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.2 </b>Períodos artísticos
+                                        </h2>
                                         <p>El arte griego se desarrolló a lo largo de varios períodos, cada uno con sus características distintivas. 
                                             A continuación, mencionaré los períodos artísticos clave en la historia del arte griego:<br /><br />
                                             <h5>Arte Arcaico (siglos VIII a.C. - VI a.C.)</h5> Durante este período, se establecieron las bases del arte griego. 
@@ -210,8 +222,8 @@ const LeccionArte1 = () => {
             </div>  
         </div>
         <div class="botones-lecciones"> 
-            <Link to="/Temas/Arte/Leccion2">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Arte">
+                <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link>     
         </div>
     </div>

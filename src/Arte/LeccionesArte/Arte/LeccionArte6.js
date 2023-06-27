@@ -11,13 +11,14 @@ import Arte4 from "./images/Arte4.jpg";
 import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
 import arte from "../../../style/titulos/arte.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import quiz from "../../../style/botones/quiz.png";
 import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarArte from "../../../components/navArte";
 import YouTube from "react-youtube";
 
 const LeccionArte6 = () => {
+
   //almacenar modals por nombres
   const [modals, setModals] = useState({
     modal1: false,
@@ -42,7 +43,7 @@ const LeccionArte6 = () => {
 
   return (
     <div className="contenedorArte">
-      <NavbarPrincipal />
+      <NavbarArte/>
       <div class="titulo-empezar">
         <img src={arte} class="img-fluid" alt="Imagen" />
       </div>
@@ -289,6 +290,9 @@ const LeccionArte6 = () => {
                     Lección 6: Danza y música griega
                     </Card.Title>
                     <Card.Text>
+                    <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                      6.1
+                    </span>{" "}
                       Danza y música griega: Vídeo explicativo
                     </Card.Text>
                     <div
@@ -319,6 +323,9 @@ const LeccionArte6 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        <h2 class="text-center">
+                          <b>6.1 </b>Vídeo introductorio
+                        </h2>
                           <YouTube
                             videoId={videoId}
                             opts={{ width: "100%", height: "100%" }}
@@ -342,8 +349,8 @@ const LeccionArte6 = () => {
         </div>
       </div>
       <div class="botones-lecciones">
-        <Link to="/Temas/Arte/Leccion5">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+        <Link to="/Temas/Arte">
+          <img src={inicio} class="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Arte/Quiz">
           <img src={quiz} class="img-fluid" alt="Imagen" />

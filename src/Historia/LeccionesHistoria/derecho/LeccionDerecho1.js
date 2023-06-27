@@ -11,11 +11,16 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import siguiente from "../../../style/botones/siguiente.png";
+import inicio from "../../../style/botones/siguiente.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho1 = () => {
+
+    const url1 = "/Temas/Derecho/Leccion1";
+    const url2 = "/Temas/Derecho/Leccion2";
+    const url3 = "/Temas/Derecho/Leccion3";
+    const url4 = "/Temas/Derecho/Leccion4";
 
     //almacenar modals por nombres
     const [modals, setModals] = useState({
@@ -40,7 +45,17 @@ const LeccionDerecho1 = () => {
 
     return (
         <div className="contenedorHistoria">
-            <NavbarPrincipal/>
+            <Navbar4
+                tituloTema="Derecho"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                     <img src={derechos} class="img-fluid" alt="Imagen" />
             </div>
@@ -123,6 +138,9 @@ const LeccionDerecho1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1:  Introducción a los derechos y la historia de Grecia</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.1
+                                </span>{" "}
                                     Explicación de los derechos y por qué son importantes
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -136,6 +154,9 @@ const LeccionDerecho1 = () => {
                                         <Modal.Title>Breve descripción de la cultura y la importancia del arte en la sociedad griega.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.1 </b>Descripción
+                                        </h2>
                                         <p>
                                         el concepto de derechos y la noción de ciudadanía tenían una importancia fundamental en la vida política y social de las polis (ciudades-estado griegas). 
                                         Aunque el concepto de derechos no era tan amplio ni universal como en las sociedades modernas, existían ciertos principios y privilegios que se asociaban con la ciudadanía y que establecían ciertos límites al poder de los gobernantes.<br/>
@@ -165,6 +186,9 @@ const LeccionDerecho1 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 1:  Introducción a los derechos y la historia de Grecia</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    1.2
+                                </span>{" "}
                                     Introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -178,6 +202,9 @@ const LeccionDerecho1 = () => {
                                         <Modal.Title>Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>1.2 </b>Períodos
+                                        </h2>
                                         <p> Desde la época arcaica hasta la antigua Grecia, las polis griegas, como Atenas y Esparta, surgieron como ciudades-estado autónomas con sus propias leyes y formas de gobierno. 
                                             Atenas, en particular, es conocida por haber establecido los fundamentos de la democracia directa, donde los ciudadanos participaban activamente en la toma de decisiones políticas.
                                         <br/><br/>
@@ -211,8 +238,8 @@ const LeccionDerecho1 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Derecho/Leccion2">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Derecho">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link>     
         </div>
     </div>

@@ -2,14 +2,27 @@ import "./styles/Derecho.css";
 import React from "react";
 import derechoTitle from "../style/titulos/derechos.png";
 import { Link } from "react-router-dom";
-import botonLeccion from "./Images/btnDerecho.png";
 import botonModel3D from "./Images/btnDerecho3D.png";
-import NavbarPrincipal from "../components/navbar2";
+import Navbar4 from "../components/navbar4";
 
 const Derecho = () => {
+  const url1 = "/Temas/Derecho/Leccion1";
+  const url2 = "/Temas/Derecho/Leccion2";
+  const url3 = "/Temas/Derecho/Leccion3";
+  const url4 = "/Temas/Derecho/Leccion4";
   return (
     <div class="contenedor-inicial-derecho">
-      <NavbarPrincipal/>
+      <Navbar4
+        tituloTema="Derecho"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div class="temaDerecho">
         <img src={derechoTitle} alt="Imagen" />
       </div>
@@ -21,9 +34,6 @@ const Derecho = () => {
         ateniense era limitada y excluía a gran parte de la población
       </div>
       <div class="button-container-der">
-        <Link to="/Temas/Derecho/Lecciones" class="btn-derecho ">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link>
         <Link to="/Temas/Derecho/Model" class="btn-derecho ">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>

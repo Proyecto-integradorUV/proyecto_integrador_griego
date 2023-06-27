@@ -11,12 +11,16 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho3 = () => {
+
+    const url1 = "/Temas/Derecho/Leccion1";
+    const url2 = "/Temas/Derecho/Leccion2";
+    const url3 = "/Temas/Derecho/Leccion3";
+    const url4 = "/Temas/Derecho/Leccion4";
 
     //almacenar modals por nombres
     const [modals, setModals] = useState({
@@ -41,7 +45,17 @@ const LeccionDerecho3 = () => {
 
     return (
         <div className="contenedorHistoria">
-            <NavbarPrincipal/>
+            <Navbar4
+                tituloTema="Derecho"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                     <img src={derechos} class="img-fluid" alt="Imagen" />
             </div>
@@ -124,6 +138,9 @@ const LeccionDerecho3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3: Los derechos durante la dominación extranjera</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    3.1
+                                </span>{" "}
                                     Impacto de la dominación romana, bizantina y otomana en los derechos de los griegos
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -137,6 +154,9 @@ const LeccionDerecho3 = () => {
                                         <Modal.Title>Impacto de la dominación romana, bizantina y otomana en los derechos de los griegos.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>3.1 </b>Impacto
+                                        </h2>
                                         <p>
                                         La dominación romana, bizantina y otomana tuvo un impacto significativo en los derechos de los griegos a lo largo de la historia.
                                         <br/><br/>
@@ -174,6 +194,9 @@ const LeccionDerecho3 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 3: Los derechos durante la dominación extranjera</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    3.2
+                                </span>{" "}
                                     Cambios y las restricciones impuestas durante estos períodos.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -187,6 +210,9 @@ const LeccionDerecho3 = () => {
                                         <Modal.Title>Cambios y las restricciones impuestas durante estos períodos.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>3.2 </b>Cambios
+                                        </h2>
                                         <p>Durante los períodos de dominación romana, bizantina y otomana en Grecia, se impusieron varios cambios y restricciones que afectaron los derechos de los griegos. Estos cambios reflejaron las diferentes normas y estructuras legales de cada imperio dominante. A continuación, se destacan algunos de los cambios y restricciones más significativos:
                                         <br/><br/>
                                         Dominación romana:
@@ -231,12 +257,9 @@ const LeccionDerecho3 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Derecho/Leccion2">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Derecho">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link>
-            <Link to="/Temas/Derecho/Leccion4">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>     
         </div>
     </div>
     );

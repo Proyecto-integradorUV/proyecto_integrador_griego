@@ -11,12 +11,16 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho2 = () => {
+
+    const url1 = "/Temas/Derecho/Leccion1";
+    const url2 = "/Temas/Derecho/Leccion2";
+    const url3 = "/Temas/Derecho/Leccion3";
+    const url4 = "/Temas/Derecho/Leccion4";
 
     //almacenar modals por nombres
     const [modals, setModals] = useState({
@@ -42,7 +46,17 @@ const LeccionDerecho2 = () => {
 
     return (
         <div className="contenedorHistoria">
-            <NavbarPrincipal/>
+            <Navbar4
+                tituloTema="Derecho"
+                url1={url1}
+                tituloLeccion1="Leccion1"
+                url2={url2}
+                tituloLeccion2="Leccion2"
+                url3={url3}
+                tituloLeccion3="Leccion3"
+                url4={url4}
+                tituloLeccion4="Leccion4"
+            />
             <div class="titulo-empezar">
                     <img src={derechos} class="img-fluid" alt="Imagen" />
             </div>
@@ -125,6 +139,9 @@ const LeccionDerecho2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Derechos en la antigua Grecia</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.1
+                                </span>{" "}
                                     Breve descripción de los derechos.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -163,6 +180,9 @@ const LeccionDerecho2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Derechos en la antigua Grecia</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.2
+                                </span>{" "}
                                     Introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -176,6 +196,9 @@ const LeccionDerecho2 = () => {
                                         <Modal.Title>Introducción a la historia de Grecia y su influencia en la concepción de los derechos.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>2.1 </b>Introducción
+                                        </h2>
                                            <p> En la sociedad ateniense de la antigua Grecia, los derechos estaban vinculados a la ciudadanía y se aplicaban de manera específica a los ciudadanos varones adultos y libres. Aunque los derechos en Atenas eran más limitados en comparación con las concepciones modernas, todavía se reconocían ciertos privilegios y protecciones para los ciudadanos.
                                            <br/><br/>
                                            <img src={derecho2} alt="Imagen" style={{ width: '50%', height: '50%',  display: "block",margin: "auto" }}/>
@@ -223,6 +246,9 @@ const LeccionDerecho2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Derechos en la antigua Grecia.</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.3
+                                </span>{" "}
                                     Limitaciones y exclusiones en los derechos en la antigua Grecia.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -236,6 +262,9 @@ const LeccionDerecho2 = () => {
                                         <Modal.Title>Limitaciones y exclusiones en los derechos en la antigua Grecia.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>2.2 </b>Limitaciones
+                                        </h2>
                                         <p>
                                         En la antigua Grecia, a pesar de la existencia de ciertos derechos para los ciudadanos, también había limitaciones y exclusiones significativas que restringían el acceso a los derechos y privilegios en la sociedad ateniense. Estas limitaciones y exclusiones se basaban en diversos criterios, como el género, la condición de esclavo y la condición de extranjero.
                                         <br/><br/>
@@ -264,12 +293,9 @@ const LeccionDerecho2 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Derecho/Leccion1">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
-            <Link to="/Temas/Derecho/Leccion3">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>     
+            <Link to="/Temas/Derecho">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
+            </Link>   
         </div>
     </div>
     );

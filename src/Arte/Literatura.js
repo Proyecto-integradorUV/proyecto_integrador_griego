@@ -2,14 +2,13 @@ import "./styles/Literatura.css";
 import React from "react";
 import literaturaTitle from "../style/titulos/literatura.png";
 import { Link } from "react-router-dom";
-import botonLeccion from "./Images/btnLiteratura.png";
 import botonModel3D from "./Images/btnLiteratura3D.png";
-import NavbarPrincipal from "../components/navbar2";
+import NavbarLite from "../components/navLite";
 
 const Literatura = () => {
   return (
     <div class="contenedor-inicial-leteratura">
-      <NavbarPrincipal/>
+      <NavbarLite/>
       <div class="temaLiteratura">
         <img src={literaturaTitle} alt="Imagen" />
       </div>
@@ -22,9 +21,6 @@ const Literatura = () => {
         tragedia hasta la filosofía y la historia
       </div>
       <div class="button-container-lit">
-        <Link to="/Temas/Literatura/Lecciones" class="btn-lit">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link>
         <Link to="/Temas/Literatura/Model" class="btn-lit">
           <img src={botonModel3D} alt="Imagen" class="button-image" />
         </Link>

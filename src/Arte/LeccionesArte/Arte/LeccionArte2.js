@@ -14,10 +14,9 @@ import templos from "./images/templos.jpg";
 import templo from "./images/templo.jpg";
 import teatros from "./images/teatros.jpg";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarArte from "../../../components/navArte";
 
 const LeccionArte2 = () => {
 
@@ -45,7 +44,7 @@ const LeccionArte2 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarArte/>
             <div class="titulo-empezar">
                     <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
@@ -128,6 +127,9 @@ const LeccionArte2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.1
+                                </span>{" "}
                                     Explicación de los elementos arquitectónicos griegos, como el orden dórico, jónico y corintio.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -141,6 +143,9 @@ const LeccionArte2 = () => {
                                         <Modal.Title>Explicación de los elementos arquitectónicos griegos, como el orden dórico, jónico y corintio.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>2.1 </b>Explicación
+                                        </h2>
                                         <p>La arquitectura griega se caracteriza por la presencia de tres órdenes arquitectónicos principales: el dórico, el jónico y el corintio. 
                                             Cada uno de estos órdenes tiene características distintivas en cuanto a columnas, capiteles y ornamentación. A continuación, te explicaré cada uno de ellos:<br/><br/>
                                             <h6>Orden Dórico</h6> El orden dórico es el más antiguo de los tres y se asocia con la arquitectura de la antigua Grecia continental. 
@@ -173,6 +178,9 @@ const LeccionArte2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.2
+                                </span>{" "}
                                     Descripción de los principales tipos de edificios, como los templos y teatros.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -186,6 +194,9 @@ const LeccionArte2 = () => {
                                         <Modal.Title>Descripción de los principales tipos de edificios, como los templos y teatros.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>2.2 </b>Descripción
+                                        </h2>
                                         <p>La antigua Grecia es conocida por su arquitectura monumental y sus distintos tipos de edificios. A continuación, describiré dos de los principales tipos de edificios griegos: los templos y los teatros.<br/><br/>
                                             <h6>Templos</h6> Los templos griegos eran estructuras religiosas dedicadas a los dioses y se caracterizaban por su belleza y simetría. Tenían una planta rectangular y estaban elevados sobre una plataforma de varios escalones llamada estilóbato. 
                                             La parte central del templo era la naos o cella, una sala cerrada que albergaba la estatua de la deidad a la que estaba dedicado. En el exterior, los templos griegos presentaban columnas y frontones. 
@@ -215,6 +226,9 @@ const LeccionArte2 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 2: Arquitectura griega</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    2.3
+                                </span>{" "}
                                     Ejemplos destacados de la arquitectura griega, como el Partenón.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -228,6 +242,9 @@ const LeccionArte2 = () => {
                                         <Modal.Title>Ejemplos destacados de la arquitectura griega, como el Partenón.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>2.3 </b>Ejemplos
+                                        </h2>
                                         <p>El Partenón es, sin duda, uno de los ejemplos más destacados de la arquitectura griega. Es un templo ubicado en la Acrópolis de Atenas y se considera una obra maestra del orden dórico. Fue construido entre los años 447 y 432 a.C. durante el apogeo de la civilización griega. Diseñado por los arquitectos Ictinos y Calícrates, y supervisado por el escultor Fidias, el Partenón estaba dedicado a la diosa Atenea Parthenos.
                                             El Partenón presenta una planta rectangular con ocho columnas en los extremos cortos y diecisiete columnas en los lados largos. 
                                             Las columnas dóricas se elevan sobre un estilóbato de tres escalones y están coronadas por capiteles dóricos simples. 
@@ -258,11 +275,8 @@ const LeccionArte2 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Arte/Leccion1">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
-            <Link to="/Temas/Arte/Leccion3">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
+            <Link to="/Temas/Arte">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
             </Link> 
         </div>
     </div>

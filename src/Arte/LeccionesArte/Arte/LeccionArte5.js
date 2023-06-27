@@ -13,10 +13,9 @@ import Arte6 from "./images/Arte6.png";
 import teatro1 from "./images/teatro1.jpg";
 import teatro2 from "./images/teatro2.jpg";
 import arte from "../../../style/titulos/arte.png";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2"
+import NavbarArte from "../../../components/navArte";
 
 const LeccionArte5 = () => {
 
@@ -43,7 +42,7 @@ const LeccionArte5 = () => {
 
     return (
         <div className="contenedorArte">
-            <NavbarPrincipal/>
+            <NavbarArte/>
             <div class="titulo-empezar">
                     <img src={arte} class="img-fluid" alt="Imagen" />
             </div>
@@ -126,6 +125,9 @@ const LeccionArte5 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 5: Literatura y teatro griego</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    5.1
+                                </span>{" "}
                                     Importancia del teatro antiguo griego.
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -139,6 +141,9 @@ const LeccionArte5 = () => {
                                         <Modal.Title>Importancia del teatro antiguo griego.</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>5.1 </b>Importancia del teatro
+                                        </h2>
                                         <p>El teatro griego antiguo desempeñó un papel significativo en la sociedad griega y tuvo una gran importancia en varios aspectos. 
                                         Aquí están algunas de las razones por las cuales el teatro griego antiguo fue importante:
                                         <br/>
@@ -176,6 +181,9 @@ const LeccionArte5 = () => {
                             <Card.Body>
                                 <Card.Title>Lección 5: Literatura y teatro griego</Card.Title>
                                 <Card.Text>
+                                <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                                    5.2
+                                </span>{" "}
                                     Antiguas obras teatrales de grecia
                                 </Card.Text>
                                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -189,6 +197,9 @@ const LeccionArte5 = () => {
                                         <Modal.Title>Antiguas obras teatrales de grecia</Modal.Title>
                                         </Modal.Header>
                                         <Modal.Body>
+                                        <h2 class="text-center">
+                                            <b>5.2 </b>Antiguas obras teatrales de grecias
+                                        </h2>
                                         <p>Existen varias obras teatrales antiguas de la Grecia clásica que son consideradas pilares fundamentales en la historia del teatro. Aquí hay algunas de las más destacadas:
                                         <br/><br/>
                                         "La Orestíada" de Esquilo: Es una trilogía de tragedias compuesta por "Agamenón", "Las Coéforas" y "Las Euménides". 
@@ -225,12 +236,9 @@ const LeccionArte5 = () => {
             </div>  
         </div>
         <div class="botones-lecciones">
-            <Link to="/Temas/Arte/Leccion4">
-            <img src={anterior} class="img-fluid" alt="Imagen" />
-            </Link>
-            <Link to="/Temas/Arte/Leccion6">
-            <img src={siguiente} class="img-fluid" alt="Imagen" />
-            </Link>     
+            <Link to="/Temas/Arte">
+            <img src={inicio} class="img-fluid" alt="Imagen" />
+            </Link>  
         </div>
     </div>
     );
