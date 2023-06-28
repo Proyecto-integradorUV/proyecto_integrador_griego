@@ -291,7 +291,7 @@ const SignUp = () => {
         <div>
               <Modal show={modals.modal} onHide={() => handleCloseModal('modal')} scrollable={true} size="lg">
                 <Modal.Header closeButton>
-                  <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
+                  <Modal.Title>Selecciona tu avatar</Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
                       {avatars.map((avatar, index) => (

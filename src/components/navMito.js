@@ -59,12 +59,6 @@ const NavbarMito = () => {
     }));
   };
 
-  // const handleImageSelect = (imageUrl) => {
-  //   setSelectedImage(imageUrl);
-  //   handleCloseModal('modal');
-  // };
-
-  //imagen seleccionada
   const [setSelectedImage] = useState(default_photo);
 
   const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
@@ -75,7 +69,7 @@ const NavbarMito = () => {
     email: "",
     username: "",
     password: "",
-    avatar: "default_photo",
+    avatar: "",
     errors: {},
   });
 
@@ -179,7 +173,7 @@ const NavbarMito = () => {
                     size="lg"
                   >
                     <Modal.Header closeButton>
-                      <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
+                      <Modal.Title>Selecciona tu avatar</Modal.Title>
                     </Modal.Header>
                     <Modal.Body
                       style={{
