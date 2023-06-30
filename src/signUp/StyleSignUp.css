@@ -1,44 +1,45 @@
 .formContainerWrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.formContainerSignUp{
-  position: relative;
+.formContainerSignUp {
   padding: 2em;
   background-color: rgba(224, 122, 95, 0.8);
+  max-width: 800px;
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-  .formContainerSignUp h2{
-    text-align: center;
-    margin-bottom: 16px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-  }
 
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    opacity: 1;
-  }
-  
-  .form-group button[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    background-color: rgba(47, 105, 155, 1);
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    opacity: 1;
-  }
-  
-  .form-group button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+.formContainerSignUp h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  opacity: 1;
+}
+
+.form-group button[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(47, 105, 155, 1);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+.form-group button[type="submit"]:hover {
+  background-color: #45a049;
+}
