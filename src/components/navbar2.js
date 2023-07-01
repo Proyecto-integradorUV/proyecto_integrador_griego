@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Dropdown, Modal, ModalHeader, ModalBody, ModalFooter } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SignInContext } from "../context/signInContext";
@@ -135,11 +135,6 @@ const NavbarPrincipal = () => {
     }));
     handleCloseModal("modalAvatar");
   };
-
-  // useEffect(() => {
-  //   console.log(" Imagen ",selectedImage)
-  //   handleImageSelect(selectedAvatarIndex);
-  // },[selectedAvatarIndex])
 
   // Cerrar sesión
   const handleLogout = () => {
