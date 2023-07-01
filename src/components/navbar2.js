@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button, Dropdown, Modal, ModalHeader, ModalBody, ModalFooter } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SignInContext } from "../context/signInContext";
@@ -19,8 +19,27 @@ import Poseidon from "./images/Poseidon.png";
 import Zeus from "./images/Zeus.png";
 import Medusa from "./images/Medusa.png";
 import default_photo from "./images/default_photo.jpg";
+import { updateUser } from "../Services/users";
 
 const NavbarPrincipal = () => {
+
+  const { isLogged, setIsLogged } = useContext(SignInContext);
+
+  //imagen seleccionada
+  const [selectedImage, setSelectedImage] = useState(default_photo);
+
+  const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
+
+  const [formData, setFormData] = useState({
+    id: null,
+    email: '',
+    first_name: '',
+    last_name: '',
+    username: '',
+    avatar: '',
+  });
+
+  //almacenar avatars por nombres
   const avatars = [
     { name: "Afrodita", image: Afrodita },
     { name: "Apolo", image: Apolo },
@@ -47,21 +66,19 @@ const NavbarPrincipal = () => {
 
   // Funciones de manejo para abrir/cerrar cada modal
   const handleOpenModal = (modalName, userId) => {
-    getDatosUsuario();
-
     setModals((prevState) => ({
       ...prevState,
       [modalName]: true,
     }));
-
-    if (datosSeleccionado) {
-      setFormData((prevFormData) => ({
-        ...prevFormData,
-        id: userId,
-      }));
-    }
+  
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      id: userId,
+    }));
+    getDatosUsuario();
   };
 
+  // Obtiene los datos del usuario actual
   const getDatosUsuario = () => {
     const userData = localStorage.getItem("userData");
     const parsedUserData = JSON.parse(userData);
@@ -69,22 +86,23 @@ const NavbarPrincipal = () => {
     const id = parsedUserData.id;
     const firstName = parsedUserData.first_name;
     const username = parsedUserData.username;
+    const last_name = parsedUserData.last_name;
+    const email = parsedUserData.email;
+    const avatar = parsedUserData.avatar;
 
+    console.log("getDatos ", id)
     setFormData((prevFormData) => ({
       ...prevFormData,
       id: id,
       first_name: firstName,
       username: username,
+      last_name: last_name,
+      email: email,
+      avatar: avatar,
     }));
   };
 
-  const handleChange = (e) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
+  // Cierra el modal
   const handleCloseModal = (modalName) => {
     setModals((prevState) => ({
       ...prevState,
@@ -100,21 +118,12 @@ const NavbarPrincipal = () => {
     }));
   };
 
-  //imagen seleccionada
-  const [selectedImage, setSelectedImage] = useState(default_photo);
-
-  const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
-
-  const [datosSeleccionado, setFormData] = useState({
-    id: "",  // Agrega un valor inicial válido para 'id'
-    first_name: "",
-    last_name: "",
-    email: "",
-    username: "",
-    password: "",
-    avatar: "default_photo",
-    errors: {},
-  });
+  const handleChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   const handleImageSelect = (imageIndex) => {
     setSelectedAvatarIndex(imageIndex);
@@ -127,8 +136,12 @@ const NavbarPrincipal = () => {
     handleCloseModal("modalAvatar");
   };
 
-  const { isLogged, setIsLogged } = useContext(SignInContext);
+  // useEffect(() => {
+  //   console.log(" Imagen ",selectedImage)
+  //   handleImageSelect(selectedAvatarIndex);
+  // },[selectedAvatarIndex])
 
+  // Cerrar sesión
   const handleLogout = () => {
     if (isLogged) {
       localStorage.removeItem("userData");
@@ -161,12 +174,35 @@ const NavbarPrincipal = () => {
     }
   };
 
-  // Nuevo (actualizar)
-  const cambioUser = (e) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [e.target.name]: e.target.value,
-    }));
+  const handleSaveProfile = () => {
+    const { id, email, first_name, last_name, username, avatar } = formData;
+  
+    const body = {
+      email: email,
+      first_name: first_name,
+      last_name: last_name,
+      username: username,
+      avatar: avatar,
+    };
+  
+    updateUser(id, body)
+      .then((response) => {
+        console.log("Usuario actualizado correctamente:", response);
+        // Actualizar los datos en localStorage
+        const userData = localStorage.getItem("userData");
+        const parsedUserData = JSON.parse(userData);
+        parsedUserData.email = email;
+        parsedUserData.first_name = first_name;
+        parsedUserData.last_name = last_name;
+        parsedUserData.username = username;
+        parsedUserData.avatar = avatar;
+        localStorage.setItem("userData", JSON.stringify(parsedUserData));
+  
+        handleCloseModal("modal");
+      })
+      .catch((error) => {
+        console.error("Error al actualizar el usuario:", error);
+      });
   };
 
   return (
@@ -186,14 +222,13 @@ const NavbarPrincipal = () => {
           <li className="navbarItemPrincipal">
             {isLogged && (
               <div className="userImageContainer">
-                <Link>
+                <p>
                   <img
-                    onClick={() => handleOpenModal("modal")}
                     src={getAvatar()}
                     alt="Imagen"
                     className="userImage"
                   />
-                </Link>
+                </p>
               </div>
             )}
           </li>
@@ -206,117 +241,9 @@ const NavbarPrincipal = () => {
               />
               <Dropdown.Menu>
                 <Dropdown.Item href="/Lecciones">Mi progreso</Dropdown.Item>
-                <Dropdown.Item onClick={() => handleOpenModal("modal", datosSeleccionado.id)}>
+                <Dropdown.Item onClick={() => handleOpenModal("modal", formData && formData.id)}>
                   Editar usuario
                 </Dropdown.Item>
-                <div>
-                  <Modal
-                    show={modals.modal}
-                    onHide={() => handleCloseModal("modal")}
-                    scrollable={true}
-                    size="lg"
-                  >
-                    <ModalHeader>
-                      <div>
-                        <h3> Modificar datos </h3>
-                      </div>
-                    </ModalHeader>
-                    <ModalBody>
-                      <div className="form-group">
-                        <label style={{ color: "black" }}>Email</label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="email"
-                          value={datosSeleccionado && datosSeleccionado.email}
-                          onChange={cambioUser}
-                        />
-                        <br />
-                        <label style={{ color: "black" }}>Nombre</label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="first_name"
-                          value={datosSeleccionado && datosSeleccionado.first_name}
-                          onChange={cambioUser}
-                        />
-                        <br />
-
-                        <label style={{ color: "black" }}>Apellido</label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="last_name"
-                          value={datosSeleccionado && datosSeleccionado.last_name}
-                          onChange={cambioUser}
-                        />
-                        <br />
-                        <label style={{ color: "black" }}>Username</label>
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="username"
-                          value={datosSeleccionado && datosSeleccionado.username}
-                          onChange={cambioUser}
-                        />
-                        <br />
-                        <label style={{ color: "black" }}>Seleccione un avatar: </label>
-                        <br />
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%' }}>
-                          <img
-                            onClick={() => handleModalAvatar("modalAvatar")}
-                            src={selectedImage}
-                            alt="Imagen"
-                            className="userImage"
-                          />
-                        </div>
-                        <br />
-                        <input type="hidden"
-                          className="form-control"
-                          disabled
-                          name="avatar"
-                          onChange={handleChange}
-                          value={datosSeleccionado && datosSeleccionado.avatar} >
-                        </input>
-                      </div>
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button className="btn btn-primary" onClick={() => handleOpenModal("modal", datosSeleccionado.id)}>
-                        Actualizar
-                      </Button>
-                      <Button
-                        variant="btn btn-danger"
-                        onClick={() => handleCloseModal("modal")}
-                      >
-                        Cerrar
-                      </Button>
-                    </ModalFooter>
-                  </Modal>
-                  
-                </div>
-                <div>
-                    <Modal show={modals.modalAvatar} onHide={() => handleCloseModal('modalAvatar')} scrollable={true} size="lg">
-                      <Modal.Header closeButton>
-                        <Modal.Title>Selecciona tu avatar</Modal.Title>
-                      </Modal.Header>
-                      <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
-                        {avatars.map((avatar, index) => (
-                          <Link key={index} onClick={() => handleImageSelect(index)}>
-                            <img key={index}
-                              src={avatar.image}
-                              alt={avatar.name}
-                              className={`avatarImage ${selectedAvatarIndex === index ? "selected" : ""}`}
-                              onClick={() => handleImageSelect(index)} style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
-                          </Link>
-                        ))}
-                      </Modal.Body>
-                      <Modal.Footer>
-                        <Button variant="secondary" onClick={() => handleCloseModal('modalAvatar')}>
-                          Cerrar
-                        </Button>
-                      </Modal.Footer>
-                    </Modal>
-                  </div>
                 <Dropdown.Item href="/Home">
                   <li>
                     {isLogged && <p onClick={handleLogout}>Cerrar sesión</p>}
@@ -341,8 +268,117 @@ const NavbarPrincipal = () => {
           </li>
         </ul>
       </nav>
+      <div>
+        <Modal
+          show={modals.modal}
+          onHide={() => handleCloseModal("modal")}
+          scrollable={true}
+          size="lg"
+        >
+          <ModalHeader>
+            <div>
+              <h3> Modificar datos </h3>
+            </div>
+          </ModalHeader>
+          <ModalBody>
+            <div className="form-group">
+              <label style={{ color: "black" }}>Email</label>
+              <input
+                className="form-control"
+                type="text"
+                name="email"
+                value={formData && formData.email}
+                onChange={handleChange}
+              />
+              <br />
+              <label style={{ color: "black" }}>Nombre</label>
+              <input
+                className="form-control"
+                type="text"
+                name="first_name"
+                value={formData && formData.first_name}
+                onChange={handleChange}
+              />
+              <br />
+
+              <label style={{ color: "black" }}>Apellido</label>
+              <input
+                className="form-control"
+                type="text"
+                name="last_name"
+                value={formData && formData.last_name}
+                onChange={handleChange}
+              />
+              <br />
+              <label style={{ color: "black" }}>Username</label>
+              <input
+                className="form-control"
+                type="text"
+                name="username"
+                value={formData && formData.username}
+                onChange={handleChange}
+              />
+              <br />
+              <label style={{ color: "black" }}>Seleccione un avatar: </label>
+              <br />
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%' }}>
+                <img
+                  onClick={() => handleModalAvatar("modalAvatar")}
+                  src={selectedImage}
+                  alt="Imagen"
+                  className="userImage"
+                />
+              </div>
+              <br />
+              <input type="hidden"
+                className="form-control"
+                disabled
+                name="avatar"
+                onChange={handleChange}
+                value={formData && formData.avatar} >
+              </input>
+            </div>
+          </ModalBody>
+          <ModalFooter>
+            <Button className="btn btn-primary" onClick={() => handleSaveProfile(formData)}>
+              Actualizar
+            </Button>
+            <Button
+              variant="btn btn-danger"
+              onClick={() => handleCloseModal("modal")}
+            >
+              Cerrar
+            </Button>
+          </ModalFooter>
+        </Modal>
+
+      </div>
+
+      <div>
+        <Modal show={modals.modalAvatar} onHide={() => handleCloseModal('modalAvatar')} scrollable={true} size="lg">
+          <Modal.Header closeButton>
+            <Modal.Title>Selecciona tu avatar</Modal.Title>
+          </Modal.Header>
+          <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
+            {avatars.map((avatar, index) => (
+              <Link key={index} onClick={() => handleImageSelect(index)}>
+                <img key={index}
+                  src={avatar.image}
+                  alt={avatar.name}
+                  className={`avatarImage ${selectedAvatarIndex === index ? "selected" : ""}`}
+                  onClick={() => handleImageSelect(index)} style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
+              </Link>
+            ))}
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={() => handleCloseModal('modalAvatar')}>
+              Cerrar
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default NavbarPrincipal;
