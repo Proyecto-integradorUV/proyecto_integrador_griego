@@ -60,7 +60,7 @@ const SignIn = () => {
     Swal.fire({
       icon: "error",
       title: "Algo salió mal",
-      text: "Ocurrió un error al crear el usuario, intenta de nuevo",
+      text: "Ocurrió un error al iniciar sesión, intenta de nuevo y verifica que tu usuario sea correcto",
       confirmButtonText: "Continuar",
       allowOutsideClick: false,
       showCancelButton: false,
