@@ -42,7 +42,7 @@ const LeccionSitios3 = () => {
   const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
   const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
   return (
-    <div class="contenedorHistoria">
+    <div className="contenedorHistoria">
       <Navbar4
         tituloTema="Sitios caracteristicos"
         url1={url1}
@@ -54,11 +54,11 @@ const LeccionSitios3 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecSitios} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecSitios} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -264,7 +264,7 @@ const LeccionSitios3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 className="text-center">Introducción</h2>
                           <p>
                             Delfos es un sitio arqueológico ubicado en la ladera
                             sur del monte Parnaso, en Grecia. Durante la
@@ -277,7 +277,7 @@ const LeccionSitios3 = () => {
                           </p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -351,7 +351,7 @@ const LeccionSitios3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Restos arqueológicos</h2>
+                          <h2 className="text-center">Restos arqueológicos</h2>
                           <p>
                             Al explorar los restos arqueológicos de Delfos, los
                             visitantes pueden maravillarse con el Templo de
@@ -365,7 +365,7 @@ const LeccionSitios3 = () => {
                           </p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -386,7 +386,7 @@ const LeccionSitios3 = () => {
                           </p>
                           <img
                             src={imagenModal3}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -461,7 +461,7 @@ const LeccionSitios3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Oráculo</h2>
+                          <h2 className="text-center">Oráculo</h2>
                           <p>
                             El oráculo de Delfos desempeñó un papel fundamental
                             en la toma de decisiones políticas y religiosas en
@@ -493,7 +493,7 @@ const LeccionSitios3 = () => {
                           </p>
                           <img
                             src={imagenModal4}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -521,9 +521,9 @@ const LeccionSitios3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/SitiosCaracteristicos">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

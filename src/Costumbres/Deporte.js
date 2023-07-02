@@ -11,7 +11,7 @@ const Deporte = () => {
   const url3 = "/Temas/Deporte/Leccion3";
   const url4 = "/Temas/Deporte/Leccion4";
   return (
-    <div class="contenedor-inicial-deporte">
+    <div className="contenedor-inicial-deporte">
       <Navbar4
         tituloTema="Deporte"
         url1={url1}
@@ -23,10 +23,10 @@ const Deporte = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="temaDepor">
+      <div className="temaDepor">
         <img src={deporteTitle} alt="Imagen" />
       </div>
-      <div class="introduccionDepor">
+      <div className="introduccionDepor">
         El deporte en la antigua Grecia era una parte integral de la vida y la
         cultura griega. Los griegos valoraban el cuerpo atlético y consideraban
         el deporte como una forma de cultivar la belleza, la virtud y la
@@ -34,9 +34,9 @@ const Deporte = () => {
         todo el territorio griego y eran considerados eventos de gran
         importancia social y cultural
       </div>
-      <div class="button-container-depor">
-        <Link to="/Temas/Deporte/Model" class="btn-deporte ">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-depor">
+        <Link to="/Temas/Deporte/Model" className="btn-deporte ">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

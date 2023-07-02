@@ -40,8 +40,8 @@ const LeccionArte1 = () => {
   return (
     <div className="contenedorArte">
       <NavbarArte />
-      <div class="titulo-empezar">
-        <img src={arte} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={arte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
         <div class="col-sm-5 col-md-6 ">
@@ -324,7 +324,7 @@ const LeccionArte1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             La cultura griega antigua se considera una de las
                             civilizaciones más influyentes en la historia
@@ -429,7 +429,7 @@ const LeccionArte1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Períodos artísticos</h2>
+                          <h2 className="text-center">Períodos artísticos</h2>
                           <p>
                             El arte griego se desarrolló a lo largo de varios
                             períodos, cada uno con sus características
@@ -493,9 +493,9 @@ const LeccionArte1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Arte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

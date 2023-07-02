@@ -43,7 +43,7 @@ const LeccionVestimenta1 = () => {
   const url3 = "/Temas/Vestimenta/Leccion3";
   const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div class="contenedorArte">
+    <div className="contenedorArte">
       <Navbar4
         tituloTema="Vestimenta"
         url1={url1}
@@ -55,12 +55,12 @@ const LeccionVestimenta1 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecVestimenta} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
         {/* Card de imagenes */}
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -137,7 +137,7 @@ const LeccionVestimenta1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Historia</h2>
+                          <h2 className="text-center">Historia</h2>
                           <p>
                             {" "}
                             La antigua Grecia, conocida como la cuna de la
@@ -152,7 +152,7 @@ const LeccionVestimenta1 = () => {
                           </p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -239,14 +239,14 @@ const LeccionVestimenta1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Conceptos</h2>
+                          <h2 className="text-center">Conceptos</h2>
                           <p>
                             Dos prendas destacadas en la vestimenta griega son
                             la toga y el peplo.
                           </p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "80%",
@@ -337,14 +337,14 @@ const LeccionVestimenta1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             En la antigua Grecia, la ropa se hacía
                             principalmente de lana, lino y seda.{" "}
                           </p>
                           <img
                             src={imagenModal3}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "80%",
@@ -405,9 +405,9 @@ const LeccionVestimenta1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Vestimenta">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

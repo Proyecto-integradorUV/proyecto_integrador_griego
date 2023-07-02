@@ -11,8 +11,8 @@ const LeccionesMitologia = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-lecciones">
-        <img src={titulo} class="img-fluid" alt="Imagen" />
+      <div className="titulo-lecciones">
+        <img src={titulo} className="img-fluid" alt="Imagen" />
       </div>
       {/* Carrusel de lecciones */}
       <div className="carousel-container">
@@ -29,8 +29,8 @@ const LeccionesMitologia = () => {
                   <br />• La edad heroica griega
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Mitologia/Leccion1" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Mitologia/Leccion1" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -46,8 +46,8 @@ const LeccionesMitologia = () => {
                   •Resto de dioses
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Mitologia/Leccion2" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Mitologia/Leccion2" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -65,8 +65,8 @@ const LeccionesMitologia = () => {
                   <br />• Amor y tragedia
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Mitologia/Leccion4" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Mitologia/Leccion4" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>

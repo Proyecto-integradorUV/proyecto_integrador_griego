@@ -44,11 +44,11 @@ const LeccionMitologia1 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -258,7 +258,7 @@ const LeccionMitologia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center"> El principio del mundo</h2>
+                          <h2 className="text-center"> El principio del mundo</h2>
                           <p>
                             La edad de los Dioses es el nombre que recibe la
                             primera etapa de la mitología griega, a la que
@@ -417,7 +417,7 @@ const LeccionMitologia1 = () => {
                           <Modal.Title>1.2 La edad de los Dioses</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             La edad de convivencia entre dioses y humanos.
                           </h2>
                           <br></br>
@@ -524,7 +524,7 @@ const LeccionMitologia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">La edad heroica griega.</h2>
+                          <h2 className="text-center">La edad heroica griega.</h2>
                           <p>
                             La Edad Heroica es un período en la mitología griega
                             que se considera posterior a la Edad de Oro. La Edad
@@ -553,9 +553,9 @@ const LeccionMitologia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Mitologia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

@@ -11,7 +11,7 @@ const Sitios = () => {
   const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
   const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
   return (
-    <div class="contenedor-inicia-sitios">
+    <div className="contenedor-inicia-sitios">
       <Navbar4
         tituloTema="Sitios caracteristicos"
         url1={url1}
@@ -23,19 +23,19 @@ const Sitios = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="temaSitios">
+      <div className="temaSitios">
         <img src={sitiosTitle} alt="Imagen" />
       </div>
-      <div class="introduccionSitios">
+      <div className="introduccionSitios">
         Grecia es un país lleno de historia, cultura y belleza natural, conocido
         por ser la cuna de la civilización occidental y por albergar algunos de
         los sitios más emblemáticos del mundo antiguo. Desde antiguos templos
         hasta impresionantes paisajes, Grecia ofrece una amplia gama de lugares
         característicos que atraen a millones de visitantes cada año
       </div>
-      <div class="button-container-sitio">
-        <Link to="/Temas/SitiosCaracteristicos/Model" class="btn-sites">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-sitio">
+        <Link to="/Temas/SitiosCaracteristicos/Model" className="btn-sites">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

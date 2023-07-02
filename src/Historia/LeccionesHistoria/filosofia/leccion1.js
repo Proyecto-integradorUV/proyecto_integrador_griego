@@ -56,11 +56,11 @@ const LeccionFilosofia1 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecHistoria} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -300,7 +300,7 @@ const LeccionFilosofia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 className="text-center">Introducción</h2>
                           <p>
                             El período presocrático, también conocido como
                             período prefilosófico, abarca desde el siglo VI a.C.
@@ -379,7 +379,7 @@ const LeccionFilosofia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Escuelas</h2>
+                          <h2 className="text-center">Escuelas</h2>
                           <p>
                             Los filósofos presocráticos plantearon una variedad
                             de teorías y enfoques, pero algunas de las escuelas
@@ -445,9 +445,9 @@ const LeccionFilosofia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Filosofia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

@@ -77,8 +77,8 @@ const QuizArte = () => {
     return (
       <div className="contenedorArte">
         <NavbarPrincipal />
-        <div class="titulo-empezar">
-          <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+        <div className="titulo-empezar">
+          <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
         </div>
         <div className="contenedor-quiz">
           <div className="juego-terminado">
@@ -101,8 +101,8 @@ const QuizArte = () => {
   return (
     <div className="contenedorArte">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="contenedor-quiz">
         <div className="lado-izquierdo">

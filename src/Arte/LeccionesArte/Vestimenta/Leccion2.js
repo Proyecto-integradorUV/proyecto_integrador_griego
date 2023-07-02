@@ -41,7 +41,7 @@ const LeccionVestimenta2 = () => {
   const url3 = "/Temas/Vestimenta/Leccion3";
   const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div class="contenedorArte">
+    <div className="contenedorArte">
       <Navbar4
         tituloTema="Vestimenta"
         url1={url1}
@@ -53,11 +53,11 @@ const LeccionVestimenta2 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecVestimenta} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -131,7 +131,7 @@ const LeccionVestimenta2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             En la antigua Grecia, los hombres utilizaban
                             principalmente dos prendas principales: el himation
@@ -139,7 +139,7 @@ const LeccionVestimenta2 = () => {
                           </p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -179,7 +179,7 @@ const LeccionVestimenta2 = () => {
                           </p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "80%",
@@ -255,7 +255,7 @@ const LeccionVestimenta2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Explicación</h2>
+                          <h2 className="text-center">Explicación</h2>
                           <p>
                             La forma de llevar estas prendas podía variar según
                             la ocasión y la clase social.
@@ -304,9 +304,9 @@ const LeccionVestimenta2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Vestimenta">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

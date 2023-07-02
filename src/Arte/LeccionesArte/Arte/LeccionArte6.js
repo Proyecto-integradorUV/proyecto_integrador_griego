@@ -43,11 +43,11 @@ const LeccionArte6 = () => {
   return (
     <div className="contenedorArte">
       <NavbarArte />
-      <div class="titulo-empezar">
-        <img src={arte} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={arte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -318,7 +318,7 @@ const LeccionArte6 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Vídeo introductorio</h2>
+                          <h2 className="text-center">Vídeo introductorio</h2>
                           <YouTube
                             videoId={videoId}
                             opts={{ width: "100%", height: "100%" }}
@@ -341,12 +341,12 @@ const LeccionArte6 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Arte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Arte/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

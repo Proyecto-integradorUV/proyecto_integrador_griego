@@ -56,11 +56,11 @@ const LeccionDerecho2 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={derechos} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={derechos} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -428,7 +428,7 @@ const LeccionDerecho2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 className="text-center">Introducción</h2>
                           <p>
                             {" "}
                             En la sociedad ateniense de la antigua Grecia, los
@@ -585,7 +585,7 @@ const LeccionDerecho2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Limitaciones</h2>
+                          <h2 className="text-center">Limitaciones</h2>
                           <p>
                             En la antigua Grecia, a pesar de la existencia de
                             ciertos derechos para los ciudadanos, también había
@@ -661,9 +661,9 @@ const LeccionDerecho2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Derecho">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

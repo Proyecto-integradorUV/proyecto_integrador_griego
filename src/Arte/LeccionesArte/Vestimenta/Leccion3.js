@@ -42,7 +42,7 @@ const LeccionVestimenta3 = () => {
   const url3 = "/Temas/Vestimenta/Leccion3";
   const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div class="contenedorArte">
+    <div className="contenedorArte">
       <Navbar4
         tituloTema="Vestimenta"
         url1={url1}
@@ -54,11 +54,11 @@ const LeccionVestimenta3 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecVestimenta} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -132,7 +132,7 @@ const LeccionVestimenta3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             En la antigua Grecia, las mujeres utilizaban
                             principalmente dos prendas principales: el peplo y
@@ -140,7 +140,7 @@ const LeccionVestimenta3 = () => {
                           </p>
                           <img
                             src={vestimenta8}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -239,7 +239,7 @@ const LeccionVestimenta3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Diferencias</h2>
+                          <h2 className="text-center">Diferencias</h2>
                           <p>
                             En la antigua Grecia, la vestimenta de las mujeres
                             casadas y solteras difería en algunos aspectos.
@@ -266,7 +266,7 @@ const LeccionVestimenta3 = () => {
 
                           <img
                             src={vestimenta5}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -342,7 +342,7 @@ const LeccionVestimenta3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Importancia</h2>
+                          <h2 className="text-center">Importancia</h2>
                           <p>
                             La vestimenta desempeñaba un papel crucial en la
                             vida de las mujeres griegas y tenía una gran
@@ -370,7 +370,7 @@ const LeccionVestimenta3 = () => {
 
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -399,9 +399,9 @@ const LeccionVestimenta3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Vestimenta">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

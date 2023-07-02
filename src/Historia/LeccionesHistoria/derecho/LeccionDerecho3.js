@@ -55,11 +55,11 @@ const LeccionDerecho3 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={derechos} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={derechos} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -337,7 +337,7 @@ const LeccionDerecho3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Impacto</h2>
+                          <h2 className="text-center">Impacto</h2>
                           <p>
                             La dominación romana, bizantina y otomana tuvo un
                             impacto significativo en los derechos de los griegos
@@ -463,7 +463,7 @@ const LeccionDerecho3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Cambios</h2>
+                          <h2 className="text-center">Cambios</h2>
                           <p>
                             Durante los períodos de dominación romana, bizantina
                             y otomana en Grecia, se impusieron varios cambios y
@@ -550,9 +550,9 @@ const LeccionDerecho3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Derecho">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

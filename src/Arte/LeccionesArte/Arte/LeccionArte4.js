@@ -47,11 +47,11 @@ const LeccionArte4 = () => {
   return (
     <div className="contenedorArte">
       <NavbarArte />
-      <div class="titulo-empezar">
+      <div className="titulo-empezar">
         <img src={arte} class="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -329,7 +329,7 @@ const LeccionArte4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Explicación</h2>
+                          <h2 className="text-center">Explicación</h2>
                           <p>
                             La pintura y la cerámica griega tuvieron una gran
                             importancia en la vida cotidiana de la antigua
@@ -497,7 +497,7 @@ const LeccionArte4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             El arte de la cerámica griega se caracteriza por dos
                             estilos distintivos: el estilo de figuras rojas
@@ -640,7 +640,7 @@ const LeccionArte4 = () => {
                           <Modal.Title>4.3 Pintura griega antigua</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Pintura griega antigua</h2>
+                          <h2 className="text-center">Pintura griega antigua</h2>
                           <p>
                             Algunas características distintivas de la pintura
                             antigua griega incluyen:
@@ -706,9 +706,9 @@ const LeccionArte4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Arte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

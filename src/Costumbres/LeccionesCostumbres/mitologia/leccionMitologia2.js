@@ -48,11 +48,11 @@ const LeccionMitologia2 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -429,7 +429,7 @@ const LeccionMitologia2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Dioses importantes de la mitología griega
                           </h2>
                           <br></br>
@@ -616,7 +616,7 @@ const LeccionMitologia2 = () => {
                         <Modal.Header closeButton>
                           <Modal.Title>2.2 Dioses</Modal.Title>
                         </Modal.Header>
-                        <h2 class="text-center">
+                        <h2 className="text-center">
                           Dioses importantes de la mitología griega
                         </h2>
                         <Modal.Body>
@@ -759,9 +759,9 @@ const LeccionMitologia2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Mitologia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

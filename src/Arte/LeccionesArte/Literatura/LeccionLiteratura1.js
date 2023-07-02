@@ -44,11 +44,11 @@ const LeccionLiteratura1 = () => {
   return (
     <div className="contenedorArte">
       <NavbarLite />
-      <div class="titulo-empezar">
-        <img src={literatura} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={literatura} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -325,7 +325,7 @@ const LeccionLiteratura1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Periodo arcaico</h2>
+                          <h2 className="text-center">Periodo arcaico</h2>
                           <p>
                             Durante el período arcaico, las obras de los poetas
                             se declamaban, como resultado de la tradición oral,
@@ -420,7 +420,7 @@ const LeccionLiteratura1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Período clásico</h2>
+                          <h2 className="text-center">Período clásico</h2>
                           <img
                             src={literatura6}
                             alt="Imagen"
@@ -528,7 +528,7 @@ const LeccionLiteratura1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Periodo helenístico</h2>
+                          <h2 className="text-center">Periodo helenístico</h2>
                           <p>
                             El periodo helenístico produjo poetas, escritores de
                             prosa e historiadores. Entre ellos estaba Calímaco,
@@ -614,7 +614,7 @@ const LeccionLiteratura1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Legado</h2>
+                          <h2 className="text-center">Legado</h2>
                           <p>
                             Después de la muerte de Alejandro Magno y el
                             crecimiento de la cultura helenística a través del
@@ -673,9 +673,9 @@ const LeccionLiteratura1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Literatura">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

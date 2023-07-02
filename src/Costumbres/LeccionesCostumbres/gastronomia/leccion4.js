@@ -61,11 +61,11 @@ const LeccionGastronomia4 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -338,7 +338,7 @@ const LeccionGastronomia4 = () => {
                           <Modal.Title>4.1 Postres</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Baklava y otros pasteles de nueces y miel.
                           </h2>
                           <img
@@ -450,7 +450,7 @@ const LeccionGastronomia4 = () => {
                           <Modal.Title>4.2 Dulces fritos</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">4.2 Loukoumades.</h2>
+                          <h2 className="text-center">4.2 Loukoumades.</h2>
                           <img
                             src={louku}
                             alt="Imagen"
@@ -557,7 +557,7 @@ const LeccionGastronomia4 = () => {
                           <Modal.Title>4.3 Postres lácteos</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             4.3 Postres como el yogur griego y el rizogalo
                           </h2>
                           <img
@@ -608,12 +608,12 @@ const LeccionGastronomia4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Gastronomia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Gastronomia/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

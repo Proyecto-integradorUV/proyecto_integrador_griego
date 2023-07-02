@@ -75,8 +75,8 @@ const QuizMitologia = () => {
     return (
       <div className="contenedorLeccionesMito">
         <NavbarPrincipal />
-        <div class="titulo-empezar">
-          <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+        <div className="titulo-empezar">
+          <img src={lecMitologia} className="img-fluid" alt="Imagen" />
         </div>
         <div className="contenedor-quiz">
           <div className="juego-terminado">
@@ -99,8 +99,8 @@ const QuizMitologia = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="contenedor-quiz">
         <div className="lado-izquierdo">

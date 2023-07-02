@@ -51,11 +51,11 @@ const LeccionDeporte2 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecDeporte} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecDeporte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -228,7 +228,7 @@ const LeccionDeporte2 = () => {
                           <p>Estos incluían los Juegos Píticos</p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "40%",
@@ -240,7 +240,7 @@ const LeccionDeporte2 = () => {
                           <p>Los Juegos Ístmicos</p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "40%",
@@ -252,7 +252,7 @@ const LeccionDeporte2 = () => {
                           <p>Los Juegos Nemeos, entre otros.</p>
                           <img
                             src={imagenModal3}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "40%",
@@ -283,9 +283,9 @@ const LeccionDeporte2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Deporte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

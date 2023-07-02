@@ -44,11 +44,11 @@ const LeccionArte2 = () => {
   return (
     <div className="contenedorArte">
       <NavbarArte />
-      <div class="titulo-empezar">
-        <img src={arte} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={arte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -324,7 +324,7 @@ const LeccionArte2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Explicación</h2>
+                          <h2 className="text-center">Explicación</h2>
                           <p>
                             La arquitectura griega se caracteriza por la
                             presencia de tres órdenes arquitectónicos
@@ -440,7 +440,7 @@ const LeccionArte2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             La antigua Grecia es conocida por su arquitectura
                             monumental y sus distintos tipos de edificios. A
@@ -576,7 +576,7 @@ const LeccionArte2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Ejemplos</h2>
+                          <h2 className="text-center">Ejemplos</h2>
                           <p>
                             El Partenón es, sin duda, uno de los ejemplos más
                             destacados de la arquitectura griega. Es un templo
@@ -655,9 +655,9 @@ const LeccionArte2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Arte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

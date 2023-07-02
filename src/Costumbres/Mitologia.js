@@ -2,18 +2,17 @@ import "./styles/Mitologia.css";
 import React from "react";
 import mitologiaTitle from "../style/titulos/mitologia.png";
 import { Link } from "react-router-dom";
-import botonLeccion from "./Images/btnMitologia.png";
 import botonModel3D from "./Images/btnMitologia3D.png";
 import NavbarMito from "../components/navMito";
 
 const Mitologia = () => {
   return (
-    <div class="contenedor-inicial-mitologia">
+    <div className="contenedor-inicial-mitologia">
       <NavbarMito />
-      <div class="temaMitologia">
+      <div className="temaMitologia">
         <img src={mitologiaTitle} alt="Imagen" />
       </div>
-      <div class="introduccionMitologia">
+      <div className="introduccionMitologia">
         La mitología griega es un vasto conjunto de relatos y creencias que
         formaban parte de la antigua religión y cultura de la civilización
         griega. Estas historias míticas abarcan desde los orígenes del mundo
@@ -22,12 +21,9 @@ const Mitologia = () => {
         universo, la naturaleza, la vida humana y las interacciones entre los
         dioses y los mortales
       </div>
-      <div class="button-container-mito">
-        {/* <Link to="/Temas/Mitologia/Lecciones" class="btn-mito">
-          <img src={botonLeccion} alt="Imagen" class="button-image" />
-        </Link> */}
-        <Link to="/Temas/Mitologia/Model" class="btn-mito">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-mito">
+        <Link to="/Temas/Mitologia/Model" className="btn-mito">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

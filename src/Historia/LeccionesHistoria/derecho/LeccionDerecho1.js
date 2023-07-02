@@ -55,11 +55,11 @@ const LeccionDerecho1 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={derechos} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={derechos} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -337,7 +337,7 @@ const LeccionDerecho1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             el concepto de derechos y la noción de ciudadanía
                             tenían una importancia fundamental en la vida
@@ -445,7 +445,7 @@ const LeccionDerecho1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Períodos</h2>
+                          <h2 className="text-center">Períodos</h2>
                           <p>
                             {" "}
                             Desde la época arcaica hasta la antigua Grecia, las
@@ -524,9 +524,9 @@ const LeccionDerecho1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Derecho">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

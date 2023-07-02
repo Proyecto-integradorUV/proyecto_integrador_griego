@@ -11,7 +11,7 @@ const Derecho = () => {
   const url3 = "/Temas/Derecho/Leccion3";
   const url4 = "/Temas/Derecho/Leccion4";
   return (
-    <div class="contenedor-inicial-derecho">
+    <div className="contenedor-inicial-derecho">
       <Navbar4
         tituloTema="Derecho"
         url1={url1}
@@ -23,19 +23,19 @@ const Derecho = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="temaDerecho">
+      <div className="temaDerecho">
         <img src={derechoTitle} alt="Imagen" />
       </div>
-      <div class="introduccionDerecho">
+      <div className="introduccionDerecho">
         En la antigua Grecia, los derechos y la participación política estaban
         restringidos a los ciudadanos varones. Las mujeres, los esclavos y los
         extranjeros no tenían los mismos derechos que los ciudadanos. Aunque se
         desarrollaron conceptos de democracia y gobierno directo, la democracia
         ateniense era limitada y excluía a gran parte de la población
       </div>
-      <div class="button-container-der">
-        <Link to="/Temas/Derecho/Model" class="btn-derecho ">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-der">
+        <Link to="/Temas/Derecho/Model" className="btn-derecho ">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

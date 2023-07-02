@@ -60,11 +60,11 @@ const LeccionGastronomia3 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -337,7 +337,7 @@ const LeccionGastronomia3 = () => {
                         </Modal.Header>
 
                         <Modal.Body>
-                          <h2 class="text-center">Vino y bebidas</h2>
+                          <h2 className="text-center">Vino y bebidas</h2>
                           <img
                             src={vino}
                             alt="Imagen"
@@ -451,7 +451,7 @@ const LeccionGastronomia3 = () => {
                           <Modal.Title>3.2 Comida a la parrilla</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Souvlaki y otras carnes a la parrilla.
                           </h2>
                           <img
@@ -565,7 +565,7 @@ const LeccionGastronomia3 = () => {
                           <Modal.Title>3.3 Comida de mar en griega</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Platos de pescado y mariscos
                           </h2>
                           <img
@@ -641,9 +641,9 @@ const LeccionGastronomia3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Gastronomia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

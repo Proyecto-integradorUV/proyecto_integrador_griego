@@ -44,7 +44,7 @@ const LeccionSitios2 = () => {
   const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
   const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
   return (
-    <div class="contenedorHistoria">
+    <div className="contenedorHistoria">
       <Navbar4
         tituloTema="Sitios caracteristicos"
         url1={url1}
@@ -56,11 +56,11 @@ const LeccionSitios2 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecSitios} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecSitios} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -336,7 +336,7 @@ const LeccionSitios2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Atenas</h2>
+                          <h2 className="text-center">Atenas</h2>
                           <p>
                             Atenas es la capital de Grecia y una de las ciudades
                             más antiguas del mundo. Tiene una historia que se
@@ -361,7 +361,7 @@ const LeccionSitios2 = () => {
                           <br />
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -435,7 +435,7 @@ const LeccionSitios2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Acrópolis</h2>
+                          <h2 className="text-center">Acrópolis</h2>
                           <p>
                             • La Acrópolis es una colina rocosa situada en el
                             centro de Atenas y es uno de los lugares más
@@ -447,7 +447,7 @@ const LeccionSitios2 = () => {
                           </p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -469,7 +469,7 @@ const LeccionSitios2 = () => {
                           </p>
                           <img
                             src={imagenModal3}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -490,7 +490,7 @@ const LeccionSitios2 = () => {
                           </p>
                           <img
                             src={imagenModal4}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -510,7 +510,7 @@ const LeccionSitios2 = () => {
                           </p>
                           <img
                             src={imagenModal5}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -585,7 +585,7 @@ const LeccionSitios2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Estilo arquitectónico</h2>
+                          <h2 className="text-center">Estilo arquitectónico</h2>
                           <p>
                             Los templos griegos, incluyendo los ubicados en la
                             Acrópolis, siguen un estilo arquitectónico
@@ -608,7 +608,7 @@ const LeccionSitios2 = () => {
                           </p>
                           <img
                             src={imagenModal6}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -637,9 +637,9 @@ const LeccionSitios2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/SitiosCaracteristicos">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

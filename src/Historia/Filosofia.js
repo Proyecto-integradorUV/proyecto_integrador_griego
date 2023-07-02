@@ -12,7 +12,7 @@ const Filosofia = () => {
   const url4 = "/Temas/Filosofia/Leccion4";
 
   return (
-    <div class="contenedor-inicial-filosofia">
+    <div className="contenedor-inicial-filosofia">
       <Navbar4
         tituloTema="Filosofía"
         url1={url1}
@@ -24,7 +24,7 @@ const Filosofia = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="temaFilosofia">
+      <div className="temaFilosofia">
         <img src={filoTitle} alt="Imagen" />
       </div>
       <div className="introduccionFilosofia">
@@ -37,9 +37,9 @@ const Filosofia = () => {
         ética, metafísica y ciencias naturales, y enfatizó la observación
         empírica y el estudio sistemático
       </div>
-      <div class="button-container-fil">
-        <Link to="/Temas/Filosofia/Model" class="btn-filosofia">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-fil">
+        <Link to="/Temas/Filosofia/Model" className="btn-filosofia">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

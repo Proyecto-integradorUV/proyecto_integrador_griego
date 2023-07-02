@@ -9,7 +9,7 @@ import NavbarPrincipal from "../components/navbar2";
 const Principal = () => {
 
   return (
-    <div class="contenedor-inicial-principal">
+    <div className="contenedor-inicial-principal">
       <NavbarPrincipal />
       <div className="video">
         <VideoSlider />

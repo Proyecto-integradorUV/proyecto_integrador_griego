@@ -15,61 +15,61 @@ import NavbarPrincipal from "../components/navbar2";
 
 const Temas = () => {
   return (
-    <div class="contenedor-inicial-principal">
+    <div className="contenedor-inicial-principal">
       <NavbarPrincipal />
-      <div class="cuerpo">
-        <div class="contenedor-temas">
-          <div class="contenedor-filosofia">
-            <Link to="/Temas/Filosofia" class="btn ">
-              <img src={filoImage} alt="Imagen" class="button-image" />
+      <div className="cuerpo">
+        <div className="contenedor-temas">
+          <div className="contenedor-filosofia">
+            <Link to="/Temas/Filosofia" className="btn ">
+              <img src={filoImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-gastronomia">
-            <Link to="/Temas/Gastronomia" class="btn ">
-              <img src={gastroImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-gastronomia">
+            <Link to="/Temas/Gastronomia" className="btn ">
+              <img src={gastroImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-sitios">
-            <Link to="/Temas/SitiosCaracteristicos" class="btn ">
-              <img src={sitesImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-sitios">
+            <Link to="/Temas/SitiosCaracteristicos" className="btn ">
+              <img src={sitesImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-mitologia">
-            <Link to="/Temas/Mitologia" class="btn ">
-              <img src={mitologiaImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-mitologia">
+            <Link to="/Temas/Mitologia" className="btn ">
+              <img src={mitologiaImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-deporte">
-            <Link to="/Temas/Deporte" class="btn ">
-              <img src={deporteImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-deporte">
+            <Link to="/Temas/Deporte" className="btn ">
+              <img src={deporteImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-vestimenta">
-            <Link to="/Temas/Vestimenta" class="btn ">
-              <img src={vestimentaImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-vestimenta">
+            <Link to="/Temas/Vestimenta" className="btn ">
+              <img src={vestimentaImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-literatura">
-            <Link to="/Temas/Literatura" class="btn ">
-              <img src={literaturaImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-literatura">
+            <Link to="/Temas/Literatura" className="btn ">
+              <img src={literaturaImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-derechos">
-            <Link to="/Temas/Derechos" class="btn ">
-              <img src={derechosImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-derechos">
+            <Link to="/Temas/Derechos" className="btn ">
+              <img src={derechosImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
 
-          <div class="contenedor-arte">
-            <Link to="/Temas/Arte" class="btn ">
-              <img src={arteImage} alt="Imagen" class="button-image" />
+          <div className="contenedor-arte">
+            <Link to="/Temas/Arte" className="btn ">
+              <img src={arteImage} alt="Imagen" className="button-image" />
             </Link>
           </div>
         </div>

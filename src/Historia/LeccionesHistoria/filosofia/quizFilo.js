@@ -75,8 +75,8 @@ const QuizFilosofia = () => {
     return (
       <div className="contenedorHistoria">
         <NavbarPrincipal />
-        <div class="titulo-empezar">
-          <img src={titulo} class="img-fluid" alt="Imagen" />
+        <div className="titulo-empezar">
+          <img src={titulo} className="img-fluid" alt="Imagen" />
         </div>
         <div className="contenedor-quiz">
           <div className="juego-terminado">
@@ -99,8 +99,8 @@ const QuizFilosofia = () => {
   return (
     <div className="contenedorHistoria">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={titulo} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={titulo} className="img-fluid" alt="Imagen" />
       </div>
       <div className="contenedor-quiz">
         <div className="lado-izquierdo">

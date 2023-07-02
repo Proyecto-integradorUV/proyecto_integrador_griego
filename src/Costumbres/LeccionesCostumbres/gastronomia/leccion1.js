@@ -57,11 +57,11 @@ const LeccionGastronomia1 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -337,7 +337,7 @@ const LeccionGastronomia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <br></br>
-                        <h2 class="text-center">
+                        <h2 className="text-center">
                           Breve historia de la cocina griega
                         </h2>
                         <Modal.Body>
@@ -428,7 +428,7 @@ const LeccionGastronomia1 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Influencias culturales y geográficas en la cocina
                             griega.
                           </h2>
@@ -585,7 +585,7 @@ const LeccionGastronomia1 = () => {
                         </Modal.Header>
 
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Características principales de la gastronomía griega
                           </h2>
                           <p>
@@ -719,9 +719,9 @@ const LeccionGastronomia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Gastronomia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

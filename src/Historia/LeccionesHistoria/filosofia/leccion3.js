@@ -57,11 +57,11 @@ const LeccionFilosofia3 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecHistoria} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -299,7 +299,7 @@ const LeccionFilosofia3 = () => {
                           <Modal.Title>3.1 Período helenístico</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 className="text-center">Introducción</h2>
                           <p>
                             Abarca aproximadamente desde la muerte de Alejandro
                             Magno en el año 323 a.C. hasta el dominio romano
@@ -454,9 +454,9 @@ const LeccionFilosofia3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Filosofia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

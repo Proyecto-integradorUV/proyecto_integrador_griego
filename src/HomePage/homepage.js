@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div class="contenedor-inicial1">
+    <div className="contenedor-inicial1">
       <Navbar />
     </div>
   );

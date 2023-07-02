@@ -48,11 +48,11 @@ const LeccionLiteratura2 = () => {
   return (
     <div className="contenedorArte">
       <NavbarLite />
-      <div class="titulo-empezar">
-        <img src={literatura} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={literatura} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -328,7 +328,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Poesía épica</h2>
+                          <h2 className="text-center">Poesía épica</h2>
                           <img
                             src={literatura2}
                             alt="Imagen"
@@ -414,7 +414,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Tragedia</h2>
+                          <h2 className="text-center">Tragedia</h2>
                           <img
                             src={literatura9}
                             alt="Imagen"
@@ -501,7 +501,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Comedia</h2>
+                          <h2 className="text-center">Comedia</h2>
                           <img
                             src={literatura10}
                             alt="Imagen"
@@ -588,7 +588,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Filosofía</h2>
+                          <h2 className="text-center">Filosofía</h2>
                           <img
                             src={literatura3}
                             alt="Imagen"
@@ -677,7 +677,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Historia</h2>
+                          <h2 className="text-center">Historia</h2>
                           <img
                             src={literatura5}
                             alt="Imagen"
@@ -765,7 +765,7 @@ const LeccionLiteratura2 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Poesía lírica</h2>
+                          <h2 className="text-center">Poesía lírica</h2>
                           <img
                             src={literatura12}
                             alt="Imagen"
@@ -802,12 +802,12 @@ const LeccionLiteratura2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Literatura">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Literatura/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

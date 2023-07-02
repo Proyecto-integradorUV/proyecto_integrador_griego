@@ -9,18 +9,18 @@ const Arte = () => {
   return (
     <div class="contenedor-inicial-arte">
       <NavbarArte/>
-      <div class="temaArte">
+      <div className="temaArte">
         <img src={arteTitle} alt="Imagen" />
       </div>
-      <div class="introduccionArte">
+      <div className="introduccionArte">
         El arte griego abarca una amplia gama de disciplinas, desde la escultura
         y la arquitectura hasta la pintura y la cerámica. A lo largo de los
         siglos, los artistas griegos experimentaron y perfeccionaron diversas
         técnicas y estilos artísticos, dejando un legado duradero
       </div>
-      <div class="button-container-arte">
-        <Link to="/Temas/Arte/Model" class="btn-arte">
-          <img src={botonModel3D} alt="Imagen" class="button-image" />
+      <div className="button-container-arte">
+        <Link to="/Temas/Arte/Model" className="btn-arte">
+          <img src={botonModel3D} alt="Imagen" className="button-image" />
         </Link>
       </div>
     </div>

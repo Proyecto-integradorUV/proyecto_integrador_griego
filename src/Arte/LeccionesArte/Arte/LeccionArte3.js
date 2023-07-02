@@ -46,11 +46,11 @@ const LeccionArte3 = () => {
   return (
     <div className="contenedorArte">
       <NavbarArte />
-      <div class="titulo-empezar">
-        <img src={arte} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={arte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -327,7 +327,7 @@ const LeccionArte3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Descripción</h2>
+                          <h2 className="text-center">Descripción</h2>
                           <p>
                             La escultura griega antigua se caracteriza por su
                             enfoque en la representación idealizada de la forma
@@ -455,7 +455,7 @@ const LeccionArte3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Temas</h2>
+                          <h2 className="text-center">Temas</h2>
                           <img
                             src={escultura3}
                             alt="Imagen"
@@ -586,7 +586,7 @@ const LeccionArte3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Figuras</h2>
+                          <h2 className="text-center">Figuras</h2>
                           <p>
                             <h6>Venus de Milo</h6> La Afrodita de Milo, más
                             conocida como Venus de Milo, es una de las estatuas
@@ -650,9 +650,9 @@ const LeccionArte3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Arte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

@@ -44,7 +44,7 @@ const LeccionVestimenta4 = () => {
   const url3 = "/Temas/Vestimenta/Leccion3";
   const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div class="contenedorArte">
+    <div className="contenedorArte">
       <Navbar4
         tituloTema="Vestimenta"
         url1={url1}
@@ -56,11 +56,11 @@ const LeccionVestimenta4 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
-        <img src={lecVestimenta} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecVestimenta} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -134,7 +134,7 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Explicación</h2>
+                          <h2 className="text-center">Explicación</h2>
                           <p>
                             En la cultura griega, tanto hombres como mujeres
                             complementaban su vestimenta con diversos accesorios
@@ -152,7 +152,7 @@ const LeccionVestimenta4 = () => {
                           </p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -169,7 +169,7 @@ const LeccionVestimenta4 = () => {
                           </p>
                           <img
                             src={imagenModal2}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -187,7 +187,7 @@ const LeccionVestimenta4 = () => {
                           </p>
                           <img
                             src={imagenModal3}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -263,7 +263,7 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Significado</h2>
+                          <h2 className="text-center">Significado</h2>
                           <p>
                             Los accesorios en la cultura griega tenían un
                             significado simbólico y complementaban la vestimenta
@@ -364,7 +364,7 @@ const LeccionVestimenta4 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Detalles</h2>
+                          <h2 className="text-center">Detalles</h2>
                           <p>
                             En la cultura griega, los peinados y el maquillaje
                             también eran importantes para complementar la
@@ -401,7 +401,7 @@ const LeccionVestimenta4 = () => {
                           </p>
                           <img
                             src={imagenModal4}
-                            class="img-fluid center"
+                            className="img-fluid center"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -429,12 +429,12 @@ const LeccionVestimenta4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Vestimenta">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Vestimenta/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

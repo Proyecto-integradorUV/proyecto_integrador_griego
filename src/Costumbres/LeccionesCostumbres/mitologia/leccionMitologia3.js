@@ -42,11 +42,11 @@ const LeccionMitologia3 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -256,7 +256,7 @@ const LeccionMitologia3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Mito de la creación según Hesíodo
                           </h2>
                           <p>
@@ -358,7 +358,7 @@ const LeccionMitologia3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">La guerra de troya</h2>
+                          <h2 className="text-center">La guerra de troya</h2>
                           <p>
                             La guerra de Troya es uno de los episodios más
                             famosos de la mitología griega y ha sido ampliamente
@@ -486,7 +486,7 @@ const LeccionMitologia3 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Amor y tragedia</h2>
+                          <h2 className="text-center">Amor y tragedia</h2>
                           <p>
                             El amor y la tragedia son temas recurrentes en los
                             mitos de la mitología griega. Estos relatos
@@ -497,7 +497,7 @@ const LeccionMitologia3 = () => {
                             ejemplos notables:
                           </p>
                           <br></br>
-                          <h3 class="text-center">Orfeo y Eurídice</h3>
+                          <h3 className="text-center">Orfeo y Eurídice</h3>
                           <p>
                             Orfeo era un talentoso músico y poeta, y Eurídice
                             era su amada esposa. Cuando Eurídice murió por una
@@ -556,12 +556,12 @@ const LeccionMitologia3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Mitologia/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Mitologia">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

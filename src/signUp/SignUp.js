@@ -235,7 +235,7 @@ const SignUp = () => {
               onChange={handleChange}
             />
             {formData.errors.last_name && (
-              <span class="slert alert-danger">
+              <span className="slert alert-danger">
                 {formData.errors.last_name}
               </span>
             )}
@@ -352,7 +352,7 @@ const SignUp = () => {
               </Modal.Footer>
             </Modal>
           </div>
-          <div class="col-md-10 my-2">
+          <div className="col-md-10 my-2">
             <a href="/Home">Regresar</a>
           </div>
         </div>

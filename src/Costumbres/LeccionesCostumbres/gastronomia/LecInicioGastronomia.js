@@ -26,8 +26,8 @@ const LeccionGastronomia = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-lecciones">
-        <img src={titulo} class="img-fluid" alt="Imagen" />
+      <div className="titulo-lecciones">
+        <img src={titulo} className="img-fluid" alt="Imagen" />
       </div>
       {/* Carrusel de lecciones */}
       <div className="carousel-container">
@@ -45,8 +45,8 @@ const LeccionGastronomia = () => {
                   <br />• Caracteristícas principales de la gastronomía griega
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Gastronomia/Leccion1" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Gastronomia/Leccion1" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -64,8 +64,8 @@ const LeccionGastronomia = () => {
                   <br />• Productos de panadería griegos
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Gastronomia/Leccion2" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Gastronomia/Leccion2" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -81,8 +81,8 @@ const LeccionGastronomia = () => {
                   <br />• Platos de pescado y maríscos
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Gastronomia/Leccion3" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Gastronomia/Leccion3" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -99,8 +99,8 @@ const LeccionGastronomia = () => {
                   griego).
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Gastronomia/Leccion4" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Gastronomia/Leccion4" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>

@@ -4,8 +4,8 @@ import "../index.css";
 
 const NavbarHome = () => {
     return (
-        <nav class="navbar navbar-expand-lg" style={{ backgroundColor: '#E07A5F' }}>
-            <div class="container-fluid">
+        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#E07A5F' }}>
+            <div className="container-fluid">
                 <ul className="navbarList1">
                     <li className="navbarItem1">
                         <a href="/SignIn" className="navbar-home">

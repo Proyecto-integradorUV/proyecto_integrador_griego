@@ -54,7 +54,7 @@ const LeccionDeporte1 = () => {
         url4={url4}
         tituloLeccion4="Leccion4"
       />
-      <div class="titulo-empezar">
+      <div className="titulo-empezar">
         <img
           src={lecDeporte}
           alt="Imagen"
@@ -62,7 +62,7 @@ const LeccionDeporte1 = () => {
         />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -342,7 +342,7 @@ const LeccionDeporte1 = () => {
                           <p>• Carreras.</p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "40%",
@@ -379,7 +379,7 @@ const LeccionDeporte1 = () => {
                           <p>• Lucha libre.</p>
                           <img
                             src={imagenModal4}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -391,7 +391,7 @@ const LeccionDeporte1 = () => {
                           <p>• Pugilato.</p>
                           <img
                             src={imagenModal5}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "30%",
@@ -403,7 +403,7 @@ const LeccionDeporte1 = () => {
                           <p>• Pentatlón.</p>
                           <img
                             src={imagenModal6}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "50%",
@@ -435,9 +435,9 @@ const LeccionDeporte1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Deporte">
-          <img src={inicio} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>
