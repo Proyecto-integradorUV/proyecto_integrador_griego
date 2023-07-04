@@ -40,13 +40,13 @@ def CreateTestView(request):
 
             try:
                 test = Test.objects.get(user=user, module=module)
-                return JsonResponse({'message': 'El test ya existe'})
+                return Response({'message': 'El test ya existe'}, status=status.HTTP_401_UNAUTHORIZED)
 
             except Test.DoesNotExist:
                 test = Test(user=user, module=module, score=score, approved=approved)
                 test.save()
 
-                return JsonResponse({'message': 'Test creado exitosamente'})
+                return Response({'message': 'Test creado exitosamente'}, status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response({'message': 'Error al guardar el Test', 'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
