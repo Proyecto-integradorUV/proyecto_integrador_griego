@@ -67,4 +67,52 @@ const updateUser = async (userId, body) => {
   return response.data;
 }
 
-export { addUsers, signIn, logout, updateUser };
+const createModule = async (body) => {
+  try {
+    const config = {
+      headers: {
+        accept: "*/*",
+        "Content-Type": "application/json",
+      },
+    };
+    const response = await Axios.post(endpoints.module.createModule, body, config);
+    return response.data;
+  } catch (error) {
+    console.error("Error al crear modulo", error);
+    throw error;
+  }
+};
+
+const createTest = async (body) => {
+  try {
+    const config = {
+      headers: {
+        accept: "*/*",
+        "Content-Type": "application/json",
+      },
+    };
+    const response = await Axios.post(endpoints.test.createTest, body, config);
+    return response.data;
+  } catch (error) {
+    console.error("Error al enviar calificación:", error);
+    throw error;
+  }
+};
+
+const upDateTest = async (body) => {
+  try {
+    const config = {
+      headers: {
+        accept: "*/*",
+        "Content-Type": "application/json",
+      },
+    };
+    const response = await Axios.put(endpoints.test.upDateTest, body, config);
+    return response.data;
+  } catch (error) {
+    console.error("Error al enviar calificación:", error);
+    throw error;
+  }
+};
+
+export { addUsers, signIn, logout, updateUser, createModule, createTest, upDateTest };

@@ -1,8 +1,9 @@
 import preguntas from "./preguntasFilo";
 import "../../../style/css/quiz.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";
+import { createTest, upDateTest } from "../../../Services/users";
 
 const QuizFilosofia = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -13,6 +14,8 @@ const QuizFilosofia = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
+
+  const [calificacionEnviada, setCalificacionEnviada] = useState(false);
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -69,6 +72,66 @@ const QuizFilosofia = () => {
     if (puntaje === 8) {
       return "5.0";
     }
+  }  
+
+  const getUsername = () => {
+    const userData = localStorage.getItem("userData");
+    const parsedUserData = JSON.parse(userData);
+    const userID = parsedUserData.id;
+    return userID;
+  };
+
+  const getApproved = useCallback(() => {
+    const score = parseFloat(calificacion(puntuacion));
+    return score >= 3.0;
+  }, [puntuacion]);
+
+  const [formData, setFormData] = useState({
+    user:getUsername(),
+    score:"0.0",
+    date:"",
+    approved: getApproved(),    
+    module:1
+  });
+
+  useEffect(() => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      score: calificacion(puntuacion),
+      approved: getApproved()
+    }));
+  }, [puntuacion, getApproved]);
+
+  function enviarCalificacion() {
+    console.log('Enviando calificación:', formData);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+    }));
+  
+    if (calificacionEnviada) {
+      // Actualizar calificación existente
+      upDateTest(formData)
+        .then((response) => {
+          // Manejar la respuesta del servidor si es necesario
+          console.log(response);
+        })
+        .catch((error) => {
+          // Manejar el error si ocurre
+          console.error(error);
+        });
+    } else {
+      // Crear nueva calificación
+      createTest(formData)
+        .then((response) => {
+          // Manejar la respuesta del servidor si es necesario
+          console.log(response);
+          setCalificacionEnviada(true); // Marcar la calificación como enviada
+        })
+        .catch((error) => {
+          // Manejar el error si ocurre
+          console.error(error);
+        });
+    }
   }
 
   if (isFinished)
@@ -90,6 +153,9 @@ const QuizFilosofia = () => {
               }}
             >
               Volver a hacer quiz
+            </button>
+            <button onClick={enviarCalificacion}>
+              Enviar calificacion
             </button>
           </div>
         </div>

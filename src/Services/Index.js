@@ -8,6 +8,14 @@ const endpoints = {
     logoutUser: `${URL}/users/logout/`,
     updateUser: (userId) => `${URL}/users/update_user/${userId}/`,
   },
+  module: {
+    createModule: `${URL}`,
+    listModule: `${URL}`
+  },
+  test: {
+    createTest: `${URL}/prueba/test/create/`,
+    upDateTest: `${URL}/prueba/test/update/`,
+  },
 };
 
 const token = () => {
