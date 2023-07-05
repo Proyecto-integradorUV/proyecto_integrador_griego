@@ -7,6 +7,7 @@ const endpoints = {
     loginUser: `${URL}/users/login/`,
     logoutUser: `${URL}/users/logout/`,
     updateUser: (userId) => `${URL}/users/update_user/${userId}/`,
+    progressUser: (userId) => `${URL}/users/update_user/?${userId}/`,
   },
 };
 

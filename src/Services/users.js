@@ -9,7 +9,11 @@ const addUsers = async (body) => {
         "Content-Type": "application/json",
       },
     };
-    const response = await Axios.post(endpoints.users.registerUser, body, config);
+    const response = await Axios.post(
+      endpoints.users.registerUser,
+      body,
+      config
+    );
     return response.data;
   } catch (error) {
     console.error("Error al registrar el usuario:", error);
@@ -65,6 +69,24 @@ const updateUser = async (userId, body) => {
   );
   console.log(response.data);
   return response.data;
-}
+};
 
-export { addUsers, signIn, logout, updateUser };
+const progressUser = async (userId, body) => {
+  const config = {
+    headers: {
+      accept: "*/*",
+      "Content-Type": "application/json",
+      Authorization: `Token ${token()}`,
+    },
+  };
+
+  const response = await Axios.get(
+    endpoints.users.progressUser(userId),
+    body,
+    config
+  );
+  console.log(response.data);
+  return response.data;
+};
+
+export { addUsers, signIn, logout, updateUser, progressUser };
