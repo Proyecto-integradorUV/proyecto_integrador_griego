@@ -104,7 +104,7 @@ const upDatePrueba = async (body) => {
   try {
     const config = {
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "multipart/form-data",
       },
     };
     const response = await Axios.put(endpoints.test.upDateTest, body, config);
