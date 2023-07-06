@@ -49,7 +49,7 @@ const Lecciones = () => {
 
             {progreso &&
               progreso.map((progresoUser) => (
-                <thr key={id}>
+                <tr key={progresoUser.id}>
                   <td>1</td>
                   <td>
                     <Link
@@ -59,7 +59,11 @@ const Lecciones = () => {
                       Filosofia
                     </Link>
                   </td>
-                  {progresoUser.module === 8 ? progresoUser.score : "notaFilo"}
+                  <td>
+                    {progresoUser.module === 8
+                      ? progresoUser.score
+                      : "notaFilo"}
+                  </td>
                   <td>
                     <Link
                       to="/Temas/Arte/Quiz"
@@ -68,7 +72,11 @@ const Lecciones = () => {
                       Arte
                     </Link>
                   </td>
-                  {progresoUser.module === 3 ? progresoUser.score : "notaArte"}
+                  <td>
+                    {progresoUser.module === 3
+                      ? progresoUser.score
+                      : "notaArte"}
+                  </td>
                   <td>
                     <Link
                       to="/Temas/Mitologia/Quiz"
@@ -77,15 +85,19 @@ const Lecciones = () => {
                       Mitologia
                     </Link>
                   </td>
-                  {progresoUser.module === 9 ? progresoUser.score : "notaMito"}
-                </thr>
+                  <td>
+                    {progresoUser.module === 9
+                      ? progresoUser.score
+                      : "notaMito"}
+                  </td>
+                </tr>
               ))}
 
             {/* segunda columna */}
 
             {progreso &&
               progreso.map((progresoUser) => (
-                <thr key={id}>
+                <tr key={progresoUser.id}>
                   <td>2</td>
                   <td>
                     <Link
@@ -95,9 +107,11 @@ const Lecciones = () => {
                       Derechos
                     </Link>
                   </td>
-                  {progresoUser.module === 2
-                    ? progresoUser.score
-                    : "notaDerecho"}
+                  <td>
+                    {progresoUser.module === 2
+                      ? progresoUser.score
+                      : "notaDerecho"}
+                  </td>
                   <td>
                     <Link
                       to="/Temas/Literatura/Quiz"
@@ -106,7 +120,11 @@ const Lecciones = () => {
                       Literatura
                     </Link>
                   </td>
-                  {progresoUser.module === 7 ? progresoUser.score : "notaLite"}
+                  <td>
+                    {progresoUser.module === 7
+                      ? progresoUser.score
+                      : "notaLite"}
+                  </td>
                   <td>
                     <Link
                       to="/Temas/Deporte/Quiz"
@@ -115,15 +133,19 @@ const Lecciones = () => {
                       Deporte
                     </Link>
                   </td>
-                  {progresoUser.module === 1 ? progresoUser.score : "notaDepor"}
-                </thr>
+                  <td>
+                    {progresoUser.module === 1
+                      ? progresoUser.score
+                      : "notaDepor"}
+                  </td>
+                </tr>
               ))}
 
-            {/*tercera columna  */}
+            {/* tercera columna  */}
 
             {progreso &&
               progreso.map((progresoUser) => (
-                <thr key={id}>
+                <tr key={progresoUser.id}>
                   <td>3</td>
                   <td>
                     <Link
@@ -142,7 +164,11 @@ const Lecciones = () => {
                       Vestimenta
                     </Link>
                   </td>
-                  {progresoUser.module === 5 ? progresoUser.score : "notaVesti"}
+                  <td>
+                    {progresoUser.module === 5
+                      ? progresoUser.score
+                      : "notaVesti"}
+                  </td>
                   <td>
                     <Link
                       to="/Temas/Gastronomia/Quiz"
@@ -151,10 +177,12 @@ const Lecciones = () => {
                       Gastronomia
                     </Link>
                   </td>
-                  {progresoUser.module === 4
-                    ? progresoUser.score
-                    : "notaGastro"}
-                </thr>
+                  <td>
+                    {progresoUser.module === 4
+                      ? progresoUser.score
+                      : "notaGastro"}
+                  </td>
+                </tr>
               ))}
           </tbody>
         </Table>
