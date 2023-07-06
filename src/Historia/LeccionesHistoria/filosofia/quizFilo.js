@@ -104,6 +104,13 @@ const QuizFilosofia = () => {
 
   function enviarCalificacion() {
     console.log('Enviando calificación:', formData);
+    console.log('Score type:', typeof formData.score, 'Score value:', formData.score);
+    console.log('approved type:', typeof formData.approved, 'approved value:', formData.approved);
+    console.log('username type:', typeof formData.username, 'username value:', formData.username); 
+    console.log('module type:', typeof formData.module, 'module value:', formData.module);
+  
+  
+  
     setFormData((prevFormData) => ({
       ...prevFormData,
     }));

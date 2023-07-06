@@ -88,10 +88,10 @@ const createPrueba = async (body) => {
   try {
     const config = {
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "multipart/form-data",
       },
     };
-    const response = await Axios.post(endpoints.test.createTest, JSON.stringify(body), config);
+    const response = await Axios.post(endpoints.test.createTest, body, config);
     return response.data;
   } catch (error) {
     console.error("Error al enviar calificación:", error);
