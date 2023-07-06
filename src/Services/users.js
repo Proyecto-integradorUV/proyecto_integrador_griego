@@ -83,15 +83,15 @@ const createModule = async (body) => {
   }
 };
 
-const createTest = async (body) => {
+const createPrueba = async (body) => {
+  console.log('Test creado', body);
   try {
     const config = {
       headers: {
-        accept: "*/*",
         "Content-Type": "application/json",
       },
     };
-    const response = await Axios.post(endpoints.test.createTest, body, config);
+    const response = await Axios.post(endpoints.test.createTest, JSON.stringify(body), config);
     return response.data;
   } catch (error) {
     console.error("Error al enviar calificación:", error);
@@ -99,11 +99,11 @@ const createTest = async (body) => {
   }
 };
 
-const upDateTest = async (body) => {
+const upDatePrueba = async (body) => {
+  console.log('Test actualizado', body);
   try {
     const config = {
       headers: {
-        accept: "*/*",
         "Content-Type": "application/json",
       },
     };
@@ -115,4 +115,4 @@ const upDateTest = async (body) => {
   }
 };
 
-export { addUsers, signIn, logout, updateUser, createModule, createTest, upDateTest };
+export { addUsers, signIn, logout, updateUser, createModule, createPrueba, upDatePrueba };

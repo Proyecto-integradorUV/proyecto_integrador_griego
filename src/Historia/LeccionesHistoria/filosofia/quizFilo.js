@@ -3,7 +3,7 @@ import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";
-import { createTest, upDateTest } from "../../../Services/users";
+import { createPrueba, upDatePrueba } from "../../../Services/users";
 
 const QuizFilosofia = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -77,8 +77,8 @@ const QuizFilosofia = () => {
   const getUsername = () => {
     const userData = localStorage.getItem("userData");
     const parsedUserData = JSON.parse(userData);
-    const userID = parsedUserData.id;
-    return userID;
+    const username = parsedUserData.username;
+    return username;    
   };
 
   const getApproved = useCallback(() => {
@@ -87,17 +87,17 @@ const QuizFilosofia = () => {
   }, [puntuacion]);
 
   const [formData, setFormData] = useState({
-    user:getUsername(),
-    score:"0.0",
-    date:"",
-    approved: getApproved(),    
-    module:1
+    username:"",
+    score: 0,
+    approved: false,    
+    module: "Filosofía"
   });
 
   useEffect(() => {
     setFormData((prevFormData) => ({
       ...prevFormData,
-      score: calificacion(puntuacion),
+      username: getUsername(),
+      score: parseFloat(calificacion(puntuacion)),
       approved: getApproved()
     }));
   }, [puntuacion, getApproved]);
@@ -110,7 +110,7 @@ const QuizFilosofia = () => {
   
     if (calificacionEnviada) {
       // Actualizar calificación existente
-      upDateTest(formData)
+      upDatePrueba(formData)
         .then((response) => {
           // Manejar la respuesta del servidor si es necesario
           console.log(response);
@@ -121,7 +121,7 @@ const QuizFilosofia = () => {
         });
     } else {
       // Crear nueva calificación
-      createTest(formData)
+      createPrueba(formData)
         .then((response) => {
           // Manejar la respuesta del servidor si es necesario
           console.log(response);
