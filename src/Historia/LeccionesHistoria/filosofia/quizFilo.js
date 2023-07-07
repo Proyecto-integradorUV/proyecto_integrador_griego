@@ -3,7 +3,7 @@ import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";
-import { createPrueba, upDatePrueba } from "../../../Services/users";
+import { createPrueba, listPrueba, upDatePrueba } from "../../../Services/users";
 
 const QuizFilosofia = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -15,7 +15,7 @@ const QuizFilosofia = () => {
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
 
-  const [calificacionEnviada, setCalificacionEnviada] = useState(false);
+  const setCalificacionEnviada = useState(false); //revisar :o
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -103,43 +103,60 @@ const QuizFilosofia = () => {
   }, [puntuacion, getApproved]);
 
   function enviarCalificacion() {
-    console.log('Enviando calificación:', formData);
-    console.log('Score type:', typeof formData.score, 'Score value:', formData.score);
-    console.log('approved type:', typeof formData.approved, 'approved value:', formData.approved);
-    console.log('username type:', typeof formData.username, 'username value:', formData.username); 
-    console.log('module type:', typeof formData.module, 'module value:', formData.module);
-  
-  
-  
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-    }));
-  
-    if (calificacionEnviada) {
-      // Actualizar calificación existente
-      upDatePrueba(formData)
-        .then((response) => {
-          // Manejar la respuesta del servidor si es necesario
-          console.log(response);
-        })
-        .catch((error) => {
-          // Manejar el error si ocurre
-          console.error(error);
-        });
-    } else {
-      // Crear nueva calificación
-      createPrueba(formData)
-        .then((response) => {
-          // Manejar la respuesta del servidor si es necesario
-          console.log(response);
-          setCalificacionEnviada(true); // Marcar la calificación como enviada
-        })
-        .catch((error) => {
-          // Manejar el error si ocurre
-          console.error(error);
-        });
-    }
-  }
+  listPrueba(8)
+    .then((data) => {
+      console.log('Datos recibidos:', data);
+
+      const username = getUsername();
+      const score = parseFloat(calificacion(puntuacion));
+      const approved = getApproved();
+      const module = "Filosofía";
+
+      if (data && data.length > 0) {
+        // Actualizar calificación existente
+        const updatedData = {
+          ...data[0], // Se asume que solo hay un dato de prueba por usuario
+          username,
+          score,
+          approved,
+          module
+        };
+
+       upDatePrueba(updatedData)
+          .then((response) => {
+            // Manejar la respuesta del servidor si es necesario
+            console.log(response);
+          })
+          .catch((error) => {
+            // Manejar el error si ocurre
+            console.error(error);
+          });
+      } else {
+        // Crear nueva calificación
+        const newData = {
+          username,
+          score,
+          approved,
+          module
+        };
+
+        createPrueba(newData)
+          .then((response) => {
+            // Manejar la respuesta del servidor si es necesario
+            console.log(response);
+            setCalificacionEnviada(true); // Marcar la calificación como enviada
+          })
+          .catch((error) => {
+            // Manejar el error si ocurre
+            console.error(error);
+          });
+      }
+    })
+    .catch((error) => {
+      // Manejar el error si ocurre
+      console.error(error);
+    });
+}
 
   if (isFinished)
     return (

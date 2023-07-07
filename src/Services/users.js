@@ -67,22 +67,6 @@ const updateUser = async (userId, body) => {
   return response.data;
 }
 
-const createModule = async (body) => {
-  try {
-    const config = {
-      headers: {
-        accept: "*/*",
-        "Content-Type": "application/json",
-      },
-    };
-    const response = await Axios.post(endpoints.module.createModule, body, config);
-    return response.data;
-  } catch (error) {
-    console.error("Error al crear modulo", error);
-    throw error;
-  }
-};
-
 const createPrueba = async (body) => {
   console.log('Test creado', body);
   try {
@@ -95,6 +79,34 @@ const createPrueba = async (body) => {
     return response.data;
   } catch (error) {
     console.error("Error al enviar calificación:", error);
+    throw error;
+  }
+};
+
+const getUserID = () => {
+  const userData = localStorage.getItem("userData");
+  const parsedUserData = JSON.parse(userData);
+  const userID = parsedUserData.id;
+  return userID;    
+};
+
+const listPrueba = async (module_id) => {
+  console.log('Lista', module_id);
+  try {
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    };
+    const response = await Axios.get(
+      `${endpoints.test.listTest}?user_id=${getUserID()}&module_id=${module_id}`,
+      config
+    );
+    console.log('Datos recibidos:', response.data);
+
+    return response.data;
+  } catch (error) {
+    console.error("Error al cargar prueba:", error);
     throw error;
   }
 };
@@ -115,4 +127,4 @@ const upDatePrueba = async (body) => {
   }
 };
 
-export { addUsers, signIn, logout, updateUser, createModule, createPrueba, upDatePrueba };
+export { addUsers, signIn, logout, updateUser, createPrueba, getUserID, listPrueba, upDatePrueba };

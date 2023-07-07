@@ -14,6 +14,7 @@ const endpoints = {
   },
   test: {
     createTest: `${URL}/prueba/test/create/`,
+    listTest: `${URL}/prueba/test/list/`,
     upDateTest: `${URL}/prueba/test/update/`,
   },
 };

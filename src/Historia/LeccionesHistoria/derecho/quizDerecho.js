@@ -1,9 +1,10 @@
 import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
 import "../../../style/css/contenedores.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/derechos.png";
+import { createPrueba, listPrueba,upDatePrueba } from "../../../Services/users";
 
 const QuizDerecho = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -14,6 +15,8 @@ const QuizDerecho = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
+
+  const setCalificacionEnviada = useState(false); 
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -72,6 +75,90 @@ const QuizDerecho = () => {
     }
   }
 
+  const getUsername = () => {
+    const userData = localStorage.getItem("userData");
+    const parsedUserData = JSON.parse(userData);
+    const username = parsedUserData.username;
+    return username;    
+  };
+
+  const getApproved = useCallback(() => {
+    const score = parseFloat(calificacion(puntuacion));
+    return score >= 3.0;
+  }, [puntuacion]);
+
+  const [formData, setFormData] = useState({
+    username:"",
+    score: 0,
+    approved: false,    
+    module: "Derechos"
+  });
+
+  useEffect(() => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      username: getUsername(),
+      score: parseFloat(calificacion(puntuacion)),
+      approved: getApproved()
+    }));
+  }, [puntuacion, getApproved]);
+
+  function enviarCalificacion() {
+  listPrueba(2)
+    .then((data) => {
+      console.log('Datos recibidos:', data);
+
+      const username = getUsername();
+      const score = parseFloat(calificacion(puntuacion));
+      const approved = getApproved();
+      const module = "Derechos";
+
+      if (data && data.length > 0) {
+        // Actualizar calificación existente
+        const updatedData = {
+          ...data[0], // Se asume que solo hay un dato de prueba por usuario
+          username,
+          score,
+          approved,
+          module
+        };
+
+       upDatePrueba(updatedData)
+          .then((response) => {
+            // Manejar la respuesta del servidor si es necesario
+            console.log(response);
+          })
+          .catch((error) => {
+            // Manejar el error si ocurre
+            console.error(error);
+          });
+      } else {
+        // Crear nueva calificación
+        const newData = {
+          username,
+          score,
+          approved,
+          module
+        };
+
+        createPrueba(newData)
+          .then((response) => {
+            // Manejar la respuesta del servidor si es necesario
+            console.log(response);
+            setCalificacionEnviada(true); // Marcar la calificación como enviada
+          })
+          .catch((error) => {
+            // Manejar el error si ocurre
+            console.error(error);
+          });
+      }
+    })
+    .catch((error) => {
+      // Manejar el error si ocurre
+      console.error(error);
+    });
+}
+
   if (isFinished)
     return (
       <div className="contenedorHistoria">
@@ -91,6 +178,9 @@ const QuizDerecho = () => {
               }}
             >
               Volver a hacer quiz
+            </button>
+            <button onClick={enviarCalificacion}>
+              Enviar calificacion
             </button>
           </div>
         </div>
