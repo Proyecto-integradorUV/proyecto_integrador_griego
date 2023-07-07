@@ -11,7 +11,7 @@ import Ares from "../components/images/Ares.png";
 import Artemisa from "../components/images/Artemisa.png";
 import Atenea from "../components/images/Atenea.png";
 import Demeter from "../components/images/Demeter.png";
-import Dioniso from "../components/images/Dioniso.png";
+import Dionisio from "../components/images/Dioniso.png";
 import Hades from "../components/images/Hades.png";
 import Hefesto from "../components/images/Hefesto.png";
 import Hera from "../components/images/Hera.png";
@@ -38,7 +38,7 @@ const SignUp = () => {
     { name: "Artemisa", image: Artemisa },
     { name: "Atenea", image: Atenea },
     { name: "Demeter", image: Demeter },
-    { name: "Dioniso", image: Dioniso },
+    { name: "Dionisio", image: Dionisio },
     { name: "Hades", image: Hades },
     { name: "Hefesto", image: Hefesto },
     { name: "Hera", image: Hera },

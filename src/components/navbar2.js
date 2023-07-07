@@ -1,5 +1,12 @@
 import React, { useContext, useState } from "react";
-import { Button, Dropdown, Modal, ModalHeader, ModalBody, ModalFooter } from "react-bootstrap";
+import {
+  Button,
+  Dropdown,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SignInContext } from "../context/signInContext";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +17,7 @@ import Ares from "./images/Ares.png";
 import Artemisa from "./images/Artemisa.png";
 import Atenea from "./images/Atenea.png";
 import Demeter from "./images/Demeter.png";
-import Dioniso from "./images/Dioniso.png";
+import Dionisio from "./images/Dioniso.png";
 import Hades from "./images/Hades.png";
 import Hefesto from "./images/Hefesto.png";
 import Hera from "./images/Hera.png";
@@ -22,7 +29,6 @@ import default_photo from "./images/default_photo.jpg";
 import { updateUser } from "../Services/users";
 
 const NavbarPrincipal = () => {
-
   const { isLogged, setIsLogged } = useContext(SignInContext);
 
   //imagen seleccionada
@@ -32,11 +38,11 @@ const NavbarPrincipal = () => {
 
   const [formData, setFormData] = useState({
     id: null,
-    email: '',
-    first_name: '',
-    last_name: '',
-    username: '',
-    avatar: '',
+    email: "",
+    first_name: "",
+    last_name: "",
+    username: "",
+    avatar: "",
   });
 
   //almacenar avatars por nombres
@@ -47,7 +53,7 @@ const NavbarPrincipal = () => {
     { name: "Artemisa", image: Artemisa },
     { name: "Atenea", image: Atenea },
     { name: "Demeter", image: Demeter },
-    { name: "Dioniso", image: Dioniso },
+    { name: "Dionisio", image: Dionisio },
     { name: "Hades", image: Hades },
     { name: "Hefesto", image: Hefesto },
     { name: "Hera", image: Hera },
@@ -70,7 +76,7 @@ const NavbarPrincipal = () => {
       ...prevState,
       [modalName]: true,
     }));
-  
+
     setFormData((prevFormData) => ({
       ...prevFormData,
       id: userId,
@@ -90,7 +96,7 @@ const NavbarPrincipal = () => {
     const email = parsedUserData.email;
     const avatar = parsedUserData.avatar;
 
-    console.log("getDatos ", id)
+    console.log("getDatos ", id);
     setFormData((prevFormData) => ({
       ...prevFormData,
       id: id,
@@ -171,7 +177,7 @@ const NavbarPrincipal = () => {
 
   const handleSaveProfile = () => {
     const { id, email, first_name, last_name, username, avatar } = formData;
-  
+
     const body = {
       email: email,
       first_name: first_name,
@@ -179,7 +185,7 @@ const NavbarPrincipal = () => {
       username: username,
       avatar: avatar,
     };
-  
+
     updateUser(id, body)
       .then((response) => {
         console.log("Usuario actualizado correctamente:", response);
@@ -192,7 +198,7 @@ const NavbarPrincipal = () => {
         parsedUserData.username = username;
         parsedUserData.avatar = avatar;
         localStorage.setItem("userData", JSON.stringify(parsedUserData));
-  
+
         handleCloseModal("modal");
       })
       .catch((error) => {
@@ -218,11 +224,7 @@ const NavbarPrincipal = () => {
             {isLogged && (
               <div className="userImageContainer">
                 <p>
-                  <img
-                    src={getAvatar()}
-                    alt="Imagen"
-                    className="userImage"
-                  />
+                  <img src={getAvatar()} alt="Imagen" className="userImage" />
                 </p>
               </div>
             )}
@@ -236,7 +238,11 @@ const NavbarPrincipal = () => {
               />
               <Dropdown.Menu>
                 <Dropdown.Item href="/Lecciones">Mi progreso</Dropdown.Item>
-                <Dropdown.Item onClick={() => handleOpenModal("modal", formData && formData.id)}>
+                <Dropdown.Item
+                  onClick={() =>
+                    handleOpenModal("modal", formData && formData.id)
+                  }
+                >
                   Editar usuario
                 </Dropdown.Item>
                 <Dropdown.Item href="/Home">
@@ -316,7 +322,15 @@ const NavbarPrincipal = () => {
               <br />
               <label style={{ color: "black" }}>Seleccione un avatar: </label>
               <br />
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%' }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "10%",
+                  height: "10%",
+                }}
+              >
                 <img
                   onClick={() => handleModalAvatar("modalAvatar")}
                   src={selectedImage}
@@ -325,17 +339,21 @@ const NavbarPrincipal = () => {
                 />
               </div>
               <br />
-              <input type="hidden"
+              <input
+                type="hidden"
                 className="form-control"
                 disabled
                 name="avatar"
                 onChange={handleChange}
-                value={formData && formData.avatar} >
-              </input>
+                value={formData && formData.avatar}
+              ></input>
             </div>
           </ModalBody>
           <ModalFooter>
-            <Button className="btn btn-primary" onClick={() => handleSaveProfile(formData)}>
+            <Button
+              className="btn btn-primary"
+              onClick={() => handleSaveProfile(formData)}
+            >
               Actualizar
             </Button>
             <Button
@@ -346,34 +364,57 @@ const NavbarPrincipal = () => {
             </Button>
           </ModalFooter>
         </Modal>
-
       </div>
 
       <div>
-        <Modal show={modals.modalAvatar} onHide={() => handleCloseModal('modalAvatar')} scrollable={true} size="lg">
+        <Modal
+          show={modals.modalAvatar}
+          onHide={() => handleCloseModal("modalAvatar")}
+          scrollable={true}
+          size="lg"
+        >
           <Modal.Header closeButton>
             <Modal.Title>Selecciona tu avatar</Modal.Title>
           </Modal.Header>
-          <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
+          <Modal.Body
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(7, 2fr)",
+              gap: "10px",
+            }}
+          >
             {avatars.map((avatar, index) => (
               <Link key={index} onClick={() => handleImageSelect(index)}>
-                <img key={index}
+                <img
+                  key={index}
                   src={avatar.image}
                   alt={avatar.name}
-                  className={`avatarImage ${selectedAvatarIndex === index ? "selected" : ""}`}
-                  onClick={() => handleImageSelect(index)} style={{ width: "100%", height: "100%", margin: "auto", borderRadius: "20%" }} />
+                  className={`avatarImage ${
+                    selectedAvatarIndex === index ? "selected" : ""
+                  }`}
+                  onClick={() => handleImageSelect(index)}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    margin: "auto",
+                    borderRadius: "20%",
+                  }}
+                />
               </Link>
             ))}
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={() => handleCloseModal('modalAvatar')}>
+            <Button
+              variant="secondary"
+              onClick={() => handleCloseModal("modalAvatar")}
+            >
               Cerrar
             </Button>
           </Modal.Footer>
         </Modal>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default NavbarPrincipal;
