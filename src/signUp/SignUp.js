@@ -1,30 +1,84 @@
 import "./StyleSignUp.css";
 import backgroundImage from "./Images/temploPoseidon.jpg";
-import { useNavigate } from "react-router-dom"; //aqui Link
-// import { Button, Modal } from "react-bootstrap";
+import { useNavigate, Link } from "react-router-dom";
+import { Button, Modal } from "react-bootstrap";
 import { addUsers } from "../Services/users";
 import { useState } from "react";
 import Swal from "sweetalert2";
-// import avatar1 from "../components/images/Afrodita.png";
-// import avatar2 from "../components/images/Apolo.png";
-// import avatar3 from "../components/images/Ares.png";
-// import avatar4 from "../components/images/Artemisa.png";
-// import avatar5 from "../components/images/Atenea.png";
-// import avatar6 from "../components/images/Demeter.png";
-// import avatar7 from "../components/images/Dioniso.png";
-// import avatar8 from "../components/images/Hades.png";
-// import avatar9 from "../components/images/Hefesto.png";
-// import avatar10 from "../components/images/Hera.png";
-// import avatar11 from "../components/images/Hestia.png";
-// import avatar12 from "../components/images/Poseidon.png";
-// import avatar13 from "../components/images/Zeus.png";
-// import avatar14 from "../components/images/Medusa.png";
-// import defaultPhoto from "../components/images/default_photo.jpg";
+import Afrodita from "../components/images/Afrodita.png";
+import Apolo from "../components/images/Apolo.png";
+import Ares from "../components/images/Ares.png";
+import Artemisa from "../components/images/Artemisa.png";
+import Atenea from "../components/images/Atenea.png";
+import Demeter from "../components/images/Demeter.png";
+import Dioniso from "../components/images/Dioniso.png";
+import Hades from "../components/images/Hades.png";
+import Hefesto from "../components/images/Hefesto.png";
+import Hera from "../components/images/Hera.png";
+import Hestia from "../components/images/Hestia.png";
+import Poseidon from "../components/images/Poseidon.png";
+import Zeus from "../components/images/Zeus.png";
+import Medusa from "../components/images/Medusa.png";
+import default_photo from "../components/images/default_photo.jpg";
 
 const SignUp = () => {
   let navigate = useNavigate();
 
   // const[erros, setErros] = useState()
+
+  //almacenar modals por nombres
+  const [modals, setModals] = useState({
+    modal: false,
+  });
+
+  const avatars = [
+    { name: "Afrodita", image: Afrodita },
+    { name: "Apolo", image: Apolo },
+    { name: "Ares", image: Ares },
+    { name: "Artemisa", image: Artemisa },
+    { name: "Atenea", image: Atenea },
+    { name: "Demeter", image: Demeter },
+    { name: "Dioniso", image: Dioniso },
+    { name: "Hades", image: Hades },
+    { name: "Hefesto", image: Hefesto },
+    { name: "Hera", image: Hera },
+    { name: "Hestia", image: Hestia },
+    { name: "Poseidon", image: Poseidon },
+    { name: "Zeus", image: Zeus },
+    { name: "Medusa", image: Medusa },
+    { name: "default_photo", image: default_photo },
+  ];
+
+  //imagen seleccionada
+  const [selectedImage, setSelectedImage] = useState(default_photo);
+
+  const [selectedAvatarIndex, setSelectedAvatarIndex] = useState(-1);
+
+  // Funciones de manejo para abrir/cerrar cada modal
+  const handleOpenModal = (modalName) => {
+    setModals((prevState) => ({
+      ...prevState,
+      [modalName]: true,
+    }));
+  };
+
+  const handleCloseModal = (modalName) => {
+    setModals((prevState) => ({
+      ...prevState,
+      [modalName]: false,
+    }));
+  };
+
+  const handleImageSelect = (imageIndex) => {
+    setSelectedAvatarIndex(imageIndex);
+    const selectedAvatar = avatars[imageIndex];
+    setSelectedImage(selectedAvatar.image);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      avatar: selectedAvatar.name,
+    }));
+    handleCloseModal("modal");
+  };
 
   const [formData, setFormData] = useState({
     first_name: "",
@@ -32,37 +86,9 @@ const SignUp = () => {
     email: "",
     username: "",
     password: "",
-    // avatar: "",
+    avatar: "default_photo",
     errors: {},
   });
-
-  // //almacenar modals por nombres
-  // const [modals, setModals] = useState({
-  //   modal: false
-  // });
-
-  // //imagen seleccionada
-  // const [selectedImage, setSelectedImage] = useState(defaultPhoto);
-
-  // // Funciones de manejo para abrir/cerrar cada modal
-  // const handleOpenModal = (modalName) => {
-  //     setModals((prevState) => ({
-  //         ...prevState,
-  //         [modalName]: true,
-  //     }));
-  // };
-
-  // const handleCloseModal = (modalName) => {
-  //     setModals((prevState) => ({
-  //         ...prevState,
-  //         [modalName]: false,
-  //     }));
-  // };
-
-  // const handleImageSelect = (imageUrl) => {
-  //   setSelectedImage(imageUrl);
-  //   handleCloseModal('modal');
-  // };
 
   const validateForm = () => {
     const errors = {};
@@ -100,7 +126,10 @@ const SignUp = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -156,7 +185,7 @@ const SignUp = () => {
     Swal.fire({
       icon: "error",
       title: "Algo salió mal",
-      text: "Ocurrió un error al crear el usuario, recuerda que la contraseña es de 8 carácteres",
+      text: "Ocurrió un error al crear el usuario, intenta de nuevo",
       confirmButtonText: "Continuar",
       allowOutsideClick: false,
       showCancelButton: false,
@@ -168,123 +197,167 @@ const SignUp = () => {
       className="contenedorPrincipal"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        width: "100%",
-        height: "100vh",
+        // width: "100%",
+        // height: "100vh",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        position: "relative"
+        position: "relative",
+        display: "flex",
+        justifyContent: "center",
       }}
     >
-    <div className="formContainerWrapper"> {/* Contenedor adicional */}
-      <div className="formContainerSignUp">
-        <form onSubmit={handleSubmit} className="form-group">
-          <h2>Registrate</h2>
-          <label>Nombre: </label>
-          <input
-            type="text"
-            className="form-control"
-            name="first_name"
-            placeholder=" "
-            onChange={handleChange}
-          />
-          {formData.errors.first_name && (
-            <span className="error-message">{formData.errors.first_name}</span>
-          )}
-          <br />
-          <label>Apellido: </label>
-          <input
-            type="text"
-            className="form-control"
-            name="last_name"
-            placeholder=" "
-            onChange={handleChange}
-          />
-          {formData.errors.last_name && (
-            <span class="slert alert-danger">{formData.errors.last_name}</span>
-          )}
-          <br />
-          <label>Correo: </label>
-          <input
-            type="email"
-            className="form-control"
-            name="email"
-            placeholder=" "
-            onChange={handleChange}
-          />
-          {formData.errors.email && (
-            <span className="error-message">{formData.errors.email}</span>
-          )}
-          <br />
-          <label>Username: </label>
-          <input
-            type="text"
-            className="form-control"
-            name="username"
-            placeholder=" "
-            onChange={handleChange}
-          />
-          {formData.errors.username && (
-            <span className="error-message">{formData.errors.username}</span>
-          )}
-          <br />
-          <label>Contraseña: </label>
-          <input
-            type="password"
-            className="form-control"
-            name="password"
-            placeholder="********"
-            onChange={handleChange}
-          />
-          {formData.errors.password && (
-            <span className="error-message">{formData.errors.password}</span>
-          )}
-          <br />
-          {/* <label>Seleccione un avatar: </label>
-          <Link style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%', height: '10%'}}>
-                  <img
-                    onClick={() => handleOpenModal("modal")}
-                    src={selectedImage}
-                    alt="Imagen"
-                    className="userImage"
-                  />
-          </Link>
+      <div className="formContainerWrapper">
+        {" "}
+        {/* Contenedor adicional */}
+        <div className="formContainerSignUp">
+          <form onSubmit={handleSubmit} className="form-group">
+            <h2>Registrate</h2>
+            <label>Nombre: </label>
+            <input
+              type="text"
+              className="form-control"
+              name="first_name"
+              placeholder=" "
+              onChange={handleChange}
+            />
+            {formData.errors.first_name && (
+              <span className="error-message">
+                {formData.errors.first_name}
+              </span>
+            )}
+            <br />
+            <label>Apellido: </label>
+            <input
+              type="text"
+              className="form-control"
+              name="last_name"
+              placeholder=" "
+              onChange={handleChange}
+            />
+            {formData.errors.last_name && (
+              <span className="slert alert-danger">
+                {formData.errors.last_name}
+              </span>
+            )}
+            <br />
+            <label>Correo: </label>
+            <input
+              type="email"
+              className="form-control"
+              name="email"
+              placeholder=" "
+              onChange={handleChange}
+            />
+            {formData.errors.email && (
+              <span className="error-message">{formData.errors.email}</span>
+            )}
+            <br />
+            <label>Username: </label>
+            <input
+              type="text"
+              className="form-control"
+              name="username"
+              placeholder=" "
+              onChange={handleChange}
+            />
+            {formData.errors.username && (
+              <span className="error-message">{formData.errors.username}</span>
+            )}
+            <br />
+            <label>Contraseña: </label>
+            <input
+              type="password"
+              className="form-control"
+              name="password"
+              placeholder="********"
+              onChange={handleChange}
+            />
+            {formData.errors.password && (
+              <span className="error-message">{formData.errors.password}</span>
+            )}
+            <br />
+            <label>Seleccione un avatar: </label>
+            <br />
+            <Link
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "10%",
+                height: "10%",
+              }}
+            >
+              <img
+                onClick={() => handleOpenModal("modal")}
+                src={selectedImage}
+                alt="Imagen"
+                className="userImage"
+              />
+            </Link>
+            <br />
+            <input
+              type="hidden"
+              className="form-control"
+              disabled
+              name="avatar"
+              onChange={handleChange}
+              value={formData.avatar}
+            ></input>
+            <button type="submit">Registarme</button>
+          </form>
           <div>
-              <Modal show={modals.modal} onHide={() => handleCloseModal('modal')} scrollable={true} size="lg">
-                <Modal.Header closeButton>
-                  <Modal.Title>Escoge el avatar deseado :D</Modal.Title>
-                    </Modal.Header>
-                        <Modal.Body style={{ display: "grid", gridTemplateColumns: "repeat(7, 2fr)", gap: "10px" }}>
-                          <Link onClick={() => handleImageSelect(avatar1)}><img src={avatar1} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar2)}><img src={avatar2} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar3)}><img src={avatar3} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar4)}><img src={avatar4} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar5)}><img src={avatar5} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar6)}><img src={avatar6} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar7)}><img src={avatar7} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar8)}><img src={avatar8} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar9)}><img src={avatar9} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar10)}><img src={avatar10} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar11)}><img src={avatar11} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar12)}><img src={avatar12} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar13)}><img src={avatar13} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                          <Link onClick={() => handleImageSelect(avatar14)}><img src={avatar14} alt="Imagen" style={{width: "100%",height: "100%", margin: "auto", borderRadius: "20%"}}/></Link>
-                        </Modal.Body>
-                      <Modal.Footer>
-                      <Button variant="secondary" onClick={() => handleCloseModal('modal')}>
-                        Cerrar
-                      </Button>
-                      </Modal.Footer>
-              </Modal>
+            <Modal
+              show={modals.modal}
+              onHide={() => handleCloseModal("modal")}
+              scrollable={true}
+              size="lg"
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Selecciona tu avatar</Modal.Title>
+              </Modal.Header>
+              <Modal.Body
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(7, 2fr)",
+                  gap: "10px",
+                }}
+              >
+                {avatars.map((avatar, index) => (
+                  <Link key={index} onClick={() => handleImageSelect(index)}>
+                    <img
+                      key={index}
+                      src={avatar.image}
+                      alt={avatar.name}
+                      className={`avatarImage ${
+                        selectedAvatarIndex === index ? "selected" : ""
+                      }`}
+                      onClick={() => handleImageSelect(index)}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        margin: "auto",
+                        borderRadius: "20%",
+                      }}
+                    />
+                  </Link>
+                ))}
+              </Modal.Body>
+              <Modal.Footer>
+                <Button
+                  variant="secondary"
+                  onClick={() => handleCloseModal("modal")}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </div>
-          <br /> */}
-          <button type="submit">Registarme</button>
-        </form>
-        <div class="col-md-10 my-2">
-          <a href="/Home">Regresar</a>
+          <div className="col-md-10 my-2">
+            <a href="/Home">Regresar</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   );
 };
 

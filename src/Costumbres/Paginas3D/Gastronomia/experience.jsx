@@ -8,9 +8,13 @@ import Floor from './Floor';
 import Image from './Image';
 import fondo from '../../Images/grecia.jpg';
 import regresar from "../../../style/botones/regresar.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 
 export default function Experience5() {
+    const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
 
     const containerRef = useRef(null);
 
@@ -58,7 +62,17 @@ export default function Experience5() {
 
     return (
         <>
-        <NavbarPrincipal/>
+        <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
         <div ref={containerRef} className="contenedorLeccionesGastro">
             <button onClick={handleClick} style={buttonStyles} className="regresar-button"><img src={regresar} className="img-fluid" alt="Imagen" /></button>
             <div style={divStyles}> Pasa el mouse por la pared de imágenes </div>

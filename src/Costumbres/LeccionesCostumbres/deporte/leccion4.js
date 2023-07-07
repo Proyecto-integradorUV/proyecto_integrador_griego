@@ -1,13 +1,13 @@
 import "../../../style/css/styleEmpezar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
 import "./leccionesDeporte.css";
 import lecDeporte from "../../../style/titulos/deporte.png";
 import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import anterior from "../../../style/botones/anterior.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import quiz from "../../../style/botones/quiz.png";
 import imagenModal1 from "./images/halterofila.jpg";
 import imagenModal2 from "./images/gim.jpg";
@@ -35,15 +35,29 @@ const LeccionDeporte4 = () => {
   };
 
   // const videoId = 'ioVG56GyvfI'; // ID del video de YouTube que deseas reproducir
+  const url1 = "/Temas/Deporte/Leccion1";
+  const url2 = "/Temas/Deporte/Leccion2";
+  const url3 = "/Temas/Deporte/Leccion3";
+  const url4 = "/Temas/Deporte/Leccion4";
 
   return (
     <div className="container-leccionDeporte">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecDeporte} class="img-fluid" alt="Imagen" />
+      <Navbar4
+        tituloTema="Deporte"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
+      <div className="titulo-empezar">
+        <img src={lecDeporte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -195,7 +209,7 @@ const LeccionDeporte4 = () => {
         <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
           <Carousel
             interval={null}
-            controls={true}
+            controls={false}
             indicators={false}
             className="fondo-card"
           >
@@ -211,7 +225,11 @@ const LeccionDeporte4 = () => {
               >
                 <Card style={{ width: "1000px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>Lección 4: Gimnasia entrenamiento fisico</Card.Title>
+                    <br></br>
+                    <br></br>
+                    <Card.Title>
+                      Lección 4: Gimnasia entrenamiento fisico
+                    </Card.Title>
                     <Card.Text>
                       <b>Gimnasia</b> entrenamiento fisico
                     </Card.Text>
@@ -254,7 +272,7 @@ const LeccionDeporte4 = () => {
                           </p>
                           <img
                             src={imagenModal1}
-                            class="img-fluid"
+                            className="img-fluid"
                             alt="Imagen"
                             style={{
                               width: "40%",
@@ -286,12 +304,12 @@ const LeccionDeporte4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Deporte/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Deporte">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Deporte/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

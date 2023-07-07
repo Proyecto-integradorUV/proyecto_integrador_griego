@@ -6,14 +6,14 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import mitologia from "./imagesLec1/fondo.jpg";
 import dioses from "./imagesLec1/dioses2.jpg";
 import dragones from "./imagesLec1/dragones.jpg";
 import origen from "./imagesLec1/origen.webp";
-import anterior from "../../../style/botones/anterior.png";
 import caballo from "./imagesLec1/caballoTroya.webp";
 import quiz from "../../../style/botones/quiz.png";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionMitologia3 = () => {
   const [modals, setModals] = useState({
@@ -42,11 +42,11 @@ const LeccionMitologia3 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -222,6 +222,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.1
+                      </span>{" "}
                       Abordaremos sobre el origen del mundo como mito de la
                       mitología griega
                     </Card.Text>
@@ -249,11 +252,11 @@ const LeccionMitologia3 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Principales mitos de la mitologia griega.
+                            3.1 Principales mitos de la mitologia griega.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Mito de la creación según Hesíodo
                           </h2>
                           <p>
@@ -321,6 +324,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.2
+                      </span>{" "}
                       Hablaremos sobre la guerra de troya y sucesos relacionados
                       a esta
                     </Card.Text>
@@ -348,11 +354,11 @@ const LeccionMitologia3 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Principales mitos de la mitologia griega.
+                            3.2 Principales mitos de la mitologia griega.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">La guerra de troya</h2>
+                          <h2 className="text-center">La guerra de troya</h2>
                           <p>
                             La guerra de Troya es uno de los episodios más
                             famosos de la mitología griega y ha sido ampliamente
@@ -447,6 +453,9 @@ const LeccionMitologia3 = () => {
                       Lección 3: Principales mitos de la mitología griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        3.3
+                      </span>{" "}
                       Hablaremos sobre el amor y la tragedia
                     </Card.Text>
                     <div
@@ -473,11 +482,11 @@ const LeccionMitologia3 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Principales mitos de la mitologia griega.
+                            3.3 Principales mitos de la mitologia griega.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Amor y tragedia</h2>
+                          <h2 className="text-center">Amor y tragedia</h2>
                           <p>
                             El amor y la tragedia son temas recurrentes en los
                             mitos de la mitología griega. Estos relatos
@@ -488,7 +497,7 @@ const LeccionMitologia3 = () => {
                             ejemplos notables:
                           </p>
                           <br></br>
-                          <h3 class="text-center">Orfeo y Eurídice</h3>
+                          <h3 className="text-center">Orfeo y Eurídice</h3>
                           <p>
                             Orfeo era un talentoso músico y poeta, y Eurídice
                             era su amada esposa. Cuando Eurídice murió por una
@@ -547,12 +556,12 @@ const LeccionMitologia3 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Leccion2">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
+      <div className="botones-lecciones">
         <Link to="/Temas/Mitologia/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
+        </Link>
+        <Link to="/Temas/Mitologia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

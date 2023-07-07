@@ -14,9 +14,9 @@ import literatura9 from "./images/literatura9.jpeg";
 import literatura10 from "./images/literatura10.jpg";
 import literatura12 from "./images/literatura12.jpg";
 import literatura from "../../../style/titulos/literatura.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarLite from "../../../components/navLite";
 import quiz from "../../../style/botones/quiz.png";
 
 const LeccionLiteratura2 = () => {
@@ -47,12 +47,12 @@ const LeccionLiteratura2 = () => {
 
   return (
     <div className="contenedorArte">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={literatura} class="img-fluid" alt="Imagen" />
+      <NavbarLite />
+      <div className="titulo-empezar">
+        <img src={literatura} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -290,10 +290,16 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia (épica)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la poesía épica</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
+                      Breve introducción a la poesía épica
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -318,10 +324,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Poesía épica en la antigua grecia.
+                            2.1 Poesía épica en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Poesía épica</h2>
                           <img
                             src={literatura2}
                             alt="Imagen"
@@ -368,11 +375,17 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia
                       (tragedia)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la tragedia</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
+                      Breve introducción a la tragedia
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -397,10 +410,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Tragedia en la antigua grecia.
+                            2.2 Tragedia en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Tragedia</h2>
                           <img
                             src={literatura9}
                             alt="Imagen"
@@ -448,11 +462,17 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia
                       (comedia)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la comedia</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.3
+                      </span>{" "}
+                      Breve introducción a la comedia
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -477,10 +497,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Comedia en la antigua grecia.
+                            2.3 Comedia en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Comedia</h2>
                           <img
                             src={literatura10}
                             alt="Imagen"
@@ -528,11 +549,17 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia
                       (filosofía)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la filosofía</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.4
+                      </span>{" "}
+                      Breve introducción a la filosofía
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -557,10 +584,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Filosofía en la antigua grecia.
+                            2.4 Filosofía en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Filosofía</h2>
                           <img
                             src={literatura3}
                             alt="Imagen"
@@ -610,11 +638,17 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia
                       (historia)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la historia</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.5
+                      </span>{" "}
+                      Breve introducción a la historia
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -639,10 +673,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Historia en la antigua grecia.
+                            2.5 Historia en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Historia</h2>
                           <img
                             src={literatura5}
                             alt="Imagen"
@@ -691,11 +726,17 @@ const LeccionLiteratura2 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
                       Lección 2: Generos literarios en la antigua grecia
                       (lirica)
                     </Card.Title>
-                    <Card.Text>Breve introducción a la lirica</Card.Text>
+                    <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.6
+                      </span>{" "}
+                      Breve introducción a la lirica
+                    </Card.Text>
                     <div
                       style={{
                         display: "flex",
@@ -720,10 +761,11 @@ const LeccionLiteratura2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Poesía lírica en la antigua grecia.
+                            2.6 Poesía lírica en la antigua grecia.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Poesía lírica</h2>
                           <img
                             src={literatura12}
                             alt="Imagen"
@@ -760,12 +802,12 @@ const LeccionLiteratura2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Literatura/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Literatura">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Literatura/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

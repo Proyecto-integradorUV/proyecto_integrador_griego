@@ -5,17 +5,21 @@ import React, { useState } from "react";
 import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import imagen1 from "./images/almuerzo.jpg";
 import imagen2 from "./images/griego2.webp";
 import imagen3 from "./images/mediterraneo.jpg";
 import imagen4 from "./images/griegos.jpg";
 import imagen5 from "./images/plato2.webp";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import lecGastronomia from "../../../style/titulos/gastronomia.png";
 
 const LeccionGastronomia2 = () => {
+  const url1 = "/Temas/Gastronomia/Leccion1";
+  const url2 = "/Temas/Gastronomia/Leccion2";
+  const url3 = "/Temas/Gastronomia/Leccion3";
+  const url4 = "/Temas/Gastronomia/Leccion4";
+
   const [modals, setModals] = useState({
     modal1: false,
     modal2: false,
@@ -41,12 +45,22 @@ const LeccionGastronomia2 = () => {
 
   return (
     <div className="contenedorLeccionesGastro">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecGastronomia} class="img-fluid" alt="Imagen" />
+      <Navbar4
+        tituloTema="Gastronomia"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
+      <div className="titulo-empezar">
+        <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -253,6 +267,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
                       Hablaremos sobre los productos agrícolas los cuales son la
                       clave en la cocina griega (aceite de oliva, aceitunas,
                       hierbas, verduras, etc.)
@@ -281,11 +298,11 @@ const LeccionGastronomia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
+                            2.1 Productos clave en la cocina griega
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Productos agrícolas clave en la cocina griega
                           </h2>
                           <p>
@@ -415,6 +432,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
                       Hablaremos sobre los productos lácteos y quesos griegos
                       (feta, yogur, etc.).
                     </Card.Text>
@@ -441,9 +461,7 @@ const LeccionGastronomia2 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
-                          </Modal.Title>
+                          <Modal.Title>2.2 Quesos, leche y más</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <h2>Productos lácteos y quesos griegos</h2>
@@ -539,6 +557,9 @@ const LeccionGastronomia2 = () => {
                       Lección 2: Ingredientes y productos básicos
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.3
+                      </span>{" "}
                       Hablaremos sobre el pan y otros productos de panadería
                       griegos.
                     </Card.Text>
@@ -566,13 +587,10 @@ const LeccionGastronomia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Lección 2: Ingredientes y productos básicos
+                            2.3 Pan y otros productos de panadería griegos
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            Pan y otros productos de panadería griegos.
-                          </h2>
                           <p>
                             El pan y los productos de panadería tienen una larga
                             tradición en la cocina griega. Estos son algunos de
@@ -653,12 +671,9 @@ const LeccionGastronomia2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Gastronomia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Gastronomia/Leccion3">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Gastronomia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

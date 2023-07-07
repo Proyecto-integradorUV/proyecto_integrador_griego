@@ -11,12 +11,17 @@ import derecho4 from "./images/derecho4.jpg";
 import derecho5 from "./images/derecho5.jpg";
 import derecho6 from "./images/derecho6.jpg";
 import derechos from "../../../style/titulos/derechos.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
 import quiz from "../../../style/botones/quiz.png";
+import Navbar4 from "../../../components/navbar4";
 
 const LeccionDerecho4 = () => {
+  const url1 = "/Temas/Derecho/Leccion1";
+  const url2 = "/Temas/Derecho/Leccion2";
+  const url3 = "/Temas/Derecho/Leccion3";
+  const url4 = "/Temas/Derecho/Leccion4";
+
   //almacenar modals por nombres
   const [modals, setModals] = useState({
     modal1: false,
@@ -40,12 +45,22 @@ const LeccionDerecho4 = () => {
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={derechos} class="img-fluid" alt="Imagen" />
+      <Navbar4
+        tituloTema="Derecho"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
+      <div className="titulo-empezar">
+        <img src={derechos} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -283,10 +298,15 @@ const LeccionDerecho4 = () => {
               >
                 <Card style={{ width: "400", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación del estado moderno
+                      Lección 4: La lucha por la independencia y la formación
+                      del estado moderno
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.1
+                      </span>{" "}
                       Movimiento de independencia griego y su influencia en el
                       desarrollo de los derechos
                     </Card.Text>
@@ -314,11 +334,12 @@ const LeccionDerecho4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Movimiento de independencia griego y su influencia
-                            en el desarrollo de los derechos.
+                            4.1 Movimiento de independencia griego y su
+                            influencia en el desarrollo de los derechos.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Independencia</h2>
                           <p>
                             <img
                               src={derecho1}
@@ -410,10 +431,15 @@ const LeccionDerecho4 = () => {
               >
                 <Card style={{ width: "400px", height: "300px" }}>
                   <Card.Body>
+                    <br></br>
                     <Card.Title>
-                      Lección 4: La lucha por la independencia y la formación del estado moderno
+                      Lección 4: La lucha por la independencia y la formación
+                      del estado moderno
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.2
+                      </span>{" "}
                       La primera constitución de Grecia y los derechos
                       establecidos en ella.
                     </Card.Text>
@@ -441,11 +467,12 @@ const LeccionDerecho4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            La primera constitución de Grecia y los derechos
+                            4.2 La primera constitución de Grecia y los derechos
                             establecidos en ella.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Constitución</h2>
                           <p>
                             La primera Constitución de Grecia, conocida como la
                             "Constitución de Epidauro", fue promulgada en enero
@@ -513,12 +540,12 @@ const LeccionDerecho4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
+      <div className="botones-lecciones">
         <Link to="/Temas/Derecho/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Derecho/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

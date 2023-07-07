@@ -14,8 +14,8 @@ const LeccionesVestimenta = () => {
     return (
         <div className="contenedorLecciones-vestimenta">
             <NavbarPrincipal/>
-            <div class="titulo-lecciones-vestimenta">
-                <img src={titulo} class="img-fluid" alt="Imagen" />
+            <div className="titulo-lecciones-vestimenta">
+                <img src={titulo} className="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}
             <div className="carousel-container" >
@@ -32,8 +32,8 @@ const LeccionesVestimenta = () => {
                                     • Descripción de los materiales utilizados en la ropa griega y su simbolismo
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion1" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Vestimenta/Leccion1" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -49,8 +49,8 @@ const LeccionesVestimenta = () => {
                                     • Explicación de cómo se usaban estas prendas y cómo variaban según la clase social
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion2" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Vestimenta/Leccion2" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -68,8 +68,8 @@ const LeccionesVestimenta = () => {
                                     • Importancia de la vestimenta en la vida de las mujeres griegas y su papel en la sociedad
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion3" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Vestimenta/Leccion3" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -85,8 +85,8 @@ const LeccionesVestimenta = () => {
                                     • Significado simbólico de estos accesorios y cómo complementaban la vestimenta
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Vestimenta/Leccion4" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Vestimenta/Leccion4" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>

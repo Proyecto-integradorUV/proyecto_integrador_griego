@@ -21,8 +21,7 @@ import Medusa from "./images/Medusa.png";
 import default_photo from "./images/default_photo.jpg";
 import { updateUser } from "../Services/users";
 
-const NavbarPrincipal = () => {
-
+const NavbarMito = () => {
   const { isLogged, setIsLogged } = useContext(SignInContext);
 
   //imagen seleccionada
@@ -261,6 +260,37 @@ const NavbarPrincipal = () => {
               Temas
             </a>
           </li>
+          <li className="navbarItemPrincipal">
+            <Dropdown className="custom-dropdown">
+              <Dropdown.Toggle
+                variant="light"
+                id="dropdownMenu"
+                className="custom-toggle"
+              >
+                <span className="navbarLinkPrincipal navbar-home">
+                  Lecciones
+                </span>
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="custom-menu">
+                <div className="row">
+                  <div className="col">
+                    <h5>Mitología</h5>
+                    <ul>
+                      <li>
+                        <a href="/Temas/Mitologia/Leccion1">Lección 1</a>
+                      </li>
+                      <li>
+                        <a href="/Temas/Mitologia/Leccion2">Lección 2</a>
+                      </li>
+                      <li>
+                        <a href="/Temas/Mitologia/Leccion3">Lección 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
+          </li>
         </ul>
       </nav>
       <div>
@@ -373,7 +403,7 @@ const NavbarPrincipal = () => {
         </Modal>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarPrincipal;
+export default NavbarMito;

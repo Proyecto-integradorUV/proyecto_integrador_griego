@@ -6,9 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
-import siguiente from "../../../style/botones/siguiente.png";
-import anterior from "../../../style/botones/anterior.png";
+import NavbarPrincipal from "../../../components/navMito";
 import ImagenCaoursel from "./componenteimagenes";
 import zeus from "./imagesLec1/zeus.png";
 import hera from "./imagesLec1/hera.png";
@@ -22,6 +20,7 @@ import ares from "./imagesLec1/ares.png";
 import apolo from "./imagesLec1/apolo.png";
 import gordo from "./imagesLec1/el.png";
 import hades from "./imagesLec1/hades.png";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionMitologia2 = () => {
   const [modals, setModals] = useState({
@@ -49,11 +48,11 @@ const LeccionMitologia2 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -395,6 +394,9 @@ const LeccionMitologia2 = () => {
                     <br></br>
                     <Card.Title>Lección 2: Más sobre Dioses</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.1
+                      </span>{" "}
                       Conoce mas de los 6 principales dioses que hay en la
                       mitología griega
                     </Card.Text>
@@ -422,11 +424,12 @@ const LeccionMitologia2 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Introducción la edad de los dioses y los humanos.
+                            2.1 Introducción la edad de los dioses y los
+                            humanos.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             Dioses importantes de la mitología griega
                           </h2>
                           <br></br>
@@ -582,6 +585,9 @@ const LeccionMitologia2 = () => {
                     <br></br>
                     <Card.Title>Lección 2: Más sobre Dioses</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        2.2
+                      </span>{" "}
                       Abordaremos sobre el resto de historia de los otros 6
                       dioses
                     </Card.Text>
@@ -608,9 +614,9 @@ const LeccionMitologia2 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>Dioses</Modal.Title>
+                          <Modal.Title>2.2 Dioses</Modal.Title>
                         </Modal.Header>
-                        <h2 class="text-center">
+                        <h2 className="text-center">
                           Dioses importantes de la mitología griega
                         </h2>
                         <Modal.Body>
@@ -753,12 +759,9 @@ const LeccionMitologia2 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Leccion1">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Mitologia/Leccion3">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Mitologia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

@@ -7,7 +7,7 @@ import Floor from './Floor';
 import Image from './Image';
 import fondo from '../../Images/grecia.jpg';
 import regresar from "../../../style/botones/regresar.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import { useNavigate } from 'react-router-dom';
 
 export default function Experience6() {

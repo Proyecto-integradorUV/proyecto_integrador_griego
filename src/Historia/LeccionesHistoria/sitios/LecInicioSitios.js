@@ -13,8 +13,8 @@ const LeccionesSitio = () => {
     return (
         <div className="contenedorLecciones-sitios">
             <NavbarPrincipal/>
-            <div class="titulo-lecciones-sitios">
-                <img src={titulo} class="img-fluid" alt="Imagen" />
+            <div className="titulo-lecciones-sitios">
+                <img src={titulo} className="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}
             <div className="carousel-container" >
@@ -31,8 +31,8 @@ const LeccionesSitio = () => {
                                     • Destacar la importancia de los sitios característicos en la comprensión de la historia y la cultura griega
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/SitiosCaracteristicos/Leccion1" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion1" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -50,8 +50,8 @@ const LeccionesSitio = () => {
                                     • Discusión sobre el estilo arquitectónico de los templos griegos y su significado cultural
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/SitiosCaracteristicos/Leccion2" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion2" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -69,8 +69,8 @@ const LeccionesSitio = () => {
                                     • Explicación del papel del oráculo de Delfos en la toma de decisiones políticas y religiosas en la antigüedad
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/SitiosCaracteristicos/Leccion3" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion3" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -88,8 +88,8 @@ const LeccionesSitio = () => {
                                     • Discusión sobre la arquitectura tradicional de las islas, las playas, la gastronomía y las actividades culturales y recreativas disponibles
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/SitiosCaracteristicos/Leccion4" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/SitiosCaracteristicos/Leccion4" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
