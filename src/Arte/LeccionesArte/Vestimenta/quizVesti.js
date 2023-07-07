@@ -1,7 +1,7 @@
 import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import lecGastronomia from "../../../style/titulos/vestimenta.png";
 import {
   createPrueba,
@@ -19,6 +19,11 @@ const QuizVesti = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
+
+  const url1 = "/Temas/Vestimenta/Leccion1";
+  const url2 = "/Temas/Vestimenta/Leccion2";
+  const url3 = "/Temas/Vestimenta/Leccion3";
+  const url4 = "/Temas/Vestimenta/Leccion4";
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -172,7 +177,17 @@ const QuizVesti = () => {
   if (isFinished)
     return (
       <div className="contenedorLecciones-vestimenta">
-        <NavbarPrincipal />
+        <Navbar4
+          tituloTema="Vestimenta"
+          url1={url1}
+          tituloLeccion1="Leccion1"
+          url2={url2}
+          tituloLeccion2="Leccion2"
+          url3={url3}
+          tituloLeccion3="Leccion3"
+          url4={url4}
+          tituloLeccion4="Leccion4"
+        />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
         </div>
@@ -197,7 +212,17 @@ const QuizVesti = () => {
 
   return (
     <div className="contenedorLecciones-vestimenta">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Vestimenta"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>

@@ -1,7 +1,7 @@
 import preguntas from "./preguntasFilo";
 import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import titulo from "../../../style/titulos/filosofia.png";
 import {
   createPrueba,
@@ -19,6 +19,11 @@ const QuizFilosofia = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
+
+  const url1 = "/Temas/Filosofia/Leccion1";
+  const url2 = "/Temas/Filosofia/Leccion2";
+  const url3 = "/Temas/Filosofia/Leccion3";
+  const url4 = "/Temas/Filosofia/Leccion4";
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -174,7 +179,17 @@ const QuizFilosofia = () => {
 
     return (
       <div className="contenedorHistoria">
-        <NavbarPrincipal />
+        <Navbar4
+          tituloTema="Filosofía"
+          url1={url1}
+          tituloLeccion1="Leccion1"
+          url2={url2}
+          tituloLeccion2="Leccion2"
+          url3={url3}
+          tituloLeccion3="Leccion3"
+          url4={url4}
+          tituloLeccion4="Leccion4"
+        />
         <div className="titulo-empezar">
           <img src={titulo} className="img-fluid" alt="Imagen" />
         </div>
@@ -200,7 +215,17 @@ const QuizFilosofia = () => {
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Filosofía"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div className="titulo-empezar">
         <img src={titulo} className="img-fluid" alt="Imagen" />
       </div>

@@ -2,7 +2,6 @@ import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
 import "../../../style/css/contenedores.css";
 import { useState, useEffect, useCallback } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/arte.png";
 import {
   createPrueba,
@@ -10,6 +9,7 @@ import {
   upDatePrueba,
 } from "../../../Services/users";
 import Swal from "sweetalert2";
+import NavbarArte from "../../../components/navArte";
 
 const QuizArte = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -174,7 +174,7 @@ const QuizArte = () => {
   if (isFinished)
     return (
       <div className="contenedor-inicial-arte">
-        <NavbarPrincipal />
+        <NavbarArte />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
         </div>
@@ -199,7 +199,7 @@ const QuizArte = () => {
 
   return (
     <div className="contenedor-inicial-arte">
-      <NavbarPrincipal />
+      <NavbarArte />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
