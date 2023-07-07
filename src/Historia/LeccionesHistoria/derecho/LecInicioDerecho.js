@@ -11,8 +11,8 @@ const LeccionesDerecho = () => {
     return (
         <div className="contenedorHistoria">
             <NavbarPrincipal/>
-            <div class="titulo-lecciones">
-                <img src={titulo} class="img-fluid" alt="Imagen" />
+            <div className="titulo-lecciones">
+                <img src={titulo} className="img-fluid" alt="Imagen" />
             </div>
             <div className="carousel-container abs-center" >
                 <Carousel interval={null} controls={true} indicators={false}>
@@ -26,8 +26,8 @@ const LeccionesDerecho = () => {
                                     • Presentar una breve introducción a la historia de Grecia y su influencia en la concepción de los derechos.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Derecho/Leccion1" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Derecho/Leccion1" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -45,8 +45,8 @@ const LeccionesDerecho = () => {
                                     • Discutir las limitaciones y exclusiones en los derechos en la antigua Grecia.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Derecho/Leccion2" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Derecho/Leccion2" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -62,8 +62,8 @@ const LeccionesDerecho = () => {
                                     • Destacar los cambios y las restricciones impuestas durante estos períodos.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Derecho/Leccion3" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Derecho/Leccion3" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -79,8 +79,8 @@ const LeccionesDerecho = () => {
                                     • Presentar la primera constitución de Grecia y los derechos establecidos en ella.                                  
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Derecho/Leccion4" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Derecho/Leccion4" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>

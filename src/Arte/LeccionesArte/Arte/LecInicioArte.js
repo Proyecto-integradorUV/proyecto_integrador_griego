@@ -10,10 +10,10 @@ import NavbarPrincipal from "../../../components/navbar2";
 const LeccionesArte = () => {
 
     return (
-        <div className="contenedorArte">
+        <div className="contenedor-inicial-arte">
             <NavbarPrincipal />
-            <div class="titulo-lecciones">
-                <img src={titulo} class="img-fluid" alt="Imagen" />
+            <div className="titulo-lecciones">
+                <img src={titulo} className="img-fluid" alt="Imagen" />
             </div>
             <div className="carousel-container abs-center" >
                 <Carousel interval={null} controls={true} indicators={false}>
@@ -27,8 +27,8 @@ const LeccionesArte = () => {
                                     • Mención de los períodos artísticos clave, como el arte arcaico, clásico y helenístico.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion1" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion1" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -46,8 +46,8 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de la arquitectura griega, como el Partenón.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion2" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion2" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -65,8 +65,8 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de esculturas griegas, como la Venus de Milo y el Discóbolo.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion3" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion3" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -84,8 +84,8 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de pinturas y cerámicas griegas, como las ánforas y las vasijas de figuras rojas.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion4" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion4" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -103,8 +103,8 @@ const LeccionesArte = () => {
                                     • Ejemplos destacados de obras literarias y teatrales griegas, como la Ilíada, la Odisea y las tragedias de Sófocles.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion5" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion5" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -122,8 +122,8 @@ const LeccionesArte = () => {
                                     • Ejemplos de danzas y melodías griegas.
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Arte/Leccion6" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Arte/Leccion6" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>

@@ -6,8 +6,8 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecHistoria from "../../../style/titulos/filosofia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
-import anterior from "../../../style/botones/anterior.png";
+import Navbar4 from "../../../components/navbar4";
+import inicio from "../../../style/botones/inicio.png";
 import imagen1 from "./Images/filo.jpg";
 import imagen2 from "./Images/filo2.png";
 import imagen3 from "./Images/filo3.webp";
@@ -39,14 +39,29 @@ const LeccionFilosofia4 = () => {
     }));
   };
 
+  const url1 = "/Temas/Filosofia/Leccion1";
+  const url2 = "/Temas/Filosofia/Leccion2";
+  const url3 = "/Temas/Filosofia/Leccion3";
+  const url4 = "/Temas/Filosofia/Leccion4";
+
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecHistoria} class="img-fluid" alt="Imagen" />
+      <Navbar4
+        tituloTema="Filosofía"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
+      <div className="titulo-empezar">
+        <img src={lecHistoria} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -252,6 +267,9 @@ const LeccionFilosofia4 = () => {
                     <br></br>
                     <Card.Title>Leccion 4: El período neoplatónico</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.1
+                      </span>{" "}
                       Daremos una breve <b>introducción</b> del período
                       neoplatónico
                     </Card.Text>
@@ -278,12 +296,10 @@ const LeccionFilosofia4 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>
-                            Leccion 4: El período neoplatónico
-                          </Modal.Title>
+                          <Modal.Title>4.1 El período neoplatónico</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">Introducción</h2>
+                          <h2 className="text-center">Introducción</h2>
                           <br></br>
                           <img
                             src={neoplatonismo}
@@ -335,6 +351,9 @@ const LeccionFilosofia4 = () => {
                     <br></br>
                     <Card.Title>Leccion 4: El período neoplatónico</Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        4.2
+                      </span>{" "}
                       Hablaremos sobre las principales <b>características</b>{" "}
                       del período neoplatónico
                     </Card.Text>
@@ -362,13 +381,10 @@ const LeccionFilosofia4 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Leccion 4: El período neoplatónico
+                            4.2 Características del período neoplatónico
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
-                            Características del período neoplatónico
-                          </h2>
                           <br></br>
                           <img
                             src={neoplatonismo}
@@ -462,12 +478,12 @@ const LeccionFilosofia4 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Filosofia/Leccion3">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Filosofia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Filosofia/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

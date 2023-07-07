@@ -21,8 +21,7 @@ import Medusa from "./images/Medusa.png";
 import default_photo from "./images/default_photo.jpg";
 import { updateUser } from "../Services/users";
 
-const NavbarPrincipal = () => {
-
+const NavbarLite = () => {
   const { isLogged, setIsLogged } = useContext(SignInContext);
 
   //imagen seleccionada
@@ -70,7 +69,7 @@ const NavbarPrincipal = () => {
       ...prevState,
       [modalName]: true,
     }));
-  
+
     setFormData((prevFormData) => ({
       ...prevFormData,
       id: userId,
@@ -171,7 +170,7 @@ const NavbarPrincipal = () => {
 
   const handleSaveProfile = () => {
     const { id, email, first_name, last_name, username, avatar } = formData;
-  
+
     const body = {
       email: email,
       first_name: first_name,
@@ -179,7 +178,7 @@ const NavbarPrincipal = () => {
       username: username,
       avatar: avatar,
     };
-  
+
     updateUser(id, body)
       .then((response) => {
         console.log("Usuario actualizado correctamente:", response);
@@ -192,7 +191,7 @@ const NavbarPrincipal = () => {
         parsedUserData.username = username;
         parsedUserData.avatar = avatar;
         localStorage.setItem("userData", JSON.stringify(parsedUserData));
-  
+
         handleCloseModal("modal");
       })
       .catch((error) => {
@@ -260,6 +259,34 @@ const NavbarPrincipal = () => {
             <a href="/Temas" className="navbarLinkPrincipal navbar-home">
               Temas
             </a>
+          </li>
+          <li className="navbarItemPrincipal">
+            <Dropdown className="custom-dropdown">
+              <Dropdown.Toggle
+                variant="light"
+                id="dropdownMenu"
+                className="custom-toggle"
+              >
+                <span className="navbarLinkPrincipal navbar-home">
+                  Lecciones
+                </span>
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="custom-menu">
+                <div className="row">
+                  <div className="col">
+                    <h5>Literatura</h5>
+                    <ul>
+                      <li>
+                        <a href="/Temas/Literatura/Leccion1">Lección1</a>
+                      </li>
+                      <li>
+                        <a href="/Temas/Literatura/Leccion2">Lección2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
           </li>
         </ul>
       </nav>
@@ -373,7 +400,7 @@ const NavbarPrincipal = () => {
         </Modal>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarPrincipal;
+export default NavbarLite;

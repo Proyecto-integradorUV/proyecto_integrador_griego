@@ -11,10 +11,10 @@ import Arte4 from "./images/Arte4.jpg";
 import Arte5 from "./images/Arte5.jpg";
 import Arte6 from "./images/Arte6.png";
 import arte from "../../../style/titulos/arte.png";
-import anterior from "../../../style/botones/anterior.png";
+import inicio from "../../../style/botones/inicio.png";
 import quiz from "../../../style/botones/quiz.png";
 import video from "../../../style/botones/ver_video.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarArte from "../../../components/navArte";
 import YouTube from "react-youtube";
 
 const LeccionArte6 = () => {
@@ -41,13 +41,13 @@ const LeccionArte6 = () => {
   const videoId = "ioVG56GyvfI"; // ID del video de YouTube que deseas reproducir
 
   return (
-    <div className="contenedorArte">
-      <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={arte} class="img-fluid" alt="Imagen" />
+    <div className="contenedor-inicial-arte">
+      <NavbarArte />
+      <div className="titulo-empezar">
+        <img src={arte} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -269,7 +269,7 @@ const LeccionArte6 = () => {
         <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
           <Carousel
             interval={null}
-            controls={true}
+            controls={false}
             indicators={false}
             className="fondo-card"
           >
@@ -285,9 +285,8 @@ const LeccionArte6 = () => {
               >
                 <Card style={{ width: "600px", height: "300px" }}>
                   <Card.Body>
-                    <Card.Title>
-                    Lección 6: Danza y música griega
-                    </Card.Title>
+                    <br></br>
+                    <Card.Title>Lección 6: Danza y música griega</Card.Title>
                     <Card.Text>
                       Danza y música griega: Vídeo explicativo
                     </Card.Text>
@@ -319,6 +318,7 @@ const LeccionArte6 = () => {
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <h2 className="text-center">Vídeo introductorio</h2>
                           <YouTube
                             videoId={videoId}
                             opts={{ width: "100%", height: "100%" }}
@@ -341,12 +341,12 @@ const LeccionArte6 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Arte/Leccion5">
-          <img src={anterior} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Arte">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
         <Link to="/Temas/Arte/Quiz">
-          <img src={quiz} class="img-fluid" alt="Imagen" />
+          <img src={quiz} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

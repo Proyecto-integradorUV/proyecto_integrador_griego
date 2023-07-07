@@ -6,7 +6,7 @@ import { Carousel, Card, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import lecMitologia from "../../../style/titulos/mitologia.png";
 import informacion from "../../../style/botones/informacion.png";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarPrincipal from "../../../components/navMito";
 import mitologia from "./imagesLec1/fondo.jpg";
 import dioses from "./imagesLec1/dioses2.jpg";
 import dragones from "./imagesLec1/dragones.jpg";
@@ -14,8 +14,8 @@ import origen from "./imagesLec1/origen.webp";
 import dios1 from "./imagesLec1/zeus.png";
 import dios5 from "./imagesLec1/atenea.png";
 import dios6 from "./imagesLec1/afrodita.png";
-import siguiente from "../../../style/botones/siguiente.png";
 import diosesHumanos from "./imagesLec1/diosesHumanos.jpeg";
+import inicio from "../../../style/botones/inicio.png";
 
 const LeccionMitologia1 = () => {
   const [modals, setModals] = useState({
@@ -44,11 +44,11 @@ const LeccionMitologia1 = () => {
   return (
     <div className="contenedorLeccionesMito">
       <NavbarPrincipal />
-      <div class="titulo-empezar">
-        <img src={lecMitologia} class="img-fluid" alt="Imagen" />
+      <div className="titulo-empezar">
+        <img src={lecMitologia} className="img-fluid" alt="Imagen" />
       </div>
       <div className="row align-items-center" style={{ marginTop: "0px" }}>
-        <div class="col-sm-5 col-md-6 ">
+        <div className="col-sm-5 col-md-6 ">
           <Carousel
             interval={2000}
             controls={true}
@@ -224,6 +224,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega.
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.1
+                      </span>{" "}
                       Abordaremos sobre el porqué de la existencia de los
                       objetos o seres vivos y el origen de los primeros Dioses.
                     </Card.Text>
@@ -251,11 +254,11 @@ const LeccionMitologia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Los mitos de origen y nacimiento de los dioses.
+                            1.1 Los mitos de origen y nacimiento de los dioses.
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">El principio del mundo</h2>
+                          <h2 className="text-center"> El principio del mundo</h2>
                           <p>
                             La edad de los Dioses es el nombre que recibe la
                             primera etapa de la mitología griega, a la que
@@ -382,6 +385,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.2
+                      </span>{" "}
                       Se mencionará sobre la "Edad de Oro" o "Edad de
                       Convivencia" entre dioses y humanos.
                     </Card.Text>
@@ -408,10 +414,10 @@ const LeccionMitologia1 = () => {
                         size="lg"
                       >
                         <Modal.Header closeButton>
-                          <Modal.Title>La edad de los Dioses</Modal.Title>
+                          <Modal.Title>1.2 La edad de los Dioses</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">
+                          <h2 className="text-center">
                             La edad de convivencia entre dioses y humanos.
                           </h2>
                           <br></br>
@@ -484,6 +490,9 @@ const LeccionMitologia1 = () => {
                       Lección 1: Periodos de la mitologia Griega
                     </Card.Title>
                     <Card.Text>
+                      <span style={{ fontWeight: "bold", color: "#bd795c" }}>
+                        1.3
+                      </span>{" "}
                       Hablaremos sobre la tercer periodo el cual es la edad
                       heroica griega.
                     </Card.Text>
@@ -511,11 +520,11 @@ const LeccionMitologia1 = () => {
                       >
                         <Modal.Header closeButton>
                           <Modal.Title>
-                            Periodos de la mitología griega
+                            1.3 Periodos de la mitología griega
                           </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <h2 class="text-center">La edad heroica griega.</h2>
+                          <h2 className="text-center">La edad heroica griega.</h2>
                           <p>
                             La Edad Heroica es un período en la mitología griega
                             que se considera posterior a la Edad de Oro. La Edad
@@ -544,9 +553,9 @@ const LeccionMitologia1 = () => {
           </Carousel>
         </div>
       </div>
-      <div class="botones-lecciones">
-        <Link to="/Temas/Mitologia/Leccion2">
-          <img src={siguiente} class="img-fluid" alt="Imagen" />
+      <div className="botones-lecciones">
+        <Link to="/Temas/Mitologia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>

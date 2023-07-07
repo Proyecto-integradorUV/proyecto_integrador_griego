@@ -11,8 +11,8 @@ const LeccionesLiteratura = () => {
   return (
     <div className="contenedorArte">
       <NavbarPrincipal />
-      <div class="titulo-lecciones">
-        <img src={titulo} class="img-fluid" alt="Imagen" />
+      <div className="titulo-lecciones">
+        <img src={titulo} className="img-fluid" alt="Imagen" />
       </div>
       <div className="carousel-container abs-center">
         <Carousel interval={null} controls={true} indicators={false}>
@@ -31,8 +31,8 @@ const LeccionesLiteratura = () => {
                   <br />• Legado
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Literatura/Leccion1" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Literatura/Leccion1" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>
@@ -57,8 +57,8 @@ const LeccionesLiteratura = () => {
                   <br />• Historia.
                 </Card.Text>
                 <Card.Text className="card-title">
-                  <Link to="/Temas/Literatura/Leccion2" class="btn-empezar">
-                    <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                  <Link to="/Temas/Literatura/Leccion2" className="btn-empezar">
+                    <img src={botonEmpezar} alt="Imagen" className="button-image" />
                   </Link>
                 </Card.Text>
               </Card.Body>

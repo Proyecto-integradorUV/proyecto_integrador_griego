@@ -13,8 +13,8 @@ const LeccionesDeporte = () => {
     return (
         <div className="contenedorLecciones-deporte">
             <NavbarPrincipal/>
-            <div class="titulo-lecciones-deporte">
-                <img src={titulo} class="img-fluid" alt="Imagen" />
+            <div className="titulo-lecciones-deporte">
+                <img src={titulo} className="img-fluid" alt="Imagen" />
             </div>
             {/* Carrusel de lecciones */}
             <div className="carousel-container" >
@@ -27,8 +27,8 @@ const LeccionesDeporte = () => {
                                     • Breve introducción
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Deporte/Leccion1" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Deporte/Leccion1" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -42,8 +42,8 @@ const LeccionesDeporte = () => {
                                     • Breve introducción
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Deporte/Leccion2" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Deporte/Leccion2" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -57,8 +57,8 @@ const LeccionesDeporte = () => {
                                     • Breve introducción
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Deporte/Leccion3" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Deporte/Leccion3" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
@@ -72,8 +72,8 @@ const LeccionesDeporte = () => {
                                     • Breve introducción
                                 </Card.Text>
                                 <Card.Text className="card-title">
-                                    <Link to="/Temas/Deporte/Leccion4" class="btn-empezar">
-                                        <img src={botonEmpezar} alt="Imagen" class="button-image" />
+                                    <Link to="/Temas/Deporte/Leccion4" className="btn-empezar">
+                                        <img src={botonEmpezar} alt="Imagen" className="button-image" />
                                     </Link>
                                 </Card.Text>
                             </Card.Body>
