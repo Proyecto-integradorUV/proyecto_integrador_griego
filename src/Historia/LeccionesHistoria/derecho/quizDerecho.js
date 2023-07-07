@@ -87,22 +87,6 @@ const QuizDerecho = () => {
     return score >= 3.0;
   }, [puntuacion]);
 
-  const [formData, setFormData] = useState({
-    username:"",
-    score: 0,
-    approved: false,    
-    module: "Derechos"
-  });
-
-  useEffect(() => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      username: getUsername(),
-      score: parseFloat(calificacion(puntuacion)),
-      approved: getApproved()
-    }));
-  }, [puntuacion, getApproved]);
-
   function enviarCalificacion() {
   listPrueba(2)
     .then((data) => {

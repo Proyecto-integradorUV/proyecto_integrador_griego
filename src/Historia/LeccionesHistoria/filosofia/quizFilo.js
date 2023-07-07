@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";
 import { createPrueba, listPrueba, upDatePrueba } from "../../../Services/users";
+import Swal from "sweetalert2";
 
 const QuizFilosofia = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -14,8 +15,6 @@ const QuizFilosofia = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
-
-  const setCalificacionEnviada = useState(false); //revisar :o
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -86,22 +85,6 @@ const QuizFilosofia = () => {
     return score >= 3.0;
   }, [puntuacion]);
 
-  const [formData, setFormData] = useState({
-    username:"",
-    score: 0,
-    approved: false,    
-    module: "Filosofía"
-  });
-
-  useEffect(() => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      username: getUsername(),
-      score: parseFloat(calificacion(puntuacion)),
-      approved: getApproved()
-    }));
-  }, [puntuacion, getApproved]);
-
   function enviarCalificacion() {
   listPrueba(8)
     .then((data) => {
@@ -124,10 +107,20 @@ const QuizFilosofia = () => {
 
        upDatePrueba(updatedData)
           .then((response) => {
+            Swal.fire({
+              icon: "success",
+              title: "Calificación enviada",
+              text: "La calificación se ha enviado correctamente.",
+            });
             // Manejar la respuesta del servidor si es necesario
             console.log(response);
           })
           .catch((error) => {
+            Swal.fire({
+              icon: "error",
+              title: "Error al enviar la calificación",
+              text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+            });
             // Manejar el error si ocurre
             console.error(error);
           });
@@ -142,11 +135,20 @@ const QuizFilosofia = () => {
 
         createPrueba(newData)
           .then((response) => {
+            Swal.fire({
+              icon: "success",
+              title: "Calificación enviada",
+              text: "La calificación se ha enviado correctamente.",
+            });
             // Manejar la respuesta del servidor si es necesario
             console.log(response);
-            setCalificacionEnviada(true); // Marcar la calificación como enviada
           })
           .catch((error) => {
+            Swal.fire({
+              icon: "error",
+              title: "Error al enviar la calificación",
+              text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+            });
             // Manejar el error si ocurre
             console.error(error);
           });
