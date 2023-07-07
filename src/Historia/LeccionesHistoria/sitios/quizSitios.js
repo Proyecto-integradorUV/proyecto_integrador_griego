@@ -3,7 +3,12 @@ import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/sitios.png";
-import { createPrueba, listPrueba,upDatePrueba } from "../../../Services/users";
+import {
+  createPrueba,
+  listPrueba,
+  upDatePrueba,
+} from "../../../Services/users";
+import Swal from "sweetalert2";
 
 const QuizSitios = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -78,7 +83,7 @@ const QuizSitios = () => {
     const userData = localStorage.getItem("userData");
     const parsedUserData = JSON.parse(userData);
     const username = parsedUserData.username;
-    return username;    
+    return username;
   };
 
   const getApproved = useCallback(() => {
@@ -87,10 +92,10 @@ const QuizSitios = () => {
   }, [puntuacion]);
 
   const [formData, setFormData] = useState({
-    username:"",
+    username: "",
     score: 0,
-    approved: false,    
-    module: "Lugares"
+    approved: false,
+    module: "Lugares",
   });
 
   useEffect(() => {
@@ -98,65 +103,92 @@ const QuizSitios = () => {
       ...prevFormData,
       username: getUsername(),
       score: parseFloat(calificacion(puntuacion)),
-      approved: getApproved()
+      approved: getApproved(),
     }));
   }, [puntuacion, getApproved]);
 
   function enviarCalificacion() {
-  listPrueba(6)
-    .then((data) => {
-      console.log('Datos recibidos:', data);
+    listPrueba(6)
+      .then((data) => {
+        console.log("Datos recibidos:", data);
 
-      const username = getUsername();
-      const score = parseFloat(calificacion(puntuacion));
-      const approved = getApproved();
-      const module = "Lugares";
+        const username = getUsername();
+        const score = parseFloat(calificacion(puntuacion));
+        const approved = getApproved();
+        const module = "Lugares";
 
-      if (data && data.length > 0) {
-        // Actualizar calificación existente
-        const updatedData = {
-          ...data[0], // Se asume que solo hay un dato de prueba por usuario
-          username,
-          score,
-          approved,
-          module
-        };
+        if (data && data.length > 0) {
+          // Actualizar calificación existente
+          const updatedData = {
+            ...data[0], // Se asume que solo hay un dato de prueba por usuario
+            username,
+            score,
+            approved,
+            module,
+          };
 
-       upDatePrueba(updatedData)
-          .then((response) => {
-            // Manejar la respuesta del servidor si es necesario
-            console.log(response);
-          })
-          .catch((error) => {
-            // Manejar el error si ocurre
-            console.error(error);
-          });
-      } else {
-        // Crear nueva calificación
-        const newData = {
-          username,
-          score,
-          approved,
-          module
-        };
+          upDatePrueba(updatedData)
+            .then((response) => {
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+            })
+            .catch((error) => {
+              onError(error);
+              Swal.fire({
+                icon: "error",
+                title: "Algo salió mal1",
+                text: "Ocurrió un error al iniciar sesión, intenta de nuevo y verifica que tu usuario sea correcto",
+                confirmButtonText: "Continuar",
+                allowOutsideClick: false,
+                showCancelButton: false,
+              });
+              console.error(error);
+            });
+        } else {
+          // Crear nueva calificación
+          const newData = {
+            username,
+            score,
+            approved,
+            module,
+          };
 
-        createPrueba(newData)
-          .then((response) => {
-            // Manejar la respuesta del servidor si es necesario
-            console.log(response);
-            setCalificacionEnviada(true); // Marcar la calificación como enviada
-          })
-          .catch((error) => {
-            // Manejar el error si ocurre
-            console.error(error);
-          });
-      }
-    })
-    .catch((error) => {
-      // Manejar el error si ocurre
-      console.error(error);
+          createPrueba(newData)
+            .then((response) => {
+              Swal.fire({
+                icon: "success",
+                title: "Que bien!",
+                text: "Tu prueba ha sido enviada con éxito",
+                confirmButtonText: "Continuar",
+                allowOutsideClick: false,
+                showCancelButton: false,
+              });
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+              setCalificacionEnviada(true); // Marcar la calificación como enviada
+            })
+            .catch((error) => {
+              onError(error);
+              // Manejar el error si ocurre
+              console.error(error);
+            });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+  const onError = (error) => {
+    Swal.fire({
+      icon: "error",
+      title: "No superaste la nota que ya tenias :(",
+      text: "Para poder enviar tu calificación tienes que sacar una mejor nota a la que tenias",
+      confirmButtonText: "Continuar",
+      allowOutsideClick: false,
+      showCancelButton: false,
     });
-}
+  };
 
   if (isFinished)
     return (
@@ -178,7 +210,10 @@ const QuizSitios = () => {
             >
               Volver a hacer quiz
             </button>
-            <button onClick={enviarCalificacion}>
+            <button
+              onClick={enviarCalificacion}
+              disabled={puntuacion < formData.score}
+            >
               Enviar calificacion
             </button>
           </div>
