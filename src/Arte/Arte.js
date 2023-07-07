@@ -12,7 +12,7 @@ const Arte = () => {
       <div className="temaArte">
         <img src={arteTitle} alt="Imagen" />
       </div>
-      <div className="introduccionArte">
+      <div className="introduccionArte text-center">
         El arte griego abarca una amplia gama de disciplinas, desde la escultura
         y la arquitectura hasta la pintura y la cerámica. A lo largo de los
         siglos, los artistas griegos experimentaron y perfeccionaron diversas

@@ -12,7 +12,7 @@ const Literatura = () => {
       <div className="temaLiteratura">
         <img src={literaturaTitle} alt="Imagen" />
       </div>
-      <div className="introduccionLiteratura">
+      <div className="introduccionLiteratura text-center">
         La literatura griega es una de las tradiciones literarias más
         influyentes y duraderas en la historia. Se desarrolló en la antigua
         Grecia, desde el siglo VIII a.C. hasta la época helenística, y ha dejado

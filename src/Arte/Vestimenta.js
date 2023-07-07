@@ -26,7 +26,7 @@ const Vestimenta = () => {
       <div className="temaVestimenta">
         <img src={vestimentaTitle} alt="Imagen" />
       </div>
-      <div className="introduccionVestimenta">
+      <div className="introduccionVestimenta text-center">
         En términos generales, tanto hombres como mujeres griegas vestían
         túnicas largas y sueltas, hechas de telas livianas y fluidas. Estas
         túnicas se conocían como 'quitos' para los hombres y 'peplo' para las

@@ -10,7 +10,7 @@ import NavbarPrincipal from "../../../components/navbar2";
 const LeccionesArte = () => {
 
     return (
-        <div className="contenedorArte">
+        <div className="contenedor-inicial-arte">
             <NavbarPrincipal />
             <div className="titulo-lecciones">
                 <img src={titulo} className="img-fluid" alt="Imagen" />

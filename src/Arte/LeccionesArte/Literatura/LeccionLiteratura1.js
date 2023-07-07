@@ -42,7 +42,7 @@ const LeccionLiteratura1 = () => {
   };
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedor-inicial-leteratura">
       <NavbarLite />
       <div className="titulo-empezar">
         <img src={literatura} className="img-fluid" alt="Imagen" />

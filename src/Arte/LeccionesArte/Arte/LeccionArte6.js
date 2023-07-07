@@ -41,7 +41,7 @@ const LeccionArte6 = () => {
   const videoId = "ioVG56GyvfI"; // ID del video de YouTube que deseas reproducir
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedor-inicial-arte">
       <NavbarArte />
       <div className="titulo-empezar">
         <img src={arte} className="img-fluid" alt="Imagen" />

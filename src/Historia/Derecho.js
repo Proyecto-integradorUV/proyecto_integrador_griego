@@ -26,7 +26,7 @@ const Derecho = () => {
       <div className="temaDerecho">
         <img src={derechoTitle} alt="Imagen" />
       </div>
-      <div className="introduccionDerecho">
+      <div className="introduccionDerecho text-center">
         En la antigua Grecia, los derechos y la participación política estaban
         restringidos a los ciudadanos varones. Las mujeres, los esclavos y los
         extranjeros no tenían los mismos derechos que los ciudadanos. Aunque se

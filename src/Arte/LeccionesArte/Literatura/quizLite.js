@@ -172,7 +172,7 @@ const QuizLite = () => {
 
   if (isFinished)
     return (
-      <div className="contenedorArte">
+      <div className="contenedor-inicial-leteratura">
         <NavbarPrincipal />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
@@ -197,7 +197,7 @@ const QuizLite = () => {
     );
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedor-inicial-leteratura">
       <NavbarPrincipal />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />

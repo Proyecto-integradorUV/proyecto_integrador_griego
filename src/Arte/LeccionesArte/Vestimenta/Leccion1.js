@@ -43,7 +43,7 @@ const LeccionVestimenta1 = () => {
   const url3 = "/Temas/Vestimenta/Leccion3";
   const url4 = "/Temas/Vestimenta/Leccion4";
   return (
-    <div className="contenedorArte">
+    <div className="contenedorLecciones-vestimenta">
       <Navbar4
         tituloTema="Vestimenta"
         url1={url1}

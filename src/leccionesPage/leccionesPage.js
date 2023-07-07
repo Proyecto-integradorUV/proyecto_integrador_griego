@@ -25,7 +25,7 @@ const Lecciones = () => {
           listPrueba(8), //Filo
           listPrueba(9) //Mitología
         ]);
-  
+
         const scores = responses.map(response => response[0]?.score || "0.0");
         setScores(scores);
         console.log(scores);
@@ -33,59 +33,97 @@ const Lecciones = () => {
         console.error("Error al obtener los puntajes:", error);
       }
     };
-  
+
     fetchData();
   }, []);
 
-    return (
-        <div className="contenedor-inicial-principal">
-          <NavbarPrincipal />
-          <div className="tabla-contenedor">
+  return (
+    <div className="contenedor-inicial-principal">
+      <NavbarPrincipal />
+      <div className="tabla-contenedor">
+        <div className="table-responsive">
           <Table striped bordered hover className="mi-tabla">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Quiz/Historia</th>
-            <th>Resultados</th>
-            <th>Quiz/Arte</th>
-            <th>Resultados</th>
-            <th>Quiz/Costumbres</th>
-            <th>Resultados</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td><Link to="/Temas/Filosofia/Quiz" className="enlace-personalizado">Filosofia</Link></td>
-            <td>{scores[7]}</td>
-            <td><Link to="/Temas/Arte/Quiz" className="enlace-personalizado">Arte</Link></td>
-            <td>{scores[2]}</td>
-            <td><Link to="/Temas/Mitologia/Quiz" className="enlace-personalizado">Mitologia</Link></td>
-            <td>{scores[8]}</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td><Link to="/Temas/Derecho/Quiz" className="enlace-personalizado">Derechos</Link></td>
-            <td>{scores[1]}</td>
-            <td><Link to="/Temas/Literatura/Quiz" className="enlace-personalizado">Literatura</Link></td>
-            <td>{scores[6]}</td>
-            <td><Link to="/Temas/Deporte/Quiz" className="enlace-personalizado">Deporte</Link></td>
-            <td>{scores[0]}</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><Link to="/Temas/SitiosCaracteristicos/Quiz" className="enlace-personalizado">Sitios Caracteristicos</Link></td>
-            <td>{scores[5]}</td>
-            <td><Link to="/Temas/Vestimenta/Quiz" className="enlace-personalizado">Vestimenta</Link></td>
-            <td>{scores[4]}</td>
-            <td><Link to="/Temas/Gastronomia/Quiz" className="enlace-personalizado">Gastronomia</Link></td>
-            <td>{scores[3]}</td>
-          </tr>
-        </tbody>
-      </Table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Quiz/Historia</th>
+                <th>Resultados</th>
+                <th>Quiz/Arte</th>
+                <th>Resultados</th>
+                <th>Quiz/Costumbres</th>
+                <th>Resultados</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <Link to="/Temas/Filosofia/Quiz" className="enlace-personalizado">
+                    Filosofia
+                  </Link>
+                </td>
+                <td>{scores[7]}</td>
+                <td>
+                  <Link to="/Temas/Arte/Quiz" className="enlace-personalizado">
+                    Arte
+                  </Link>
+                </td>
+                <td>{scores[2]}</td>
+                <td>
+                  <Link to="/Temas/Mitologia/Quiz" className="enlace-personalizado">
+                    Mitologia
+                  </Link>
+                </td>
+                <td>{scores[8]}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <Link to="/Temas/Derecho/Quiz" className="enlace-personalizado">
+                    Derechos
+                  </Link>
+                </td>
+                <td>{scores[1]}</td>
+                <td>
+                  <Link to="/Temas/Literatura/Quiz" className="enlace-personalizado">
+                    Literatura
+                  </Link>
+                </td>
+                <td>{scores[6]}</td>
+                <td>
+                  <Link to="/Temas/Deporte/Quiz" className="enlace-personalizado">
+                    Deporte
+                  </Link>
+                </td>
+                <td>{scores[0]}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <Link to="/Temas/SitiosCaracteristicos/Quiz" className="enlace-personalizado">
+                    Sitios Caracteristicos
+                  </Link>
+                </td>
+                <td>{scores[5]}</td>
+                <td>
+                  <Link to="/Temas/Vestimenta/Quiz" className="enlace-personalizado">
+                    Vestimenta
+                  </Link>
+                </td>
+                <td>{scores[4]}</td>
+                <td>
+                  <Link to="/Temas/Gastronomia/Quiz" className="enlace-personalizado">
+                    Gastronomia
+                  </Link>
+                </td>
+                <td>{scores[3]}</td>
+              </tr>
+            </tbody>
+          </Table>
+        </div>
+      </div>
     </div>
-</div>
-);
-}
+  );
+};
 
 export default Lecciones;

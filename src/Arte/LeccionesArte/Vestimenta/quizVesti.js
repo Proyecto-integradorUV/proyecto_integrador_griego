@@ -171,7 +171,7 @@ const QuizVesti = () => {
 
   if (isFinished)
     return (
-      <div className="contenedorArte">
+      <div className="contenedorLecciones-vestimenta">
         <NavbarPrincipal />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
@@ -196,7 +196,7 @@ const QuizVesti = () => {
     );
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedorLecciones-vestimenta">
       <NavbarPrincipal />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />

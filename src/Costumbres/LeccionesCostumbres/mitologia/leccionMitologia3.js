@@ -557,11 +557,11 @@ const LeccionMitologia3 = () => {
         </div>
       </div>
       <div className="botones-lecciones">
+      <Link to="/Temas/Mitologia">
+          <img src={inicio} className="img-fluid" alt="Imagen" />
+        </Link>
         <Link to="/Temas/Mitologia/Quiz">
           <img src={quiz} className="img-fluid" alt="Imagen" />
-        </Link>
-        <Link to="/Temas/Mitologia">
-          <img src={inicio} className="img-fluid" alt="Imagen" />
         </Link>
       </div>
     </div>
