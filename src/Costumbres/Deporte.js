@@ -26,7 +26,7 @@ const Deporte = () => {
       <div className="temaDepor">
         <img src={deporteTitle} alt="Imagen" />
       </div>
-      <div className="introduccionDepor">
+      <div className="introduccionDepor text-center">
         El deporte en la antigua Grecia era una parte integral de la vida y la
         cultura griega. Los griegos valoraban el cuerpo atlético y consideraban
         el deporte como una forma de cultivar la belleza, la virtud y la

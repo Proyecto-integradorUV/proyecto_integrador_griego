@@ -1,5 +1,5 @@
 .container-leccionVestimenta{
-    background-image: url('./images/fondo.jpeg');
+    background-image: url('../../Images/grecia.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100vw;
@@ -7,7 +7,7 @@
 }
 
 .contenedorLecciones-vestimenta{
-    background-image: url('./images/fondo.jpeg');
+    background-image: url('../../Images/grecia.jpeg');
     background-size: cover;
     background-position: center;    
     width: 100%;

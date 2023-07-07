@@ -27,7 +27,7 @@ const Filosofia = () => {
       <div className="temaFilosofia">
         <img src={filoTitle} alt="Imagen" />
       </div>
-      <div className="introduccionFilosofia">
+      <div className="introduccionFilosofia text-center">
         A lo largo de la historia de la filosofía griega, se destacaron figuras
         clave como Sócrates, Platón y Aristóteles. Sócrates enfatizó el uso de
         la razón y el diálogo para buscar la verdad y la virtud. Platón

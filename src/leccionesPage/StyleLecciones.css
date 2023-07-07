@@ -6,20 +6,27 @@
     height: 100vh;
   }
 
-  /* .tabla-contenedor {
-    margin: 20px auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 20px;
-    max-width: 1000px;
-  } */
+  .tabla-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   
   .mi-tabla {
-    margin: 20px auto;
+    margin: 50px auto;
     position: relative;
     overflow: hidden;
-    background-color: rgba(224, 188, 109, 0.5);
+    background-color: rgba(253, 211, 121, 0.5);
     max-width: 1000px;
+  }
+
+  .mi-tabla td {
+    font-size: 1.5vw; /* Utilizamos vw para ajustar el tamaño de fuente al ancho de la ventana */
+  }
+
+  .mi-tabla th {
+    font-size: 2.5vw; /* Utilizamos vw para ajustar el tamaño de fuente al ancho de la ventana */
   }
 
   .enlace-personalizado {

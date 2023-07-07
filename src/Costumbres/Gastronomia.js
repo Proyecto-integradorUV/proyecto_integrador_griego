@@ -27,7 +27,7 @@ const Gastronomia = () => {
       <div className="temaGastronomia">
         <img src={gastronomiaTitle} alt="Imagen" />
       </div>
-      <div className="introduccionGastronomia">
+      <div className="introduccionGastronomia text-center">
         La gastronomía de Grecia tiene una rica historia que se remonta a miles
         de años atrás y ha influido en muchas otras cocinas alrededor del mundo.
         La cocina griega es conocida por su sabor fresco, ingredientes

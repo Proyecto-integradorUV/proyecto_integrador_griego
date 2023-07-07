@@ -1,5 +1,8 @@
 import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
+import "../../../style/css/styleEmpezar.css";
+import "../../../style/css/contenedores.css";
+import "./leccionesSitios.css";
 import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/sitios.png";
@@ -171,7 +174,7 @@ const QuizSitios = () => {
 
   if (isFinished)
     return (
-      <div className="container-leccionSitios">
+      <div className="contenedorHistoria">
         <NavbarPrincipal />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
@@ -196,7 +199,7 @@ const QuizSitios = () => {
     );
 
   return (
-    <div className="container-leccionSitios">
+    <div className="contenedorHistoria">
       <NavbarPrincipal />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />

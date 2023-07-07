@@ -38,7 +38,7 @@ const LeccionArte1 = () => {
   };
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedor-inicial-arte">
       <NavbarArte />
       <div className="titulo-empezar">
         <img src={arte} className="img-fluid" alt="Imagen" />

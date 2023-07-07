@@ -26,7 +26,7 @@ const Sitios = () => {
       <div className="temaSitios">
         <img src={sitiosTitle} alt="Imagen" />
       </div>
-      <div className="introduccionSitios">
+      <div className="introduccionSitios text-center">
         Grecia es un país lleno de historia, cultura y belleza natural, conocido
         por ser la cuna de la civilización occidental y por albergar algunos de
         los sitios más emblemáticos del mundo antiguo. Desde antiguos templos

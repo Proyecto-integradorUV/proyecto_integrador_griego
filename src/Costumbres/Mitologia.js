@@ -12,7 +12,7 @@ const Mitologia = () => {
       <div className="temaMitologia">
         <img src={mitologiaTitle} alt="Imagen" />
       </div>
-      <div className="introduccionMitologia">
+      <div className="introduccionMitologia text-center">
         La mitología griega es un vasto conjunto de relatos y creencias que
         formaban parte de la antigua religión y cultura de la civilización
         griega. Estas historias míticas abarcan desde los orígenes del mundo

@@ -45,7 +45,7 @@ const LeccionArte4 = () => {
   };
 
   return (
-    <div className="contenedorArte">
+    <div className="contenedor-inicial-arte">
       <NavbarArte />
       <div className="titulo-empezar">
         <img src={arte} class="img-fluid" alt="Imagen" />
