@@ -108,7 +108,7 @@ const preguntasMito = [
   {
     titulo: "¿Quién fue el fundador y figura central del neoplatonismo?",
     opciones: [
-      { textoRespuesta: "San Agustín", isCorrect: false },
+      { textoRespuesta: "San Alfredo", isCorrect: false },
       { textoRespuesta: "Plotino", isCorrect: true },
       { textoRespuesta: "Aristóteles", isCorrect: false },
       { textoRespuesta: "San Agustín", isCorrect: false },

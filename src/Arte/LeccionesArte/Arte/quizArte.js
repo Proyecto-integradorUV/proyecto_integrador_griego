@@ -1,16 +1,22 @@
 import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
 import "../../../style/css/contenedores.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import lecGastronomia from "../../../style/titulos/arte.png";
+import {
+  createPrueba,
+  listPrueba,
+  upDatePrueba,
+} from "../../../Services/users";
+import Swal from "sweetalert2";
 
 const QuizArte = () => {
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [puntuacion, setPuntuacion] = useState(0);
 
   const [isFinished, setIsFinished] = useState(false);
-  const [tiempoRestante, setTiempoRestante] = useState(10);
+  const [tiempoRestante, setTiempoRestante] = useState(60);
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
@@ -29,7 +35,7 @@ const QuizArte = () => {
         setPreguntaActual(preguntaActual + 1);
         setTiempoRestante(60);
       }
-    }, 1500);
+    }, 1000);
   }
 
   useEffect(() => {
@@ -73,6 +79,98 @@ const QuizArte = () => {
     }
   }
 
+  const getUsername = () => {
+    const userData = localStorage.getItem("userData");
+    const parsedUserData = JSON.parse(userData);
+    const username = parsedUserData.username;
+    return username;
+  };
+
+  const getApproved = useCallback(() => {
+    const score = parseFloat(calificacion(puntuacion));
+    return score >= 3.0;
+  }, [puntuacion]);
+
+  function enviarCalificacion() {
+    listPrueba(3)
+      .then((data) => {
+        console.log("Datos recibidos:", data);
+
+        const username = getUsername();
+        const score = parseFloat(calificacion(puntuacion));
+        const approved = getApproved();
+        const module = "Arte";
+
+        if (data && data.length > 0) {
+          // Actualizar calificación existente
+          const updatedData = {
+            ...data[0], // Se asume que solo hay un dato de prueba por usuario
+            username,
+            score,
+            approved,
+            module,
+          };
+
+          console.log("el puntaje es", score);
+          console.log("en la data está", data.score);
+
+          upDatePrueba(updatedData)
+            .then((response) => {
+              Swal.fire({
+                icon: "success",
+                title: "Calificación enviada",
+                text: "La calificación se ha enviado correctamente.",
+              });
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+            })
+            .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error al enviar la calificación",
+                text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+              });
+              // Manejar el error si ocurre
+              console.error(error);
+            });
+        } else {
+          // Crear nueva calificación
+          const newData = {
+            username,
+            score,
+            approved,
+            module,
+          };
+          console.log("el puntaje es2", score);
+          console.log("en la data está2", data.score);
+
+          createPrueba(newData)
+            .then((response) => {
+              Swal.fire({
+                icon: "success",
+                title: "Calificación enviada",
+                text: "La calificación se ha enviado correctamente.",
+              });
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+            })
+            .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error al enviar la calificación",
+                text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+              });
+              // Manejar el error si ocurre
+              console.error(error);
+            });
+        }
+      })
+      .catch((error) => {
+        // Manejar el error si ocurre
+        console.error(error);
+      });
+  }
+
   if (isFinished)
     return (
       <div className="contenedorArte">
@@ -93,6 +191,7 @@ const QuizArte = () => {
             >
               Volver a hacer quiz
             </button>
+            <button onClick={enviarCalificacion}>Enviar calificación</button>
           </div>
         </div>
       </div>

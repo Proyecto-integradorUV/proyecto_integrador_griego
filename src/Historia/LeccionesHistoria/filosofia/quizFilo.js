@@ -3,7 +3,11 @@ import "../../../style/css/quiz.css";
 import { useState, useEffect, useCallback } from "react";
 import NavbarPrincipal from "../../../components/navbar2";
 import titulo from "../../../style/titulos/filosofia.png";
-import { createPrueba, listPrueba, upDatePrueba } from "../../../Services/users";
+import {
+  createPrueba,
+  listPrueba,
+  upDatePrueba,
+} from "../../../Services/users";
 import Swal from "sweetalert2";
 
 const QuizFilosofia = () => {
@@ -71,13 +75,13 @@ const QuizFilosofia = () => {
     if (puntaje === 8) {
       return "5.0";
     }
-  }  
+  }
 
   const getUsername = () => {
     const userData = localStorage.getItem("userData");
     const parsedUserData = JSON.parse(userData);
     const username = parsedUserData.username;
-    return username;    
+    return username;
   };
 
   const getApproved = useCallback(() => {
@@ -86,81 +90,88 @@ const QuizFilosofia = () => {
   }, [puntuacion]);
 
   function enviarCalificacion() {
-  listPrueba(8)
-    .then((data) => {
-      console.log('Datos recibidos:', data);
+    listPrueba(8)
+      .then((data) => {
+        console.log("Datos recibidos:", data);
 
-      const username = getUsername();
-      const score = parseFloat(calificacion(puntuacion));
-      const approved = getApproved();
-      const module = "Filosofía";
+        const username = getUsername();
+        const score = parseFloat(calificacion(puntuacion));
+        const approved = getApproved();
+        const module = "Filosofía";
 
-      if (data && data.length > 0) {
-        // Actualizar calificación existente
-        const updatedData = {
-          ...data[0], // Se asume que solo hay un dato de prueba por usuario
-          username,
-          score,
-          approved,
-          module
-        };
+        if (data && data.length > 0) {
+          // Actualizar calificación existente
+          const updatedData = {
+            ...data[0], // Se asume que solo hay un dato de prueba por usuario
+            username,
+            score,
+            approved,
+            module,
+          };
 
-       upDatePrueba(updatedData)
-          .then((response) => {
-            Swal.fire({
-              icon: "success",
-              title: "Calificación enviada",
-              text: "La calificación se ha enviado correctamente.",
+          console.log("el puntaje es", score);
+          console.log("en la data está", data.score);
+
+          upDatePrueba(updatedData)
+            .then((response) => {
+              Swal.fire({
+                icon: "success",
+                title: "Calificación enviada",
+                text: "La calificación se ha enviado correctamente.",
+              });
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+            })
+            .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error al enviar la calificación",
+                text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+              });
+              // Manejar el error si ocurre
+              console.error(error);
             });
-            // Manejar la respuesta del servidor si es necesario
-            console.log(response);
-          })
-          .catch((error) => {
-            Swal.fire({
-              icon: "error",
-              title: "Error al enviar la calificación",
-              text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
-            });
-            // Manejar el error si ocurre
-            console.error(error);
-          });
-      } else {
-        // Crear nueva calificación
-        const newData = {
-          username,
-          score,
-          approved,
-          module
-        };
+        } else {
+          // Crear nueva calificación
+          const newData = {
+            username,
+            score,
+            approved,
+            module,
+          };
+          console.log("el puntaje es2", score);
+          console.log("en la data está2", data.score);
 
-        createPrueba(newData)
-          .then((response) => {
-            Swal.fire({
-              icon: "success",
-              title: "Calificación enviada",
-              text: "La calificación se ha enviado correctamente.",
+          createPrueba(newData)
+            .then((response) => {
+              Swal.fire({
+                icon: "success",
+                title: "Calificación enviada",
+                text: "La calificación se ha enviado correctamente.",
+              });
+              // Manejar la respuesta del servidor si es necesario
+              console.log(response);
+            })
+            .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error al enviar la calificación",
+                text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
+              });
+              // Manejar el error si ocurre
+              console.error(error);
             });
-            // Manejar la respuesta del servidor si es necesario
-            console.log(response);
-          })
-          .catch((error) => {
-            Swal.fire({
-              icon: "error",
-              title: "Error al enviar la calificación",
-              text: "Ha ocurrido un error al enviar la calificación. Por favor, intenta nuevamente.",
-            });
-            // Manejar el error si ocurre
-            console.error(error);
-          });
-      }
-    })
-    .catch((error) => {
-      // Manejar el error si ocurre
-      console.error(error);
-    });
-}
+        }
+      })
+      .catch((error) => {
+        // Manejar el error si ocurre
+        console.error(error);
+      });
+  }
 
-  if (isFinished)
+  if (isFinished) {
+    // const disableButton = typeof data == "undefined";
+
     return (
       <div className="contenedorHistoria">
         <NavbarPrincipal />
@@ -180,13 +191,12 @@ const QuizFilosofia = () => {
             >
               Volver a hacer quiz
             </button>
-            <button onClick={enviarCalificacion}>
-              Enviar calificacion
-            </button>
+            <button onClick={enviarCalificacion}>Enviar calificación</button>
           </div>
         </div>
       </div>
     );
+  }
 
   return (
     <div className="contenedorHistoria">
