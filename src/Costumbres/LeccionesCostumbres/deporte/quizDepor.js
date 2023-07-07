@@ -46,16 +46,16 @@ const QuizDepor = () => {
       return "0.0";
     }
     if (puntaje === 1) {
-      return "1.0";
+      return "1.25";
     }
     if (puntaje === 2) {
-      return "2.0";
+      return "2.5";
     }
     if (puntaje === 3) {
-      return "3.0";
+      return "3.75";
     }
     if (puntaje === 4) {
-      return "4.0";
+      return "5.0";
     }
   }
 
