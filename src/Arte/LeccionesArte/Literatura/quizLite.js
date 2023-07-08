@@ -2,7 +2,7 @@ import preguntas from "./preguntas";
 import "../../../style/css/quiz.css";
 import "../../../style/css/contenedores.css";
 import { useState, useEffect, useCallback } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
+import NavbarLite from "../../../components/navLite";
 import lecGastronomia from "../../../style/titulos/literatura.png";
 import {
   createPrueba,
@@ -173,7 +173,7 @@ const QuizLite = () => {
   if (isFinished)
     return (
       <div className="contenedor-inicial-leteratura">
-        <NavbarPrincipal />
+        <NavbarLite />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
         </div>
@@ -198,7 +198,7 @@ const QuizLite = () => {
 
   return (
     <div className="contenedor-inicial-leteratura">
-      <NavbarPrincipal />
+      <NavbarLite />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>

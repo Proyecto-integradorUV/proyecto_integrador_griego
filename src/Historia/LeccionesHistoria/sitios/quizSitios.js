@@ -4,7 +4,7 @@ import "../../../style/css/styleEmpezar.css";
 import "../../../style/css/contenedores.css";
 import "./leccionesSitios.css";
 import { useState, useEffect, useCallback } from "react";
-import NavbarPrincipal from "../../../components/navbar2";
+import Navbar4 from "../../../components/navbar4";
 import lecGastronomia from "../../../style/titulos/sitios.png";
 import {
   createPrueba,
@@ -22,6 +22,11 @@ const QuizSitios = () => {
   const [areDisabled, setAreDisabled] = useState(false);
   const [start, setStart] = useState(false);
   const [botonIniciar, setBotonIniciar] = useState(false);
+
+  const url1 = "/Temas/SitiosCaracteristicos/Leccion1";
+  const url2 = "/Temas/SitiosCaracteristicos/Leccion2";
+  const url3 = "/Temas/SitiosCaracteristicos/Leccion3";
+  const url4 = "/Temas/SitiosCaracteristicos/Leccion4";
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
@@ -175,7 +180,17 @@ const QuizSitios = () => {
   if (isFinished)
     return (
       <div className="contenedorHistoria">
-        <NavbarPrincipal />
+        <Navbar4
+          tituloTema="Sitios caracteristicos"
+          url1={url1}
+          tituloLeccion1="Leccion1"
+          url2={url2}
+          tituloLeccion2="Leccion2"
+          url3={url3}
+          tituloLeccion3="Leccion3"
+          url4={url4}
+          tituloLeccion4="Leccion4"
+        />
         <div className="titulo-empezar">
           <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
         </div>
@@ -200,7 +215,17 @@ const QuizSitios = () => {
 
   return (
     <div className="contenedorHistoria">
-      <NavbarPrincipal />
+      <Navbar4
+        tituloTema="Sitios caracteristicos"
+        url1={url1}
+        tituloLeccion1="Leccion1"
+        url2={url2}
+        tituloLeccion2="Leccion2"
+        url3={url3}
+        tituloLeccion3="Leccion3"
+        url4={url4}
+        tituloLeccion4="Leccion4"
+      />
       <div className="titulo-empezar">
         <img src={lecGastronomia} className="img-fluid" alt="Imagen" />
       </div>
