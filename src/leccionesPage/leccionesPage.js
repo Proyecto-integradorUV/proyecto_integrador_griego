@@ -41,7 +41,11 @@ const Lecciones = () => {
       <NavbarPrincipal />
       <div className="tabla-contenedor">
         <div className="table-responsive">
-          <img src={quizTitulo} alt="Imagen" style={{}} />
+          <img
+            src={quizTitulo}
+            alt="Imagen"
+            style={{ height: "200px", weight: "300px" }}
+          />
           <Table striped bordered hover className="mi-tabla">
             <thead>
               <tr>
