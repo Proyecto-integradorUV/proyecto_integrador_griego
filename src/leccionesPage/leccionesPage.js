@@ -81,7 +81,7 @@ const Lecciones = () => {
                     to="/Temas/Mitologia/Quiz"
                     className="enlace-personalizado"
                   >
-                    Mitologia
+                    Mitología
                   </Link>
                 </td>
                 <td>{scores[8]}</td>
@@ -123,7 +123,7 @@ const Lecciones = () => {
                     to="/Temas/SitiosCaracteristicos/Quiz"
                     className="enlace-personalizado"
                   >
-                    Sitios Caracteristicos
+                    Sitios Característicos
                   </Link>
                 </td>
                 <td>{scores[5]}</td>
@@ -141,7 +141,7 @@ const Lecciones = () => {
                     to="/Temas/Gastronomia/Quiz"
                     className="enlace-personalizado"
                   >
-                    Gastronomia
+                    Gastronomía
                   </Link>
                 </td>
                 <td>{scores[3]}</td>
